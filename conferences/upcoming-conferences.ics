@@ -1,0 +1,291 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Watch//Conference Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Scientific and Investor Conferences
+X-WR-CALDESC:Published future conference dates tracked from official sources
+BEGIN:VEVENT
+UID:amp-2026@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261115
+SUMMARY:AMP Annual Meeting (2026)
+LOCATION:Seattle Convention Center\, Seattle\, Washington\, USA
+URL:https://www.amp.org/events/amp-events-calendar/
+DESCRIPTION:Official event source: https://www.amp.org/events/amp-events-calendar/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2026@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261212
+SUMMARY:San Antonio Breast Cancer Symposium (2026)
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:jpm-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270115
+SUMMARY:J.P. Morgan Healthcare Conference (2027)
+LOCATION:San Francisco\, California\, USA
+URL:https://www.jpmorgan.com/about-us/events-conferences/health-care-conference
+DESCRIPTION:Official event source: https://www.jpmorgan.com/about-us/events-conferences/health-care-conference. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-lung-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270118
+SUMMARY:AACR Special Conference: Redefining Lung Cancer (2027)
+LOCATION:Hilton San Diego Bayfront\, San Diego\, California\, USA
+URL:https://www.aacr.org/meeting/aacr-lung-cancer-conference/
+DESCRIPTION:Official event source: https://www.aacr.org/meeting/aacr-lung-cancer-conference/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pmwc-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270130
+SUMMARY:PMWC (2027)
+LOCATION:Santa Clara Convention Center\, Santa Clara\, California\, USA
+URL:https://pmwcintl.com/
+DESCRIPTION:Official event source: https://pmwcintl.com/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agbt-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270305
+SUMMARY:AGBT General Meeting (2027)
+LOCATION:Signia by Hilton Orlando Bonnet Creek\, Orlando\, Florida\, USA
+URL:https://www.agbt.org/general-meeting-venue-travel
+DESCRIPTION:Official event source: https://www.agbt.org/general-meeting-venue-travel. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270408
+SUMMARY:AACR Annual Meeting (2027)
+LOCATION:Orange County Convention Center\, Orlando\, Florida\, USA
+URL:https://www.aacr.org/meeting/aacr-annual-meeting-2027/
+DESCRIPTION:Official event source: https://www.aacr.org/meeting/aacr-annual-meeting-2027/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:asco-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270609
+SUMMARY:ASCO Annual Meeting (2027)
+LOCATION:McCormick Place\, Chicago\, Illinois\, USA
+URL:https://www.asco.org/annual-meeting/dates-know
+DESCRIPTION:Official event source: https://www.asco.org/annual-meeting/dates-know. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eshg-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20270612
+DTEND;VALUE=DATE:20270616
+SUMMARY:ESHG Conference (2027)
+LOCATION:Rotterdam Ahoy\, Rotterdam\, The Netherlands
+URL:https://2027.eshg.org/general-information/location-venue/
+DESCRIPTION:Official event source: https://2027.eshg.org/general-information/location-venue/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:amp-europe-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270624
+SUMMARY:AMP Europe (2027)
+LOCATION:Amsterdam Congress Center\, La Guardiaweg 59\, Amsterdam\, The Netherlands
+URL:https://amp-europe-congress.com/
+DESCRIPTION:Official event source: https://amp-europe-congress.com/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:esmo-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270922
+SUMMARY:ESMO Congress (2027)
+LOCATION:Fira de Barcelona Gran Via\, Barcelona\, Spain
+URL:https://www.esmo.org/about-esmo-meetings/esmo-congresses/
+DESCRIPTION:Official event source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20271026
+DTEND;VALUE=DATE:20271031
+SUMMARY:ASHG Annual Meeting (2027)
+LOCATION:Nashville\, Tennessee\, USA
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event source: https://www.ashg.org/meetings/future-past/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:amp-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271114
+SUMMARY:AMP Annual Meeting (2027)
+LOCATION:Baltimore\, Maryland\, USA
+URL:https://www.amp.org/events/amp-events-calendar/
+DESCRIPTION:Official event source: https://www.amp.org/events/amp-events-calendar/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2027@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20271207
+DTEND;VALUE=DATE:20271211
+SUMMARY:San Antonio Breast Cancer Symposium (2027)
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agbt-2028@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20280207
+DTEND;VALUE=DATE:20280211
+SUMMARY:AGBT General Meeting (2028)
+URL:https://www.agbt.org/meetings
+DESCRIPTION:Official event source: https://www.agbt.org/meetings. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eshg-2028@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20280617
+DTEND;VALUE=DATE:20280621
+SUMMARY:ESHG Conference (2028)
+URL:https://www.eshg.org/conferences/future-eshg-meetings
+DESCRIPTION:Official event source: https://www.eshg.org/conferences/future-eshg-meetings. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:amp-2028@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20281107
+DTEND;VALUE=DATE:20281112
+SUMMARY:AMP Annual Meeting (2028)
+LOCATION:Honolulu\, Hawaii\, USA
+URL:https://www.amp.org/events/amp-events-calendar/
+DESCRIPTION:Official event source: https://www.amp.org/events/amp-events-calendar/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:esmo-2028@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20281020
+DTEND;VALUE=DATE:20281025
+SUMMARY:ESMO Congress (2028)
+LOCATION:Milan\, Italy
+URL:https://www.esmo.org/about-esmo-meetings/esmo-congresses/
+DESCRIPTION:Official event source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2028@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20281205
+DTEND;VALUE=DATE:20281209
+SUMMARY:San Antonio Breast Cancer Symposium (2028)
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eshg-2029@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20290526
+DTEND;VALUE=DATE:20290530
+SUMMARY:ESHG Conference (2029)
+URL:https://www.eshg.org/conferences/future-eshg-meetings
+DESCRIPTION:Official event source: https://www.eshg.org/conferences/future-eshg-meetings. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2029@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20291204
+DTEND;VALUE=DATE:20291208
+SUMMARY:San Antonio Breast Cancer Symposium (2029)
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agbt-2029@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20290212
+DTEND;VALUE=DATE:20290216
+SUMMARY:AGBT General Meeting (2029)
+URL:https://www.agbt.org/meetings
+DESCRIPTION:Official event source: https://www.agbt.org/meetings. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agbt-2030@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20300225
+DTEND;VALUE=DATE:20300301
+SUMMARY:AGBT General Meeting (2030)
+URL:https://www.agbt.org/meetings
+DESCRIPTION:Official event source: https://www.agbt.org/meetings. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2030@conference-watch.scherel88
+DTSTAMP:20261101T170000Z
+DTSTART;VALUE=DATE:20301210
+DTEND;VALUE=DATE:20301214
+SUMMARY:San Antonio Breast Cancer Symposium (2030)
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
