@@ -1,0 +1,27 @@
+name: Validate daily investor-source audit
+
+on:
+  push:
+    paths:
+      - "audit/*.json"
+      - "validate_audit.py"
+      - ".github/workflows/validate-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate latest 26x3 evidence log
+        run: python validate_audit.py --latest
+      - name: Validate calendar source and published ICS
+        run: python validate_calendar.py --ics
