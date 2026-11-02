@@ -94,25 +94,29 @@
       "name": "Jefferies Global Healthcare London",
       "source_url": "https://www.jefferies.com/events/global-healthcare-conference-in-london-2/",
       "status": "verified_conference_dates_only",
-      "notes": "November 16-19 2026; organizer public page does not establish issuer-specific presentation times."
+      "notes": "November 16-19 2026; organizer public page does not establish issuer-specific presentation times. Rechecked Nov 2; organizer pages do not provide complete public issuer-specific schedules; issuer detail pages independently cross-checked.",
+      "checked_at": "2026-11-02T13:06:00Z"
     },
     {
       "name": "Stephens Annual Investment Conference",
       "source_url": "https://prod-new.stephens.com/events/save-the-date-stephens-annual-investment-conference",
       "status": "verified_conference_dates_only",
-      "notes": "November 17-19 2026; no complete public issuer-specific timed agenda."
+      "notes": "November 17-19 2026; no complete public issuer-specific timed agenda. Rechecked Nov 2; organizer pages do not provide complete public issuer-specific schedules; issuer detail pages independently cross-checked.",
+      "checked_at": "2026-11-02T13:06:00Z"
     },
     {
       "name": "UBS Global Healthcare",
       "source_url": "https://investor.illumina.com/events/event-details/ubs-global-healthcare-conference",
       "status": "issuer_cross_checked",
-      "notes": "Issuer events checked individually; organizer full public agenda not independently available."
+      "notes": "Issuer events checked individually; organizer full public agenda not independently available. Rechecked Nov 2; organizer pages do not provide complete public issuer-specific schedules; issuer detail pages independently cross-checked.",
+      "checked_at": "2026-11-02T13:06:00Z"
     },
     {
       "name": "Stifel 2026 Healthcare",
       "source_url": "https://investors.billiontoone.com/events/event-details/stifel-2026-healthcare-conference",
       "status": "issuer_cross_checked",
-      "notes": "BillionToOne exact time verified via issuer event page."
+      "notes": "BillionToOne exact time verified via issuer event page. Rechecked Nov 2; organizer pages do not provide complete public issuer-specific schedules; issuer detail pages independently cross-checked.",
+      "checked_at": "2026-11-02T13:06:00Z"
     }
   ],
   "repository_status": {
