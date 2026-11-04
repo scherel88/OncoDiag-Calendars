@@ -37,7 +37,9 @@
     "public_feed_retrieved": false,
     "actions_success_checked": false,
     "results_source_updated": true,
-    "results_calendar_regeneration_pending_verification": true
+    "results_calendar_regeneration_pending_verification": false,
+    "results_calendar_regenerated_in_repo": true,
+    "sophia_q3_results_in_ics": true
   },
   "failures": [
     {
@@ -45,8 +47,8 @@
       "message": "67 of 78 required source categories not freshly verified; mandatory 7-day issuer newsroom and SEC/exchange checks incomplete."
     },
     {
-      "type": "publishing_unverified",
-      "message": "Results JSON commit confirmed, but latest Actions conclusion and unauthenticated public feed not independently verified."
+      "type": "external_publishing_unverified",
+      "message": "GitHub repository ICS contains SOPHiA Q3 results and 94 unique UIDs; GitHub Actions conclusion and unauthenticated public HTTP feed remain unverified."
     }
   ],
   "checks": [
