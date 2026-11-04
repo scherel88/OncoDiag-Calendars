@@ -1,0 +1,3628 @@
+{
+  "audit_date": "2026-11-04",
+  "generated_at": "2026-11-04T08:17:04.524103-05:00",
+  "seed_source": "audit/2026-11-04.json",
+  "source_pairs": 78,
+  "url_attempted": 78,
+  "http_fetched": 41,
+  "http_failed": 37,
+  "sparse_dynamic_or_empty": 0,
+  "historical_one_off_sources": 2,
+  "completed_independent_announcement_reviews": 0,
+  "disclaimer": "Network-level preflight and candidate-link extraction only. HTTP success does NOT verify news, events, filings, 7-day coverage, or absence of changes.",
+  "checks": [
+    {
+      "company": "Labcorp",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:45.526721-05:00",
+      "finished_at": "2026-11-04T08:16:46.926607-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.labcorp.com/news-and-events/recent-past-presentations"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Labcorp",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:45.527483-05:00",
+      "finished_at": "2026-11-04T08:16:49.361011-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.labcorp.com/news-and-events/news-releases",
+        "https://ir.labcorp.com/rss-feeds",
+        "https://labcorp.gcs-web.com/news-releases/news-release-details/labcorp-reports-strong-2026-third-quarter-results-raises-full"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://ir.labcorp.com/news-and-events/news-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://ir.labcorp.com/news-and-events/news-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://ir.labcorp.com/rss-feeds",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://ir.labcorp.com/rss-feeds",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://labcorp.gcs-web.com/news-releases/news-release-details/labcorp-reports-strong-2026-third-quarter-results-raises-full",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://labcorp.gcs-web.com/news-releases/news-release-details/labcorp-reports-strong-2026-third-quarter-results-raises-full",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Labcorp",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:45.527884-05:00",
+      "finished_at": "2026-11-04T08:16:46.992824-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.labcorp.com/financials/sec-filings"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://ir.labcorp.com/financials/sec-filings",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://ir.labcorp.com/financials/sec-filings",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Mendelics",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:45.528369-05:00",
+      "finished_at": "2026-11-04T08:16:46.696859-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://mendelics.com.br/a-mendelics/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://mendelics.com.br/a-mendelics/",
+        "final_url": "https://mendelics.com.br/a-mendelics/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 369582,
+        "sha256": "0370e32f76d2361bdca470438e4a2f553dde99bbfb4935d1cf4a65947ccfd0a5",
+        "elapsed_ms": 1168,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 12314,
+        "links_seen": 112
+      }
+    },
+    {
+      "company": "Mendelics",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:45.529001-05:00",
+      "finished_at": "2026-11-04T08:16:46.788647-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://blog.mendelics.com.br/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed",
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://blog.mendelics.com.br/",
+        "final_url": "https://blog.mendelics.com.br/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 205272,
+        "sha256": "775c0613ba88b17d804e968748d0484a260bab9ab048d7207d6b6edab6396f04",
+        "elapsed_ms": 1259,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 7407,
+        "links_seen": 91
+      }
+    },
+    {
+      "company": "Mendelics",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:45.531681-05:00",
+      "finished_at": "2026-11-04T08:16:46.633288-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.gov.br/cvm/pt-br"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.gov.br/cvm/pt-br",
+        "final_url": "https://www.gov.br/cvm/pt-br",
+        "http_status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 226308,
+        "sha256": "a49c675e30f440d6ddb9787382e9f5781cd73114b8725e0ebe540ca5e5e7725e",
+        "elapsed_ms": 1101,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 14607,
+        "links_seen": 532
+      }
+    },
+    {
+      "company": "Exact Sciences",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:46.633357-05:00",
+      "finished_at": "2026-11-04T08:16:50.854983-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.abbott.com/en-us/exact-sciences",
+        "https://www.sec.gov/Archives/edgar/data/1800/000110465926033079/tm268709d2_ex99-1.htm"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.abbott.com/en-us/exact-sciences",
+        "final_url": "https://www.abbott.com/en-us/exact-sciences",
+        "http_status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 94286,
+        "sha256": "7130da6fa13eb50e540e5394bd04a07bbf1936df198dda99d133e1b4fa746bb5",
+        "elapsed_ms": 4221,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 1933,
+        "links_seen": 15
+      }
+    },
+    {
+      "company": "Exact Sciences",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:46.696917-05:00",
+      "finished_at": "2026-11-04T08:16:47.956985-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.abbott.com/en-us/corpnewsroom.html",
+        "https://www.abbott.com/en-us/exact-sciences",
+        "https://www.sec.gov/Archives/edgar/data/1800/000110465926033079/tm268709d2_ex99-1.htm"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed",
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.abbott.com/en-us/corpnewsroom.html",
+        "final_url": "https://www.abbott.com/en-us/corpnewsroom",
+        "http_status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 842800,
+        "sha256": "b031a60c05a2b7b4931556892c87748b89b8464dbef3e5192221cdd3cb94afca",
+        "elapsed_ms": 1259,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 874,
+        "links_seen": 15
+      }
+    },
+    {
+      "company": "Exact Sciences",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:46.788702-05:00",
+      "finished_at": "2026-11-04T08:16:49.218820-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=1800&owner=exclude",
+        "https://www.sec.gov/Archives/edgar/data/1800/000110465926033079/tm268709d2_ex99-1.htm"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1800&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1800&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1800/000110465926033079/tm268709d2_ex99-1.htm",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1800/000110465926033079/tm268709d2_ex99-1.htm",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Veracyte",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:46.926672-05:00",
+      "finished_at": "2026-11-04T08:16:48.329519-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.veracyte.com/events-presentations"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.veracyte.com/events-presentations",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.veracyte.com/events-presentations",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Veracyte",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:46.992880-05:00",
+      "finished_at": "2026-11-04T08:16:49.559005-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.veracyte.com/news-releases",
+        "https://investor.veracyte.com/news-releases/news-release-details/veracyte-participate-upcoming-investor-conferences-9"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.veracyte.com/news-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.veracyte.com/news-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.veracyte.com/news-releases/news-release-details/veracyte-participate-upcoming-investor-conferences-9",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.veracyte.com/news-releases/news-release-details/veracyte-participate-upcoming-investor-conferences-9",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Veracyte",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:47.957062-05:00",
+      "finished_at": "2026-11-04T08:16:49.216655-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.veracyte.com/financials/quarterly-results"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.veracyte.com/financials/quarterly-results",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.veracyte.com/financials/quarterly-results",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:48.329561-05:00",
+      "finished_at": "2026-11-04T08:16:49.650787-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.carislifesciences.com/news-events/events"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.carislifesciences.com/news-events/events",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.carislifesciences.com/news-events/events",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:49.216713-05:00",
+      "finished_at": "2026-11-04T08:16:50.624398-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.carislifesciences.com/news-events/news-releases",
+        "https://www.carislifesciences.com/news-and-events/news/"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.carislifesciences.com/news-events/news-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.carislifesciences.com/news-events/news-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.carislifesciences.com/news-and-events/news/",
+        "final_url": "https://www.carislifesciences.com/news-and-events/news/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 278925,
+        "sha256": "aea9a47aa0c1f5292fae48c9ddcc7208c82c5b753767426f0044270e272fc05d",
+        "elapsed_ms": 149,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Presentations",
+            "url": "https://www.carislifesciences.com/research/publications/?types=presentation"
+          },
+          {
+            "title": "Caris Life Sciences to Report Third Quarter 2026 Financial Results on November 4, 2026",
+            "url": "https://www.carislifesciences.com/about/news-and-media/caris-life-sciences-to-report-third-quarter-2026-financial-results-on-november-4-2026/"
+          }
+        ],
+        "date_mentions": [
+          "November 4, 2026"
+        ],
+        "text_chars": 5490,
+        "links_seen": 183
+      }
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:49.218855-05:00",
+      "finished_at": "2026-11-04T08:16:50.458365-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.carislifesciences.com/financial-information/sec-filings"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.carislifesciences.com/financial-information/sec-filings",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.carislifesciences.com/financial-information/sec-filings",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Guardant Health",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:49.361073-05:00",
+      "finished_at": "2026-11-04T08:16:49.648257-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.guardanthealth.com/overview/default.aspx",
+        "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investors.guardanthealth.com/overview/default.aspx",
+        "final_url": "https://investors.guardanthealth.com/overview/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 163111,
+        "sha256": "d33c45df101498311934d1874ca7ca090f94a9d0ccf7e553be45d273b2baf591",
+        "elapsed_ms": 287,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
+          },
+          {
+            "title": "Press Release of Q2 2026, aspx file, (opens in new window)",
+            "url": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-Reports-Second-Quarter-2026-Financial-Results-and-Increases-2026-Revenue-Guidance/default.aspx"
+          },
+          {
+            "title": "Webcast of Q2 2026, Online link, (opens in new window)",
+            "url": "https://events.q4inc.com/attendee/711520995"
+          },
+          {
+            "title": "Presentation of Q2 2026, PDF file, (opens in new window)",
+            "url": "https://s206.q4cdn.com/462472367/files/doc_financials/2026/q2/Guardant-Health-Q2-2026-Earnings-Presentation-vF.pdf"
+          },
+          {
+            "title": "Form 10-Q of Q2 2026, PDF file, (opens in new window)",
+            "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001576280/b01f01b5-96ff-4b11-8fb6-fa514d53e46a.pdf"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 1550,
+        "links_seen": 38
+      }
+    },
+    {
+      "company": "Guardant Health",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:49.559059-05:00",
+      "finished_at": "2026-11-04T08:16:49.692074-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.guardanthealth.com/press-releases/default.aspx",
+        "https://guardanthealth.com/newsroom/press-releases/",
+        "https://investors.guardanthealth.com/overview/default.aspx"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investors.guardanthealth.com/press-releases/default.aspx",
+        "final_url": "https://investors.guardanthealth.com/press-releases/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 113462,
+        "sha256": "1fc84b946384b365fbc420326faf9b3c72d96bc3b448e0f48245fbddc6a3dbba",
+        "elapsed_ms": 132,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 1249,
+        "links_seen": 31
+      }
+    },
+    {
+      "company": "Guardant Health",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:49.648310-05:00",
+      "finished_at": "2026-11-04T08:16:49.788276-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.guardanthealth.com/financials/sec-filings/default.aspx",
+        "https://investors.guardanthealth.com/overview/default.aspx"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investors.guardanthealth.com/financials/sec-filings/default.aspx",
+        "final_url": "https://investors.guardanthealth.com/financials/sec-filings/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 95227,
+        "sha256": "17b669ff0e5ac14fd5ae3921810ad1c278f03673c3a6e82ec728158b586c7e71",
+        "elapsed_ms": 139,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 1364,
+        "links_seen": 34
+      }
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:49.650830-05:00",
+      "finished_at": "2026-11-04T08:16:50.039608-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.myriad.com/events-and-presentations/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investor.myriad.com/events-and-presentations/",
+        "final_url": "https://investor.myriad.com/events-and-presentations/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 92677,
+        "sha256": "6d604dbeaa5d775bcb1370c8825eb518ed668c572c7811d429e9b026e5c7aebd",
+        "elapsed_ms": 388,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investor.myriad.com/events-and-presentations/"
+          },
+          {
+            "title": "Watch the webcast",
+            "url": "https://edge.media-server.com/mmc/p/wb9q9q9r"
+          },
+          {
+            "title": "Watch the webcast",
+            "url": "https://event.summitcast.com/view/aMepMFxWv3z5SRZ9meKJzp/guest_book?session_id=ZKVJtBoNxHkScVXjc3pc4r"
+          },
+          {
+            "title": "Watch the webcast",
+            "url": "https://edge.media-server.com/mmc/p/koiev25j"
+          },
+          {
+            "title": "Watch the webcast",
+            "url": "https://edge.media-server.com/mmc/p/4mseffvy"
+          },
+          {
+            "title": "Watch the webcast",
+            "url": "https://event.summitcast.com/view/mT9poctHDNthc6b89WqVjf/guest_book?session_id=WkNvWCvyesynJkqnd7mkY8"
+          },
+          {
+            "title": "Watch the webcast",
+            "url": "https://event.summitcast.com/view/9z5g2VrV6e6rbCqQgDRoHA/guest_book?session_id=NToHXvM9qEKRzca8YztwEu"
+          },
+          {
+            "title": "Watch the webcast",
+            "url": "https://edge.media-server.com/mmc/p/5d5uyqxn"
+          },
+          {
+            "title": "Watch the webcast",
+            "url": "https://jpmorgan.metameetings.net/events/healthcare26/sessions/317560-myriad-genetics-inc/webcast?gpu_only=true&kiosk=true"
+          },
+          {
+            "title": "Investor Day",
+            "url": "https://investor.myriad.com/?page_id=22718"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 2288,
+        "links_seen": 55
+      }
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:49.692135-05:00",
+      "finished_at": "2026-11-04T08:16:50.054618-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.myriad.com/news-releases/",
+        "https://investor.myriad.com/news-releases/news-release-detail/27616/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investor.myriad.com/news-releases/",
+        "final_url": "https://investor.myriad.com/news-releases/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 95859,
+        "sha256": "e8518abacd7bb1ecb5083a2ef2f0040f257bfe7c3702e7e1ed58ec33937a892d",
+        "elapsed_ms": 362,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investor.myriad.com/events-and-presentations/"
+          },
+          {
+            "title": "Investor Day",
+            "url": "https://investor.myriad.com/?page_id=22718"
+          }
+        ],
+        "date_mentions": [
+          "Nov 02, 2026",
+          "Oct 22, 2026",
+          "Oct 20, 2026",
+          "November 4, 2026",
+          "Oct 15, 2026",
+          "Oct 08, 2026",
+          "Sep 16, 2026",
+          "Aug 27, 2026",
+          "Jul 30, 2026",
+          "July 30, 2026",
+          "Jul 23, 2026",
+          "Jul 21, 2026",
+          "Jul 02, 2026",
+          "Jun 23, 2026",
+          "Jun 02, 2026",
+          "May 27, 2026",
+          "May 26, 2026",
+          "May 15, 2026",
+          "May 07, 2026",
+          "May 05, 2026",
+          "Apr 30, 2026",
+          "May 5, 2026",
+          "Apr 28, 2026",
+          "Apr 16, 2026",
+          "Apr 14, 2026",
+          "Apr 09, 2026",
+          "Mar 17, 2026",
+          "Mar 02, 2026",
+          "Feb 24, 2026",
+          "Feb 23, 2026"
+        ],
+        "text_chars": 5973,
+        "links_seen": 75
+      }
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:49.788330-05:00",
+      "finished_at": "2026-11-04T08:16:50.097651-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.myriad.com/sec-filings/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investor.myriad.com/sec-filings/",
+        "final_url": "https://investor.myriad.com/sec-filings/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 388509,
+        "sha256": "c233f0af25d0051be3347e193d30efe3e5698587211fa782f01ca4e61fc6de09",
+        "elapsed_ms": 309,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investor.myriad.com/events-and-presentations/"
+          },
+          {
+            "title": "Investor Day",
+            "url": "https://investor.myriad.com/?page_id=22718"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 15047,
+        "links_seen": 366
+      }
+    },
+    {
+      "company": "Natera",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:50.039659-05:00",
+      "finished_at": "2026-11-04T08:16:50.954805-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.natera.com/events-and-presentations/events/default.aspx"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investor.natera.com/events-and-presentations/events/default.aspx",
+        "final_url": "https://investor.natera.com/events-and-presentations/events/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 73720,
+        "sha256": "1dcc02bd633eb6db0f02c44fbdca116157a4774ed5e4db7817dc894ff02d337c",
+        "elapsed_ms": 915,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investor.natera.com/events-and-presentations/default.aspx"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 2702,
+        "links_seen": 64
+      }
+    },
+    {
+      "company": "Natera",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:50.054668-05:00",
+      "finished_at": "2026-11-04T08:16:50.451717-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.natera.com/company/news/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed",
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.natera.com/company/news/",
+        "final_url": "https://www.natera.com/company/news/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 343910,
+        "sha256": "4e441c39d8095b2838a06c1963de36c2fb091e8a329a8b1cb1411321178c7a45",
+        "elapsed_ms": 397,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 6010,
+        "links_seen": 209
+      }
+    },
+    {
+      "company": "Natera",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:50.097706-05:00",
+      "finished_at": "2026-11-04T08:16:50.380459-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.natera.com/financials/sec-filings/default.aspx"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investor.natera.com/financials/sec-filings/default.aspx",
+        "final_url": "https://investor.natera.com/financials/sec-filings/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 59174,
+        "sha256": "4663d732e46bb93c9d005e922eb82c030c924943f7a7f11c6569fcc45c930adf",
+        "elapsed_ms": 282,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investor.natera.com/events-and-presentations/default.aspx"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 2878,
+        "links_seen": 64
+      }
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:50.380507-05:00",
+      "finished_at": "2026-11-04T08:16:50.637184-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.questdiagnostics.com/events-and-presentations/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.questdiagnostics.com/events-and-presentations/",
+        "final_url": "https://ir.questdiagnostics.com/events-and-presentations/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 76123,
+        "sha256": "02564953973af8b25f0daeda7eac9782478979d36ef333beaae235b293f5fcfe",
+        "elapsed_ms": 256,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://ir.questdiagnostics.com/events-and-presentations/default.aspx"
+          },
+          {
+            "title": "Shareholder Inquiries",
+            "url": "https://ir.questdiagnostics.com/investor-resources/shareholder-inquiries/default.aspx"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 2161,
+        "links_seen": 56
+      }
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:50.451772-05:00",
+      "finished_at": "2026-11-04T08:16:50.629037-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://newsroom.questdiagnostics.com/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://newsroom.questdiagnostics.com/",
+        "final_url": "https://newsroom.questdiagnostics.com/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 49299,
+        "sha256": "5616c9dfcd267dbb6c8f3529a5ad1b3eeee96827582aea2040fa976514f17c0d",
+        "elapsed_ms": 177,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Quest Diagnostics Reports Third Quarter 2026 Financial Results; Raises Revenue and EPS Guidance for Full Year 2026",
+            "url": "https://newsroom.questdiagnostics.com/2026-10-22-Quest-Diagnostics-Reports-Third-Quarter-2026-Financial-Results-Raises-Revenue-and-EPS-Guidance-for-Full-Year-2026"
+          }
+        ],
+        "date_mentions": [
+          "Oct. 19, 2026"
+        ],
+        "text_chars": 5120,
+        "links_seen": 37
+      }
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:50.458423-05:00",
+      "finished_at": "2026-11-04T08:16:52.919107-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=1022079&owner=exclude",
+        "https://www.sec.gov/Archives/edgar/data/1022079/000102207926000097/dgx093020268-kex991.htm"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1022079&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1022079&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1022079/000102207926000097/dgx093020268-kex991.htm",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1022079/000102207926000097/dgx093020268-kex991.htm",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:50.624460-05:00",
+      "finished_at": "2026-11-04T08:16:50.886565-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.neogenomics.com/news-events/ir-calendar"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.neogenomics.com/news-events/ir-calendar",
+        "final_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 52180,
+        "sha256": "ec776def7e9ca8eec201244ff166929709a37d86f864c6c1e4763702b791e097",
+        "elapsed_ms": 262,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "NeoGenomics Reports Third Quarter 2026 Results",
+            "url": "https://ir.neogenomics.com/news-events/press-releases/detail/342/neogenomics-reports-third-quarter-2026-results"
+          },
+          {
+            "title": "NeoGenomics to Report Third Quarter 2026 Financial Results on October 28, 2026",
+            "url": "https://ir.neogenomics.com/news-events/press-releases/detail/340/neogenomics-to-report-third-quarter-2026-financial-results-on-october-28-2026"
+          },
+          {
+            "title": "Presentations",
+            "url": "https://ir.neogenomics.com/news-events/presentations"
+          },
+          {
+            "title": "Financial Results",
+            "url": "https://ir.neogenomics.com/financial-information/financial-results"
+          },
+          {
+            "title": "Third Quarter 2026 Financial Results Conference Call",
+            "url": "https://ir.neogenomics.com/news-events/ir-calendar/detail/20261028-third-quarter-2026-financial-results-conference-call"
+          },
+          {
+            "title": "Second Quarter 2026 Financial Results Conference Call",
+            "url": "https://ir.neogenomics.com/news-events/ir-calendar/detail/20260728-second-quarter-2026-financial-results-conference-call"
+          }
+        ],
+        "date_mentions": [
+          "October 28, 2026",
+          "Oct 28, 2026",
+          "Sep 15, 2026",
+          "Jul 28, 2026",
+          "Jun 4, 2026",
+          "Jun 2, 2026",
+          "May 28, 2026",
+          "May 21, 2026"
+        ],
+        "text_chars": 3079,
+        "links_seen": 153
+      }
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:50.629083-05:00",
+      "finished_at": "2026-11-04T08:16:50.928765-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.neogenomics.com/news-events/press-releases"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.neogenomics.com/news-events/press-releases",
+        "final_url": "https://ir.neogenomics.com/news-events/press-releases",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 67481,
+        "sha256": "c4985491eec87630d15e835c2241b329571b60a8cf03523ddd9aa9700b0b7c7a",
+        "elapsed_ms": 299,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "NeoGenomics Reports Third Quarter 2026 Results",
+            "url": "https://ir.neogenomics.com/news-events/press-releases/detail/342/neogenomics-reports-third-quarter-2026-results"
+          },
+          {
+            "title": "NeoGenomics to Report Third Quarter 2026 Financial Results on October 28, 2026",
+            "url": "https://ir.neogenomics.com/news-events/press-releases/detail/340/neogenomics-to-report-third-quarter-2026-financial-results-on-october-28-2026"
+          },
+          {
+            "title": "Presentations",
+            "url": "https://ir.neogenomics.com/news-events/presentations"
+          },
+          {
+            "title": "Financial Results",
+            "url": "https://ir.neogenomics.com/financial-information/financial-results"
+          },
+          {
+            "title": "NeoGenomics to Participate in the Morgan Stanley 24th Annual Global Healthcare Conference",
+            "url": "https://ir.neogenomics.com/news-events/press-releases/detail/338/neogenomics-to-participate-in-the-morgan-stanley-24th-annual-global-healthcare-conference"
+          },
+          {
+            "title": "NeoGenomics Reports Second Quarter 2026 Results",
+            "url": "https://ir.neogenomics.com/news-events/press-releases/detail/336/neogenomics-reports-second-quarter-2026-results"
+          },
+          {
+            "title": "NeoGenomics to Report Second Quarter 2026 Financial Results on July 28, 2026",
+            "url": "https://ir.neogenomics.com/news-events/press-releases/detail/333/neogenomics-to-report-second-quarter-2026-financial-results-on-july-28-2026"
+          }
+        ],
+        "date_mentions": [
+          "October 28, 2026",
+          "Oct 28, 2026",
+          "Oct 15, 2026",
+          "Oct 14, 2026",
+          "Oct 5, 2026",
+          "Sep 1, 2026",
+          "Aug 26, 2026",
+          "Jul 28, 2026",
+          "Jul 20, 2026",
+          "Jul 9, 2026",
+          "Jul 7, 2026",
+          "July 28, 2026"
+        ],
+        "text_chars": 3959,
+        "links_seen": 169
+      }
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:50.637221-05:00",
+      "finished_at": "2026-11-04T08:16:50.880485-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.neogenomics.com/sec-filings"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.neogenomics.com/sec-filings",
+        "final_url": "https://ir.neogenomics.com/sec-filings",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 54876,
+        "sha256": "ae83bbca13074f685496d400adb0f9b8716db36abfd74e78a1ea89e36fa8e2df",
+        "elapsed_ms": 243,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "NeoGenomics Reports Third Quarter 2026 Results",
+            "url": "https://ir.neogenomics.com/news-events/press-releases/detail/342/neogenomics-reports-third-quarter-2026-results"
+          },
+          {
+            "title": "NeoGenomics to Report Third Quarter 2026 Financial Results on October 28, 2026",
+            "url": "https://ir.neogenomics.com/news-events/press-releases/detail/340/neogenomics-to-report-third-quarter-2026-financial-results-on-october-28-2026"
+          },
+          {
+            "title": "Presentations",
+            "url": "https://ir.neogenomics.com/news-events/presentations"
+          },
+          {
+            "title": "Financial Results",
+            "url": "https://ir.neogenomics.com/financial-information/financial-results"
+          },
+          {
+            "title": "Earnings Webcast Audio",
+            "url": "https://www.webcaster5.com/Webcast/Page/1219/54667"
+          },
+          {
+            "title": "Presentation PDF",
+            "url": "https://ir.neogenomics.com/_assets/_610d53b3b98b921893e126d5ab9f670a/neogenomics/db/575/5403/presentation/NEO_3Q_2026_Investor_Presentation.pdf"
+          }
+        ],
+        "date_mentions": [
+          "October 28, 2026",
+          "April 6, 2026"
+        ],
+        "text_chars": 2880,
+        "links_seen": 158
+      }
+    },
+    {
+      "company": "DELFI Diagnostics",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:50.855048-05:00",
+      "finished_at": "2026-11-04T08:16:51.550784-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://delfidiagnostics.com/events/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://delfidiagnostics.com/events/",
+        "final_url": "https://delfidiagnostics.com/events/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 70891,
+        "sha256": "864663aa9473b33d7ba2652dd376b8c546767e87d49bd8641ca2c7fb27c45e04",
+        "elapsed_ms": 695,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Publications & Presentations",
+            "url": "https://delfidiagnostics.com/technology/evidence-clinical-trials/#publications"
+          }
+        ],
+        "date_mentions": [
+          "December 3, 2026",
+          "October 30, 2026"
+        ],
+        "text_chars": 2732,
+        "links_seen": 76
+      }
+    },
+    {
+      "company": "DELFI Diagnostics",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:50.880529-05:00",
+      "finished_at": "2026-11-04T08:16:51.483279-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://delfidiagnostics.com/about-us/newsroom/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://delfidiagnostics.com/about-us/newsroom/",
+        "final_url": "https://delfidiagnostics.com/about-us/newsroom/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 148971,
+        "sha256": "af86b53ee29ad448244eb2712c01548fa02d2766df70329e37d9ba69aad3bc25",
+        "elapsed_ms": 602,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "DELFI Diagnostics Appoints Cindy Soriano as Chief Financial Officer and Announces Participation in 44th Annual J.P. Morgan Healthcare Conference",
+            "url": "https://www.prnewswire.com/news-releases/delfi-diagnostics-appoints-cindy-soriano-as-chief-financial-officer-and-announces-participation-in-44th-annual-jp-morgan-healthcare-conference-302655846.html?tc=eml_cleartime"
+          },
+          {
+            "title": "DELFI Diagnostics to Participate in J.P. Morgan Healthcare Conference",
+            "url": "https://www.prnewswire.com/news-releases/delfi-diagnostics-to-participate-in-jp-morgan-healthcare-conference-302344795.html"
+          },
+          {
+            "title": "Blood Test Boosts Lung Cancer Screening Participation",
+            "url": "https://clpmag.com/diagnostic-technologies/molecular-diagnostics/blood-test-increases-lung-cancer-screening-participation/?utm_content=buffer84287&utm_medium=social&utm_source=facebook&utm_campaign=buffer"
+          },
+          {
+            "title": "Publications & Presentations",
+            "url": "https://delfidiagnostics.com/technology/evidence-clinical-trials/#publications"
+          }
+        ],
+        "date_mentions": [
+          "May 28, 2026",
+          "May 13, 2026",
+          "April 27, 2026",
+          "April 6, 2026",
+          "January 8, 2026",
+          "December 5, 2025",
+          "December 1, 2025",
+          "May 12, 2025",
+          "April 25, 2025",
+          "January 8, 2025",
+          "December 2, 2024",
+          "November 19, 2024",
+          "October 29, 2024",
+          "October 28, 2024",
+          "October 22, 2024",
+          "October 21, 2024",
+          "October 7, 2024",
+          "August 26, 2024",
+          "June 11, 2024",
+          "June 4, 2024",
+          "June 3, 2024",
+          "May 13, 2024",
+          "April 2, 2024",
+          "April 1, 2024",
+          "February 1, 2024",
+          "January 5, 2024",
+          "December 13, 2023",
+          "October 9, 2023",
+          "October 4, 2023",
+          "July 27, 2023"
+        ],
+        "text_chars": 17733,
+        "links_seen": 211
+      }
+    },
+    {
+      "company": "DELFI Diagnostics",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:50.886606-05:00",
+      "finished_at": "2026-11-04T08:16:51.639662-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://delfidiagnostics.com/about-us/newsroom/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://delfidiagnostics.com/about-us/newsroom/",
+        "final_url": "https://delfidiagnostics.com/about-us/newsroom/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 148971,
+        "sha256": "af86b53ee29ad448244eb2712c01548fa02d2766df70329e37d9ba69aad3bc25",
+        "elapsed_ms": 753,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "DELFI Diagnostics Appoints Cindy Soriano as Chief Financial Officer and Announces Participation in 44th Annual J.P. Morgan Healthcare Conference",
+            "url": "https://www.prnewswire.com/news-releases/delfi-diagnostics-appoints-cindy-soriano-as-chief-financial-officer-and-announces-participation-in-44th-annual-jp-morgan-healthcare-conference-302655846.html?tc=eml_cleartime"
+          },
+          {
+            "title": "DELFI Diagnostics to Participate in J.P. Morgan Healthcare Conference",
+            "url": "https://www.prnewswire.com/news-releases/delfi-diagnostics-to-participate-in-jp-morgan-healthcare-conference-302344795.html"
+          },
+          {
+            "title": "Blood Test Boosts Lung Cancer Screening Participation",
+            "url": "https://clpmag.com/diagnostic-technologies/molecular-diagnostics/blood-test-increases-lung-cancer-screening-participation/?utm_content=buffer84287&utm_medium=social&utm_source=facebook&utm_campaign=buffer"
+          },
+          {
+            "title": "Publications & Presentations",
+            "url": "https://delfidiagnostics.com/technology/evidence-clinical-trials/#publications"
+          }
+        ],
+        "date_mentions": [
+          "May 28, 2026",
+          "May 13, 2026",
+          "April 27, 2026",
+          "April 6, 2026",
+          "January 8, 2026",
+          "December 5, 2025",
+          "December 1, 2025",
+          "May 12, 2025",
+          "April 25, 2025",
+          "January 8, 2025",
+          "December 2, 2024",
+          "November 19, 2024",
+          "October 29, 2024",
+          "October 28, 2024",
+          "October 22, 2024",
+          "October 21, 2024",
+          "October 7, 2024",
+          "August 26, 2024",
+          "June 11, 2024",
+          "June 4, 2024",
+          "June 3, 2024",
+          "May 13, 2024",
+          "April 2, 2024",
+          "April 1, 2024",
+          "February 1, 2024",
+          "January 5, 2024",
+          "December 13, 2023",
+          "October 9, 2023",
+          "October 4, 2023",
+          "July 27, 2023"
+        ],
+        "text_chars": 17733,
+        "links_seen": 211
+      }
+    },
+    {
+      "company": "Personalis",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:50.928815-05:00",
+      "finished_at": "2026-11-04T08:16:52.244672-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.personalis.com/news-events/events-and-presentations"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.personalis.com/news-events/events-and-presentations",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.personalis.com/news-events/events-and-presentations",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Personalis",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:50.954868-05:00",
+      "finished_at": "2026-11-04T08:16:53.402651-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.personalis.com/news-events/press-releases",
+        "https://investors.personalis.com/"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.personalis.com/news-events/press-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.personalis.com/news-events/press-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.personalis.com/",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.personalis.com/",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Personalis",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:51.483335-05:00",
+      "finished_at": "2026-11-04T08:16:53.848530-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=1527753&owner=exclude",
+        "https://www.sec.gov/Archives/edgar/data/1527753/000119312526211896/psnl-20260331.htm"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1527753&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1527753&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1527753/000119312526211896/psnl-20260331.htm",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1527753/000119312526211896/psnl-20260331.htm",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "GRAIL",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:51.550833-05:00",
+      "finished_at": "2026-11-04T08:16:52.859316-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://grail.gcs-web.com/news-events/events"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://grail.gcs-web.com/news-events/events",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://grail.gcs-web.com/news-events/events",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "GRAIL",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:51.639720-05:00",
+      "finished_at": "2026-11-04T08:16:53.971888-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://grail.gcs-web.com/news-events/press-releases",
+        "https://grail.gcs-web.com/"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://grail.gcs-web.com/news-events/press-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://grail.gcs-web.com/news-events/press-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://grail.gcs-web.com/",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://grail.gcs-web.com/",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "GRAIL",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:52.244726-05:00",
+      "finished_at": "2026-11-04T08:16:54.803089-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=1699031&owner=exclude",
+        "https://investors.grail.com/sec-filings/sec-filing/10-q/0001628280-26-032090"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1699031&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1699031&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.grail.com/sec-filings/sec-filing/10-q/0001628280-26-032090",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.grail.com/sec-filings/sec-filing/10-q/0001628280-26-032090",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Tempus AI",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:52.859361-05:00",
+      "finished_at": "2026-11-04T08:16:53.195986-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.tempus.com/events/default.aspx"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investors.tempus.com/events/default.aspx",
+        "final_url": "https://investors.tempus.com/events/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 130401,
+        "sha256": "5610030d73bb4323db84e1b52bfdccf67c5021dceea35d066d6d34d9214b1e2f",
+        "elapsed_ms": 336,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 843,
+        "links_seen": 20
+      }
+    },
+    {
+      "company": "Tempus AI",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:52.919162-05:00",
+      "finished_at": "2026-11-04T08:16:57.394215-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.tempus.com/news-events/press-releases/default.aspx",
+        "https://tempus.gcs-web.com/",
+        "https://tempus.gcs-web.com/news-releases/news-release-details/tempus-reports-third-quarter-2026-results"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.tempus.com/news-events/press-releases/default.aspx",
+          "attempt": 1,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://investors.tempus.com/news-events/press-releases/default.aspx",
+          "attempt": 2,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://tempus.gcs-web.com/",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://tempus.gcs-web.com/",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://tempus.gcs-web.com/news-releases/news-release-details/tempus-reports-third-quarter-2026-results",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://tempus.gcs-web.com/news-releases/news-release-details/tempus-reports-third-quarter-2026-results",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Tempus AI",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:53.196036-05:00",
+      "finished_at": "2026-11-04T08:16:55.723798-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=1717115&owner=exclude",
+        "https://www.sec.gov/Archives/edgar/data/1717115/000119312526326090/tem-20260630.htm"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1717115&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1717115&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526326090/tem-20260630.htm",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526326090/tem-20260630.htm",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:53.402723-05:00",
+      "finished_at": "2026-11-04T08:16:54.697578-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.adaptivebiotech.com/"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.adaptivebiotech.com/",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.adaptivebiotech.com/",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:53.848591-05:00",
+      "finished_at": "2026-11-04T08:16:57.425830-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.adaptivebiotech.com/news-releases",
+        "https://investors.adaptivebiotech.com/",
+        "https://investors.adaptivebiotech.com/news-releases/news-release-details/adaptive-biotechnologies-report-third-quarter-2026-financial"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.adaptivebiotech.com/news-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.adaptivebiotech.com/news-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.adaptivebiotech.com/",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.adaptivebiotech.com/",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.adaptivebiotech.com/news-releases/news-release-details/adaptive-biotechnologies-report-third-quarter-2026-financial",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.adaptivebiotech.com/news-releases/news-release-details/adaptive-biotechnologies-report-third-quarter-2026-financial",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:53.971952-05:00",
+      "finished_at": "2026-11-04T08:16:56.396490-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=1478320&owner=exclude",
+        "https://www.sec.gov/Archives/edgar/data/1478320/000119312526332940/adpt-20260630.htm"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1478320&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1478320&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1478320/000119312526332940/adpt-20260630.htm",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1478320/000119312526332940/adpt-20260630.htm",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "BillionToOne",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:54.697630-05:00",
+      "finished_at": "2026-11-04T08:16:56.085420-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.billiontoone.com/news-events/events-presentations"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.billiontoone.com/news-events/events-presentations",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.billiontoone.com/news-events/events-presentations",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "BillionToOne",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:54.803156-05:00",
+      "finished_at": "2026-11-04T08:16:56.054974-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.billiontoone.com/news-events/news-releases"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.billiontoone.com/news-events/news-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.billiontoone.com/news-events/news-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "BillionToOne",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:55.723851-05:00",
+      "finished_at": "2026-11-04T08:16:56.886491-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.billiontoone.com/financial-information/sec-filings"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.billiontoone.com/financial-information/sec-filings",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.billiontoone.com/financial-information/sec-filings",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "GeneDx",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:56.055027-05:00",
+      "finished_at": "2026-11-04T08:16:57.398639-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.genedx.com/news-events/events"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://ir.genedx.com/news-events/events",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://ir.genedx.com/news-events/events",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "GeneDx",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:56.085465-05:00",
+      "finished_at": "2026-11-04T08:16:59.844366-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.genedx.com/news-events/news-releases",
+        "https://ir.genedx.com/",
+        "https://genedx.gcs-web.com/news-releases/news-release-details/genedx-report-third-quarter-2026-financial-results-monday"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://ir.genedx.com/news-events/news-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://ir.genedx.com/news-events/news-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://ir.genedx.com/",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://ir.genedx.com/",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://genedx.gcs-web.com/news-releases/news-release-details/genedx-report-third-quarter-2026-financial-results-monday",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://genedx.gcs-web.com/news-releases/news-release-details/genedx-report-third-quarter-2026-financial-results-monday",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "GeneDx",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:56.396543-05:00",
+      "finished_at": "2026-11-04T08:16:58.769898-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=1818331&owner=exclude",
+        "https://www.sec.gov/Archives/edgar/data/1818331/000181833126000041/0001818331-26-000041-index.htm"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1818331&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1818331&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1818331/000181833126000041/0001818331-26-000041-index.htm",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1818331/000181833126000041/0001818331-26-000041-index.htm",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:56.886539-05:00",
+      "finished_at": "2026-11-04T08:16:57.082052-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.sophiagenetics.com/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.sophiagenetics.com/",
+        "final_url": "https://ir.sophiagenetics.com/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 57812,
+        "sha256": "a3d185861c04da2f763d62969913e297a2af194085ba8585d134261cf2079fa1",
+        "elapsed_ms": 195,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "SOPHiA GENETICS - Company Overview View our most recent presentation here",
+            "url": "https://ir.sophiagenetics.com/image/SOPHiA_GENETICS_Investor_Presentation_November_2026.pdf"
+          },
+          {
+            "title": "SOPHiA GENETICS Q3 2026 Earnings Call",
+            "url": "https://ir.sophiagenetics.com/events?item=37"
+          },
+          {
+            "title": "SOPHiA GENETICS Q2 2026 Earnings Call",
+            "url": "https://ir.sophiagenetics.com/events?item=36"
+          },
+          {
+            "title": "SOPHiA GENETICS Reports Third Quarter 2026 Results",
+            "url": "https://ir.sophiagenetics.com/2026-11-03-SOPHiA-GENETICS-Reports-Third-Quarter-2026-Results"
+          },
+          {
+            "title": "SOPHiA GENETICS to Announce Financial Results for Third Quarter 2026 on November 3, 2026",
+            "url": "https://ir.sophiagenetics.com/2026-10-20-SOPHiA-GENETICS-to-Announce-Financial-Results-for-Third-Quarter-2026-on-November-3,-2026"
+          },
+          {
+            "title": "Latest Presentation",
+            "url": "https://ir.sophiagenetics.com/download/SOPHiA_GENETICS_Investor_Presentation_November_2026.pdf"
+          }
+        ],
+        "date_mentions": [
+          "November 3, 2026",
+          "August 4, 2026",
+          "June 18, 2026",
+          "Nov 3, 2026",
+          "September 30, 2026",
+          "Oct 20, 2026",
+          "Oct 8, 2026"
+        ],
+        "text_chars": 6232,
+        "links_seen": 105
+      }
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:57.082097-05:00",
+      "finished_at": "2026-11-04T08:16:57.276739-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.sophiagenetics.com/2026-11-03-SOPHiA-GENETICS-Reports-Third-Quarter-2026-Results"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "One-off historical article or static filing is not a current archive",
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.sophiagenetics.com/2026-11-03-SOPHiA-GENETICS-Reports-Third-Quarter-2026-Results",
+        "final_url": "https://ir.sophiagenetics.com/2026-11-03-SOPHiA-GENETICS-Reports-Third-Quarter-2026-Results",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 200577,
+        "sha256": "c5372382481835089930f9b5f26a7e93948552ca333ead6fc3b0d965f95d2d5d",
+        "elapsed_ms": 194,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Latest Presentation",
+            "url": "https://ir.sophiagenetics.com/download/SOPHiA_GENETICS_Investor_Presentation_November_2026.pdf"
+          }
+        ],
+        "date_mentions": [
+          "Nov 3, 2026",
+          "Nov. 3, 2026",
+          "September 30, 2026",
+          "November 3, 2026",
+          "December 31, 2025"
+        ],
+        "text_chars": 32964,
+        "links_seen": 100
+      }
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:57.276806-05:00",
+      "finished_at": "2026-11-04T08:16:58.525827-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=SOPH&owner=exclude",
+        "https://ir.sophiagenetics.com/",
+        "https://ir.sophiagenetics.com/2026-08-04-SOPHiA-GENETICS-Reports-Second-Quarter-2026-Results"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=SOPH&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=SOPH&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.sophiagenetics.com/",
+        "final_url": "https://ir.sophiagenetics.com/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 57812,
+        "sha256": "848b6919913b8f1003c691216a4903f1fd64d75643d70c8dbe45c74a557e8279",
+        "elapsed_ms": 64,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "SOPHiA GENETICS - Company Overview View our most recent presentation here",
+            "url": "https://ir.sophiagenetics.com/image/SOPHiA_GENETICS_Investor_Presentation_November_2026.pdf"
+          },
+          {
+            "title": "SOPHiA GENETICS Q3 2026 Earnings Call",
+            "url": "https://ir.sophiagenetics.com/events?item=37"
+          },
+          {
+            "title": "SOPHiA GENETICS Q2 2026 Earnings Call",
+            "url": "https://ir.sophiagenetics.com/events?item=36"
+          },
+          {
+            "title": "SOPHiA GENETICS Reports Third Quarter 2026 Results",
+            "url": "https://ir.sophiagenetics.com/2026-11-03-SOPHiA-GENETICS-Reports-Third-Quarter-2026-Results"
+          },
+          {
+            "title": "SOPHiA GENETICS to Announce Financial Results for Third Quarter 2026 on November 3, 2026",
+            "url": "https://ir.sophiagenetics.com/2026-10-20-SOPHiA-GENETICS-to-Announce-Financial-Results-for-Third-Quarter-2026-on-November-3,-2026"
+          },
+          {
+            "title": "Latest Presentation",
+            "url": "https://ir.sophiagenetics.com/download/SOPHiA_GENETICS_Investor_Presentation_November_2026.pdf"
+          }
+        ],
+        "date_mentions": [
+          "November 3, 2026",
+          "August 4, 2026",
+          "June 18, 2026",
+          "Nov 3, 2026",
+          "September 30, 2026",
+          "Oct 20, 2026",
+          "Oct 8, 2026"
+        ],
+        "text_chars": 6232,
+        "links_seen": 105
+      }
+    },
+    {
+      "company": "Illumina",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:57.394280-05:00",
+      "finished_at": "2026-11-04T08:16:59.963281-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.illumina.com/events-and-presentations",
+        "https://investor.illumina.com/"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.illumina.com/events-and-presentations",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.illumina.com/events-and-presentations",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.illumina.com/",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.illumina.com/",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Illumina",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:57.398681-05:00",
+      "finished_at": "2026-11-04T08:17:00.022363-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.illumina.com/news-releases",
+        "https://investor.illumina.com/"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.illumina.com/news-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.illumina.com/news-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.illumina.com/",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.illumina.com/",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Illumina",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:57.425909-05:00",
+      "finished_at": "2026-11-04T08:16:58.732487-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.illumina.com/financial-information/quarterly-results"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.illumina.com/financial-information/quarterly-results",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.illumina.com/financial-information/quarterly-results",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "PacBio",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:58.525868-05:00",
+      "finished_at": "2026-11-04T08:16:59.902439-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.pacificbiosciences.com/events-and-presentations"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.pacificbiosciences.com/events-and-presentations",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.pacificbiosciences.com/events-and-presentations",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "PacBio",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:58.732538-05:00",
+      "finished_at": "2026-11-04T08:17:01.112126-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.pacificbiosciences.com/news-releases",
+        "https://investor.pacificbiosciences.com/"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.pacificbiosciences.com/news-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.pacificbiosciences.com/news-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.pacificbiosciences.com/",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.pacificbiosciences.com/",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "PacBio",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:58.769975-05:00",
+      "finished_at": "2026-11-04T08:16:59.952636-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investor.pacificbiosciences.com/financial-information/sec-filings"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investor.pacificbiosciences.com/financial-information/sec-filings",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investor.pacificbiosciences.com/financial-information/sec-filings",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:59.844444-05:00",
+      "finished_at": "2026-11-04T08:17:01.354600-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://nanoporetech.com/about/investors/financial-calendar"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://nanoporetech.com/about/investors/financial-calendar",
+        "final_url": "https://nanoporetech.com/about/investors/financial-calendar",
+        "http_status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 323956,
+        "sha256": "c3a62cf1752da760d5073d5c42db4c2d073ded2b90151c4df243c0413fd760e6",
+        "elapsed_ms": 1510,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Reports & presentations",
+            "url": "https://nanoporetech.com/about/investors/reports"
+          },
+          {
+            "title": "Shareholder information",
+            "url": "https://nanoporetech.com/about/investors/shareholder-information"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 3985,
+        "links_seen": 81
+      }
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:16:59.902479-05:00",
+      "finished_at": "2026-11-04T08:17:02.058334-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://nanoporetech.com/about/investors/reports",
+        "https://nanoporetech.com/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://nanoporetech.com/about/investors/reports",
+        "final_url": "https://nanoporetech.com/about/investors/reports",
+        "http_status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 868702,
+        "sha256": "9e44c907f8ad1af96cca0a50c07060f8614d0d56357179ba6c3d76ad7c0bcc15",
+        "elapsed_ms": 2155,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Webcast",
+            "url": "https://kvgo.com/rbc/oxford-nanopore-sep-2026"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1775313&tp_key=18e40aabd1&tp_special=8"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://rbc-oxford-nanopore-group-call-aug-2026.open-exchange.net/livestream"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/6a4cb1b7cba7980013e49a19"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/3eb76db2d2/ont-h1-26-results-presentation-final.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1755044&tp_key=281e8fa9b5&tp_special=8"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/0e2c0197ad/ont-annual-2025-results-presentatin-final-2-march-2026.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/6968bc5121449c0013b78551"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://rbc-oxford-nanopore-group-call-jan-2026.open-exchange.net/"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://jpmorgan.metameetings.net/events/healthcare26/sessions/317526-oxford-nanopore-technologies-plc/webcast?gpu_only=true&kiosk=true"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1742099&tp_key=7cb8f50842"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://kvgo.com/global-healthcare-conference-2025/oxford-nanopore-technologies-december-2025"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://kvgo.com/rbc/oxford-nanopore-technologies-plc"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/c300222393/ont-2025-interim-results-presentation.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/689b0f692d8633001355dccd"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://www.webcaster4.com/Webcast/Page/2332/52778"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://rbc-oxford-nanopore-group-call-jul-2025.open-exchange.net/registration"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://linkback.morganstanley.com/web/sendlink/webapp/BMServlet?file=6gj3sifg-3s0e-g002-9b58-c3fe6ccc765b&store=0&d=1&user=ib_d8uhk7qfnz8o-2&__gda__=1988168398_ef57e356db2dce04f53c0688e33f3277#0011&ib_d8uhk7qfnz8o-1&1988168398_5c42869e34c02fa254a42e867cf3b2cf&0001&ib_d8uhk7qfnz8o-0&1988168398_3965b9e9be4ef732d5c288093c06faff"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1709012&tp_key=cfbf2ae03f&tp_special=8"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/6781466d05217c8a87d3b0ac"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/a13732df7e/ont-2024-annual-results-presentation-5-march-2025.pdf"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/4df72ccae9/oxford-nanopore-jpm-2025-presentation.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://jpmorgan.metameetings.net/events/healthcare25/sessions/58139-oxford-nanopore-technologies/webcast?gpu_only=true&kiosk=true"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1698508&tp_key=2aa37b2ece"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://wsw.com/webcast/canaccord100/ont.l/2621925"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://video.morganstanley.com/sharevideo/0f082353-0418-4228-8984-6387fb0c5d69"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://cc.webcasts.com/bern001/092524a_js/?entity=3_D8M5BY4"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://bofa.veracast.com/webcasts/bofa/globalhealthcareuk2024/8o6eX0.cfm"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://kvgo.com/gs/oxford-nanopore-technologues-plc-sept-2024"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/f265e0a793/ont-2024-interim-results-presentation-slides-3-sep-2024-final.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/66be19fcef33bcf5ad291514"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://www.veracast.com/webcasts/rbc/calls/11nvL9.cfm"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://cc.webcasts.com/barc002/031224a_js/?entity=105_IB1DHF6"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/3e942a3698/oxford-nanopore-fy23-results-6-3-24.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/65c4aa143fb3f51bf67d352f"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 11563,
+        "links_seen": 163
+      }
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:16:59.952684-05:00",
+      "finished_at": "2026-11-04T08:17:01.636990-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://nanoporetech.com/about/investors/reports"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://nanoporetech.com/about/investors/reports",
+        "final_url": "https://nanoporetech.com/about/investors/reports",
+        "http_status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 833295,
+        "sha256": "de19532fec69c46d05131d244c05fadc940ac37eea4683e91d26da57eae4aa46",
+        "elapsed_ms": 1684,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Webcast",
+            "url": "https://kvgo.com/rbc/oxford-nanopore-sep-2026"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1775313&tp_key=18e40aabd1&tp_special=8"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://rbc-oxford-nanopore-group-call-aug-2026.open-exchange.net/livestream"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/6a4cb1b7cba7980013e49a19"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/3eb76db2d2/ont-h1-26-results-presentation-final.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1755044&tp_key=281e8fa9b5&tp_special=8"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/0e2c0197ad/ont-annual-2025-results-presentatin-final-2-march-2026.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/6968bc5121449c0013b78551"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://rbc-oxford-nanopore-group-call-jan-2026.open-exchange.net/"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://jpmorgan.metameetings.net/events/healthcare26/sessions/317526-oxford-nanopore-technologies-plc/webcast?gpu_only=true&kiosk=true"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1742099&tp_key=7cb8f50842"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://kvgo.com/global-healthcare-conference-2025/oxford-nanopore-technologies-december-2025"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://kvgo.com/rbc/oxford-nanopore-technologies-plc"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/c300222393/ont-2025-interim-results-presentation.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/689b0f692d8633001355dccd"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://www.webcaster4.com/Webcast/Page/2332/52778"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://rbc-oxford-nanopore-group-call-jul-2025.open-exchange.net/registration"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://linkback.morganstanley.com/web/sendlink/webapp/BMServlet?file=6gj3sifg-3s0e-g002-9b58-c3fe6ccc765b&store=0&d=1&user=ib_d8uhk7qfnz8o-2&__gda__=1988168398_ef57e356db2dce04f53c0688e33f3277#0011&ib_d8uhk7qfnz8o-1&1988168398_5c42869e34c02fa254a42e867cf3b2cf&0001&ib_d8uhk7qfnz8o-0&1988168398_3965b9e9be4ef732d5c288093c06faff"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1709012&tp_key=cfbf2ae03f&tp_special=8"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/6781466d05217c8a87d3b0ac"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/a13732df7e/ont-2024-annual-results-presentation-5-march-2025.pdf"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/4df72ccae9/oxford-nanopore-jpm-2025-presentation.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://jpmorgan.metameetings.net/events/healthcare25/sessions/58139-oxford-nanopore-technologies/webcast?gpu_only=true&kiosk=true"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://event.webcasts.com/starthere.jsp?ei=1698508&tp_key=2aa37b2ece"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://wsw.com/webcast/canaccord100/ont.l/2621925"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://video.morganstanley.com/sharevideo/0f082353-0418-4228-8984-6387fb0c5d69"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://cc.webcasts.com/bern001/092524a_js/?entity=3_D8M5BY4"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://bofa.veracast.com/webcasts/bofa/globalhealthcareuk2024/8o6eX0.cfm"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://kvgo.com/gs/oxford-nanopore-technologues-plc-sept-2024"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/f265e0a793/ont-2024-interim-results-presentation-slides-3-sep-2024-final.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/66be19fcef33bcf5ad291514"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://www.veracast.com/webcasts/rbc/calls/11nvL9.cfm"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://cc.webcasts.com/barc002/031224a_js/?entity=105_IB1DHF6"
+          },
+          {
+            "title": "Presentation",
+            "url": "https://nanoporetech.com/api/assets/f/196663/x/3e942a3698/oxford-nanopore-fy23-results-6-3-24.pdf"
+          },
+          {
+            "title": "Webcast",
+            "url": "https://stream.brrmedia.co.uk/broadcast/65c4aa143fb3f51bf67d352f"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 11246,
+        "links_seen": 160
+      }
+    },
+    {
+      "company": "Element Biosciences",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:16:59.963328-05:00",
+      "finished_at": "2026-11-04T08:17:00.210542-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.elementbiosciences.com/news"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.elementbiosciences.com/news",
+        "final_url": "https://www.elementbiosciences.com/news",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 119603,
+        "sha256": "907af6e43cc59e66866c5736e2092d5da498ca6e974286f9807e1a982135b0c6",
+        "elapsed_ms": 247,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [
+          "October 29, 2026",
+          "October 19, 2026",
+          "August 18, 2026",
+          "July 14, 2026",
+          "June 17, 2026",
+          "June 9, 2026",
+          "May 8, 2026",
+          "March 24, 2026",
+          "February 19, 2026",
+          "January 5, 2026",
+          "December 4, 2025",
+          "November 11, 2025"
+        ],
+        "text_chars": 3959,
+        "links_seen": 89
+      }
+    },
+    {
+      "company": "Element Biosciences",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:17:00.022440-05:00",
+      "finished_at": "2026-11-04T08:17:00.200020-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.elementbiosciences.com/news"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed",
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.elementbiosciences.com/news",
+        "final_url": "https://www.elementbiosciences.com/news",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 119603,
+        "sha256": "907af6e43cc59e66866c5736e2092d5da498ca6e974286f9807e1a982135b0c6",
+        "elapsed_ms": 177,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [
+          "October 29, 2026",
+          "October 19, 2026",
+          "August 18, 2026",
+          "July 14, 2026",
+          "June 17, 2026",
+          "June 9, 2026",
+          "May 8, 2026",
+          "March 24, 2026",
+          "February 19, 2026",
+          "January 5, 2026",
+          "December 4, 2025",
+          "November 11, 2025"
+        ],
+        "text_chars": 3959,
+        "links_seen": 89
+      }
+    },
+    {
+      "company": "Element Biosciences",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:17:00.200088-05:00",
+      "finished_at": "2026-11-04T08:17:00.347774-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.elementbiosciences.com/news/element-biosciences-announces-upsized-series-e-to-accelerate-global-growth-across-ecosystem-of-genomic-multiomic-and-clinical-research-solutions"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.elementbiosciences.com/news/element-biosciences-announces-upsized-series-e-to-accelerate-global-growth-across-ecosystem-of-genomic-multiomic-and-clinical-research-solutions",
+        "final_url": "https://www.elementbiosciences.com/news/element-biosciences-announces-upsized-series-e-to-accelerate-global-growth-across-ecosystem-of-genomic-multiomic-and-clinical-research-solutions",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 107489,
+        "sha256": "0e7a5c788fdbf71731100bae0cc687c6e1e85e64abd88f5462e3afb3848fbe60",
+        "elapsed_ms": 147,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [
+          "June 9, 2026"
+        ],
+        "text_chars": 6672,
+        "links_seen": 79
+      }
+    },
+    {
+      "company": "MGI Tech",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:17:00.210585-05:00",
+      "finished_at": "2026-11-04T08:17:02.058101-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sse.com.cn/disclosure/listedinfo/regular/index.shtml?productId=688114"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.sse.com.cn/disclosure/listedinfo/regular/index.shtml?productId=688114",
+        "final_url": "https://www.sse.com.cn/disclosure/listedinfo/regular/index.shtml?productId=688114",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 26096,
+        "sha256": "7a514d47ffa156573067855ceaa1062346381b466141cd1fd3dc7f50853cbd9c",
+        "elapsed_ms": 1847,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 871,
+        "links_seen": 95
+      }
+    },
+    {
+      "company": "MGI Tech",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:17:00.347835-05:00",
+      "finished_at": "2026-11-04T08:17:01.953172-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sse.com.cn/disclosure/listedinfo/announcement/"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "No investor-relevant anchor titles extracted; manual inspection needed",
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/",
+        "final_url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 26945,
+        "sha256": "380c79efd2875c045863837ad77efc8c5e1facca8eb17a74af73d56e5fd8fd83",
+        "elapsed_ms": 1605,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 917,
+        "links_seen": 96
+      }
+    },
+    {
+      "company": "MGI Tech",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:17:01.112193-05:00",
+      "finished_at": "2026-11-04T08:17:04.390785-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://static.cninfo.com.cn/finalpage/2026-10-24/1225620906.PDF"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "Binary response: content not machine-reviewed",
+        "One-off historical article or static filing is not a current archive",
+        "No investor-relevant anchor titles extracted; manual inspection needed"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-10-24/1225620906.PDF",
+        "final_url": "https://static.cninfo.com.cn/finalpage/2026-10-24/1225620906.PDF",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 207448,
+        "sha256": "bbd19f5b958a68b4a59e350c65e9eb6e80715fe7048ee5ed40e6debc0f08ab5f",
+        "elapsed_ms": 3278,
+        "is_html_or_xml": false,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 0,
+        "links_seen": 0
+      }
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:17:01.354673-05:00",
+      "finished_at": "2026-11-04T08:17:01.663685-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
+        "https://ir.thermofisher.com/investors/news-events/news/default.aspx",
+        "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-to-Hold-Earnings-Conference-Call-on-Wednesday-October-21-2026/default.aspx"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
+        "final_url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 120907,
+        "sha256": "c7d70af8f74f84297b27a34b9762a6dd065ec5e7ea1e9517ef389ee16d08c8c0",
+        "elapsed_ms": 308,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "News, Events & Presentations",
+            "url": "https://ir.thermofisher.com/investors/news-events/news/default.aspx"
+          },
+          {
+            "title": "Events & Presentations",
+            "url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx"
+          },
+          {
+            "title": "Earnings Results",
+            "url": "https://ir.thermofisher.com/investors/financials/quarterly-results/default.aspx"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 4151,
+        "links_seen": 96
+      }
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:17:01.637057-05:00",
+      "finished_at": "2026-11-04T08:17:01.792282-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://ir.thermofisher.com/investors/news-events/news/default.aspx",
+        "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Reports-Third-Quarter-2026-Results/default.aspx"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.thermofisher.com/investors/news-events/news/default.aspx",
+        "final_url": "https://ir.thermofisher.com/investors/news-events/news/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 73486,
+        "sha256": "2fd2461c4d8b613c213b4d337ff2d2594cb1f6810a87a4f812225310e1c03397",
+        "elapsed_ms": 155,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "News, Events & Presentations",
+            "url": "https://ir.thermofisher.com/investors/news-events/news/default.aspx"
+          },
+          {
+            "title": "Events & Presentations",
+            "url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx"
+          },
+          {
+            "title": "Earnings Results",
+            "url": "https://ir.thermofisher.com/investors/financials/quarterly-results/default.aspx"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 3975,
+        "links_seen": 96
+      }
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:17:01.663733-05:00",
+      "finished_at": "2026-11-04T08:17:03.022716-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude",
+        "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Reports-Third-Quarter-2026-Results/default.aspx"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Reports-Third-Quarter-2026-Results/default.aspx",
+        "final_url": "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Reports-Third-Quarter-2026-Results/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 460643,
+        "sha256": "6f5ad5cf2cfd529bb054b2f044f2f7419022c55001e8ae3dfc04693b976596b3",
+        "elapsed_ms": 198,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "News, Events & Presentations",
+            "url": "https://ir.thermofisher.com/investors/news-events/news/default.aspx"
+          },
+          {
+            "title": "Events & Presentations",
+            "url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx"
+          },
+          {
+            "title": "Earnings Results",
+            "url": "https://ir.thermofisher.com/investors/financials/quarterly-results/default.aspx"
+          }
+        ],
+        "date_mentions": [
+          "October 21, 2026",
+          "September 26, 2026"
+        ],
+        "text_chars": 33416,
+        "links_seen": 106
+      }
+    },
+    {
+      "company": "10x Genomics",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:17:01.792342-05:00",
+      "finished_at": "2026-11-04T08:17:02.068512-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.10xgenomics.com/events-and-presentations/default.aspx"
+      ],
+      "attempt_errors": [],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investors.10xgenomics.com/events-and-presentations/default.aspx",
+        "final_url": "https://investors.10xgenomics.com/events-and-presentations/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 100717,
+        "sha256": "109a2ee51b25f9fffa9bc66cbd44a7844ce7cfc741598f46fae7c4000b307cf1",
+        "elapsed_ms": 276,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investors.10xgenomics.com/events-and-presentations/default.aspx"
+          },
+          {
+            "title": "Quarterly and Annual Results",
+            "url": "https://investors.10xgenomics.com/financials/default.aspx#quarterly-results"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 2061,
+        "links_seen": 31
+      }
+    },
+    {
+      "company": "10x Genomics",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:17:01.953223-05:00",
+      "finished_at": "2026-11-04T08:17:04.272872-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.10xgenomics.com/news-releases/default.aspx",
+        "https://investors.10xgenomics.com/",
+        "https://www.prnewswire.com/news-releases/10x-genomics-to-participate-in-the-2026-jefferies-global-healthcare-conference-302921150.html"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.10xgenomics.com/news-releases/default.aspx",
+          "attempt": 1,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://investors.10xgenomics.com/news-releases/default.aspx",
+          "attempt": 2,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ],
+      "http_retrieval": "success",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
+      ],
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://investors.10xgenomics.com/",
+        "final_url": "https://investors.10xgenomics.com/overview/default.aspx",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 59582,
+        "sha256": "127fa8b4f9e62dbd1958b6d7768aee71f7839ec13824bd8fa6c3c17baa21aa66",
+        "elapsed_ms": 437,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [
+          {
+            "title": "Events & Presentations",
+            "url": "https://investors.10xgenomics.com/events-and-presentations/default.aspx"
+          },
+          {
+            "title": "Quarterly and Annual Results",
+            "url": "https://investors.10xgenomics.com/financials/default.aspx#quarterly-results"
+          }
+        ],
+        "date_mentions": [],
+        "text_chars": 2276,
+        "links_seen": 34
+      }
+    },
+    {
+      "company": "10x Genomics",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:17:02.058153-05:00",
+      "finished_at": "2026-11-04T08:17:04.433172-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://www.sec.gov/edgar/browse/?CIK=1770787&owner=exclude",
+        "https://www.sec.gov/Archives/edgar/data/1770787/000162828026054273/txg-20260806xexx991.htm"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1770787&owner=exclude",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/edgar/browse/?CIK=1770787&owner=exclude",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1770787/000162828026054273/txg-20260806xexx991.htm",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1770787/000162828026054273/txg-20260806xexx991.htm",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "official_ir_events_webcasts",
+      "started_at": "2026-11-04T08:17:02.058412-05:00",
+      "finished_at": "2026-11-04T08:17:03.341871-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.twistbioscience.com/events-and-presentations/events"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.twistbioscience.com/events-and-presentations/events",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.twistbioscience.com/events-and-presentations/events",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "corporate_ir_press_releases_investor_conferences",
+      "started_at": "2026-11-04T08:17:02.068551-05:00",
+      "finished_at": "2026-11-04T08:17:04.523316-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.twistbioscience.com/news-releases",
+        "https://investors.twistbioscience.com/news-releases/news-release-details/twist-bioscience-report-fiscal-2026-fourth-quarter-and-full-year"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.twistbioscience.com/news-releases",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.twistbioscience.com/news-releases",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.twistbioscience.com/news-releases/news-release-details/twist-bioscience-report-fiscal-2026-fourth-quarter-and-full-year",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.twistbioscience.com/news-releases/news-release-details/twist-bioscience-report-fiscal-2026-fourth-quarter-and-full-year",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "official_filings_financial_reports",
+      "started_at": "2026-11-04T08:17:03.022775-05:00",
+      "finished_at": "2026-11-04T08:17:04.164523-05:00",
+      "attempted": true,
+      "configured_urls": [
+        "https://investors.twistbioscience.com/financial-information/sec-filings"
+      ],
+      "attempt_errors": [
+        {
+          "url": "https://investors.twistbioscience.com/financial-information/sec-filings",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://investors.twistbioscience.com/financial-information/sec-filings",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "http_retrieval": "failed",
+      "human_announcement_review_completed": false,
+      "seven_day_newsroom_review_completed": false,
+      "source_category_verified": false,
+      "source_quality_warnings": [
+        "All configured URLs failed after retries; inspect attempt_errors"
+      ],
+      "retrieved": null
+    }
+  ]
+}
