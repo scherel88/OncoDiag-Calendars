@@ -111,9 +111,13 @@ jobs:
         run: |
           git config user.name "diagnostics-earnings-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          report="$(find source-probes -maxdepth 1 -name '*.json' | sort | tail -n 1)"
+          report="$(find source-probes -maxdepth 1 -name '????-??-??.json' | sort | tail -n 1)"
           filename="$(basename "$report")"
+          browser_report="${report%.json}.browser.json"
           cp "$report" "$RUNNER_TEMP/probe-report.json"
+          if [[ -f "$browser_report" ]]; then
+            cp "$browser_report" "$RUNNER_TEMP/browser-report.json"
+          fi
           for attempt in 1 2 3 4; do
             # The daily evidence path can be written by overlapping push-triggered
             # runs. Never rebase two generated JSON reports against each other.
@@ -122,6 +126,10 @@ jobs:
             mkdir -p source-probes
             cp "$RUNNER_TEMP/probe-report.json" "source-probes/$filename"
             git add "source-probes/$filename"
+            if [[ -f "$RUNNER_TEMP/browser-report.json" ]]; then
+              cp "$RUNNER_TEMP/browser-report.json" "source-probes/${filename%.json}.browser.json"
+              git add "source-probes/${filename%.json}.browser.json"
+            fi
             if git diff --cached --quiet; then
               echo "Latest upstream evidence is already identical"
               exit 0
