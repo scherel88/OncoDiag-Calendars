@@ -3,7 +3,8 @@
   "sources": {
     "Labcorp|corporate_ir_press_releases_investor_conferences": [
       "https://ir.labcorp.com/news-and-events/news-releases",
-      "https://ir.labcorp.com/rss-feeds"
+      "https://ir.labcorp.com/rss-feeds",
+      "https://www.labcorp.com/newsroom/press-releases"
     ],
     "Exact Sciences|official_ir_events_webcasts": [
       "https://www.abbott.com/en-us/exact-sciences"
@@ -50,7 +51,8 @@
     ],
     "GRAIL|corporate_ir_press_releases_investor_conferences": [
       "https://grail.gcs-web.com/news-events/press-releases",
-      "https://grail.gcs-web.com/"
+      "https://grail.gcs-web.com/",
+      "https://grail.com/news-center/"
     ],
     "GRAIL|official_filings_financial_reports": [
       "https://www.sec.gov/edgar/browse/?CIK=1699031&owner=exclude"
@@ -82,15 +84,18 @@
     ],
     "Illumina|official_ir_events_webcasts": [
       "https://investor.illumina.com/events-and-presentations",
-      "https://investor.illumina.com/"
+      "https://investor.illumina.com/",
+      "https://www.illumina.com/company/news-center/press-releases.html"
     ],
     "Illumina|corporate_ir_press_releases_investor_conferences": [
       "https://investor.illumina.com/news-releases",
-      "https://investor.illumina.com/"
+      "https://investor.illumina.com/",
+      "https://www.illumina.com/company/news-center/press-releases.html"
     ],
     "PacBio|corporate_ir_press_releases_investor_conferences": [
       "https://investor.pacificbiosciences.com/news-releases",
-      "https://investor.pacificbiosciences.com/"
+      "https://investor.pacificbiosciences.com/",
+      "https://www.pacb.com/news/press-releases/"
     ],
     "Oxford Nanopore Technologies|corporate_ir_press_releases_investor_conferences": [
       "https://nanoporetech.com/about/investors/reports",
@@ -115,6 +120,24 @@
     ],
     "Twist Bioscience|corporate_ir_press_releases_investor_conferences": [
       "https://investors.twistbioscience.com/news-releases"
+    ],
+    "Labcorp|official_ir_events_webcasts": [
+      "https://www.labcorp.com/newsroom/press-releases"
+    ],
+    "Caris Life Sciences|official_ir_events_webcasts": [
+      "https://www.carislifesciences.com/news-and-events/"
+    ],
+    "GRAIL|official_ir_events_webcasts": [
+      "https://grail.com/news-center/"
+    ],
+    "PacBio|official_ir_events_webcasts": [
+      "https://www.pacb.com/news/press-releases/"
+    ],
+    "BillionToOne|official_ir_events_webcasts": [
+      "https://www.billiontoone.com/news-media"
+    ],
+    "BillionToOne|corporate_ir_press_releases_investor_conferences": [
+      "https://www.billiontoone.com/news-media"
     ]
   }
 }
