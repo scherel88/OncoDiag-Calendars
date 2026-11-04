@@ -179,6 +179,9 @@ def do_check(check, overrides):
     else:
         result["source_quality_warnings"].append(
             "All configured URLs failed after retries; inspect attempt_errors")
+        if attempts and all("403" in e["error"] for e in attempts):
+            result["source_quality_warnings"].append(
+                "GitHub runner was forbidden (HTTP 403) on every URL; this does NOT prove public browser access is unavailable. Retry with browser-based official-source inspection.")
     return result
 
 
