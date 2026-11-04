@@ -62,6 +62,8 @@ jobs:
               f"- URL categories attempted: **{data['url_attempted']}/78**\n"
               f"- Successfully fetched: **{data['http_fetched']}/78**\n"
               f"- Failed all fallback URLs: **{data['http_failed']}**\n"
+              f"- Dated, category-specific content candidates: **{data.get('content_candidate_categories', 0)}/78**\n"
+              f"- Browser review required (HTTP block or unusable content): **{data.get('browser_fallback_needed', 0)}**\n"
               f"- Sparse/dynamic content: **{data['sparse_dynamic_or_empty']}**\n"
               f"- Historical/single-document primary URLs: **{data['historical_one_off_sources']}**\n"
               "- No HTTP success is counted as a verified announcement review.\n"
