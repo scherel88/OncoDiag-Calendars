@@ -17,6 +17,7 @@
       "https://www.sec.gov/edgar/browse/?CIK=1800&owner=exclude"
     ],
     "Veracyte|corporate_ir_press_releases_investor_conferences": [
+      "https://veracyteinc.gcs-web.com/press-releases",
       "https://investor.veracyte.com/news-releases"
     ],
     "Caris Life Sciences|corporate_ir_press_releases_investor_conferences": [
@@ -41,12 +42,15 @@
       "https://www.natera.com/company/news/"
     ],
     "Quest Diagnostics|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001022079.json",
       "https://www.sec.gov/edgar/browse/?CIK=1022079&owner=exclude"
     ],
     "Personalis|corporate_ir_press_releases_investor_conferences": [
+      "https://www.personalis.com/resources/",
       "https://investors.personalis.com/news-events/press-releases"
     ],
     "Personalis|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001527753.json",
       "https://www.sec.gov/edgar/browse/?CIK=1527753&owner=exclude"
     ],
     "GRAIL|corporate_ir_press_releases_investor_conferences": [
@@ -55,28 +59,35 @@
       "https://grail.com/news-center/"
     ],
     "GRAIL|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001699031.json",
       "https://www.sec.gov/edgar/browse/?CIK=1699031&owner=exclude"
     ],
     "Tempus AI|corporate_ir_press_releases_investor_conferences": [
+      "https://tempus.gcs-web.com/news-events/news-releases",
       "https://investors.tempus.com/news-events/press-releases/default.aspx",
       "https://tempus.gcs-web.com/",
       "https://www.tempus.com/news/"
     ],
     "Tempus AI|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001717115.json",
       "https://www.sec.gov/edgar/browse/?CIK=1717115&owner=exclude"
     ],
     "Adaptive Biotechnologies|corporate_ir_press_releases_investor_conferences": [
       "https://investors.adaptivebiotech.com/news-releases",
-      "https://investors.adaptivebiotech.com/"
+      "https://investors.adaptivebiotech.com/",
+      "https://www.adaptivebiotech.com/"
     ],
     "Adaptive Biotechnologies|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001478320.json",
       "https://www.sec.gov/edgar/browse/?CIK=1478320&owner=exclude"
     ],
     "GeneDx|corporate_ir_press_releases_investor_conferences": [
       "https://ir.genedx.com/news-events/news-releases",
-      "https://ir.genedx.com/"
+      "https://ir.genedx.com/",
+      "https://www.genedx.com/"
     ],
     "GeneDx|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001818331.json",
       "https://www.sec.gov/edgar/browse/?CIK=1818331&owner=exclude"
     ],
     "SOPHiA GENETICS|official_filings_financial_reports": [
@@ -117,10 +128,12 @@
       "https://investors.10xgenomics.com/"
     ],
     "10x Genomics|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001770787.json",
       "https://www.sec.gov/edgar/browse/?CIK=1770787&owner=exclude"
     ],
     "Twist Bioscience|corporate_ir_press_releases_investor_conferences": [
-      "https://investors.twistbioscience.com/news-releases"
+      "https://investors.twistbioscience.com/news-releases",
+      "https://www.twistbioscience.com/"
     ],
     "Labcorp|official_ir_events_webcasts": [
       "https://www.labcorp.com/newsroom/press-releases"
@@ -143,6 +156,49 @@
     "SOPHiA GENETICS|corporate_ir_press_releases_investor_conferences": [
       "https://ir.sophiagenetics.com/index.php?s=43",
       "https://ir.sophiagenetics.com/"
+    ],
+    "Veracyte|official_ir_events_webcasts": [
+      "https://veracyteinc.gcs-web.com/events-presentations"
+    ],
+    "Veracyte|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001384101.json",
+      "https://veracyteinc.gcs-web.com/financials/sec-filings"
+    ],
+    "Personalis|official_ir_events_webcasts": [
+      "https://www.personalis.com/resources/"
+    ],
+    "Adaptive Biotechnologies|official_ir_events_webcasts": [
+      "https://www.adaptivebiotech.com/"
+    ],
+    "GeneDx|official_ir_events_webcasts": [
+      "https://www.genedx.com/"
+    ],
+    "Twist Bioscience|official_ir_events_webcasts": [
+      "https://www.twistbioscience.com/"
+    ],
+    "Labcorp|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0000920148.json"
+    ],
+    "Caris Life Sciences|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0002019410.json"
+    ],
+    "BillionToOne|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0002070849.json"
+    ],
+    "Illumina|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001110803.json"
+    ],
+    "PacBio|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001299130.json"
+    ],
+    "Twist Bioscience|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001581280.json"
     ]
+  },
+  "meta": {
+    "edgar_api": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+    "filings_api_policy": "SEC JSON submissions feed is an official first-party primary source; inspect recent filing forms/filingDate, not mere HTTP success.",
+    "exact_sciences": "Acquired by Abbott March 23 2026; no independent Exact Sciences financial events or ongoing stand-alone SEC filing duty. Continue relevant Abbott disclosures only; SEC 8-K acquisition close https://www.sec.gov/Archives/edgar/data/1124140/000119312526118700/d128802d8k.htm",
+    "event_archive_fallback_policy": "Corporate news or resources archives are discovery aids, not substitute proof of a complete event-calendar review."
   }
 }
