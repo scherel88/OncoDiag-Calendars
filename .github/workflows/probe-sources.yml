@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "source_probe.py"
+      - "source_browser_probe.py"
       - "source_overrides.json"
       - ".github/workflows/probe-sources.yml"
   workflow_dispatch:
@@ -48,6 +49,32 @@ jobs:
         if: steps.schedule.outputs.run_probe == 'true'
         run: python source_probe.py
 
+      - name: Determine browser fallback need
+        id: fallback
+        if: steps.schedule.outputs.run_probe == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          p = max(Path("source-probes").glob("????-??-??.json"))
+          d = json.loads(p.read_text())
+          required = d.get("http_failed", 0) > 0
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write("required=" + ("true" if required else "false") + "\n")
+          print(f"HTTP-blocked source categories: {d.get('http_failed', 0)}")
+          PY
+
+      - name: Install ordinary public browser for blocked official pages
+        if: steps.fallback.outputs.required == 'true'
+        run: |
+          python -m pip install --disable-pip-version-check playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Render blocked source pages without bypassing access controls
+        if: steps.fallback.outputs.required == 'true'
+        run: python source_browser_probe.py
+
       - name: Publish diagnostic summary
         if: steps.schedule.outputs.run_probe == 'true'
         shell: bash
@@ -68,6 +95,11 @@ jobs:
               f"- Historical/single-document primary URLs: **{data['historical_one_off_sources']}**\n"
               "- No HTTP success is counted as a verified announcement review.\n"
           )
+          browser = p.with_suffix(".browser.json")
+          if browser.exists():
+              b = json.loads(browser.read_text())
+              summary += (f"- Browser-rendered previously blocked categories: **{b['browser_rendered_categories']}/{b['attempted_categories']}**\n"
+                          "- Browser rendering does not establish complete announcement review.\n")
           with open(__import__("os").environ["GITHUB_STEP_SUMMARY"], "a") as f:
               f.write(summary)
           if data["http_failed"]:
