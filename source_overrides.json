@@ -59,7 +59,8 @@
     ],
     "Tempus AI|corporate_ir_press_releases_investor_conferences": [
       "https://investors.tempus.com/news-events/press-releases/default.aspx",
-      "https://tempus.gcs-web.com/"
+      "https://tempus.gcs-web.com/",
+      "https://www.tempus.com/news/"
     ],
     "Tempus AI|official_filings_financial_reports": [
       "https://www.sec.gov/edgar/browse/?CIK=1717115&owner=exclude"
