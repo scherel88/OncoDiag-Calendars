@@ -72,21 +72,30 @@ jobs:
               print("::warning::Some primary sources remain inaccessible; consult source-probes JSON")
           PY
 
-      - name: Commit source probe evidence
+      - name: Commit source probe evidence without rebase conflicts
         if: steps.schedule.outputs.run_probe == 'true'
         run: |
           git config user.name "diagnostics-earnings-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add source-probes/
-          if git diff --cached --quiet; then
-            echo "No source evidence changes"
-            exit 0
-          fi
-          git commit -m "Record automated investor-source reachability preflight"
-          for attempt in 1 2 3; do
-            git pull --rebase origin "${GITHUB_REF_NAME}" || exit 1
+          report="$(find source-probes -maxdepth 1 -name '*.json' | sort | tail -n 1)"
+          filename="$(basename "$report")"
+          cp "$report" "$RUNNER_TEMP/probe-report.json"
+          for attempt in 1 2 3 4; do
+            # The daily evidence path can be written by overlapping push-triggered
+            # runs. Never rebase two generated JSON reports against each other.
+            git fetch origin "${GITHUB_REF_NAME}" || exit 1
+            git reset --hard "origin/${GITHUB_REF_NAME}" || exit 1
+            mkdir -p source-probes
+            cp "$RUNNER_TEMP/probe-report.json" "source-probes/$filename"
+            git add "source-probes/$filename"
+            if git diff --cached --quiet; then
+              echo "Latest upstream evidence is already identical"
+              exit 0
+            fi
+            git commit -m "Record automated investor-source reachability preflight"
             if git push; then exit 0; fi
+            echo "Concurrent upstream write; retrying generated evidence publication"
             sleep $((attempt * 3))
           done
-          echo "Failed to publish source probe evidence" >&2
+          echo "Failed to publish source probe evidence after four retries" >&2
           exit 1
