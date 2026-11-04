@@ -1,0 +1,92 @@
+name: Probe all 78 investor source categories
+
+on:
+  push:
+    paths:
+      - "source_probe.py"
+      - "source_overrides.json"
+      - ".github/workflows/probe-sources.yml"
+  workflow_dispatch:
+  schedule:
+    # GitHub schedules are UTC; these two slots cover 08:00 Eastern in DST and standard time.
+    - cron: "0 12 * * *"
+    - cron: "0 13 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: investor-source-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check local schedule window
+        id: schedule
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "schedule" && "$(TZ=America/New_York date +%H)" != "08" ]]; then
+            echo "run_probe=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping second UTC slot outside 08:00 Eastern"
+          else
+            echo "run_probe=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out repository
+        if: steps.schedule.outputs.run_probe == 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        if: steps.schedule.outputs.run_probe == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Attempt all 78 primary-source categories with fallbacks
+        if: steps.schedule.outputs.run_probe == 'true'
+        run: python source_probe.py
+
+      - name: Publish diagnostic summary
+        if: steps.schedule.outputs.run_probe == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = max(Path("source-probes").glob("????-??-??.json"))
+          data = json.loads(p.read_text())
+          summary = (
+              "## Investor-source HTTP preflight (not a complete 78-source content audit)\n"
+              f"- URL categories attempted: **{data['url_attempted']}/78**\n"
+              f"- Successfully fetched: **{data['http_fetched']}/78**\n"
+              f"- Failed all fallback URLs: **{data['http_failed']}**\n"
+              f"- Sparse/dynamic content: **{data['sparse_dynamic_or_empty']}**\n"
+              f"- Historical/single-document primary URLs: **{data['historical_one_off_sources']}**\n"
+              "- No HTTP success is counted as a verified announcement review.\n"
+          )
+          with open(__import__("os").environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write(summary)
+          if data["http_failed"]:
+              print("::warning::Some primary sources remain inaccessible; consult source-probes JSON")
+          PY
+
+      - name: Commit source probe evidence
+        if: steps.schedule.outputs.run_probe == 'true'
+        run: |
+          git config user.name "diagnostics-earnings-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add source-probes/
+          if git diff --cached --quiet; then
+            echo "No source evidence changes"
+            exit 0
+          fi
+          git commit -m "Record automated investor-source reachability preflight"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" || exit 1
+            if git push; then exit 0; fi
+            sleep $((attempt * 3))
+          done
+          echo "Failed to publish source probe evidence" >&2
+          exit 1
