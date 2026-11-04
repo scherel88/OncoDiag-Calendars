@@ -191,9 +191,27 @@ def do_check(check, overrides):
               "source_category_verified": False,
               "source_quality_warnings": [],
               "retrieved": selected}
+    result["browser_fallback_requested"] = False
+    result["content_candidate_for_category"] = False
     if not urls:
+        result["browser_fallback_requested"] = True
         result["source_quality_warnings"].append("No HTTPS source URL configured")
     elif selected:
+        cat = check["category"]
+        signals = selected.get("page_signals", {})
+        dated = bool(selected.get("date_mentions"))
+        links = bool(selected.get("candidate_links") or selected.get("xml_relevant_titles"))
+        filings = bool(selected.get("filing_records"))
+        if cat == "official_filings_financial_reports":
+            result["content_candidate_for_category"] = filings or (signals.get("filings") and dated)
+        elif cat == "official_ir_events_webcasts":
+            result["content_candidate_for_category"] = bool(signals.get("events") and dated)
+        else:
+            result["content_candidate_for_category"] = bool(signals.get("news") and (dated or links))
+        if not result["content_candidate_for_category"]:
+            result["browser_fallback_requested"] = True
+            result["source_quality_warnings"].append(
+                "HTTP 200 but no dated category-specific information was extracted; NOT a completed source review")
         u = selected["url"]
         if not selected["is_html_or_xml"]:
             result["source_quality_warnings"].append("Binary response: content not machine-reviewed")
@@ -203,13 +221,14 @@ def do_check(check, overrides):
         if SINGLE_ITEM.search(urlsplit(u).path):
             result["source_quality_warnings"].append(
                 "One-off historical article or static filing is not a current archive")
-        if not selected.get("candidate_links") and not selected.get("xml_relevant_titles"):
+        if not selected.get("candidate_links") and not selected.get("xml_relevant_titles") and not selected.get("filing_records"):
             result["source_quality_warnings"].append(
                 "No investor-relevant anchor titles extracted; manual inspection needed")
         if check["category"] == "corporate_ir_press_releases_investor_conferences":
             result["source_quality_warnings"].append(
                 "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review")
     else:
+        result["browser_fallback_requested"] = True
         result["source_quality_warnings"].append(
             "All configured URLs failed after retries; inspect attempt_errors")
         if attempts and all("403" in e["error"] for e in attempts):
@@ -237,6 +256,8 @@ def main():
         results = list(pool.map(lambda c: do_check(c, overrides), checks))
     attempted = sum(c["attempted"] for c in results)
     fetched = sum(c["http_retrieval"] == "success" for c in results)
+    usable = sum(c["content_candidate_for_category"] for c in results)
+    browser = sum(c["browser_fallback_requested"] for c in results)
     sparse = sum(any("Sparse page" in w for w in c["source_quality_warnings"]) for c in results)
     historical = sum(any("One-off historical" in w for w in c["source_quality_warnings"]) for c in results)
     report = {
@@ -244,7 +265,15 @@ def main():
         "generated_at": datetime.now(ET).isoformat(),
         "seed_source": str(audits[-1].relative_to(ROOT)),
         "source_pairs": 78, "url_attempted": attempted, "http_fetched": fetched,
-        "http_failed": 78 - fetched, "sparse_dynamic_or_empty": sparse,
+        "http_failed": 78 - fetched, "content_candidate_categories": usable,
+        "browser_fallback_needed": browser,
+        "browser_fallback_queue": [
+            {"company": c["company"], "category": c["category"],
+             "urls": c["configured_urls"], "reason": c["source_quality_warnings"],
+             "http_retrieval": c["http_retrieval"]}
+            for c in results if c["browser_fallback_requested"]
+        ],
+        "sparse_dynamic_or_empty": sparse,
         "historical_one_off_sources": historical,
         "completed_independent_announcement_reviews": 0,
         "disclaimer": "Network-level preflight and candidate-link extraction only. HTTP success does NOT verify news, events, filings, 7-day coverage, or absence of changes.",
