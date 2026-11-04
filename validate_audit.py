@@ -72,7 +72,7 @@ def validate(path):
             if not check.get("error") or check.get("retry_required") is not True:
                 raise ValueError(f"{name}: incomplete without error and retry flag")
         counts[status] += 1
-    if dict(counts) != {k: data.get("counts", {}).get(k, 0) for k in STATUSES}:
+    if any(counts.get(k, 0) != data.get("counts", {}).get(k, 0) for k in STATUSES):
         raise ValueError("Recorded completion counts do not match check records")
     if data.get("company_count") != 26 or data.get("category_count") != 3 or data.get("total_checks") != 78:
         raise ValueError("Incorrect audit dimension metadata")
