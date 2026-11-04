@@ -14,7 +14,9 @@
       "https://www.abbott.com/en-us/exact-sciences"
     ],
     "Exact Sciences|official_filings_financial_reports": [
-      "https://www.sec.gov/edgar/browse/?CIK=1800&owner=exclude"
+      "https://data.sec.gov/submissions/CIK0001124140.json",
+      "https://abbott.mediaroom.com/",
+      "https://data.sec.gov/submissions/CIK0000001800.json"
     ],
     "Veracyte|corporate_ir_press_releases_investor_conferences": [
       "https://veracyteinc.gcs-web.com/press-releases",
@@ -199,6 +201,7 @@
     "edgar_api": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
     "filings_api_policy": "SEC JSON submissions feed is an official first-party primary source; inspect recent filing forms/filingDate, not mere HTTP success.",
     "exact_sciences": "Acquired by Abbott March 23 2026; no independent Exact Sciences financial events or ongoing stand-alone SEC filing duty. Continue relevant Abbott disclosures only; SEC 8-K acquisition close https://www.sec.gov/Archives/edgar/data/1124140/000119312526118700/d128802d8k.htm",
-    "event_archive_fallback_policy": "Corporate news or resources archives are discovery aids, not substitute proof of a complete event-calendar review."
+    "event_archive_fallback_policy": "Corporate news or resources archives are discovery aids, not substitute proof of a complete event-calendar review.",
+    "exact_sciences_status": "standalone_filings_not_applicable_post_merger; check Abbott official disclosures for Exact only, no standalone earnings call; approval based on definitive 8-K and Abbott press release"
   }
 }
