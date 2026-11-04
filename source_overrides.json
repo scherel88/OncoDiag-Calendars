@@ -19,6 +19,7 @@
       "https://data.sec.gov/submissions/CIK0000001800.json"
     ],
     "Veracyte|corporate_ir_press_releases_investor_conferences": [
+      "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
       "https://veracyteinc.gcs-web.com/press-releases",
       "https://investor.veracyte.com/news-releases"
     ],
@@ -160,6 +161,7 @@
       "https://ir.sophiagenetics.com/"
     ],
     "Veracyte|official_ir_events_webcasts": [
+      "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
       "https://veracyteinc.gcs-web.com/events-presentations"
     ],
     "Veracyte|official_filings_financial_reports": [
@@ -195,6 +197,13 @@
     ],
     "Twist Bioscience|official_filings_financial_reports": [
       "https://data.sec.gov/submissions/CIK0001581280.json"
+    ],
+    "MGI Tech|official_ir_events_webcasts": [
+      "https://www.mgi-tech.com/Investor/index"
+    ],
+    "MGI Tech|corporate_ir_press_releases_investor_conferences": [
+      "https://www.mgi-tech.com/Investor/index",
+      "https://global-mgitech.com/media-hub/media-coverage/"
     ]
   },
   "meta": {
