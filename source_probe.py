@@ -93,14 +93,21 @@ def try_url(url):
                 raise ValueError("Response has less than 80 bytes")
             is_html = "html" in content_type or (b"<html" in data[:500].lower())
             is_xml = "xml" in content_type or data[:50].lstrip().startswith(b"<?xml")
+            is_json = "json" in content_type or data[:100].lstrip().startswith(b'{"cik"')
             parsed = {"candidate_links": [], "date_mentions": [],
-                      "text_chars": 0, "links_seen": 0}
+                      "text_chars": 0, "links_seen": 0,
+                      "filing_records": [], "page_signals": {}}
             if is_html:
                 reader = LinkReader(final_url)
                 reader.feed(data.decode("utf-8", "replace"))
                 text = " ".join(" ".join(reader.text).split())
                 parsed["text_chars"] = len(text)
                 parsed["links_seen"] = len(reader.links)
+                parsed["page_signals"] = {
+                    "events": bool(re.search(r"upcoming events|past events|investor calendar|events (?:&|and) presentations", text, re.I)),
+                    "news": bool(re.search(r"press releases|news releases|investor news|newsroom", text, re.I)),
+                    "filings": bool(re.search(r"SEC filings|filing date|filing type|form 10-[KQ]|form 8-K|quarterly financial", text, re.I))
+                }
                 seen = set()
                 for link in reader.links:
                     if RELEVANT.search(link["title"]) and link["url"] not in seen:
@@ -118,11 +125,37 @@ def try_url(url):
                     if RELEVANT.search(title)
                 ][:30]
                 parsed["date_mentions"] = list(dict.fromkeys(DATE.findall(text[:100000])))[:30]
+            elif is_json:
+                document = json.loads(data.decode("utf-8", "replace"))
+                if not isinstance(document, dict):
+                    raise ValueError("JSON document is not an object")
+                recent = document.get("filings", {}).get("recent", {})
+                if not isinstance(recent, dict) or not isinstance(recent.get("form"), list):
+                    raise ValueError("No structured company filings list in JSON")
+                forms = recent.get("form", [])
+                dates = recent.get("filingDate", [])
+                accessions = recent.get("accessionNumber", [])
+                docs = recent.get("primaryDocument", [])
+                wanted = {"8-K", "8-K/A", "10-Q", "10-Q/A", "10-K", "10-K/A",
+                          "6-K", "20-F", "40-F", "425", "SC 13E3", "SC 13E3/A"}
+                for i, form in enumerate(forms):
+                    if form in wanted and i < len(dates):
+                        parsed["filing_records"].append({
+                            "form": form, "filing_date": dates[i],
+                            "accession": accessions[i] if i < len(accessions) else None,
+                            "primary_document": docs[i] if i < len(docs) else None
+                        })
+                    if len(parsed["filing_records"]) >= 30:
+                        break
+                parsed["text_chars"] = len(data)
+                parsed["page_signals"] = {"filings": True, "events": False, "news": False}
+                parsed["issuer_cik"] = document.get("cik")
+                parsed["issuer_name"] = document.get("name")
             return {"outcome": "fetched", "url": url, "final_url": final_url,
                     "http_status": code, "content_type": content_type[:120],
                     "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest(),
                     "elapsed_ms": int((time.monotonic() - start)*1000),
-                    "is_html_or_xml": bool(is_html or is_xml), "attempts": attempt,
+                    "is_html_or_xml": bool(is_html or is_xml or is_json), "attempts": attempt,
                     **parsed}, errors
         except (HTTPError, URLError, TimeoutError, OSError, ValueError, EOFError) as exc:
             errors.append({"url": url, "attempt": attempt,
