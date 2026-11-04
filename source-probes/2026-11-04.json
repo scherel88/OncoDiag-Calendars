@@ -1,11 +1,11 @@
 {
   "audit_date": "2026-11-04",
-  "generated_at": "2026-11-04T08:40:58.555952-05:00",
+  "generated_at": "2026-11-04T08:43:13.201213-05:00",
   "seed_source": "audit/2026-11-04.json",
   "source_pairs": 78,
   "url_attempted": 78,
-  "http_fetched": 59,
-  "http_failed": 19,
+  "http_fetched": 61,
+  "http_failed": 17,
   "sparse_dynamic_or_empty": 2,
   "historical_one_off_sources": 1,
   "completed_independent_announcement_reviews": 0,
@@ -14,8 +14,8 @@
     {
       "company": "Labcorp",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:19.907178-05:00",
-      "finished_at": "2026-11-04T08:40:20.639608-05:00",
+      "started_at": "2026-11-04T08:42:56.249229-05:00",
+      "finished_at": "2026-11-04T08:42:56.511297-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.labcorp.com/newsroom/press-releases",
@@ -36,8 +36,8 @@
         "http_status": 200,
         "content_type": "text/html;charset=utf-8",
         "bytes": 117868,
-        "sha256": "ca6659bcadb35e2915cdccad2978b100396910ef5c5394ca58dd7ee66c1ade81",
-        "elapsed_ms": 732,
+        "sha256": "38967895e2ceafc05fdf56d236ba8e490187aef8bb0702439b6d9d611e7f2e5f",
+        "elapsed_ms": 261,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -49,8 +49,8 @@
     {
       "company": "Labcorp",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:19.908093-05:00",
-      "finished_at": "2026-11-04T08:40:22.233078-05:00",
+      "started_at": "2026-11-04T08:42:56.250105-05:00",
+      "finished_at": "2026-11-04T08:42:58.869895-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.labcorp.com/news-and-events/news-releases",
@@ -95,8 +95,8 @@
         "http_status": 200,
         "content_type": "text/html;charset=utf-8",
         "bytes": 117868,
-        "sha256": "ca6659bcadb35e2915cdccad2978b100396910ef5c5394ca58dd7ee66c1ade81",
-        "elapsed_ms": 87,
+        "sha256": "38967895e2ceafc05fdf56d236ba8e490187aef8bb0702439b6d9d611e7f2e5f",
+        "elapsed_ms": 343,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -108,8 +108,8 @@
     {
       "company": "Labcorp",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:19.908932-05:00",
-      "finished_at": "2026-11-04T08:40:22.231540-05:00",
+      "started_at": "2026-11-04T08:42:56.250599-05:00",
+      "finished_at": "2026-11-04T08:42:58.489167-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0000920148.json",
@@ -150,8 +150,8 @@
     {
       "company": "Mendelics",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:19.909735-05:00",
-      "finished_at": "2026-11-04T08:40:20.153580-05:00",
+      "started_at": "2026-11-04T08:42:56.251123-05:00",
+      "finished_at": "2026-11-04T08:42:57.362577-05:00",
       "attempted": true,
       "configured_urls": [
         "https://mendelics.com.br/a-mendelics/"
@@ -171,8 +171,8 @@
         "http_status": 200,
         "content_type": "text/html; charset=utf-8",
         "bytes": 369582,
-        "sha256": "0370e32f76d2361bdca470438e4a2f553dde99bbfb4935d1cf4a65947ccfd0a5",
-        "elapsed_ms": 243,
+        "sha256": "bb7a0795ad391c65b3f23a0dae586462f9aa43aeacb58f3a0693b89c1d470500",
+        "elapsed_ms": 1111,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -184,8 +184,8 @@
     {
       "company": "Mendelics",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:19.910556-05:00",
-      "finished_at": "2026-11-04T08:40:20.179413-05:00",
+      "started_at": "2026-11-04T08:42:56.252002-05:00",
+      "finished_at": "2026-11-04T08:42:56.638718-05:00",
       "attempted": true,
       "configured_urls": [
         "https://blog.mendelics.com.br/"
@@ -205,9 +205,9 @@
         "final_url": "https://blog.mendelics.com.br/",
         "http_status": 200,
         "content_type": "text/html; charset=utf-8",
-        "bytes": 205321,
-        "sha256": "8d02dc384778b36a7569ac0d26f9e2eaa8ad91c4479ef4af5ef3b99bd6fbdbe2",
-        "elapsed_ms": 268,
+        "bytes": 205322,
+        "sha256": "c2890f57e35e0915c2a2c350fd855795495bed7e74e6538e8c595fe78575ea16",
+        "elapsed_ms": 386,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -219,8 +219,8 @@
     {
       "company": "Mendelics",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:19.915299-05:00",
-      "finished_at": "2026-11-04T08:40:20.723308-05:00",
+      "started_at": "2026-11-04T08:42:56.257857-05:00",
+      "finished_at": "2026-11-04T08:42:57.145535-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.gov.br/cvm/pt-br"
@@ -241,7 +241,7 @@
         "content_type": "text/html;charset=utf-8",
         "bytes": 226370,
         "sha256": "5ac61124da894b752f84ec19fc4eed3d3da047763200e69da23fbba2b4c082eb",
-        "elapsed_ms": 807,
+        "elapsed_ms": 887,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -253,8 +253,8 @@
     {
       "company": "Exact Sciences",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:20.153670-05:00",
-      "finished_at": "2026-11-04T08:40:20.230107-05:00",
+      "started_at": "2026-11-04T08:42:56.511372-05:00",
+      "finished_at": "2026-11-04T08:42:56.644925-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.abbott.com/en-us/exact-sciences",
@@ -275,8 +275,8 @@
         "http_status": 200,
         "content_type": "text/html;charset=utf-8",
         "bytes": 94286,
-        "sha256": "7130da6fa13eb50e540e5394bd04a07bbf1936df198dda99d133e1b4fa746bb5",
-        "elapsed_ms": 76,
+        "sha256": "90a318d6bcff455b1e5ad58b18341d99a838ffb6abf946699c087d635c5855d5",
+        "elapsed_ms": 133,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -288,8 +288,8 @@
     {
       "company": "Exact Sciences",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:20.179481-05:00",
-      "finished_at": "2026-11-04T08:40:20.315265-05:00",
+      "started_at": "2026-11-04T08:42:56.638787-05:00",
+      "finished_at": "2026-11-04T08:42:56.758246-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.abbott.com/en-us/corpnewsroom.html",
@@ -312,8 +312,8 @@
         "http_status": 200,
         "content_type": "text/html;charset=utf-8",
         "bytes": 842800,
-        "sha256": "09efc53a8445cb4eccfa3705d6a8f395d535745d829cb2e60e5e788de69580de",
-        "elapsed_ms": 135,
+        "sha256": "55b31c622ec892aa2342d264db7d8f9941c512f124eb6349e4118bcc7d1399eb",
+        "elapsed_ms": 119,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -325,8 +325,8 @@
     {
       "company": "Exact Sciences",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:20.230186-05:00",
-      "finished_at": "2026-11-04T08:40:21.592595-05:00",
+      "started_at": "2026-11-04T08:42:56.644965-05:00",
+      "finished_at": "2026-11-04T08:42:57.772097-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001124140.json",
@@ -358,8 +358,8 @@
         "http_status": 200,
         "content_type": "text/html; charset=utf-8",
         "bytes": 238083,
-        "sha256": "0e20d4a677767724d3e2288fab449b48b091e6381417f98ea1d18439ffdb5e81",
-        "elapsed_ms": 82,
+        "sha256": "876014beb8abebab1030388e810bf602b8ec807e54008d9e26ca4d62f3c1b2b1",
+        "elapsed_ms": 69,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -399,14 +399,25 @@
     {
       "company": "Veracyte",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:20.315336-05:00",
-      "finished_at": "2026-11-04T08:40:22.672798-05:00",
+      "started_at": "2026-11-04T08:42:56.758317-05:00",
+      "finished_at": "2026-11-04T08:43:00.086111-05:00",
       "attempted": true,
       "configured_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
         "https://veracyteinc.gcs-web.com/events-presentations",
         "https://investor.veracyte.com/events-presentations"
       ],
       "attempt_errors": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
         {
           "url": "https://veracyteinc.gcs-web.com/events-presentations",
           "attempt": 1,
@@ -441,15 +452,26 @@
     {
       "company": "Veracyte",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:20.639694-05:00",
-      "finished_at": "2026-11-04T08:40:23.836399-05:00",
+      "started_at": "2026-11-04T08:42:57.145598-05:00",
+      "finished_at": "2026-11-04T08:43:01.365423-05:00",
       "attempted": true,
       "configured_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
         "https://veracyteinc.gcs-web.com/press-releases",
         "https://investor.veracyte.com/news-releases",
         "https://investor.veracyte.com/news-releases/news-release-details/veracyte-participate-upcoming-investor-conferences-9"
       ],
       "attempt_errors": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
+          "attempt": 1,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
+          "attempt": 2,
+          "error": "HTTP Error 403: Forbidden"
+        },
         {
           "url": "https://veracyteinc.gcs-web.com/press-releases",
           "attempt": 1,
@@ -494,8 +516,8 @@
     {
       "company": "Veracyte",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:20.723378-05:00",
-      "finished_at": "2026-11-04T08:40:24.185521-05:00",
+      "started_at": "2026-11-04T08:42:57.362643-05:00",
+      "finished_at": "2026-11-04T08:43:00.636429-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001384101.json",
@@ -547,8 +569,8 @@
     {
       "company": "Caris Life Sciences",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:21.592661-05:00",
-      "finished_at": "2026-11-04T08:40:21.659470-05:00",
+      "started_at": "2026-11-04T08:42:57.772160-05:00",
+      "finished_at": "2026-11-04T08:42:57.890305-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.carislifesciences.com/news-and-events/",
@@ -568,7 +590,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 299328,
         "sha256": "8ce2e693670128f82418406f3c1fb1f9b6a16ee7fd6c7870dd8623894e620a79",
-        "elapsed_ms": 66,
+        "elapsed_ms": 118,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -593,8 +615,8 @@
     {
       "company": "Caris Life Sciences",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:21.659534-05:00",
-      "finished_at": "2026-11-04T08:40:22.908041-05:00",
+      "started_at": "2026-11-04T08:42:57.890365-05:00",
+      "finished_at": "2026-11-04T08:42:59.087916-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investor.carislifesciences.com/news-events/news-releases",
@@ -627,7 +649,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 278925,
         "sha256": "aea9a47aa0c1f5292fae48c9ddcc7208c82c5b753767426f0044270e272fc05d",
-        "elapsed_ms": 35,
+        "elapsed_ms": 100,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -650,8 +672,8 @@
     {
       "company": "Caris Life Sciences",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:22.231597-05:00",
-      "finished_at": "2026-11-04T08:40:24.441690-05:00",
+      "started_at": "2026-11-04T08:42:58.489220-05:00",
+      "finished_at": "2026-11-04T08:43:00.615247-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0002019410.json",
@@ -692,8 +714,8 @@
     {
       "company": "Guardant Health",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:22.233131-05:00",
-      "finished_at": "2026-11-04T08:40:22.649358-05:00",
+      "started_at": "2026-11-04T08:42:58.869976-05:00",
+      "finished_at": "2026-11-04T08:42:59.145501-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investors.guardanthealth.com/overview/default.aspx",
@@ -713,7 +735,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 163111,
         "sha256": "d33c45df101498311934d1874ca7ca090f94a9d0ccf7e553be45d273b2baf591",
-        "elapsed_ms": 416,
+        "elapsed_ms": 275,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -746,8 +768,8 @@
     {
       "company": "Guardant Health",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:22.649425-05:00",
-      "finished_at": "2026-11-04T08:40:22.722580-05:00",
+      "started_at": "2026-11-04T08:42:59.087979-05:00",
+      "finished_at": "2026-11-04T08:42:59.226398-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investors.guardanthealth.com/press-releases/default.aspx",
@@ -770,7 +792,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 113462,
         "sha256": "1fc84b946384b365fbc420326faf9b3c72d96bc3b448e0f48245fbddc6a3dbba",
-        "elapsed_ms": 73,
+        "elapsed_ms": 138,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -787,8 +809,8 @@
     {
       "company": "Guardant Health",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:22.672891-05:00",
-      "finished_at": "2026-11-04T08:40:22.790260-05:00",
+      "started_at": "2026-11-04T08:42:59.145553-05:00",
+      "finished_at": "2026-11-04T08:42:59.286356-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investors.guardanthealth.com/financials/sec-filings/default.aspx",
@@ -808,7 +830,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 95227,
         "sha256": "17b669ff0e5ac14fd5ae3921810ad1c278f03673c3a6e82ec728158b586c7e71",
-        "elapsed_ms": 117,
+        "elapsed_ms": 140,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -825,8 +847,8 @@
     {
       "company": "Myriad Genetics",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:22.722650-05:00",
-      "finished_at": "2026-11-04T08:40:23.128815-05:00",
+      "started_at": "2026-11-04T08:42:59.226458-05:00",
+      "finished_at": "2026-11-04T08:42:59.406279-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investor.myriad.com/events-and-presentations/"
@@ -845,7 +867,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 92677,
         "sha256": "6d604dbeaa5d775bcb1370c8825eb518ed668c572c7811d429e9b026e5c7aebd",
-        "elapsed_ms": 406,
+        "elapsed_ms": 179,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -898,8 +920,8 @@
     {
       "company": "Myriad Genetics",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:22.790343-05:00",
-      "finished_at": "2026-11-04T08:40:23.121731-05:00",
+      "started_at": "2026-11-04T08:42:59.286406-05:00",
+      "finished_at": "2026-11-04T08:42:59.414506-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investor.myriad.com/news-releases/",
@@ -921,7 +943,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 95859,
         "sha256": "e8518abacd7bb1ecb5083a2ef2f0040f257bfe7c3702e7e1ed58ec33937a892d",
-        "elapsed_ms": 331,
+        "elapsed_ms": 128,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -973,8 +995,8 @@
     {
       "company": "Myriad Genetics",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:22.908099-05:00",
-      "finished_at": "2026-11-04T08:40:23.310110-05:00",
+      "started_at": "2026-11-04T08:42:59.406340-05:00",
+      "finished_at": "2026-11-04T08:42:59.570476-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investor.myriad.com/sec-filings/"
@@ -993,7 +1015,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 388509,
         "sha256": "c233f0af25d0051be3347e193d30efe3e5698587211fa782f01ca4e61fc6de09",
-        "elapsed_ms": 401,
+        "elapsed_ms": 164,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1014,8 +1036,8 @@
     {
       "company": "Natera",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:23.121789-05:00",
-      "finished_at": "2026-11-04T08:40:23.411358-05:00",
+      "started_at": "2026-11-04T08:42:59.414549-05:00",
+      "finished_at": "2026-11-04T08:42:59.680577-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investor.natera.com/events-and-presentations/events/default.aspx"
@@ -1034,7 +1056,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 73720,
         "sha256": "1dcc02bd633eb6db0f02c44fbdca116157a4774ed5e4db7817dc894ff02d337c",
-        "elapsed_ms": 289,
+        "elapsed_ms": 265,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1051,8 +1073,8 @@
     {
       "company": "Natera",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:23.128864-05:00",
-      "finished_at": "2026-11-04T08:40:23.669450-05:00",
+      "started_at": "2026-11-04T08:42:59.570537-05:00",
+      "finished_at": "2026-11-04T08:42:59.757314-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.natera.com/company/news/"
@@ -1074,7 +1096,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 343910,
         "sha256": "4e441c39d8095b2838a06c1963de36c2fb091e8a329a8b1cb1411321178c7a45",
-        "elapsed_ms": 540,
+        "elapsed_ms": 186,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -1086,8 +1108,8 @@
     {
       "company": "Natera",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:23.310199-05:00",
-      "finished_at": "2026-11-04T08:40:23.419000-05:00",
+      "started_at": "2026-11-04T08:42:59.680636-05:00",
+      "finished_at": "2026-11-04T08:42:59.831148-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investor.natera.com/financials/sec-filings/default.aspx"
@@ -1106,7 +1128,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 59174,
         "sha256": "4663d732e46bb93c9d005e922eb82c030c924943f7a7f11c6569fcc45c930adf",
-        "elapsed_ms": 108,
+        "elapsed_ms": 150,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1123,8 +1145,8 @@
     {
       "company": "Quest Diagnostics",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:23.411414-05:00",
-      "finished_at": "2026-11-04T08:40:23.619099-05:00",
+      "started_at": "2026-11-04T08:42:59.757376-05:00",
+      "finished_at": "2026-11-04T08:43:00.290941-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.questdiagnostics.com/events-and-presentations/"
@@ -1143,7 +1165,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 76123,
         "sha256": "02564953973af8b25f0daeda7eac9782478979d36ef333beaae235b293f5fcfe",
-        "elapsed_ms": 207,
+        "elapsed_ms": 533,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1164,8 +1186,8 @@
     {
       "company": "Quest Diagnostics",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:23.419056-05:00",
-      "finished_at": "2026-11-04T08:40:23.552655-05:00",
+      "started_at": "2026-11-04T08:42:59.831208-05:00",
+      "finished_at": "2026-11-04T08:43:00.167078-05:00",
       "attempted": true,
       "configured_urls": [
         "https://newsroom.questdiagnostics.com/"
@@ -1185,8 +1207,8 @@
         "http_status": 200,
         "content_type": "text/html; charset=utf-8",
         "bytes": 49299,
-        "sha256": "fe542f4c641937c7eeee4a0cbc01e0db870887bb629d4c6073bb431b108da96a",
-        "elapsed_ms": 133,
+        "sha256": "41b68671799d1f8d20cfff8a9c4ae47236a69a855395271cd45ac80e547e4544",
+        "elapsed_ms": 335,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1205,8 +1227,8 @@
     {
       "company": "Quest Diagnostics",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:23.552710-05:00",
-      "finished_at": "2026-11-04T08:40:27.289780-05:00",
+      "started_at": "2026-11-04T08:43:00.086182-05:00",
+      "finished_at": "2026-11-04T08:43:03.309815-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001022079.json",
@@ -1258,8 +1280,8 @@
     {
       "company": "NeoGenomics",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:23.619154-05:00",
-      "finished_at": "2026-11-04T08:40:23.781549-05:00",
+      "started_at": "2026-11-04T08:43:00.167135-05:00",
+      "finished_at": "2026-11-04T08:43:00.341568-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.neogenomics.com/news-events/ir-calendar"
@@ -1278,7 +1300,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 52180,
         "sha256": "ec776def7e9ca8eec201244ff166929709a37d86f864c6c1e4763702b791e097",
-        "elapsed_ms": 162,
+        "elapsed_ms": 174,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1324,8 +1346,8 @@
     {
       "company": "NeoGenomics",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:23.669513-05:00",
-      "finished_at": "2026-11-04T08:40:23.796405-05:00",
+      "started_at": "2026-11-04T08:43:00.290995-05:00",
+      "finished_at": "2026-11-04T08:43:00.480585-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.neogenomics.com/news-events/press-releases"
@@ -1346,7 +1368,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 67481,
         "sha256": "c4985491eec87630d15e835c2241b329571b60a8cf03523ddd9aa9700b0b7c7a",
-        "elapsed_ms": 126,
+        "elapsed_ms": 189,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1400,8 +1422,8 @@
     {
       "company": "NeoGenomics",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:23.781611-05:00",
-      "finished_at": "2026-11-04T08:40:23.835670-05:00",
+      "started_at": "2026-11-04T08:43:00.341626-05:00",
+      "finished_at": "2026-11-04T08:43:00.400010-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.neogenomics.com/sec-filings"
@@ -1420,7 +1442,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 54876,
         "sha256": "ae83bbca13074f685496d400adb0f9b8716db36abfd74e78a1ea89e36fa8e2df",
-        "elapsed_ms": 53,
+        "elapsed_ms": 58,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1460,8 +1482,8 @@
     {
       "company": "DELFI Diagnostics",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:23.796465-05:00",
-      "finished_at": "2026-11-04T08:40:25.557946-05:00",
+      "started_at": "2026-11-04T08:43:00.400066-05:00",
+      "finished_at": "2026-11-04T08:43:01.775671-05:00",
       "attempted": true,
       "configured_urls": [
         "https://delfidiagnostics.com/events/"
@@ -1480,7 +1502,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 70891,
         "sha256": "864663aa9473b33d7ba2652dd376b8c546767e87d49bd8641ca2c7fb27c45e04",
-        "elapsed_ms": 1761,
+        "elapsed_ms": 1375,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1500,8 +1522,8 @@
     {
       "company": "DELFI Diagnostics",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:23.835731-05:00",
-      "finished_at": "2026-11-04T08:40:25.655283-05:00",
+      "started_at": "2026-11-04T08:43:00.480642-05:00",
+      "finished_at": "2026-11-04T08:43:00.879873-05:00",
       "attempted": true,
       "configured_urls": [
         "https://delfidiagnostics.com/about-us/newsroom/"
@@ -1522,7 +1544,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 148971,
         "sha256": "af86b53ee29ad448244eb2712c01548fa02d2766df70329e37d9ba69aad3bc25",
-        "elapsed_ms": 1819,
+        "elapsed_ms": 399,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1582,8 +1604,8 @@
     {
       "company": "DELFI Diagnostics",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:23.836464-05:00",
-      "finished_at": "2026-11-04T08:40:25.682131-05:00",
+      "started_at": "2026-11-04T08:43:00.615301-05:00",
+      "finished_at": "2026-11-04T08:43:01.030196-05:00",
       "attempted": true,
       "configured_urls": [
         "https://delfidiagnostics.com/about-us/newsroom/"
@@ -1602,7 +1624,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 148971,
         "sha256": "af86b53ee29ad448244eb2712c01548fa02d2766df70329e37d9ba69aad3bc25",
-        "elapsed_ms": 1845,
+        "elapsed_ms": 414,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1662,8 +1684,8 @@
     {
       "company": "Personalis",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:24.185587-05:00",
-      "finished_at": "2026-11-04T08:40:24.342980-05:00",
+      "started_at": "2026-11-04T08:43:00.636469-05:00",
+      "finished_at": "2026-11-04T08:43:01.779413-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.personalis.com/resources/",
@@ -1686,7 +1708,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 247999,
         "sha256": "ec5c0e4a36eb6d015d5e939b42ba63a19c6edc33b7b44f7bfe756a58f28634f7",
-        "elapsed_ms": 157,
+        "elapsed_ms": 1142,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -1698,8 +1720,8 @@
     {
       "company": "Personalis",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:24.343045-05:00",
-      "finished_at": "2026-11-04T08:40:24.413236-05:00",
+      "started_at": "2026-11-04T08:43:00.879938-05:00",
+      "finished_at": "2026-11-04T08:43:01.782354-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.personalis.com/resources/",
@@ -1724,7 +1746,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 247999,
         "sha256": "ec5c0e4a36eb6d015d5e939b42ba63a19c6edc33b7b44f7bfe756a58f28634f7",
-        "elapsed_ms": 70,
+        "elapsed_ms": 902,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -1736,8 +1758,8 @@
     {
       "company": "Personalis",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:24.413287-05:00",
-      "finished_at": "2026-11-04T08:40:28.038565-05:00",
+      "started_at": "2026-11-04T08:43:01.030261-05:00",
+      "finished_at": "2026-11-04T08:43:04.360288-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001527753.json",
@@ -1789,8 +1811,8 @@
     {
       "company": "GRAIL",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:24.441764-05:00",
-      "finished_at": "2026-11-04T08:40:24.534383-05:00",
+      "started_at": "2026-11-04T08:43:01.365491-05:00",
+      "finished_at": "2026-11-04T08:43:01.502792-05:00",
       "attempted": true,
       "configured_urls": [
         "https://grail.com/news-center/",
@@ -1810,7 +1832,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 363959,
         "sha256": "1e8bf7d0af4510f6a61a27c18e1d9125e7b645079ee34d50a61a91635bf93f05",
-        "elapsed_ms": 92,
+        "elapsed_ms": 137,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1853,8 +1875,8 @@
     {
       "company": "GRAIL",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:24.534446-05:00",
-      "finished_at": "2026-11-04T08:40:26.908887-05:00",
+      "started_at": "2026-11-04T08:43:01.502854-05:00",
+      "finished_at": "2026-11-04T08:43:03.870447-05:00",
       "attempted": true,
       "configured_urls": [
         "https://grail.gcs-web.com/news-events/press-releases",
@@ -1898,7 +1920,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 363959,
         "sha256": "1e8bf7d0af4510f6a61a27c18e1d9125e7b645079ee34d50a61a91635bf93f05",
-        "elapsed_ms": 103,
+        "elapsed_ms": 146,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -1941,8 +1963,8 @@
     {
       "company": "GRAIL",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:25.558004-05:00",
-      "finished_at": "2026-11-04T08:40:29.217625-05:00",
+      "started_at": "2026-11-04T08:43:01.775734-05:00",
+      "finished_at": "2026-11-04T08:43:05.115882-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001699031.json",
@@ -1994,8 +2016,8 @@
     {
       "company": "Tempus AI",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:25.655347-05:00",
-      "finished_at": "2026-11-04T08:40:25.808646-05:00",
+      "started_at": "2026-11-04T08:43:01.779453-05:00",
+      "finished_at": "2026-11-04T08:43:02.067266-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investors.tempus.com/events/default.aspx"
@@ -2016,7 +2038,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 130401,
         "sha256": "5610030d73bb4323db84e1b52bfdccf67c5021dceea35d066d6d34d9214b1e2f",
-        "elapsed_ms": 153,
+        "elapsed_ms": 287,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -2028,8 +2050,8 @@
     {
       "company": "Tempus AI",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:25.682206-05:00",
-      "finished_at": "2026-11-04T08:40:30.244939-05:00",
+      "started_at": "2026-11-04T08:43:01.782384-05:00",
+      "finished_at": "2026-11-04T08:43:06.217883-05:00",
       "attempted": true,
       "configured_urls": [
         "https://tempus.gcs-web.com/news-events/news-releases",
@@ -2091,8 +2113,8 @@
     {
       "company": "Tempus AI",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:25.808715-05:00",
-      "finished_at": "2026-11-04T08:40:30.163766-05:00",
+      "started_at": "2026-11-04T08:43:02.067326-05:00",
+      "finished_at": "2026-11-04T08:43:05.374707-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001717115.json",
@@ -2144,8 +2166,8 @@
     {
       "company": "Adaptive Biotechnologies",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:26.908944-05:00",
-      "finished_at": "2026-11-04T08:40:27.608696-05:00",
+      "started_at": "2026-11-04T08:43:03.309884-05:00",
+      "finished_at": "2026-11-04T08:43:03.382464-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.adaptivebiotech.com/",
@@ -2167,7 +2189,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 154396,
         "sha256": "5ead21e1900d353615f88f4377f81b773c336e2e7a00430f9aacd9940beef834",
-        "elapsed_ms": 699,
+        "elapsed_ms": 72,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -2179,8 +2201,8 @@
     {
       "company": "Adaptive Biotechnologies",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:27.289865-05:00",
-      "finished_at": "2026-11-04T08:40:29.568037-05:00",
+      "started_at": "2026-11-04T08:43:03.382519-05:00",
+      "finished_at": "2026-11-04T08:43:05.613522-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investors.adaptivebiotech.com/news-releases",
@@ -2226,7 +2248,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 154396,
         "sha256": "5ead21e1900d353615f88f4377f81b773c336e2e7a00430f9aacd9940beef834",
-        "elapsed_ms": 61,
+        "elapsed_ms": 43,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -2238,8 +2260,8 @@
     {
       "company": "Adaptive Biotechnologies",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:27.608755-05:00",
-      "finished_at": "2026-11-04T08:40:31.758499-05:00",
+      "started_at": "2026-11-04T08:43:03.870513-05:00",
+      "finished_at": "2026-11-04T08:43:07.155858-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001478320.json",
@@ -2291,8 +2313,8 @@
     {
       "company": "BillionToOne",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:28.038646-05:00",
-      "finished_at": "2026-11-04T08:40:28.155442-05:00",
+      "started_at": "2026-11-04T08:43:04.360348-05:00",
+      "finished_at": "2026-11-04T08:43:04.454244-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.billiontoone.com/news-media",
@@ -2312,7 +2334,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 101985,
         "sha256": "606adbda191aea40a55e364ca0e183b69a0d3736c30931485079e27db280190c",
-        "elapsed_ms": 116,
+        "elapsed_ms": 93,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -2363,8 +2385,8 @@
     {
       "company": "BillionToOne",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:28.155495-05:00",
-      "finished_at": "2026-11-04T08:40:28.214223-05:00",
+      "started_at": "2026-11-04T08:43:04.454298-05:00",
+      "finished_at": "2026-11-04T08:43:04.503227-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.billiontoone.com/news-media",
@@ -2386,7 +2408,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 101985,
         "sha256": "606adbda191aea40a55e364ca0e183b69a0d3736c30931485079e27db280190c",
-        "elapsed_ms": 58,
+        "elapsed_ms": 48,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -2437,8 +2459,8 @@
     {
       "company": "BillionToOne",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:28.214282-05:00",
-      "finished_at": "2026-11-04T08:40:30.457568-05:00",
+      "started_at": "2026-11-04T08:43:04.503267-05:00",
+      "finished_at": "2026-11-04T08:43:06.712611-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0002070849.json",
@@ -2479,8 +2501,8 @@
     {
       "company": "GeneDx",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:29.217703-05:00",
-      "finished_at": "2026-11-04T08:40:29.360702-05:00",
+      "started_at": "2026-11-04T08:43:05.115950-05:00",
+      "finished_at": "2026-11-04T08:43:05.264459-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.genedx.com/",
@@ -2502,7 +2524,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 568452,
         "sha256": "317c89d379ed24182aeade4232ac8e068079e4babc4e2a2635cedd15781c1611",
-        "elapsed_ms": 142,
+        "elapsed_ms": 148,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -2514,8 +2536,8 @@
     {
       "company": "GeneDx",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:29.360767-05:00",
-      "finished_at": "2026-11-04T08:40:31.607194-05:00",
+      "started_at": "2026-11-04T08:43:05.264526-05:00",
+      "finished_at": "2026-11-04T08:43:07.508570-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.genedx.com/news-events/news-releases",
@@ -2561,7 +2583,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 568452,
         "sha256": "317c89d379ed24182aeade4232ac8e068079e4babc4e2a2635cedd15781c1611",
-        "elapsed_ms": 97,
+        "elapsed_ms": 84,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -2573,8 +2595,8 @@
     {
       "company": "GeneDx",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:29.568099-05:00",
-      "finished_at": "2026-11-04T08:40:33.885700-05:00",
+      "started_at": "2026-11-04T08:43:05.374760-05:00",
+      "finished_at": "2026-11-04T08:43:08.633172-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001818331.json",
@@ -2626,8 +2648,8 @@
     {
       "company": "SOPHiA GENETICS",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:30.163824-05:00",
-      "finished_at": "2026-11-04T08:40:30.268890-05:00",
+      "started_at": "2026-11-04T08:43:05.613577-05:00",
+      "finished_at": "2026-11-04T08:43:05.787076-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.sophiagenetics.com/"
@@ -2645,8 +2667,8 @@
         "http_status": 200,
         "content_type": "text/html; charset=utf-8",
         "bytes": 57812,
-        "sha256": "8eea4e479685743be6fe5fdb8454dcd51e5ee153d27f539474550ae561a6ac52",
-        "elapsed_ms": 104,
+        "sha256": "a1bd25cb665df40885930e31f1b39efdd28599c73cf38f03da772e7195dd2ffc",
+        "elapsed_ms": 173,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -2691,8 +2713,8 @@
     {
       "company": "SOPHiA GENETICS",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:30.245023-05:00",
-      "finished_at": "2026-11-04T08:40:30.318405-05:00",
+      "started_at": "2026-11-04T08:43:05.787129-05:00",
+      "finished_at": "2026-11-04T08:43:05.833958-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.sophiagenetics.com/index.php?s=43",
@@ -2714,8 +2736,8 @@
         "http_status": 200,
         "content_type": "text/html; charset=utf-8",
         "bytes": 93132,
-        "sha256": "0b221a7e574c5bc59a8dc5acdadd92ae47d6c3027cceaa636578e59f1059fe48",
-        "elapsed_ms": 73,
+        "sha256": "00a52357aca586390a45f86e6a05116ca7af9739a7d20ba56a6520b69ebd28ac",
+        "elapsed_ms": 46,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -2752,8 +2774,8 @@
     {
       "company": "SOPHiA GENETICS",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:30.268962-05:00",
-      "finished_at": "2026-11-04T08:40:30.372649-05:00",
+      "started_at": "2026-11-04T08:43:05.834007-05:00",
+      "finished_at": "2026-11-04T08:43:05.880490-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.sophiagenetics.com/financials",
@@ -2773,8 +2795,8 @@
         "http_status": 200,
         "content_type": "text/html; charset=utf-8",
         "bytes": 60474,
-        "sha256": "ba13e8ad093245aa842ee4151665d72d2e8077e4709442434e969e498dee39f2",
-        "elapsed_ms": 103,
+        "sha256": "cf72c2c7ee962a3dfb5f225944304f9de8690a66c5b5e2ca80a0bbc97fdf4735",
+        "elapsed_ms": 46,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -2927,8 +2949,8 @@
     {
       "company": "Illumina",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:30.318464-05:00",
-      "finished_at": "2026-11-04T08:40:33.738288-05:00",
+      "started_at": "2026-11-04T08:43:05.880540-05:00",
+      "finished_at": "2026-11-04T08:43:09.070398-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investor.illumina.com/events-and-presentations",
@@ -2970,7 +2992,7 @@
         "content_type": "text/html;charset=utf-8",
         "bytes": 371477,
         "sha256": "4fa5e97e1f13821748fc02241f110d7d42fd5755a4ff539fc16ac65c189e4ced",
-        "elapsed_ms": 1171,
+        "elapsed_ms": 1032,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -3066,8 +3088,8 @@
     {
       "company": "Illumina",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:30.372706-05:00",
-      "finished_at": "2026-11-04T08:40:33.489613-05:00",
+      "started_at": "2026-11-04T08:43:06.217952-05:00",
+      "finished_at": "2026-11-04T08:43:09.236200-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investor.illumina.com/news-releases",
@@ -3111,7 +3133,7 @@
         "content_type": "text/html;charset=utf-8",
         "bytes": 371477,
         "sha256": "4fa5e97e1f13821748fc02241f110d7d42fd5755a4ff539fc16ac65c189e4ced",
-        "elapsed_ms": 938,
+        "elapsed_ms": 918,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -3207,8 +3229,8 @@
     {
       "company": "Illumina",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:30.457620-05:00",
-      "finished_at": "2026-11-04T08:40:32.634995-05:00",
+      "started_at": "2026-11-04T08:43:06.712690-05:00",
+      "finished_at": "2026-11-04T08:43:08.883545-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001110803.json",
@@ -3249,8 +3271,8 @@
     {
       "company": "PacBio",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:31.607258-05:00",
-      "finished_at": "2026-11-04T08:40:31.828821-05:00",
+      "started_at": "2026-11-04T08:43:07.155924-05:00",
+      "finished_at": "2026-11-04T08:43:07.397798-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.pacb.com/news/press-releases/",
@@ -3269,8 +3291,8 @@
         "http_status": 200,
         "content_type": "text/html; charset=utf-8",
         "bytes": 257551,
-        "sha256": "980b8ae17fac20a1bd7478d32b2329361f46e5c2afc2dcaf12a9ff60e0076389",
-        "elapsed_ms": 221,
+        "sha256": "17da77680d59ab74cb4c977160a1734fa69b438741e2065b87275d521c032710",
+        "elapsed_ms": 241,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -3332,8 +3354,8 @@
     {
       "company": "PacBio",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:31.758591-05:00",
-      "finished_at": "2026-11-04T08:40:34.334855-05:00",
+      "started_at": "2026-11-04T08:43:07.397862-05:00",
+      "finished_at": "2026-11-04T08:43:09.833433-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investor.pacificbiosciences.com/news-releases",
@@ -3376,8 +3398,8 @@
         "http_status": 200,
         "content_type": "text/html; charset=utf-8",
         "bytes": 257551,
-        "sha256": "c9646f584def166be08a1f7a83c76abc2306537417ab441a267558a64ae0a7d6",
-        "elapsed_ms": 230,
+        "sha256": "47f76bcb23e7f463bc6f3f266a6ed07ed3905f3b73fda844ba34c9c3c81a13ab",
+        "elapsed_ms": 231,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -3439,8 +3461,8 @@
     {
       "company": "PacBio",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:31.828885-05:00",
-      "finished_at": "2026-11-04T08:40:33.960536-05:00",
+      "started_at": "2026-11-04T08:43:07.508639-05:00",
+      "finished_at": "2026-11-04T08:43:09.628543-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001299130.json",
@@ -3481,8 +3503,8 @@
     {
       "company": "Oxford Nanopore Technologies",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:32.635047-05:00",
-      "finished_at": "2026-11-04T08:40:32.701892-05:00",
+      "started_at": "2026-11-04T08:43:08.633232-05:00",
+      "finished_at": "2026-11-04T08:43:08.735941-05:00",
       "attempted": true,
       "configured_urls": [
         "https://nanoporetech.com/about/investors/financial-calendar"
@@ -3500,8 +3522,8 @@
         "http_status": 200,
         "content_type": "text/html;charset=utf-8",
         "bytes": 323956,
-        "sha256": "f8bf1f4d5bb10ed5eb43f0af32a7447e7860d0926f60f34263e66cc87a5f8060",
-        "elapsed_ms": 66,
+        "sha256": "2930686742fa4477e9691203f154caa332a5d2a800978a05da9b31cceef65ab8",
+        "elapsed_ms": 102,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -3522,8 +3544,8 @@
     {
       "company": "Oxford Nanopore Technologies",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:32.701948-05:00",
-      "finished_at": "2026-11-04T08:40:32.823588-05:00",
+      "started_at": "2026-11-04T08:43:08.735996-05:00",
+      "finished_at": "2026-11-04T08:43:08.812178-05:00",
       "attempted": true,
       "configured_urls": [
         "https://nanoporetech.com/about/investors/reports",
@@ -3544,8 +3566,8 @@
         "http_status": 200,
         "content_type": "text/html;charset=utf-8",
         "bytes": 868704,
-        "sha256": "68800634095d63ef2af7f4cdc9816a362dfab9583ee2de2a63d9a06c46e8b2f3",
-        "elapsed_ms": 121,
+        "sha256": "3e9e5d02f3289f6c5d2906c0a654e5b68b07702b0c251d8359c9f6eb4a70b759",
+        "elapsed_ms": 76,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -3698,8 +3720,8 @@
     {
       "company": "Oxford Nanopore Technologies",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:32.823660-05:00",
-      "finished_at": "2026-11-04T08:40:32.880676-05:00",
+      "started_at": "2026-11-04T08:43:08.812256-05:00",
+      "finished_at": "2026-11-04T08:43:08.918121-05:00",
       "attempted": true,
       "configured_urls": [
         "https://nanoporetech.com/about/investors/reports"
@@ -3717,8 +3739,8 @@
         "http_status": 200,
         "content_type": "text/html;charset=utf-8",
         "bytes": 868704,
-        "sha256": "68800634095d63ef2af7f4cdc9816a362dfab9583ee2de2a63d9a06c46e8b2f3",
-        "elapsed_ms": 56,
+        "sha256": "3e9e5d02f3289f6c5d2906c0a654e5b68b07702b0c251d8359c9f6eb4a70b759",
+        "elapsed_ms": 105,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -3871,8 +3893,8 @@
     {
       "company": "Element Biosciences",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:32.880743-05:00",
-      "finished_at": "2026-11-04T08:40:33.013577-05:00",
+      "started_at": "2026-11-04T08:43:08.883586-05:00",
+      "finished_at": "2026-11-04T08:43:09.264842-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.elementbiosciences.com/news"
@@ -3893,7 +3915,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 119603,
         "sha256": "907af6e43cc59e66866c5736e2092d5da498ca6e974286f9807e1a982135b0c6",
-        "elapsed_ms": 132,
+        "elapsed_ms": 381,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -3918,8 +3940,8 @@
     {
       "company": "Element Biosciences",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:33.013638-05:00",
-      "finished_at": "2026-11-04T08:40:33.080109-05:00",
+      "started_at": "2026-11-04T08:43:08.918175-05:00",
+      "finished_at": "2026-11-04T08:43:09.254169-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.elementbiosciences.com/news"
@@ -3941,7 +3963,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 119603,
         "sha256": "907af6e43cc59e66866c5736e2092d5da498ca6e974286f9807e1a982135b0c6",
-        "elapsed_ms": 66,
+        "elapsed_ms": 335,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -3966,8 +3988,8 @@
     {
       "company": "Element Biosciences",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:33.080153-05:00",
-      "finished_at": "2026-11-04T08:40:33.163350-05:00",
+      "started_at": "2026-11-04T08:43:09.070475-05:00",
+      "finished_at": "2026-11-04T08:43:09.269199-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.elementbiosciences.com/news/element-biosciences-announces-upsized-series-e-to-accelerate-global-growth-across-ecosystem-of-genomic-multiomic-and-clinical-research-solutions"
@@ -3988,7 +4010,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 107489,
         "sha256": "0e7a5c788fdbf71731100bae0cc687c6e1e85e64abd88f5462e3afb3848fbe60",
-        "elapsed_ms": 83,
+        "elapsed_ms": 198,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [],
@@ -4002,68 +4024,80 @@
     {
       "company": "MGI Tech",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:33.163416-05:00",
-      "finished_at": "2026-11-04T08:40:58.554595-05:00",
+      "started_at": "2026-11-04T08:43:09.236287-05:00",
+      "finished_at": "2026-11-04T08:43:11.120097-05:00",
       "attempted": true,
       "configured_urls": [
+        "https://www.mgi-tech.com/Investor/index",
         "https://www.sse.com.cn/disclosure/listedinfo/regular/index.shtml?productId=688114"
       ],
-      "attempt_errors": [
-        {
-          "url": "https://www.sse.com.cn/disclosure/listedinfo/regular/index.shtml?productId=688114",
-          "attempt": 1,
-          "error": "<urlopen error [Errno 101] Network is unreachable>"
-        },
-        {
-          "url": "https://www.sse.com.cn/disclosure/listedinfo/regular/index.shtml?productId=688114",
-          "attempt": 2,
-          "error": "<urlopen error [Errno 101] Network is unreachable>"
-        }
-      ],
-      "http_retrieval": "failed",
+      "attempt_errors": [],
+      "http_retrieval": "success",
       "human_announcement_review_completed": false,
       "seven_day_newsroom_review_completed": false,
       "source_category_verified": false,
       "source_quality_warnings": [
-        "All configured URLs failed after retries; inspect attempt_errors"
+        "No investor-relevant anchor titles extracted; manual inspection needed"
       ],
-      "retrieved": null
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.mgi-tech.com/Investor/index",
+        "final_url": "https://www.mgi-tech.com/Investor/index",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 271795,
+        "sha256": "d0ffa843f0b337594d2b69365e6c91a05fa5fe52c686d64615bd1b3299d39597",
+        "elapsed_ms": 1883,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 8417,
+        "links_seen": 584
+      }
     },
     {
       "company": "MGI Tech",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:33.489674-05:00",
-      "finished_at": "2026-11-04T08:40:58.554810-05:00",
+      "started_at": "2026-11-04T08:43:09.254232-05:00",
+      "finished_at": "2026-11-04T08:43:10.525390-05:00",
       "attempted": true,
       "configured_urls": [
+        "https://www.mgi-tech.com/Investor/index",
+        "https://global-mgitech.com/media-hub/media-coverage/",
         "https://www.sse.com.cn/disclosure/listedinfo/announcement/"
       ],
-      "attempt_errors": [
-        {
-          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/",
-          "attempt": 1,
-          "error": "<urlopen error [Errno 101] Network is unreachable>"
-        },
-        {
-          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/",
-          "attempt": 2,
-          "error": "<urlopen error [Errno 101] Network is unreachable>"
-        }
-      ],
-      "http_retrieval": "failed",
+      "attempt_errors": [],
+      "http_retrieval": "success",
       "human_announcement_review_completed": false,
       "seven_day_newsroom_review_completed": false,
       "source_category_verified": false,
       "source_quality_warnings": [
-        "All configured URLs failed after retries; inspect attempt_errors"
+        "No investor-relevant anchor titles extracted; manual inspection needed",
+        "HTTP retrieval alone cannot establish a complete last-seven-day newsroom review"
       ],
-      "retrieved": null
+      "retrieved": {
+        "outcome": "fetched",
+        "url": "https://www.mgi-tech.com/Investor/index",
+        "final_url": "https://www.mgi-tech.com/Investor/index",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 271795,
+        "sha256": "d0ffa843f0b337594d2b69365e6c91a05fa5fe52c686d64615bd1b3299d39597",
+        "elapsed_ms": 1271,
+        "is_html_or_xml": true,
+        "attempts": 1,
+        "candidate_links": [],
+        "date_mentions": [],
+        "text_chars": 8417,
+        "links_seen": 584
+      }
     },
     {
       "company": "MGI Tech",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:33.738350-05:00",
-      "finished_at": "2026-11-04T08:40:35.123411-05:00",
+      "started_at": "2026-11-04T08:43:09.264889-05:00",
+      "finished_at": "2026-11-04T08:43:10.847331-05:00",
       "attempted": true,
       "configured_urls": [
         "https://static.cninfo.com.cn/finalpage/2026-10-24/1225620906.PDF"
@@ -4086,7 +4120,7 @@
         "content_type": "application/pdf",
         "bytes": 207448,
         "sha256": "bbd19f5b958a68b4a59e350c65e9eb6e80715fe7048ee5ed40e6debc0f08ab5f",
-        "elapsed_ms": 1385,
+        "elapsed_ms": 1582,
         "is_html_or_xml": false,
         "attempts": 1,
         "candidate_links": [],
@@ -4098,8 +4132,8 @@
     {
       "company": "Thermo Fisher Scientific",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:33.885827-05:00",
-      "finished_at": "2026-11-04T08:40:34.067472-05:00",
+      "started_at": "2026-11-04T08:43:09.269248-05:00",
+      "finished_at": "2026-11-04T08:43:09.443140-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
@@ -4120,7 +4154,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 120907,
         "sha256": "c7d70af8f74f84297b27a34b9762a6dd065ec5e7ea1e9517ef389ee16d08c8c0",
-        "elapsed_ms": 181,
+        "elapsed_ms": 173,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -4145,8 +4179,8 @@
     {
       "company": "Thermo Fisher Scientific",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:33.960587-05:00",
-      "finished_at": "2026-11-04T08:40:34.056099-05:00",
+      "started_at": "2026-11-04T08:43:09.443206-05:00",
+      "finished_at": "2026-11-04T08:43:09.703039-05:00",
       "attempted": true,
       "configured_urls": [
         "https://ir.thermofisher.com/investors/news-events/news/default.aspx",
@@ -4168,7 +4202,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 73486,
         "sha256": "2fd2461c4d8b613c213b4d337ff2d2594cb1f6810a87a4f812225310e1c03397",
-        "elapsed_ms": 95,
+        "elapsed_ms": 259,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -4193,8 +4227,8 @@
     {
       "company": "Thermo Fisher Scientific",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:34.056181-05:00",
-      "finished_at": "2026-11-04T08:40:35.654919-05:00",
+      "started_at": "2026-11-04T08:43:09.628593-05:00",
+      "finished_at": "2026-11-04T08:43:10.890578-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude",
@@ -4225,7 +4259,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 460643,
         "sha256": "6f5ad5cf2cfd529bb054b2f044f2f7419022c55001e8ae3dfc04693b976596b3",
-        "elapsed_ms": 206,
+        "elapsed_ms": 210,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -4253,8 +4287,8 @@
     {
       "company": "10x Genomics",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:34.067529-05:00",
-      "finished_at": "2026-11-04T08:40:34.300739-05:00",
+      "started_at": "2026-11-04T08:43:09.703103-05:00",
+      "finished_at": "2026-11-04T08:43:09.896019-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investors.10xgenomics.com/events-and-presentations/default.aspx"
@@ -4273,7 +4307,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 100717,
         "sha256": "109a2ee51b25f9fffa9bc66cbd44a7844ce7cfc741598f46fae7c4000b307cf1",
-        "elapsed_ms": 233,
+        "elapsed_ms": 192,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -4294,8 +4328,8 @@
     {
       "company": "10x Genomics",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:34.300794-05:00",
-      "finished_at": "2026-11-04T08:40:35.661059-05:00",
+      "started_at": "2026-11-04T08:43:09.833508-05:00",
+      "finished_at": "2026-11-04T08:43:11.440508-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investors.10xgenomics.com/news-releases/default.aspx",
@@ -4329,7 +4363,7 @@
         "content_type": "text/html; charset=utf-8",
         "bytes": 59582,
         "sha256": "127fa8b4f9e62dbd1958b6d7768aee71f7839ec13824bd8fa6c3c17baa21aa66",
-        "elapsed_ms": 163,
+        "elapsed_ms": 395,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -4350,8 +4384,8 @@
     {
       "company": "10x Genomics",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:34.334915-05:00",
-      "finished_at": "2026-11-04T08:40:37.593913-05:00",
+      "started_at": "2026-11-04T08:43:09.896074-05:00",
+      "finished_at": "2026-11-04T08:43:13.200396-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001770787.json",
@@ -4403,8 +4437,8 @@
     {
       "company": "Twist Bioscience",
       "category": "official_ir_events_webcasts",
-      "started_at": "2026-11-04T08:40:35.123509-05:00",
-      "finished_at": "2026-11-04T08:40:35.350216-05:00",
+      "started_at": "2026-11-04T08:43:10.525454-05:00",
+      "finished_at": "2026-11-04T08:43:10.733554-05:00",
       "attempted": true,
       "configured_urls": [
         "https://www.twistbioscience.com/",
@@ -4423,8 +4457,8 @@
         "http_status": 200,
         "content_type": "text/html;charset=utf-8",
         "bytes": 305945,
-        "sha256": "55c6312ac9f9d55462e9b59473d2f579dd453da05e4d07aba291f67cb7282e9b",
-        "elapsed_ms": 226,
+        "sha256": "33e3413e4bb7765d04ec9ea367208a3766220fe6ebc2071301eeaa440ee57ee6",
+        "elapsed_ms": 207,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -4445,8 +4479,8 @@
     {
       "company": "Twist Bioscience",
       "category": "corporate_ir_press_releases_investor_conferences",
-      "started_at": "2026-11-04T08:40:35.350276-05:00",
-      "finished_at": "2026-11-04T08:40:36.620172-05:00",
+      "started_at": "2026-11-04T08:43:10.733619-05:00",
+      "finished_at": "2026-11-04T08:43:11.912146-05:00",
       "attempted": true,
       "configured_urls": [
         "https://investors.twistbioscience.com/news-releases",
@@ -4478,9 +4512,9 @@
         "final_url": "https://www.twistbioscience.com/",
         "http_status": 200,
         "content_type": "text/html;charset=utf-8",
-        "bytes": 305941,
-        "sha256": "063956325563568cf3c5e72a738b51f245efe8ad376ff6f5e2255b649676fe3b",
-        "elapsed_ms": 148,
+        "bytes": 305945,
+        "sha256": "369431b21717a70bbbabe1281fc3865661314a63947b0464169692b2850d5e8a",
+        "elapsed_ms": 47,
         "is_html_or_xml": true,
         "attempts": 1,
         "candidate_links": [
@@ -4501,8 +4535,8 @@
     {
       "company": "Twist Bioscience",
       "category": "official_filings_financial_reports",
-      "started_at": "2026-11-04T08:40:35.654984-05:00",
-      "finished_at": "2026-11-04T08:40:37.800921-05:00",
+      "started_at": "2026-11-04T08:43:10.847415-05:00",
+      "finished_at": "2026-11-04T08:43:13.022328-05:00",
       "attempted": true,
       "configured_urls": [
         "https://data.sec.gov/submissions/CIK0001581280.json",
