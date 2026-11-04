@@ -39,18 +39,28 @@ def validate(path):
     for check in checks:
         name = f"{check['company']}/{check['category']}"
         status = check.get("status")
-        if status not in STATUSES or check.get("attempted") is not True:
-            raise ValueError(f"{name}: invalid status or missing attempt")
-        stamp = check.get("checked_at", "")
-        try:
-            parsed = datetime.fromisoformat(stamp.replace("Z", "+00:00"))
-            if parsed.utcoffset() is None:
-                raise ValueError("timestamp lacks offset")
-        except (ValueError, TypeError) as exc:
-            raise ValueError(f"{name}: invalid checked_at {stamp}") from exc
+        if status not in STATUSES or not isinstance(check.get("attempted"), bool):
+            raise ValueError(f"{name}: invalid status or attempted flag")
+        if status in ("verified", "not_applicable") and not check["attempted"]:
+            raise ValueError(f"{name}: verified/N/A requires a fresh check")
+        stamp = check.get("checked_at")
+        if check["attempted"]:
+            try:
+                parsed = datetime.fromisoformat(stamp.replace("Z", "+00:00"))
+                if parsed.utcoffset() is None:
+                    raise ValueError("timestamp lacks offset")
+            except (ValueError, TypeError, AttributeError) as exc:
+                raise ValueError(f"{name}: invalid checked_at {stamp}") from exc
+        elif stamp is not None:
+            raise ValueError(f"{name}: unattempted check cannot claim a fresh timestamp")
         url = check.get("source_url", "")
-        attempts = check.get("attempted_urls", [])
-        if not url.startswith("https://") or not isinstance(attempts, list) or url not in attempts:
+        attempts = check.get("attempted_urls")
+        if not isinstance(url, str) or not url.startswith("https://"):
+            raise ValueError(f"{name}: missing source URL")
+        if attempts is not None and (not isinstance(attempts, list) or
+                                     not all(isinstance(u, str) and u.startswith("https://") for u in attempts)):
+            raise ValueError(f"{name}: invalid attempted URLs")
+        if attempts and check["attempted"] and url not in attempts:
             raise ValueError(f"{name}: source URL missing from attempted URLs")
         if status == "verified":
             evidence = check.get("evidence_urls", [])
