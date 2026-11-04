@@ -203,7 +203,7 @@ def do_check(check, overrides):
         links = bool(selected.get("candidate_links") or selected.get("xml_relevant_titles"))
         filings = bool(selected.get("filing_records"))
         if cat == "official_filings_financial_reports":
-            result["content_candidate_for_category"] = filings or (signals.get("filings") and dated)
+            result["content_candidate_for_category"] = bool(filings or (signals.get("filings") and dated))
         elif cat == "official_ir_events_webcasts":
             result["content_candidate_for_category"] = bool(signals.get("events") and dated)
         else:
