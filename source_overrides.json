@@ -80,8 +80,8 @@
       "https://www.sec.gov/edgar/browse/?CIK=1818331&owner=exclude"
     ],
     "SOPHiA GENETICS|official_filings_financial_reports": [
-      "https://www.sec.gov/edgar/browse/?CIK=SOPH&owner=exclude",
-      "https://ir.sophiagenetics.com/"
+      "https://ir.sophiagenetics.com/financials",
+      "https://www.sec.gov/edgar/browse/?CIK=SOPH&owner=exclude"
     ],
     "Illumina|official_ir_events_webcasts": [
       "https://investor.illumina.com/events-and-presentations",
@@ -139,6 +139,10 @@
     ],
     "BillionToOne|corporate_ir_press_releases_investor_conferences": [
       "https://www.billiontoone.com/news-media"
+    ],
+    "SOPHiA GENETICS|corporate_ir_press_releases_investor_conferences": [
+      "https://ir.sophiagenetics.com/index.php?s=43",
+      "https://ir.sophiagenetics.com/"
     ]
   }
 }
