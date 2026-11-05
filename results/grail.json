@@ -1,5 +1,54 @@
 [
-  {"company":"GRAIL","quarter":4,"fiscal_year":2025,"status":"published","results_url":"https://investors.grail.com/news-releases/news-release-details/grail-reports-fourth-quarter-and-full-year-2025-financial","lines":["Revenue was $43.6 million, up 14% year over year; U.S. Galleri revenue was $41.3 million, up 31%.","GAAP net loss was $99.2 million.","Adjusted gross profit was $23.1 million and adjusted EBITDA loss was $71.8 million.","Cash, cash equivalents and short-term marketable securities were approximately $904.4 million at year end."]},
-  {"company":"GRAIL","quarter":1,"fiscal_year":2026,"status":"published","results_url":"https://investors.grail.com/news-releases/news-release-details/grail-reports-first-quarter-2026-financial-results","lines":["Revenue was $40.8 million, up 28% year over year; Galleri revenue was $39.8 million, up 37%.","More than 56,000 Galleri tests were sold, up approximately 50% year over year.","GAAP net loss was $93.2 million; adjusted gross profit was $19.7 million and adjusted EBITDA loss was $79.9 million.","Cash, cash equivalents and short-term marketable securities were approximately $823.1 million at quarter end."]},
-  {"company":"GRAIL","quarter":2,"fiscal_year":2026,"status":"published","results_url":"https://investors.grail.com/news-releases/news-release-details/grail-reports-second-quarter-2026-financial-results","lines":["Total revenue was $44.7 million, up 26% year over year; Galleri revenue was $42.6 million, up 24%.","Galleri test volume exceeded 61,000, up 35% year over year; first-half Galleri volume exceeded 117,000, up 42%.","GAAP net loss was $110.2 million; adjusted gross profit was $21.6 million and adjusted EBITDA loss was $90.3 million.","Cash, cash equivalents and short-term marketable securities were $861.6 million at June 30, 2026; management continued to anticipate an FDA advisory committee for Galleri in the fall."]}
+  {
+    "company": "GRAIL",
+    "quarter": 4,
+    "fiscal_year": 2025,
+    "status": "published",
+    "results_url": "https://investors.grail.com/news-releases/news-release-details/grail-reports-fourth-quarter-and-full-year-2025-financial",
+    "lines": [
+      "Revenue was $43.6 million, up 14% year over year; U.S. Galleri revenue was $41.3 million, up 31%.",
+      "GAAP net loss was $99.2 million.",
+      "Adjusted gross profit was $23.1 million and adjusted EBITDA loss was $71.8 million.",
+      "Cash, cash equivalents and short-term marketable securities were approximately $904.4 million at year end."
+    ]
+  },
+  {
+    "company": "GRAIL",
+    "quarter": 1,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investors.grail.com/news-releases/news-release-details/grail-reports-first-quarter-2026-financial-results",
+    "lines": [
+      "Revenue was $40.8 million, up 28% year over year; Galleri revenue was $39.8 million, up 37%.",
+      "More than 56,000 Galleri tests were sold, up approximately 50% year over year.",
+      "GAAP net loss was $93.2 million; adjusted gross profit was $19.7 million and adjusted EBITDA loss was $79.9 million.",
+      "Cash, cash equivalents and short-term marketable securities were approximately $823.1 million at quarter end."
+    ]
+  },
+  {
+    "company": "GRAIL",
+    "quarter": 2,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investors.grail.com/news-releases/news-release-details/grail-reports-second-quarter-2026-financial-results",
+    "lines": [
+      "Total revenue was $44.7 million, up 26% year over year; Galleri revenue was $42.6 million, up 24%.",
+      "Galleri test volume exceeded 61,000, up 35% year over year; first-half Galleri volume exceeded 117,000, up 42%.",
+      "GAAP net loss was $110.2 million; adjusted gross profit was $21.6 million and adjusted EBITDA loss was $90.3 million.",
+      "Cash, cash equivalents and short-term marketable securities were $861.6 million at June 30, 2026; management continued to anticipate an FDA advisory committee for Galleri in the fall."
+    ]
+  },
+  {
+    "company": "GRAIL",
+    "quarter": 3,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investors.grail.com/news-releases/news-release-details/grail-reports-third-quarter-2026-financial-results",
+    "lines": [
+      "Q3 revenue $37.5 million (+4% year over year); Galleri revenue $37.3 million (+14%).",
+      "Galleri Q3 test volume more than 56,000 (+24%); first-nine-month volume more than 174,000 (+36%).",
+      "GAAP net loss $103.6 million; adjusted EBITDA loss $92.6 million; adjusted gross profit $15.9 million.",
+      "Cash, cash equivalents and short-term marketable securities $788.7 million as of September 30, 2026."
+    ]
+  }
 ]
