@@ -9,9 +9,9 @@ on:
       - ".github/workflows/probe-sources.yml"
   workflow_dispatch:
   schedule:
-    # GitHub schedules are UTC; these two slots cover 08:00 Eastern in DST and standard time.
-    - cron: "0 12 * * *"
-    - cron: "0 13 * * *"
+    # Collect evidence before the 08:00 ET ChatGPT audit (DST and standard time).
+    - cron: "11 10 * * *"
+    - cron: "11 11 * * *"
 
 permissions:
   contents: write
@@ -28,9 +28,9 @@ jobs:
         id: schedule
         shell: bash
         run: |
-          if [[ "${{ github.event_name }}" == "schedule" && "$(TZ=America/New_York date +%H)" != "08" ]]; then
+          if [[ "${{ github.event_name }}" == "schedule" && "$(TZ=America/New_York date +%H)" != "06" ]]; then
             echo "run_probe=false" >> "$GITHUB_OUTPUT"
-            echo "Skipping second UTC slot outside 08:00 Eastern"
+            echo "Skipping UTC slot outside 06:00 Eastern"
           else
             echo "run_probe=true" >> "$GITHUB_OUTPUT"
           fi
