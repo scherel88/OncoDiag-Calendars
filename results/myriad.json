@@ -1,5 +1,54 @@
 [
-  {"company":"Myriad","quarter":4,"fiscal_year":2025,"status":"published","results_url":"https://investor.myriad.com/news-releases/news-release-detail/26976/","lines":["Revenue was $209.8 million, essentially flat year over year; excluding an $8.1 million headwind, revenue grew about 4%.","Gross margin was 70.0%.","GAAP net loss was $7.9 million, or $0.08 per share; adjusted EPS was $0.04 and adjusted EBITDA was $14.3 million.","The company reiterated its full-year 2026 financial guidance."]},
-  {"company":"Myriad","quarter":1,"fiscal_year":2026,"status":"published","results_url":"https://investor.myriad.com/news-releases/news-release-detail/27246/","lines":["Revenue was $200.4 million, up 2% year over year.","Cancer Care Continuum test volume grew 13% and Mental Health 7%, while Prenatal Health volume declined 12%.","Gross margin was 68.7%; GAAP net loss was $34.1 million, adjusted loss was $0.09 per share and adjusted EBITDA was negative $4.5 million.","The company reiterated its full-year 2026 guidance."]},
-  {"company":"Myriad","quarter":2,"fiscal_year":2026,"status":"published","start_override":"2026-07-30T16:30:00-04:00","results_url":"https://investor.myriad.com/news-releases/news-release-detail/27481/","lines":["Revenue was $190.7 million, down 11% year over year; total test volume was 379,000, down 1%.","Cancer Care Continuum volume grew 6%, Prenatal Health declined 9%, and Mental Health grew 4%.","Gross margin was 66.6%; GAAP net loss was $43.2 million, or $0.46 per share.","2026 revenue guidance was revised to $770-$790 million with adjusted gross margin of 66%-67%; prior adjusted EBITDA guidance was suspended."]}
+  {
+    "company": "Myriad",
+    "quarter": 4,
+    "fiscal_year": 2025,
+    "status": "published",
+    "results_url": "https://investor.myriad.com/news-releases/news-release-detail/26976/",
+    "lines": [
+      "Revenue was $209.8 million, essentially flat year over year; excluding an $8.1 million headwind, revenue grew about 4%.",
+      "Gross margin was 70.0%.",
+      "GAAP net loss was $7.9 million, or $0.08 per share; adjusted EPS was $0.04 and adjusted EBITDA was $14.3 million.",
+      "The company reiterated its full-year 2026 financial guidance."
+    ]
+  },
+  {
+    "company": "Myriad",
+    "quarter": 1,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investor.myriad.com/news-releases/news-release-detail/27246/",
+    "lines": [
+      "Revenue was $200.4 million, up 2% year over year.",
+      "Cancer Care Continuum test volume grew 13% and Mental Health 7%, while Prenatal Health volume declined 12%.",
+      "Gross margin was 68.7%; GAAP net loss was $34.1 million, adjusted loss was $0.09 per share and adjusted EBITDA was negative $4.5 million.",
+      "The company reiterated its full-year 2026 guidance."
+    ]
+  },
+  {
+    "company": "Myriad",
+    "quarter": 2,
+    "fiscal_year": 2026,
+    "status": "published",
+    "start_override": "2026-07-30T16:30:00-04:00",
+    "results_url": "https://investor.myriad.com/news-releases/news-release-detail/27481/",
+    "lines": [
+      "Revenue was $190.7 million, down 11% year over year; total test volume was 379,000, down 1%.",
+      "Cancer Care Continuum volume grew 6%, Prenatal Health declined 9%, and Mental Health grew 4%.",
+      "Gross margin was 66.6%; GAAP net loss was $43.2 million, or $0.46 per share.",
+      "2026 revenue guidance was revised to $770-$790 million with adjusted gross margin of 66%-67%; prior adjusted EBITDA guidance was suspended."
+    ]
+  },
+  {
+    "company": "Myriad",
+    "quarter": 3,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investor.myriad.com/news-releases/news-release-detail/27666/",
+    "lines": [
+      "Q3 revenue approximately $202.7 million; Cancer Care Continuum average revenue per test improved sequentially.",
+      "Raised midpoint of 2026 revenue guidance to $780-$790 million, with Cancer Care Continuum and Mental Health $620-$630 million and Prenatal Health approximately $160 million.",
+      "Announced definitive agreement to sell Prenatal Health business; transaction expected to close by early 2027."
+    ]
+  }
 ]
