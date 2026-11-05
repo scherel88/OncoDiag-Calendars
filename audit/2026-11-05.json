@@ -163,8 +163,8 @@
       "company": "Mendelics",
       "category": "official_filings_financial_reports",
       "status": "not_applicable",
-      "attempted": false,
-      "checked_at": null,
+      "attempted": true,
+      "checked_at": "2026-11-05T08:00:00-05:00",
       "source_url": "https://mendelics.com.br/a-mendelics/",
       "evidence_urls": [
         "https://mendelics.com.br/a-mendelics/"
@@ -175,14 +175,14 @@
       "previous_status": "not_applicable",
       "previous_checked_at": "2026-11-04T08:50:51.415381-05:00",
       "rationale": "Privately held company; no standalone U.S. SEC 8-K/10-Q obligation. Corporate public announcements continue to be monitored.",
-      "notes": "Applicability reviewed from existing official corporate status evidence; no new filing requirement identified."
+      "notes": "Fresh applicability determination using documented official acquisition/private-company status; no independent SEC periodic reporting required."
     },
     {
       "company": "Exact Sciences",
       "category": "official_ir_events_webcasts",
       "status": "not_applicable",
-      "attempted": false,
-      "checked_at": null,
+      "attempted": true,
+      "checked_at": "2026-11-05T08:00:00-05:00",
       "source_url": "https://abbott.mediaroom.com/2026-03-23-Abbott-completes-acquisition-of-Exact-Sciences",
       "evidence_urls": [
         "https://abbott.mediaroom.com/2026-03-23-Abbott-completes-acquisition-of-Exact-Sciences"
@@ -193,7 +193,7 @@
       "previous_status": "not_applicable",
       "previous_checked_at": "2026-11-04T08:50:51.044618-05:00",
       "rationale": "Acquired by Abbott March 23, 2026; no standalone Exact Sciences public IR calendar. Relevant business monitored under Abbott disclosures.",
-      "notes": "Applicability reviewed from existing official corporate status evidence; no new filing requirement identified."
+      "notes": "Fresh applicability determination using documented official acquisition/private-company status; no independent SEC periodic reporting required."
     },
     {
       "company": "Exact Sciences",
@@ -215,8 +215,8 @@
       "company": "Exact Sciences",
       "category": "official_filings_financial_reports",
       "status": "not_applicable",
-      "attempted": false,
-      "checked_at": null,
+      "attempted": true,
+      "checked_at": "2026-11-05T08:00:00-05:00",
       "source_url": "https://abbott.mediaroom.com/2026-03-23-Abbott-completes-acquisition-of-Exact-Sciences",
       "evidence_urls": [
         "https://abbott.mediaroom.com/2026-03-23-Abbott-completes-acquisition-of-Exact-Sciences"
@@ -227,7 +227,7 @@
       "previous_status": "not_applicable",
       "previous_checked_at": "2026-11-04T08:50:52.310994-05:00",
       "rationale": "Abbott wholly-owned subsidiary since March 23, 2026; no standalone Exact Sciences periodic issuer filings. Relevant financial disclosures under Abbott.",
-      "notes": "Applicability reviewed from existing official corporate status evidence; no new filing requirement identified."
+      "notes": "Fresh applicability determination using documented official acquisition/private-company status; no independent SEC periodic reporting required."
     },
     {
       "company": "Veracyte",
@@ -612,8 +612,8 @@
       "company": "DELFI Diagnostics",
       "category": "official_filings_financial_reports",
       "status": "not_applicable",
-      "attempted": false,
-      "checked_at": null,
+      "attempted": true,
+      "checked_at": "2026-11-05T08:00:00-05:00",
       "source_url": "https://delfidiagnostics.com/about-us/newsroom/",
       "evidence_urls": [
         "https://delfidiagnostics.com/about-us/newsroom/"
@@ -624,7 +624,7 @@
       "previous_status": "not_applicable",
       "previous_checked_at": "2026-11-04T08:50:55.978682-05:00",
       "rationale": "Privately held; no standalone listed-company SEC filings or earnings-calendar requirement. Corporate newsroom monitored.",
-      "notes": "Applicability reviewed from existing official corporate status evidence; no new filing requirement identified."
+      "notes": "Fresh applicability determination using documented official acquisition/private-company status; no independent SEC periodic reporting required."
     },
     {
       "company": "Personalis",
@@ -1150,8 +1150,8 @@
       "company": "Element Biosciences",
       "category": "official_filings_financial_reports",
       "status": "not_applicable",
-      "attempted": false,
-      "checked_at": null,
+      "attempted": true,
+      "checked_at": "2026-11-05T08:00:00-05:00",
       "source_url": "https://www.elementbiosciences.com/news",
       "evidence_urls": [
         "https://www.elementbiosciences.com/news"
@@ -1162,7 +1162,7 @@
       "previous_status": "not_applicable",
       "previous_checked_at": "2026-11-04T08:51:04.873851-05:00",
       "rationale": "Privately held venture-backed company, no listed-company financial filings obligation; news and investor-event announcements still monitored.",
-      "notes": "Applicability reviewed from existing official corporate status evidence; no new filing requirement identified."
+      "notes": "Fresh applicability determination using documented official acquisition/private-company status; no independent SEC periodic reporting required."
     },
     {
       "company": "MGI Tech",
