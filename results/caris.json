@@ -1,5 +1,54 @@
 [
-  {"company":"Caris","quarter":4,"fiscal_year":2025,"status":"published","results_url":"https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-fourth-quarter-and-full-year-2025","lines":["Revenue was $292.9 million, up 125% year over year.","Caris completed about 52,700 clinical therapy-selection cases, up about 20%, and reported a 75% gross margin.","Net income was $82.0 million; adjusted EBITDA was $106.1 million and free cash flow was $39.7 million.","2026 revenue outlook was $1.00-$1.02 billion, with clinical therapy-selection volume expected to grow about 20%."]},
-  {"company":"Caris","quarter":1,"fiscal_year":2026,"status":"published","results_url":"https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-first-quarter-2026-financial-results","lines":["Revenue was $216.2 million, up 79% year over year; molecular profiling services revenue was $210.8 million.","Caris completed about 52,800 clinical therapy-selection cases, up about 15%.","Gross margin was 65%, up from 47% a year earlier; GAAP net loss was $0.5 million.","Management attributed growth primarily to higher clinical case volume and improved average selling prices."]},
-  {"company":"Caris","quarter":2,"fiscal_year":2026,"status":"published","results_url":"https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-second-quarter-2026-financial","lines":["Revenue was $263.7 million, up 45% year over year.","Caris completed about 59,200 clinical therapy-selection cases, up about 18%, and reported a 68% gross margin.","GAAP net loss was $0.6 million; adjusted EBITDA was $55.7 million and free cash flow was $6.4 million.","2026 revenue guidance was raised to $1.03-$1.04 billion; clinical therapy-selection volume growth remained about 20%."]}
+  {
+    "company": "Caris",
+    "quarter": 4,
+    "fiscal_year": 2025,
+    "status": "published",
+    "results_url": "https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-fourth-quarter-and-full-year-2025",
+    "lines": [
+      "Revenue was $292.9 million, up 125% year over year.",
+      "Caris completed about 52,700 clinical therapy-selection cases, up about 20%, and reported a 75% gross margin.",
+      "Net income was $82.0 million; adjusted EBITDA was $106.1 million and free cash flow was $39.7 million.",
+      "2026 revenue outlook was $1.00-$1.02 billion, with clinical therapy-selection volume expected to grow about 20%."
+    ]
+  },
+  {
+    "company": "Caris",
+    "quarter": 1,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-first-quarter-2026-financial-results",
+    "lines": [
+      "Revenue was $216.2 million, up 79% year over year; molecular profiling services revenue was $210.8 million.",
+      "Caris completed about 52,800 clinical therapy-selection cases, up about 15%.",
+      "Gross margin was 65%, up from 47% a year earlier; GAAP net loss was $0.5 million.",
+      "Management attributed growth primarily to higher clinical case volume and improved average selling prices."
+    ]
+  },
+  {
+    "company": "Caris",
+    "quarter": 2,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-second-quarter-2026-financial",
+    "lines": [
+      "Revenue was $263.7 million, up 45% year over year.",
+      "Caris completed about 59,200 clinical therapy-selection cases, up about 18%, and reported a 68% gross margin.",
+      "GAAP net loss was $0.6 million; adjusted EBITDA was $55.7 million and free cash flow was $6.4 million.",
+      "2026 revenue guidance was raised to $1.03-$1.04 billion; clinical therapy-selection volume growth remained about 20%."
+    ]
+  },
+  {
+    "company": "Caris",
+    "quarter": 3,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-third-quarter-2026-financial-results",
+    "lines": [
+      "Q3 revenue $275.4 million (+27% year over year); molecular profiling services revenue $262.7 million.",
+      "Approximately 61,500 clinical cases (+21%) and over 358,000 oncology tests; gross margin 66%.",
+      "GAAP net income $15.3 million; adjusted EBITDA $44.4 million; free cash flow negative $39.7 million.",
+      "2026 revenue guidance increased to $1.04-$1.05 billion; Caris Confirm WGS tumor-informed MRD targeted for launch before year-end 2026."
+    ]
+  }
 ]
