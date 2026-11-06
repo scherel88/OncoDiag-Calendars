@@ -1,5 +1,55 @@
 [
-  {"company":"Natera","quarter":4,"fiscal_year":2025,"status":"published","results_url":"https://investor.natera.com/financials/quarterly-results/default.aspx","lines":["Revenue was $665.5 million, up 39.8% year over year.","Gross margin was 66.9%; approximately 923,600 tests were processed, up 16.5%.","Oncology volume was approximately 233,300 tests, up 54.7%; full-year cash inflow was $107.6 million.","2026 guidance called for revenue of $2.62-$2.70 billion, gross margin of 63%-65%, and positive net cash inflow."]},
-  {"company":"Natera","quarter":1,"fiscal_year":2026,"status":"published","results_url":"https://investor.natera.com/financials/quarterly-results/default.aspx","lines":["Revenue was $696.6 million, up 38.8% year over year.","Gross margin was 64.7%; approximately 1,013,600 tests were processed, up 18.5%.","Oncology volume was approximately 258,900 tests, up 54.4%; cash inflow was $11.8 million.","2026 revenue guidance was raised to $2.74-$2.82 billion."]},
-  {"company":"Natera","quarter":2,"fiscal_year":2026,"status":"published","results_url":"https://investor.natera.com/news/news-details/2026/Natera-Reports-Second-Quarter-2026-Financial-Results/default.aspx","lines":["Revenue was $752.8 million, up 37.7% year over year.","Approximately 1,043,900 tests were processed, up 22.4% year over year; oncology volume was approximately 296,700 tests, up 57.2%.","Gross margin was 64.5%; GAAP net loss was $67.0 million.","2026 revenue guidance was raised to $2.85-$2.91 billion, with positive net cash inflow still expected."]}
+  {
+    "company": "Natera",
+    "quarter": 4,
+    "fiscal_year": 2025,
+    "status": "published",
+    "results_url": "https://investor.natera.com/financials/quarterly-results/default.aspx",
+    "lines": [
+      "Revenue was $665.5 million, up 39.8% year over year.",
+      "Gross margin was 66.9%; approximately 923,600 tests were processed, up 16.5%.",
+      "Oncology volume was approximately 233,300 tests, up 54.7%; full-year cash inflow was $107.6 million.",
+      "2026 guidance called for revenue of $2.62-$2.70 billion, gross margin of 63%-65%, and positive net cash inflow."
+    ]
+  },
+  {
+    "company": "Natera",
+    "quarter": 1,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investor.natera.com/financials/quarterly-results/default.aspx",
+    "lines": [
+      "Revenue was $696.6 million, up 38.8% year over year.",
+      "Gross margin was 64.7%; approximately 1,013,600 tests were processed, up 18.5%.",
+      "Oncology volume was approximately 258,900 tests, up 54.4%; cash inflow was $11.8 million.",
+      "2026 revenue guidance was raised to $2.74-$2.82 billion."
+    ]
+  },
+  {
+    "company": "Natera",
+    "quarter": 2,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investor.natera.com/news/news-details/2026/Natera-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+    "lines": [
+      "Revenue was $752.8 million, up 37.7% year over year.",
+      "Approximately 1,043,900 tests were processed, up 22.4% year over year; oncology volume was approximately 296,700 tests, up 57.2%.",
+      "Gross margin was 64.5%; GAAP net loss was $67.0 million.",
+      "2026 revenue guidance was raised to $2.85-$2.91 billion, with positive net cash inflow still expected."
+    ]
+  },
+  {
+    "company": "Natera",
+    "quarter": 3,
+    "fiscal_year": 2026,
+    "status": "published",
+    "results_url": "https://investor.natera.com/news/news-details/2026/Natera-Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+    "lines": [
+      "Revenue was $794.0 million, up 34.1% year over year.",
+      "GAAP net loss was $59.9 million, or $0.42 per diluted share; GAAP gross margin was 64.7%.",
+      "Approximately 1,093,100 tests were processed, up 22.3%, including 339,500 oncology tests, up 60.9%.",
+      "Clinical MRD oncology units increased by 32,700 sequentially versus Q2 2026.",
+      "Full-year 2026 revenue guidance was raised to $3.005-$3.035 billion, with positive cash flow expected."
+    ]
+  }
 ]
