@@ -35,7 +35,7 @@ BAD_CONTENT = (
     "checking your browser", "attention required! | cloudflare", "captcha challenge",
 )
 MAX_BYTES = 1_000_000
-DATE_ITEM = re.compile(r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\\.?\\s+\\d{1,2},?\\s+20\\d{2}|\\b\\d{1,2}/\\d{1,2}/20\\d{2}\\b", re.I)
+DATE_ITEM = re.compile(r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+20\d{2}|\b\d{1,2}/\d{1,2}/20\d{2}\b", re.I)
 CALENDAR_PATHS = ("events", "press-releases", "news-releases", "sec-filings", "ir-calendar")
 
 
@@ -248,7 +248,7 @@ def run(args):
             candidates = fallback_candidates(urls, key.rsplit("|", 1)[-1], audit.cache, other_company_urls)
             # SEC official EDGAR browse is a documented fallback for blocked data.sec.gov JSON.
             for u in urls:
-                m = re.search(r"data\\.sec\\.gov/submissions/CIK(\\d{10})\\.json", u)
+                m = re.search(r"data\.sec\.gov/submissions/CIK(\d{10})\.json", u)
                 if m:
                     candidates.append("https://www.sec.gov/edgar/browse/?CIK=" + str(int(m.group(1))) + "&owner=exclude")
             for candidate in dict.fromkeys(candidates):
