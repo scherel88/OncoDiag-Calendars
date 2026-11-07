@@ -172,6 +172,13 @@ class RecoveryParserTests(unittest.TestCase):
         self.assertFalse(mod.same_issuer("https://wrong.gcs-web.com/","https://issuer.gcs-web.com/"))
         self.assertFalse(mod.same_issuer("https://example.com.evil.test/","https://ir.example.com/"))
 
+    def test_registry_only_trusts_explicit_platform_aliases(self):
+        mod.load(ROOT/"earnings/config/sources.json")
+        self.assertTrue(mod.same_issuer("https://genedx.gcs-web.com/events",
+                                       "https://ir.genedx.com/news-events/events"))
+        self.assertFalse(mod.same_issuer("https://veracyteinc.gcs-web.com/events",
+                                        "https://ir.genedx.com/news-events/events"))
+
     def test_newsletter_captcha_does_not_hide_real_page(self):
         self.assertFalse(mod.is_challenge("<html><title>Events</title><p>Upcoming events</p>"
             "<form>The captcha test has failed. Please try again.</form></html>"))
@@ -243,6 +250,41 @@ class RecoveryParserTests(unittest.TestCase):
 
 
 class HTTPRecoveryTests(unittest.IsolatedAsyncioTestCase):
+    async def test_browser_compatible_recovery_preserves_original_failure(self):
+        import httpx
+        class Compatible:
+            calls=0
+            async def fetch(self,url,headers):
+                self.calls+=1
+                return mod.FetchResult(url,200,"<p>Issuer events</p>",transport="chrome-compatible")
+            async def close(self):
+                pass
+        async def blocked(request):
+            return httpx.Response(403)
+        compatible=Compatible()
+        async with httpx.AsyncClient(transport=httpx.MockTransport(blocked)) as client:
+            http=mod.PublicHTTP(client,compatible=compatible)
+            r=await http.fetch("https://ir.example/events")
+            self.assertEqual(r.status,200)
+            self.assertEqual(r.transport,"chrome-compatible")
+            self.assertEqual(r.history[0]["status"],403)
+            self.assertEqual(compatible.calls,1)
+            await http.close()
+
+    async def test_browser_compatible_never_retries_rate_limit(self):
+        import httpx
+        class Compatible:
+            async def fetch(self,*args):
+                raise AssertionError("A rate limit must not trigger alternate transport")
+            async def close(self):
+                pass
+        async def limited(request):
+            return httpx.Response(429,headers={"Retry-After":"60"})
+        async with httpx.AsyncClient(transport=httpx.MockTransport(limited)) as client:
+            http=mod.PublicHTTP(client,compatible=Compatible())
+            self.assertEqual((await http.fetch("https://ir.example/events")).status,429)
+            await http.close()
+
     async def test_singleflight_coalesces_requests(self):
         import asyncio
         import httpx

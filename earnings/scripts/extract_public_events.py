@@ -62,6 +62,7 @@ SEASONAL_ZONES = {"EST":"America/New_York","EDT":"America/New_York",
 MAX_BODY = 2_000_000
 USER_AGENT = "Mozilla/5.0 (compatible; OncoDiag-Calendars/2.0; +https://github.com/scherel88/OncoDiag-Calendars)"
 SHARED_HOSTS = {"gcs-web.com","q4web.com","q4inc.com","q4cdn.com","q4app.com"}
+ISSUER_HOST_GROUPS = {}
 DETAIL_RE = re.compile(r"event-details|/events?/[^/?]+|[?&](?:item|eventid|event_id)=",re.I)
 
 
@@ -87,6 +88,8 @@ def same_issuer(url: str, issuer: str) -> bool:
     reference = (urlsplit(issuer).hostname or "").lower()
     if not host or not reference:
         return False
+    if host in ISSUER_HOST_GROUPS.get(reference,set()):
+        return True  # Explicit, verified platform aliases in this issuer's registry.
     # Exact host or sibling subdomains under the same registrable issuer suffix.
     if host == reference or host.endswith("." + reference) or reference.endswith("." + host):
         return True
@@ -523,12 +526,50 @@ class FetchResult:
     headers: dict = field(default_factory=dict)
     error: str | None = None
     cache: str = "miss"
+    transport: str = "httpx"
+    history: list[dict] = field(default_factory=list)
+
+
+class BrowserCompatibleHTTP:
+    """One ordinary Chrome-compatible TLS/HTTP session; no rotating identities."""
+    def __init__(self):
+        from curl_cffi.requests import AsyncSession
+        self.session=AsyncSession(impersonate="chrome",max_clients=4,timeout=12)
+
+    async def fetch(self,url,headers):
+        try:
+            async with asyncio.timeout(13):
+                async with self.session.stream("GET",url,headers=headers,
+                        allow_redirects=True,max_redirects=5,timeout=12) as response:
+                    meta={k.lower():v for k,v in response.headers.items()}
+                    result=FetchResult(str(response.url),response.status_code,
+                        headers=meta,transport="chrome-compatible")
+                    if response.status_code==304:
+                        return result
+                    if response.status_code>=400:
+                        result.error="http_"+str(response.status_code)
+                        return result
+                    chunks=[];size=0
+                    async for chunk in response.aiter_content():
+                        size+=len(chunk)
+                        if size>MAX_BODY:
+                            result.error="body_too_large";return result
+                        chunks.append(chunk)
+                    result.text=b"".join(chunks).decode(response.encoding or "utf-8",errors="replace")
+                    if is_challenge(result.text):
+                        result.error="challenge_page"
+                    return result
+        except Exception as ex:
+            return FetchResult(url,error=type(ex).__name__+": "+str(ex)[:170],transport="chrome-compatible")
+
+    async def close(self):
+        await self.session.close()
 
 
 class PublicHTTP:
     """One connection pool, bounded downloads, revalidation and per-host pacing."""
 
-    def __init__(self, client, cache_dir=None, concurrency=8, timeout=12):
+    def __init__(self, client, cache_dir=None, concurrency=8, timeout=12,compatible=None):
         self.client=client
         self.cache_dir=cache_dir
         self.timeout=timeout
@@ -538,6 +579,7 @@ class PublicHTTP:
         self.inflight={}
         self.requests=0
         self.revalidated=0
+        self.compatible=compatible
         if cache_dir and cache_dir.exists():
             # Public URLs with cache-busting query strings must not grow the
             # Actions cache without bound. Keep at most 32 MB / 200 recent files.
@@ -559,10 +601,53 @@ class PublicHTTP:
 
     async def fetch(self, url):
         if url not in self.inflight:
-            task=asyncio.create_task(self._fetch(url))
+            task=asyncio.create_task(self._fetch_with_recovery(url))
             self.inflight[url]=task
         # A site's deadline must not cancel a request shared by another site.
         return await asyncio.shield(self.inflight[url])
+
+    async def _fetch_with_recovery(self,url):
+        first=await self._fetch(url)
+        if not self.compatible or not (first.status==403 or first.error=="challenge_page"):
+            return first
+        cached=self._cached(url)
+        headers={}
+        if cached:
+            for a,b in (("etag","If-None-Match"),("last-modified","If-Modified-Since")):
+                if cached["headers"].get(a):
+                    headers[b]=cached["headers"][a]
+        host=urlsplit(url).hostname or ""
+        async with self.slots,self.host_slots.setdefault(host,asyncio.Semaphore(2)):
+            if self.cooldown.get(host,0)>time.monotonic():
+                return first
+            self.requests+=1
+            result=await self.compatible.fetch(url,headers)
+        result.history=[{"transport":first.transport,"status":first.status,"error":first.error}]
+        if result.status==429:
+            self.cooldown[host]=time.monotonic()+retry_delay(result.headers.get("retry-after"),60)
+        if result.status==304 and cached:
+            result.text=cached["text"];result.headers=cached["headers"]
+            result.cache="revalidated";self.revalidated+=1
+        elif result.status==304:
+            result.error="304_without_cached_body"
+        if result.text and not result.error and result.status==200:
+            self._save_cache(url,result.text,result.headers)
+        return result
+
+    def _save_cache(self,url,text,meta):
+        if (not self.cache_dir or not (meta.get("etag") or meta.get("last-modified")) or
+                "no-store" in meta.get("cache-control","").lower()):
+            return
+        try:
+            self.cache_dir.mkdir(parents=True,exist_ok=True)
+            path=self._cache_path(url)
+            keep={k:v for k,v in meta.items() if k in ("etag","last-modified","content-type")}
+            payload={"url":url,"text":text,"headers":keep,"retrieved_at_utc":now()}
+            tmp=path.with_suffix(".tmp")
+            tmp.write_text(json.dumps(payload),encoding="utf-8")
+            tmp.replace(path)
+        except OSError:
+            pass
 
     def _cache_path(self, url):
         return self.cache_dir/(hashlib.sha256(url.encode()).hexdigest()+".json") if self.cache_dir else None
@@ -631,20 +716,8 @@ class PublicHTTP:
                             # Never reuse a challenge/error page as fresh source evidence.
                             if is_challenge(text):
                                 result.error="challenge_page"
-                            elif (self.cache_dir and status==200 and
-                                  (meta.get("etag") or meta.get("last-modified")) and
-                                  "no-store" not in meta.get("cache-control","").lower()):
-                                try:
-                                    self.cache_dir.mkdir(parents=True,exist_ok=True)
-                                    path=self._cache_path(url)
-                                    keep={k:v for k,v in meta.items() if k in
-                                          ("etag","last-modified","content-type")}
-                                    payload={"url":url,"text":text,"headers":keep,"retrieved_at_utc":now()}
-                                    tmp=path.with_suffix(".tmp")
-                                    tmp.write_text(json.dumps(payload),encoding="utf-8")
-                                    tmp.replace(path)
-                                except OSError:
-                                    pass  # Caching is an optimization, never a prerequisite.
+                            elif status==200:
+                                self._save_cache(url,text,meta)
                             return result
                 except (httpx.HTTPError,TimeoutError,ValueError) as ex:
                     if attempt:
@@ -658,6 +731,8 @@ class PublicHTTP:
             t.cancel()
         if pending:
             await asyncio.gather(*pending,return_exceptions=True)
+        if self.compatible:
+            await self.compatible.close()
 
 
 def retry_delay(value, default):
@@ -739,6 +814,7 @@ def decode_public_json(body):
 def record_fetch(log, result, purpose):
     log["http_attempts"].append({"url":result.url,"purpose":purpose,
         "status":result.status,"error":result.error,"cache":result.cache,
+        "transport":result.transport,"previous_attempts":result.history,
         "retrieved_at_utc":now(),"bytes":len(result.text.encode("utf-8"))})
 
 
@@ -836,7 +912,8 @@ async def scan_company(browser, sem, company: dict, years: list[int], timeout_ms
         progress["browser_log"]=log
     async with sem:
         ctx=await browser.new_context(locale="en-US",viewport={"width":1280,"height":850},
-                                      service_workers="block")
+            user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"+
+                       browser.version+" Safari/537.36",service_workers="block")
         page=await ctx.new_page()
         page.on("pageerror",lambda ex: log["script_errors"].append(str(ex)[:200])
                 if len(log["script_errors"])<12 else None)
@@ -937,12 +1014,20 @@ async def scan_company(browser, sem, company: dict, years: list[int], timeout_ms
                     initial_count=len(found)
                     await capture("initial")
                     if len(found)==initial_count:
+                        try:
+                            await page.wait_for_function("""() =>
+                              [window.$tudio,window.jQuery,window.$].some(jq =>
+                                jq && jq.fn && (jq.fn.q4Events || jq.fn.events))
+                            """,timeout=min(6000,timeout_ms))
+                        except PWError:
+                            pass
                         # Recover broken issuer widget initialization using the
                         # issuer's own already-loaded library, explicitly in its
                         # PUBLIC mode. No endpoint, API key or event fact is guessed.
                         widget=await page.evaluate("""(years) => {
-                          const jq=window.$tudio || window.jQuery;
-                          if (!jq || !jq.fn) return 'library_unavailable';
+                          const jq=[window.$tudio,window.jQuery,window.$].find(jq =>
+                            jq && jq.fn && (jq.fn.q4Events || jq.fn.events));
+                          if (!jq) return 'library_unavailable';
                           const plugin=jq.fn.q4Events ? 'q4Events' : jq.fn.events ? 'events' : null;
                           if (!plugin) return 'widget_unavailable';
                           try {
@@ -1062,6 +1147,9 @@ def load(path: Path) -> list[dict]:
         if not c["news_urls"] or (c["kind"]=="public" and not c["event_urls"]) or (
              c["kind"]=="private" and c["event_urls"]):
             raise ValueError("Invalid public/private source scope for "+c["company"])
+        hosts={urlsplit(u).hostname for u in c["event_urls"]+c["news_urls"]}
+        for host in hosts:
+            ISSUER_HOST_GROUPS[host]=hosts
     return companies
 
 
@@ -1075,7 +1163,7 @@ async def run(args):
             raise ValueError("Unknown or out-of-scope company")
     years=[int(x) for x in args.years.split(",")]
     started=time.monotonic()
-    report={"schema_version":1,"extractor_version":2,"generated_at_utc":now(),
+    report={"schema_version":1,"extractor_version":3,"generated_at_utc":now(),
             "extractor":"HTTP-first public sources + selective Chromium",
             "review_required":True,"events":[],"companies":{},"errors":[],
             "notes":["All extracted events require ChatGPT corroboration; no canonical JSON or ICS is written.",
@@ -1090,7 +1178,8 @@ async def run(args):
              "Accept-Language":"en-US,en;q=0.9"},follow_redirects=True,
              limits=limits,timeout=httpx.Timeout(12,connect=6)) as client:
         http=PublicHTTP(client,args.cache_dir,concurrency=10,
-                        timeout=min(15,args.timeout_ms/1000))
+                        timeout=min(15,args.timeout_ms/1000),
+                        compatible=None if args.plain_http else BrowserCompatibleHTTP())
         async with async_playwright() as p:
             browser=None
             browser_error=None
@@ -1153,7 +1242,8 @@ async def run(args):
                         bool(e.missing and "conflict" in e.missing) for e in rows)
                     log["primary_readable"]=state["primary_readable"]
                     log["primary_access_errors"]=[x for x in log["http_attempts"]
-                        if x["purpose"]=="investor_calendar" and x["error"]]
+                        if x["purpose"]=="investor_calendar" and (x["error"] or
+                            any(a["error"] for a in x["previous_attempts"]))]
                     log["recovered_after_primary_failure"]=bool(rows and log["primary_access_errors"])
                     log["status"]="CANDIDATES_FOUND" if rows else (
                         "NO_EVENT_CANDIDATES_NOT_VERIFIED" if state["primary_readable"] else "ACCESS_RESTRICTED")
@@ -1183,8 +1273,10 @@ async def run(args):
         "companies_with_candidates":sum(v["candidate_count"]>0 for v in report["companies"].values()),
         "event_candidates":len(report["events"]),
         "sites_without_candidates":sum(v["candidate_count"]==0 for v in report["companies"].values()),
-        "sites_with_access_errors":sum(bool(v["primary_access_errors"]) or
+        "sites_with_access_errors":sum(any(x["error"] for x in v["primary_access_errors"]) or
             v["browser_status"] in ("ACCESS_RESTRICTED","CHALLENGE_PAGE","BROWSER_ERROR","UNAVAILABLE")
+            for v in report["companies"].values()),
+        "sites_with_initial_access_errors":sum(bool(v["primary_access_errors"])
             for v in report["companies"].values()),
         "sites_recovered_after_primary_failure":sum(v["recovered_after_primary_failure"]
             for v in report["companies"].values()),
@@ -1293,6 +1385,7 @@ def cli():
     parser.add_argument("--browser-concurrency",type=int,default=2)
     parser.add_argument("--cache-dir",type=Path)
     parser.add_argument("--http-only",action="store_true",help="Skip optional Chromium rendering")
+    parser.add_argument("--plain-http",action="store_true",help="Disable Chrome-compatible TLS fallback")
     parser.add_argument("--timeout-ms",type=int,default=22000)
     parser.add_argument("--max-details",type=int,default=10)
     parser.add_argument("--site-deadline",type=int,default=130)

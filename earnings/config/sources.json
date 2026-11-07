@@ -7,12 +7,14 @@
       "kind": "public",
       "mode": "standard",
       "event_urls": [
-        "https://ir.labcorp.com/news-and-events/recent-past-presentations"
+        "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+        "https://labcorp.gcs-web.com/"
       ],
       "news_urls": [
         "https://ir.labcorp.com/news-and-events/news-releases",
         "https://www.labcorp.com/newsroom/press-releases"
-      ]
+      ],
+      "fallback_note": "Issuer-operated public platform alias verified from current official pages on 2026-11-07; used only after primary calendar failure or zero candidates."
     },
     {
       "company": "Abbott",
@@ -32,12 +34,14 @@
       "kind": "public",
       "mode": "indexed",
       "event_urls": [
-        "https://investor.veracyte.com/events-presentations"
+        "https://investor.veracyte.com/events-presentations",
+        "https://veracyteinc.gcs-web.com/events-presentations"
       ],
       "news_urls": [
         "https://investor.veracyte.com/news-releases",
         "https://investor.veracyte.com/press-releases"
-      ]
+      ],
+      "fallback_note": "Issuer-operated public platform alias verified from current official pages on 2026-11-07; used only after primary calendar failure or zero candidates."
     },
     {
       "company": "Caris Life Sciences",
@@ -123,11 +127,13 @@
       "kind": "public",
       "mode": "indexed",
       "event_urls": [
-        "https://investors.personalis.com/news-events/events-and-presentations"
+        "https://investors.personalis.com/news-events/events-and-presentations",
+        "https://personalis.gcs-web.com/"
       ],
       "news_urls": [
         "https://investors.personalis.com/news-events/press-releases"
-      ]
+      ],
+      "fallback_note": "Issuer-operated public platform alias verified from current official pages on 2026-11-07; used only after primary calendar failure or zero candidates."
     },
     {
       "company": "GRAIL",
@@ -158,12 +164,14 @@
       "kind": "public",
       "mode": "indexed",
       "event_urls": [
-        "https://investors.adaptivebiotech.com/news-events/events"
+        "https://investors.adaptivebiotech.com/news-events/events",
+        "https://adaptivebiotech.gcs-web.com/news-events/events"
       ],
       "news_urls": [
         "https://investors.adaptivebiotech.com/news-events/news-releases",
         "https://investors.adaptivebiotech.com/news-releases"
-      ]
+      ],
+      "fallback_note": "Issuer-operated public platform alias verified from current official pages on 2026-11-07; used only after primary calendar failure or zero candidates."
     },
     {
       "company": "BillionToOne",
@@ -182,11 +190,13 @@
       "kind": "public",
       "mode": "standard",
       "event_urls": [
-        "https://ir.genedx.com/news-events/events"
+        "https://ir.genedx.com/news-events/events",
+        "https://genedx.gcs-web.com/news-events/events"
       ],
       "news_urls": [
         "https://ir.genedx.com/news-events/news-releases"
-      ]
+      ],
+      "fallback_note": "Issuer-operated public platform alias verified from current official pages on 2026-11-07; used only after primary calendar failure or zero candidates."
     },
     {
       "company": "SOPHiA GENETICS",
@@ -216,12 +226,14 @@
       "kind": "public",
       "mode": "standard",
       "event_urls": [
-        "https://investor.pacificbiosciences.com/events-and-presentations"
+        "https://investor.pacificbiosciences.com/events-and-presentations",
+        "https://pacificbiosciencesofcalifornia.gcs-web.com/events-and-presentations"
       ],
       "news_urls": [
         "https://investor.pacificbiosciences.com/news-releases",
         "https://www.pacb.com/news/press-releases/"
-      ]
+      ],
+      "fallback_note": "Issuer-operated public platform alias verified from current official pages on 2026-11-07; used only after primary calendar failure or zero candidates."
     },
     {
       "company": "Oxford Nanopore Technologies",
