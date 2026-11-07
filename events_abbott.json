@@ -1,0 +1,34 @@
+[
+  {
+    "company": "Abbott",
+    "quarter": 4,
+    "fiscal_year": 2025,
+    "start": "2026-01-22T08:00:00-06:00",
+    "webcast": "https://edge.media-server.com/mmc/p/sygmyhj7",
+    "source": "https://www.abbottinvestor.com/events/event-details/q4-2025-abbott-earnings-conference-call"
+  },
+  {
+    "company": "Abbott",
+    "quarter": 1,
+    "fiscal_year": 2026,
+    "start": "2026-04-16T08:00:00-05:00",
+    "webcast": "https://edge.media-server.com/mmc/p/qgffrnte",
+    "source": "https://www.abbottinvestor.com/events/event-details/q1-2026-abbott-earnings-conference-call"
+  },
+  {
+    "company": "Abbott",
+    "quarter": 2,
+    "fiscal_year": 2026,
+    "start": "2026-07-16T08:00:00-05:00",
+    "webcast": "https://edge.media-server.com/mmc/p/fgbg9ss6",
+    "source": "https://www.abbottinvestor.com/news-and-events/events"
+  },
+  {
+    "company": "Abbott",
+    "quarter": 3,
+    "fiscal_year": 2026,
+    "start": "2026-10-21T08:00:00-05:00",
+    "webcast": "https://edge.media-server.com/mmc/p/gxn96ftv",
+    "source": "https://www.abbottinvestor.com/events/event-details/q3-2026-abbott-earnings-conference-call"
+  }
+]
