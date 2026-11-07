@@ -92,7 +92,8 @@
       "https://ir.neogenomics.com/news-events/press-releases"
     ],
     "NeoGenomics|official_filings_financial_reports": [
-      "https://ir.neogenomics.com/financials/sec-filings"
+      "https://ir.neogenomics.com/sec-filings/all-sec-filings",
+      "https://ir.neogenomics.com/sec-filings"
     ],
     "DELFI Diagnostics|official_ir_events_webcasts": [
       "https://delfidiagnostics.com/about-us/newsroom/"
@@ -219,8 +220,8 @@
       "https://www.mgi-tech.com/Investor/index"
     ],
     "MGI Tech|corporate_ir_press_releases_investor_conferences": [
-      "https://www.mgi-tech.com/Investor/index",
-      "https://global-mgitech.com/media-hub/media-coverage/"
+      "https://global-mgitech.com/news/",
+      "https://www.mgi-tech.com/Investor/index"
     ],
     "MGI Tech|official_filings_financial_reports": [
       "https://www.mgi-tech.com/Investor/index"
@@ -239,7 +240,8 @@
       "https://investors.10xgenomics.com/overview/default.aspx"
     ],
     "10x Genomics|corporate_ir_press_releases_investor_conferences": [
-      "https://investors.10xgenomics.com/news-releases/default.aspx"
+      "https://investors.10xgenomics.com/news/default.aspx",
+      "https://investors.10xgenomics.com/overview/default.aspx"
     ],
     "10x Genomics|official_filings_financial_reports": [
       "https://data.sec.gov/submissions/CIK0001770787.json"
