@@ -1,8 +1,9 @@
 {
-  "description": "25 companies x 3 source categories (75 mappings). URLs are discovery candidates, not all independently live-validated. For private issuers F points to corporate disclosures and requires documented N/A where appropriate.",
+  "description": "25 companies x 3 categories. Links are source-discovery candidates; not all can be fetched by ChatGPT. Private company filings may be N/A. Reviewed and corrected several invalid paths on 2026-11-06.",
   "sources": {
     "Labcorp|official_ir_events_webcasts": [
-      "https://ir.labcorp.com/news-and-events/events-and-presentations",
+      "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+      "https://ir.labcorp.com/news-and-events/past-events",
       "https://ir.labcorp.com/"
     ],
     "Labcorp|corporate_ir_press_releases_investor_conferences": [
@@ -13,12 +14,12 @@
       "https://data.sec.gov/submissions/CIK0000920148.json"
     ],
     "Exact Sciences|official_ir_events_webcasts": [
-      "https://investor.exactsciences.com/",
+      "https://www.abbott.com/en-us/investors/",
       "https://www.abbott.com/en-us/exact-sciences"
     ],
     "Exact Sciences|corporate_ir_press_releases_investor_conferences": [
-      "https://investor.exactsciences.com/",
-      "https://www.abbott.com/en-us/corpnewsroom.html"
+      "https://www.abbott.com/en-us/investors/",
+      "https://www.abbott.com/en-us/exact-sciences"
     ],
     "Exact Sciences|official_filings_financial_reports": [
       "https://data.sec.gov/submissions/CIK0001124140.json",
@@ -95,13 +96,13 @@
       "https://ir.neogenomics.com/financials/sec-filings"
     ],
     "DELFI Diagnostics|official_ir_events_webcasts": [
-      "https://www.delfi-diagnostics.com/"
+      "https://delfidiagnostics.com/about-us/newsroom/"
     ],
     "DELFI Diagnostics|corporate_ir_press_releases_investor_conferences": [
-      "https://www.delfi-diagnostics.com/"
+      "https://delfidiagnostics.com/about-us/newsroom/"
     ],
     "DELFI Diagnostics|official_filings_financial_reports": [
-      "https://www.delfi-diagnostics.com/"
+      "https://delfidiagnostics.com/about-us/newsroom/"
     ],
     "Personalis|official_ir_events_webcasts": [
       "https://investors.personalis.com/",
@@ -114,11 +115,10 @@
       "https://data.sec.gov/submissions/CIK0001527753.json"
     ],
     "GRAIL|official_ir_events_webcasts": [
-      "https://grail.gcs-web.com/",
-      "https://grail.com/news-center/"
+      "https://investors.grail.com/"
     ],
     "GRAIL|corporate_ir_press_releases_investor_conferences": [
-      "https://grail.gcs-web.com/news-events/press-releases",
+      "https://investors.grail.com/",
       "https://grail.com/news-center/"
     ],
     "GRAIL|official_filings_financial_reports": [
@@ -171,10 +171,11 @@
       "https://ir.sophiagenetics.com/financials"
     ],
     "Illumina|official_ir_events_webcasts": [
-      "https://investor.illumina.com/events-and-presentations"
+      "https://investor.illumina.com/news-events/events",
+      "https://investor.illumina.com/"
     ],
     "Illumina|corporate_ir_press_releases_investor_conferences": [
-      "https://investor.illumina.com/news-releases",
+      "https://investor.illumina.com/",
       "https://www.illumina.com/company/news-center/press-releases.html"
     ],
     "Illumina|official_filings_financial_reports": [
