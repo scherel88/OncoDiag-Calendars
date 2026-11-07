@@ -14,6 +14,3 @@ One public GitHub repository with **two independent publishing branches**. Event
 3. **Independent validation:** Every build validates its source input and the generated iCalendar feed. A failed validation stops publication.
 4. **Public mirror:** After successful validation, each workflow copies only its generated `.ics` file into `main`, retrying safely around concurrent updates. Therefore existing subscribers using the previous `main` URLs continue to receive updates.
 
-**Do not edit calendar data directly on `main`.** This branch holds only the two published, independently validated ICS feeds and this README. Event input, scripts, and workflows reside exclusively in their respective working branches.
-
-
