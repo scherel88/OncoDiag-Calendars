@@ -1,34 +1,52 @@
 {
-  "description": "Category-specific primary-source URLs and fallbacks; static one-off press releases are not adequate for current-event discovery.",
+  "description": "25 companies x 3 source categories (75 mappings). URLs are discovery candidates, not all independently live-validated. For private issuers F points to corporate disclosures and requires documented N/A where appropriate.",
   "sources": {
+    "Labcorp|official_ir_events_webcasts": [
+      "https://ir.labcorp.com/news-and-events/events-and-presentations",
+      "https://ir.labcorp.com/"
+    ],
     "Labcorp|corporate_ir_press_releases_investor_conferences": [
       "https://ir.labcorp.com/news-and-events/news-releases",
-      "https://ir.labcorp.com/rss-feeds",
       "https://www.labcorp.com/newsroom/press-releases"
     ],
+    "Labcorp|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0000920148.json"
+    ],
     "Exact Sciences|official_ir_events_webcasts": [
+      "https://investor.exactsciences.com/",
       "https://www.abbott.com/en-us/exact-sciences"
     ],
     "Exact Sciences|corporate_ir_press_releases_investor_conferences": [
-      "https://www.abbott.com/en-us/corpnewsroom.html",
-      "https://www.abbott.com/en-us/exact-sciences"
+      "https://investor.exactsciences.com/",
+      "https://www.abbott.com/en-us/corpnewsroom.html"
     ],
     "Exact Sciences|official_filings_financial_reports": [
       "https://data.sec.gov/submissions/CIK0001124140.json",
-      "https://abbott.mediaroom.com/",
       "https://data.sec.gov/submissions/CIK0000001800.json"
     ],
+    "Veracyte|official_ir_events_webcasts": [
+      "https://veracyteinc.gcs-web.com/events-presentations",
+      "https://investor.veracyte.com/"
+    ],
     "Veracyte|corporate_ir_press_releases_investor_conferences": [
-      "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
       "https://veracyteinc.gcs-web.com/press-releases",
       "https://investor.veracyte.com/news-releases"
+    ],
+    "Veracyte|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001384101.json"
+    ],
+    "Caris Life Sciences|official_ir_events_webcasts": [
+      "https://investor.carislifesciences.com/",
+      "https://www.carislifesciences.com/news-and-events/"
     ],
     "Caris Life Sciences|corporate_ir_press_releases_investor_conferences": [
       "https://investor.carislifesciences.com/news-events/news-releases",
       "https://www.carislifesciences.com/news-and-events/news/"
     ],
+    "Caris Life Sciences|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0002019410.json"
+    ],
     "Guardant Health|official_ir_events_webcasts": [
-      "https://investors.guardanthealth.com/overview/default.aspx",
       "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
     ],
     "Guardant Health|corporate_ir_press_releases_investor_conferences": [
@@ -38,117 +56,92 @@
     "Guardant Health|official_filings_financial_reports": [
       "https://investors.guardanthealth.com/financials/sec-filings/default.aspx"
     ],
+    "Myriad Genetics|official_ir_events_webcasts": [
+      "https://investor.myriad.com/events-and-presentations/"
+    ],
     "Myriad Genetics|corporate_ir_press_releases_investor_conferences": [
       "https://investor.myriad.com/news-releases/"
     ],
+    "Myriad Genetics|official_filings_financial_reports": [
+      "https://investor.myriad.com/sec-filings/"
+    ],
+    "Natera|official_ir_events_webcasts": [
+      "https://investor.natera.com/events-and-presentations/events/default.aspx"
+    ],
     "Natera|corporate_ir_press_releases_investor_conferences": [
+      "https://investor.natera.com/news/default.aspx",
       "https://www.natera.com/company/news/"
     ],
+    "Natera|official_filings_financial_reports": [
+      "https://investor.natera.com/financials/sec-filings/default.aspx"
+    ],
+    "Quest Diagnostics|official_ir_events_webcasts": [
+      "https://ir.questdiagnostics.com/"
+    ],
+    "Quest Diagnostics|corporate_ir_press_releases_investor_conferences": [
+      "https://ir.questdiagnostics.com/",
+      "https://newsroom.questdiagnostics.com/"
+    ],
     "Quest Diagnostics|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0001022079.json",
-      "https://www.sec.gov/edgar/browse/?CIK=1022079&owner=exclude"
+      "https://data.sec.gov/submissions/CIK0001022079.json"
+    ],
+    "NeoGenomics|official_ir_events_webcasts": [
+      "https://ir.neogenomics.com/news-events/ir-calendar"
+    ],
+    "NeoGenomics|corporate_ir_press_releases_investor_conferences": [
+      "https://ir.neogenomics.com/news-events/press-releases"
+    ],
+    "NeoGenomics|official_filings_financial_reports": [
+      "https://ir.neogenomics.com/financials/sec-filings"
+    ],
+    "DELFI Diagnostics|official_ir_events_webcasts": [
+      "https://www.delfi-diagnostics.com/"
+    ],
+    "DELFI Diagnostics|corporate_ir_press_releases_investor_conferences": [
+      "https://www.delfi-diagnostics.com/"
+    ],
+    "DELFI Diagnostics|official_filings_financial_reports": [
+      "https://www.delfi-diagnostics.com/"
+    ],
+    "Personalis|official_ir_events_webcasts": [
+      "https://investors.personalis.com/",
+      "https://www.personalis.com/resources/"
     ],
     "Personalis|corporate_ir_press_releases_investor_conferences": [
-      "https://www.personalis.com/resources/",
       "https://investors.personalis.com/news-events/press-releases"
     ],
     "Personalis|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0001527753.json",
-      "https://www.sec.gov/edgar/browse/?CIK=1527753&owner=exclude"
+      "https://data.sec.gov/submissions/CIK0001527753.json"
     ],
-    "GRAIL|corporate_ir_press_releases_investor_conferences": [
-      "https://grail.gcs-web.com/news-events/press-releases",
+    "GRAIL|official_ir_events_webcasts": [
       "https://grail.gcs-web.com/",
       "https://grail.com/news-center/"
     ],
+    "GRAIL|corporate_ir_press_releases_investor_conferences": [
+      "https://grail.gcs-web.com/news-events/press-releases",
+      "https://grail.com/news-center/"
+    ],
     "GRAIL|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0001699031.json",
-      "https://www.sec.gov/edgar/browse/?CIK=1699031&owner=exclude"
+      "https://data.sec.gov/submissions/CIK0001699031.json"
+    ],
+    "Tempus AI|official_ir_events_webcasts": [
+      "https://tempus.gcs-web.com/"
     ],
     "Tempus AI|corporate_ir_press_releases_investor_conferences": [
       "https://tempus.gcs-web.com/news-events/news-releases",
-      "https://investors.tempus.com/news-events/press-releases/default.aspx",
-      "https://tempus.gcs-web.com/",
       "https://www.tempus.com/news/"
     ],
     "Tempus AI|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0001717115.json",
-      "https://www.sec.gov/edgar/browse/?CIK=1717115&owner=exclude"
+      "https://data.sec.gov/submissions/CIK0001717115.json"
+    ],
+    "Adaptive Biotechnologies|official_ir_events_webcasts": [
+      "https://investors.adaptivebiotech.com/"
     ],
     "Adaptive Biotechnologies|corporate_ir_press_releases_investor_conferences": [
-      "https://investors.adaptivebiotech.com/news-releases",
-      "https://investors.adaptivebiotech.com/",
-      "https://www.adaptivebiotech.com/"
+      "https://investors.adaptivebiotech.com/news-releases"
     ],
     "Adaptive Biotechnologies|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0001478320.json",
-      "https://www.sec.gov/edgar/browse/?CIK=1478320&owner=exclude"
-    ],
-    "GeneDx|corporate_ir_press_releases_investor_conferences": [
-      "https://ir.genedx.com/news-events/news-releases",
-      "https://ir.genedx.com/",
-      "https://www.genedx.com/"
-    ],
-    "GeneDx|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0001818331.json",
-      "https://www.sec.gov/edgar/browse/?CIK=1818331&owner=exclude"
-    ],
-    "SOPHiA GENETICS|official_filings_financial_reports": [
-      "https://ir.sophiagenetics.com/financials",
-      "https://www.sec.gov/edgar/browse/?CIK=SOPH&owner=exclude"
-    ],
-    "Illumina|official_ir_events_webcasts": [
-      "https://investor.illumina.com/events-and-presentations",
-      "https://investor.illumina.com/",
-      "https://www.illumina.com/company/news-center/press-releases.html"
-    ],
-    "Illumina|corporate_ir_press_releases_investor_conferences": [
-      "https://investor.illumina.com/news-releases",
-      "https://investor.illumina.com/",
-      "https://www.illumina.com/company/news-center/press-releases.html"
-    ],
-    "PacBio|corporate_ir_press_releases_investor_conferences": [
-      "https://investor.pacificbiosciences.com/news-releases",
-      "https://investor.pacificbiosciences.com/",
-      "https://www.pacb.com/news/press-releases/"
-    ],
-    "Oxford Nanopore Technologies|corporate_ir_press_releases_investor_conferences": [
-      "https://nanoporetech.com/about/investors/reports",
-      "https://nanoporetech.com/"
-    ],
-    "Thermo Fisher Scientific|official_ir_events_webcasts": [
-      "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
-      "https://ir.thermofisher.com/investors/news-events/news/default.aspx"
-    ],
-    "Thermo Fisher Scientific|corporate_ir_press_releases_investor_conferences": [
-      "https://ir.thermofisher.com/investors/news-events/news/default.aspx"
-    ],
-    "Thermo Fisher Scientific|official_filings_financial_reports": [
-      "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude"
-    ],
-    "10x Genomics|corporate_ir_press_releases_investor_conferences": [
-      "https://investors.10xgenomics.com/news-releases/default.aspx",
-      "https://investors.10xgenomics.com/"
-    ],
-    "10x Genomics|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0001770787.json",
-      "https://www.sec.gov/edgar/browse/?CIK=1770787&owner=exclude"
-    ],
-    "Twist Bioscience|corporate_ir_press_releases_investor_conferences": [
-      "https://investors.twistbioscience.com/news-releases",
-      "https://www.twistbioscience.com/"
-    ],
-    "Labcorp|official_ir_events_webcasts": [
-      "https://www.labcorp.com/newsroom/press-releases"
-    ],
-    "Caris Life Sciences|official_ir_events_webcasts": [
-      "https://www.carislifesciences.com/news-and-events/"
-    ],
-    "GRAIL|official_ir_events_webcasts": [
-      "https://grail.com/news-center/"
-    ],
-    "PacBio|official_ir_events_webcasts": [
-      "https://www.pacb.com/news/press-releases/"
+      "https://data.sec.gov/submissions/CIK0001478320.json"
     ],
     "BillionToOne|official_ir_events_webcasts": [
       "https://www.billiontoone.com/news-media"
@@ -156,47 +149,65 @@
     "BillionToOne|corporate_ir_press_releases_investor_conferences": [
       "https://www.billiontoone.com/news-media"
     ],
-    "SOPHiA GENETICS|corporate_ir_press_releases_investor_conferences": [
-      "https://ir.sophiagenetics.com/index.php?s=43",
-      "https://ir.sophiagenetics.com/"
-    ],
-    "Veracyte|official_ir_events_webcasts": [
-      "https://www.globenewswire.com/news-release/2026/10/29/3391836/0/en/veracyte-to-participate-in-upcoming-investor-conferences.html",
-      "https://veracyteinc.gcs-web.com/events-presentations"
-    ],
-    "Veracyte|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0001384101.json",
-      "https://veracyteinc.gcs-web.com/financials/sec-filings"
-    ],
-    "Personalis|official_ir_events_webcasts": [
-      "https://www.personalis.com/resources/"
-    ],
-    "Adaptive Biotechnologies|official_ir_events_webcasts": [
-      "https://www.adaptivebiotech.com/"
-    ],
-    "GeneDx|official_ir_events_webcasts": [
-      "https://www.genedx.com/"
-    ],
-    "Twist Bioscience|official_ir_events_webcasts": [
-      "https://www.twistbioscience.com/"
-    ],
-    "Labcorp|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0000920148.json"
-    ],
-    "Caris Life Sciences|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0002019410.json"
-    ],
     "BillionToOne|official_filings_financial_reports": [
       "https://data.sec.gov/submissions/CIK0002070849.json"
+    ],
+    "GeneDx|official_ir_events_webcasts": [
+      "https://ir.genedx.com/"
+    ],
+    "GeneDx|corporate_ir_press_releases_investor_conferences": [
+      "https://ir.genedx.com/news-events/news-releases"
+    ],
+    "GeneDx|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001818331.json"
+    ],
+    "SOPHiA GENETICS|official_ir_events_webcasts": [
+      "https://ir.sophiagenetics.com/"
+    ],
+    "SOPHiA GENETICS|corporate_ir_press_releases_investor_conferences": [
+      "https://ir.sophiagenetics.com/index.php?s=43"
+    ],
+    "SOPHiA GENETICS|official_filings_financial_reports": [
+      "https://ir.sophiagenetics.com/financials"
+    ],
+    "Illumina|official_ir_events_webcasts": [
+      "https://investor.illumina.com/events-and-presentations"
+    ],
+    "Illumina|corporate_ir_press_releases_investor_conferences": [
+      "https://investor.illumina.com/news-releases",
+      "https://www.illumina.com/company/news-center/press-releases.html"
     ],
     "Illumina|official_filings_financial_reports": [
       "https://data.sec.gov/submissions/CIK0001110803.json"
     ],
+    "PacBio|official_ir_events_webcasts": [
+      "https://investor.pacificbiosciences.com/"
+    ],
+    "PacBio|corporate_ir_press_releases_investor_conferences": [
+      "https://investor.pacificbiosciences.com/news-releases",
+      "https://www.pacb.com/news/press-releases/"
+    ],
     "PacBio|official_filings_financial_reports": [
       "https://data.sec.gov/submissions/CIK0001299130.json"
     ],
-    "Twist Bioscience|official_filings_financial_reports": [
-      "https://data.sec.gov/submissions/CIK0001581280.json"
+    "Oxford Nanopore Technologies|official_ir_events_webcasts": [
+      "https://nanoporetech.com/about/investors"
+    ],
+    "Oxford Nanopore Technologies|corporate_ir_press_releases_investor_conferences": [
+      "https://nanoporetech.com/about/investors/reports",
+      "https://nanoporetech.com/"
+    ],
+    "Oxford Nanopore Technologies|official_filings_financial_reports": [
+      "https://nanoporetech.com/about/investors/reports"
+    ],
+    "Element Biosciences|official_ir_events_webcasts": [
+      "https://www.elementbiosciences.com/"
+    ],
+    "Element Biosciences|corporate_ir_press_releases_investor_conferences": [
+      "https://www.elementbiosciences.com/"
+    ],
+    "Element Biosciences|official_filings_financial_reports": [
+      "https://www.elementbiosciences.com/"
     ],
     "MGI Tech|official_ir_events_webcasts": [
       "https://www.mgi-tech.com/Investor/index"
@@ -204,6 +215,36 @@
     "MGI Tech|corporate_ir_press_releases_investor_conferences": [
       "https://www.mgi-tech.com/Investor/index",
       "https://global-mgitech.com/media-hub/media-coverage/"
+    ],
+    "MGI Tech|official_filings_financial_reports": [
+      "https://www.mgi-tech.com/Investor/index"
+    ],
+    "Thermo Fisher Scientific|official_ir_events_webcasts": [
+      "https://ir.thermofisher.com/investors/news-events/events/default.aspx"
+    ],
+    "Thermo Fisher Scientific|corporate_ir_press_releases_investor_conferences": [
+      "https://ir.thermofisher.com/investors/news-events/news/default.aspx"
+    ],
+    "Thermo Fisher Scientific|official_filings_financial_reports": [
+      "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude"
+    ],
+    "10x Genomics|official_ir_events_webcasts": [
+      "https://investors.10xgenomics.com/overview/default.aspx"
+    ],
+    "10x Genomics|corporate_ir_press_releases_investor_conferences": [
+      "https://investors.10xgenomics.com/news-releases/default.aspx"
+    ],
+    "10x Genomics|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001770787.json"
+    ],
+    "Twist Bioscience|official_ir_events_webcasts": [
+      "https://investors.twistbioscience.com/"
+    ],
+    "Twist Bioscience|corporate_ir_press_releases_investor_conferences": [
+      "https://investors.twistbioscience.com/news-releases"
+    ],
+    "Twist Bioscience|official_filings_financial_reports": [
+      "https://data.sec.gov/submissions/CIK0001581280.json"
     ]
   },
   "meta": {
