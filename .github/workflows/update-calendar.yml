@@ -31,6 +31,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Enforce dedicated publishing branch
+        run: test "${GITHUB_REF_NAME}" = "earnings-financial-calls"
+
       - name: Validate event records
         run: python validate_calendar.py
 
