@@ -27,15 +27,22 @@ EVENT_WORDS = ("earnings", "financial results", "conference", "investor", "fires
 BAD_WORDS = ("verify you are human", "captcha", "access denied",
              "checking your browser", "enable cookies", "just a moment")
 DATE_RE = re.compile(
-    r"\b(?:20\d{2}[-/]\d\d?[-/]\d\d?|(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|"
-    r"apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember|t)?|oct(?:ober)?|"
-    r"nov(?:ember)?|dec(?:ember)?)\.?\s+\d{1,2},?\s+20\d{2})\b", re.I)
+    r"\b(?:20\d{2}[-/]\d\d?[-/]\d\d?|"
+    r"(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|"
+    r"jul(?:y)?|aug(?:ust)?|sep(?:tember|t)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?"
+    r"\s+\d{1,2},?\s+20\d{2}|"
+    r"\d{1,2}\s+(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|"
+    r"jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember|t)?|oct(?:ober)?|"
+    r"nov(?:ember)?|dec(?:ember)?)\s+20\d{2})\b",re.I)
 TIME_RE = re.compile(r"(?<!\d)(1[0-2]|0?[1-9])(?::([0-5]\d))?\s*(a\.?m\.?|p\.?m\.?)\b", re.I)
-ZONE_RE = re.compile(r"\b(EST|EDT|ET|CST|CDT|CT|PST|PDT|PT|MST|MDT|MT|UTC|GMT|BST|CET|CEST)\b", re.I)
+ZONE_RE = re.compile(r"\b(Eastern Time|Central Time|Pacific Time|Mountain Time|EST|EDT|ET|CST|CDT|CT|PST|PDT|PT|MST|MDT|MT|UTC|GMT|BST|CET|CEST)\b", re.I)
+H24_RE = re.compile(r"(?<!\d)([01]?\d|2[0-3]):([0-5]\d)(?!\s*(?:a\.?m\.?|p\.?m\.?))", re.I)
 FIXED = {"EST":-5,"EDT":-4,"CST":-6,"CDT":-5,"PST":-8,"PDT":-7,
          "MST":-7,"MDT":-6,"UTC":0,"GMT":0}
 ZONES = {"ET":"America/New_York","CT":"America/Chicago","PT":"America/Los_Angeles",
-         "MT":"America/Denver","BST":"Europe/London","CET":"Europe/Paris","CEST":"Europe/Paris"}
+         "MT":"America/Denver","BST":"Europe/London","CET":"Europe/Paris","CEST":"Europe/Paris",
+         "EASTERN TIME":"America/New_York","CENTRAL TIME":"America/Chicago",
+         "PACIFIC TIME":"America/Los_Angeles","MOUNTAIN TIME":"America/Denver"}
 CARD_SELECTOR = ("article, tr, li, [itemscope][itemtype*='Event'], "
                  "[class*='event-item'], [class*='event_item'], [class*='eventItem'], "
                  "[class*='event-row'], [class*='eventRow'], .q4-event, .module_item")
@@ -93,17 +100,20 @@ def parse_start(raw: str) -> tuple[str | None, str | None, str | None]:
     # Limit the clock/zone to the SAME event card's date context.
     near = raw[max(0,m.start()-25):min(len(raw),m.end()+95)]
     t = TIME_RE.search(near)
-    if not t:
+    h24 = None if t else H24_RE.search(near)
+    if not t and not h24:
         return None, d.isoformat(), "time_missing"
-    after = near[t.end():t.end()+35]
-    before = near[max(0,t.start()-20):t.start()]
+    anchor = t or h24
+    after = near[anchor.end():anchor.end()+35]
+    before = near[max(0,anchor.start()-20):anchor.start()]
     zone = ZONE_RE.search(after) or ZONE_RE.search(before)
     if not zone:
         return None, d.isoformat(), "timezone_missing"
     code = zone.group().upper()
     tz = timezone(timedelta(hours=FIXED[code])) if code in FIXED else ZoneInfo(ZONES[code])
-    hr = int(t.group(1)) % 12 + (12 if t.group(3).lower().startswith("p") else 0)
-    dtime = datetime(d.year,d.month,d.day,hr,int(t.group(2) or 0),tzinfo=tz)
+    hr = int(t.group(1)) % 12 + (12 if t.group(3).lower().startswith("p") else 0) if t else int(h24.group(1))
+    minute = int(t.group(2) or 0) if t else int(h24.group(2))
+    dtime = datetime(d.year,d.month,d.day,hr,minute,tzinfo=tz)
     return dtime.isoformat(), d.isoformat(), None
 
 
@@ -456,7 +466,8 @@ def self_test():
     assert len(rows)==1 and rows[0].start and rows[0].review_ready
     assert parse_start("Nov 7, 2026 at 8:30 AM ET")[0]=="2026-11-07T08:30:00-05:00"
     assert parse_start("Nov 7, 2026 at 8:30 AM")[2]=="timezone_missing"
-    print("Self-test: 4 parser checks passed")
+    assert parse_start("17 November 2026 14:45 GMT")[0]=="2026-11-17T14:45:00+00:00"
+    print("Self-test: 5 parser checks passed")
 
 
 def cli():
