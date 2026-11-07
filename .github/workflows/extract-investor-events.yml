@@ -1,4 +1,5 @@
 name: Extract public investor-event candidates
+# Manual end-to-end run: 2026-11-07 (browser extraction + ChatGPT review)
 
 # Scheduling must live on main; scripts, registry and extraction data live on
 # earnings-financial-calls. This workflow never modifies canonical events/ICS.
