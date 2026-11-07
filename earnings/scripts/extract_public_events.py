@@ -200,19 +200,18 @@ def from_html(company: str, html: str, base: str, method: str) -> list[Candidate
             continue
     for node in soup.select(CARD_SELECTOR)[:1600]:
         content=compact(node.get_text(" ",strip=True))
-        if not 20<=len(content)<=1000 or len(DATE_RE.findall(content))!=1:
+        datetime_attrs=[t.get("datetime","") for t in node.select("time[datetime]")]
+        iso_attr=next((v for v in datetime_attrs if STAMP_RE.search(v)),None)
+        n_dates=len(DATE_RE.findall(content))
+        # JS calendars often keep the only date in <time datetime>, not visible text.
+        if not 20<=len(content)<=1000 or n_dates>1 or (n_dates==0 and not iso_attr):
             continue
         titles=[compact(n.get_text(" ",strip=True)) for n in
                 node.select("h2,h3,h4,h5,[class*='event-title'],[class*='eventTitle'],a[href]")[:20]]
         title=next((t for t in titles if relevant(t)),None)
         if not title:
             continue
-        stamp=content
-        for t in node.select("time[datetime]"):
-            raw=t.get("datetime","")
-            if STAMP_RE.search(raw):
-                stamp=raw
-                break
+        stamp=iso_attr or content
         start,day,missing=parse_start(stamp)
         if not day:
             continue
