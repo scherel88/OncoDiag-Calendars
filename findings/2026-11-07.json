@@ -911,12 +911,16 @@
     "event_source_commit": "cad4d71ecfb6e4995cf2c274ef056de28a17d60d",
     "ics_repair_commit": "b02fbf69ec5363d6219a9633f6071cbad7e554f6",
     "ics_repository_event_count": 102,
-    "old_101_uid_preservation": "TO_VERIFY",
-    "new_event_uid_present": "TO_VERIFY",
+    "old_101_uid_preservation": "CONFIRMED",
+    "new_event_uid_present": "CONFIRMED",
     "public_raw_ics_access": "DISABLED_BY_WEB_TOOL",
     "public_feed_url": "https://raw.githubusercontent.com/scherel88/diagnostics-earnings-calendar/main/earnings.ics",
     "github_actions_completed": "UNCONFIRMED",
-    "notes": "Publisher had not reflected the one backfill; ICS was updated in GitHub with a deterministic UID; final in-repository verification is required, independent public fetching unavailable."
+    "notes": "Verified ICS through connected GitHub repository read (not independent public raw URL). Public access and Actions build status still unverified.",
+    "duplicate_uids": 0,
+    "ics_file_sha": "4557e9051cfe57b4a6c5db6a5d5a65ebf82c3c0e",
+    "new_event_start": "20260910T130000Z",
+    "new_event_end": "20260910T140000Z"
   },
   "errors": [
     "Multiple official dynamic investor-event pages exposed JavaScript shells rather than complete event archives.",
