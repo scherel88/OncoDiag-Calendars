@@ -1,9 +1,8 @@
 {
-  "description": "25 companies x 3 categories. Links are source-discovery candidates; not all can be fetched by ChatGPT. Private company filings may be N/A. Reviewed and corrected several invalid paths on 2026-11-06.",
+  "description": "25 companies x 3 categories. Primary official event and release archives prioritized; SEC API and issuer-hosted filings are alternatives where available. Configured URL access != substantive 7-day archive verification.",
   "sources": {
     "Labcorp|official_ir_events_webcasts": [
       "https://ir.labcorp.com/news-and-events/recent-past-presentations",
-      "https://ir.labcorp.com/news-and-events/past-events",
       "https://ir.labcorp.com/"
     ],
     "Labcorp|corporate_ir_press_releases_investor_conferences": [
@@ -26,19 +25,19 @@
       "https://data.sec.gov/submissions/CIK0000001800.json"
     ],
     "Veracyte|official_ir_events_webcasts": [
-      "https://veracyteinc.gcs-web.com/events-presentations",
-      "https://investor.veracyte.com/"
+      "https://investor.veracyte.com/events-presentations",
+      "https://veracyteinc.gcs-web.com/events-presentations"
     ],
     "Veracyte|corporate_ir_press_releases_investor_conferences": [
-      "https://veracyteinc.gcs-web.com/press-releases",
-      "https://investor.veracyte.com/news-releases"
+      "https://investor.veracyte.com/press-releases",
+      "https://veracyteinc.gcs-web.com/press-releases"
     ],
     "Veracyte|official_filings_financial_reports": [
       "https://data.sec.gov/submissions/CIK0001384101.json"
     ],
     "Caris Life Sciences|official_ir_events_webcasts": [
-      "https://investor.carislifesciences.com/",
-      "https://www.carislifesciences.com/news-and-events/"
+      "https://investor.carislifesciences.com/news-events/events",
+      "https://investor.carislifesciences.com/"
     ],
     "Caris Life Sciences|corporate_ir_press_releases_investor_conferences": [
       "https://investor.carislifesciences.com/news-events/news-releases",
@@ -77,7 +76,7 @@
       "https://investor.natera.com/financials/sec-filings/default.aspx"
     ],
     "Quest Diagnostics|official_ir_events_webcasts": [
-      "https://ir.questdiagnostics.com/"
+      "https://ir.questdiagnostics.com/events-and-presentations/"
     ],
     "Quest Diagnostics|corporate_ir_press_releases_investor_conferences": [
       "https://ir.questdiagnostics.com/",
@@ -115,6 +114,7 @@
       "https://data.sec.gov/submissions/CIK0001527753.json"
     ],
     "GRAIL|official_ir_events_webcasts": [
+      "https://investors.grail.com/news-events/events",
       "https://investors.grail.com/"
     ],
     "GRAIL|corporate_ir_press_releases_investor_conferences": [
@@ -122,6 +122,7 @@
       "https://grail.com/news-center/"
     ],
     "GRAIL|official_filings_financial_reports": [
+      "https://investors.grail.com/financials-filings/sec-filings",
       "https://data.sec.gov/submissions/CIK0001699031.json"
     ],
     "Tempus AI|official_ir_events_webcasts": [
@@ -144,9 +145,11 @@
       "https://data.sec.gov/submissions/CIK0001478320.json"
     ],
     "BillionToOne|official_ir_events_webcasts": [
-      "https://www.billiontoone.com/news-media"
+      "https://investors.billiontoone.com/news-events/events-presentations",
+      "https://investors.billiontoone.com/"
     ],
     "BillionToOne|corporate_ir_press_releases_investor_conferences": [
+      "https://investors.billiontoone.com/news-events/news-releases",
       "https://www.billiontoone.com/news-media"
     ],
     "BillionToOne|official_filings_financial_reports": [
@@ -162,6 +165,7 @@
       "https://data.sec.gov/submissions/CIK0001818331.json"
     ],
     "SOPHiA GENETICS|official_ir_events_webcasts": [
+      "https://ir.sophiagenetics.com/events",
       "https://ir.sophiagenetics.com/"
     ],
     "SOPHiA GENETICS|corporate_ir_press_releases_investor_conferences": [
@@ -182,7 +186,8 @@
       "https://data.sec.gov/submissions/CIK0001110803.json"
     ],
     "PacBio|official_ir_events_webcasts": [
-      "https://investor.pacificbiosciences.com/"
+      "https://investor.pacificbiosciences.com/events-and-presentations",
+      "https://investor.pacificbiosciences.com/investor-relations"
     ],
     "PacBio|corporate_ir_press_releases_investor_conferences": [
       "https://investor.pacificbiosciences.com/news-releases",
@@ -230,6 +235,7 @@
       "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude"
     ],
     "10x Genomics|official_ir_events_webcasts": [
+      "https://investors.10xgenomics.com/events-and-presentations/",
       "https://investors.10xgenomics.com/overview/default.aspx"
     ],
     "10x Genomics|corporate_ir_press_releases_investor_conferences": [
@@ -239,6 +245,7 @@
       "https://data.sec.gov/submissions/CIK0001770787.json"
     ],
     "Twist Bioscience|official_ir_events_webcasts": [
+      "https://investors.twistbioscience.com/events-and-presentations/events",
       "https://investors.twistbioscience.com/"
     ],
     "Twist Bioscience|corporate_ir_press_releases_investor_conferences": [
