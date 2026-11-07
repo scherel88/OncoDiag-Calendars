@@ -1,0 +1,930 @@
+{
+  "schema_version": "2026-11-07-chatgpt-issuer-events-v1",
+  "date_eastern": "2026-11-07",
+  "generated_at_utc": "2026-11-07T05:39:23.091Z",
+  "execution_owner": "ChatGPT web source verification and connected GitHub publisher",
+  "status": "PARTIAL",
+  "scope": {
+    "tracked_companies": 25,
+    "public_companies": 23,
+    "private_news_only": [
+      "DELFI Diagnostics",
+      "Element Biosciences"
+    ],
+    "expected_categories": 48,
+    "attempted_categories": 48,
+    "category_status_counts": {
+      "VERIFIED_NEW": 2,
+      "VERIFIED_NO_CHANGE": 16,
+      "INCOMPLETE": 30
+    },
+    "category_key_rule": "public: E and N; private: N only; no filings"
+  },
+  "source_checks": [
+    {
+      "company": "Labcorp",
+      "category": "E",
+      "primary_url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NEW",
+      "substantive_coverage_assessment": "The official investor presentations archive lists a September 10 Investor Day; exact 9:00 AM EDT start and webcast corroborated by issuer announcement; missing from baseline ICS and published as historical backfill.",
+      "evidence_urls": [
+        "https://ir.labcorp.com/news-releases/news-release-details/labcorp-highlights-strategic-priorities-driving-durable-growth",
+        "https://edge.media-server.com/mmc/p/y48wz7fs"
+      ],
+      "event_ids": [
+        "labcorp-investor-day-2026-09-10"
+      ],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Labcorp",
+      "category": "N",
+      "primary_url": "https://ir.labcorp.com/news-and-events/news-releases",
+      "configured_fallback_urls": [
+        "https://www.labcorp.com/newsroom/press-releases"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://ir.labcorp.com/news-and-events/news-releases"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Abbott",
+      "category": "E",
+      "primary_url": "https://www.abbottinvestor.com/news-and-events/events",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://www.abbottinvestor.com/news-and-events/events"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Abbott",
+      "category": "N",
+      "primary_url": "https://www.abbottinvestor.com/taxonomy/term/3886/",
+      "configured_fallback_urls": [
+        "https://www.abbott.com/en-us/corpnewsroom",
+        "https://www.abbottinvestor.com/news-and-events"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor press taxonomy link returned a restricted/incomplete page and corporate newsroom fallback did not substantiate the seven-day investor-conference announcement window.",
+      "evidence_urls": [
+        "https://www.abbottinvestor.com/taxonomy/term/3886/"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Veracyte",
+      "category": "E",
+      "primary_url": "https://investor.veracyte.com/events-presentations",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Events archive restricted direct retrieval, indexed official release confirms three already published investor presentations; complete calendar not verifiable.",
+      "evidence_urls": [
+        "https://investor.veracyte.com/events-presentations"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Veracyte",
+      "category": "N",
+      "primary_url": "https://investor.veracyte.com/news-releases",
+      "configured_fallback_urls": [
+        "https://investor.veracyte.com/press-releases"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor releases archive restricted; official Oct 29 investor-conference release indexed but full seven-day release review not established.",
+      "evidence_urls": [
+        "https://investor.veracyte.com/news-releases/news-release-details/veracyte-participate-upcoming-investor-conferences-9"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "E",
+      "primary_url": "https://investor.carislifesciences.com/news-events/events",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://investor.carislifesciences.com/news-events/events"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "N",
+      "primary_url": "https://investor.carislifesciences.com/news-events/news-releases",
+      "configured_fallback_urls": [
+        "https://www.carislifesciences.com/news-and-events/news/"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://investor.carislifesciences.com/news-events/news-releases"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Guardant Health",
+      "category": "E",
+      "primary_url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official events landing page is JavaScript-rendered and does not expose full upcoming events in static retrieval; separately reviewed the Q3 earnings detail already on calendar.",
+      "evidence_urls": [
+        "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Guardant Health",
+      "category": "N",
+      "primary_url": "https://investors.guardanthealth.com/press-releases/2026/",
+      "configured_fallback_urls": [
+        "https://investors.guardanthealth.com/press-releases/default.aspx"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "News page dynamically rendered; official November 5 earnings release verified but full recent release index not exhaustively reviewed.",
+      "evidence_urls": [
+        "https://investors.guardanthealth.com/press-releases/2026/"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "E",
+      "primary_url": "https://investor.myriad.com/events-and-presentations/",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://investor.myriad.com/events-and-presentations/"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "N",
+      "primary_url": "https://investor.myriad.com/news-releases/",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://investor.myriad.com/news-releases/"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Natera",
+      "category": "E",
+      "primary_url": "https://investor.natera.com/events-and-presentations/events/default.aspx",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Issuer calendar is JavaScript rendered; Q3 November 5 details cross-checked but full future event archive could not be enumerated.",
+      "evidence_urls": [
+        "https://investor.natera.com/events-and-presentations/events/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Natera",
+      "category": "N",
+      "primary_url": "https://investor.natera.com/news/default.aspx",
+      "configured_fallback_urls": [
+        "https://www.natera.com/company/news/"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official primary page and/or issuer indexed fallback consulted; full seven-day archive or complete upcoming event coverage was not reliably established.",
+      "evidence_urls": [
+        "https://investor.natera.com/news/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "E",
+      "primary_url": "https://ir.questdiagnostics.com/events-and-presentations/default.aspx",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Issuer events page renders an incomplete shell; older indexed archive does not prove no recent/upcoming events.",
+      "evidence_urls": [
+        "https://ir.questdiagnostics.com/events-and-presentations/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "N",
+      "primary_url": "https://ir.questdiagnostics.com/press-releases/default.aspx",
+      "configured_fallback_urls": [
+        "https://newsroom.questdiagnostics.com/"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor releases page dynamic; issuer newsroom and indexed Oct 22 financial call found but current full investor release archive coverage unproven.",
+      "evidence_urls": [
+        "https://newsroom.questdiagnostics.com/"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "E",
+      "primary_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://ir.neogenomics.com/news-events/ir-calendar"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "N",
+      "primary_url": "https://ir.neogenomics.com/news-events/press-releases",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://ir.neogenomics.com/news-events/press-releases"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "DELFI Diagnostics",
+      "category": "N",
+      "primary_url": "https://delfidiagnostics.com/about-us/newsroom/",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://delfidiagnostics.com/about-us/newsroom/"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Personalis",
+      "category": "E",
+      "primary_url": "https://investors.personalis.com/news-events/events-and-presentations",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official investor event archive view was incomplete/stale versus recent November 4 financial-results news; future event coverage not established.",
+      "evidence_urls": [
+        "https://investors.personalis.com/news-events/events-and-presentations"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Personalis",
+      "category": "N",
+      "primary_url": "https://investors.personalis.com/news-events/press-releases",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://investors.personalis.com/news-events/press-releases"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "GRAIL",
+      "category": "E",
+      "primary_url": "https://investors.grail.com/news-events/events",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "IR events calendar restricted to crawler; indexed official issuer detail confirms November 10 UBS on ICS, not comprehensive future event list.",
+      "evidence_urls": [
+        "https://investors.grail.com/news-events/events"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "GRAIL",
+      "category": "N",
+      "primary_url": "https://investors.grail.com/",
+      "configured_fallback_urls": [
+        "https://grail.com/news-center/"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official primary page and/or issuer indexed fallback consulted; full seven-day archive or complete upcoming event coverage was not reliably established.",
+      "evidence_urls": [
+        "https://investors.grail.com/"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Tempus AI",
+      "category": "E",
+      "primary_url": "https://investors.tempus.com/events/default.aspx",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Issuer investor-events calendar requires dynamic rendering; official November 2 earnings event corroborated separately, but future list is not exhaustive.",
+      "evidence_urls": [
+        "https://investors.tempus.com/events/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Tempus AI",
+      "category": "N",
+      "primary_url": "https://investors.tempus.com/news/default.aspx",
+      "configured_fallback_urls": [
+        "https://tempus.gcs-web.com/news-events/news-releases"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor news listings dynamic; company November 2 Q3 release reviewed but complete recent-release audit was not possible.",
+      "evidence_urls": [
+        "https://investors.tempus.com/news/news-details/2026/Tempus-Reports-Third-Quarter-2026-Results/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "E",
+      "primary_url": "https://investors.adaptivebiotech.com/news-events/events",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor events landing blocked in direct retrieval; official indexed archive says no upcoming events, but completeness cannot be certified.",
+      "evidence_urls": [
+        "https://investors.adaptivebiotech.com/news-events/events"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "N",
+      "primary_url": "https://investors.adaptivebiotech.com/news-events/news-releases",
+      "configured_fallback_urls": [
+        "https://investors.adaptivebiotech.com/news-releases"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official primary page and/or issuer indexed fallback consulted; full seven-day archive or complete upcoming event coverage was not reliably established.",
+      "evidence_urls": [
+        "https://investors.adaptivebiotech.com/news-events/news-releases"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "BillionToOne",
+      "category": "E",
+      "primary_url": "https://investors.billiontoone.com/news-events/events-presentations",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://investors.billiontoone.com/news-events/events-presentations"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "BillionToOne",
+      "category": "N",
+      "primary_url": "https://investors.billiontoone.com/news-events/news-releases",
+      "configured_fallback_urls": [
+        "https://www.billiontoone.com/news-media"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor release archive restricted; official October 27 issuer announcement confirms two events already in ICS but past seven-day archive not fully verified.",
+      "evidence_urls": [
+        "https://investors.billiontoone.com/news-events/news-releases"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "GeneDx",
+      "category": "E",
+      "primary_url": "https://ir.genedx.com/news-events/events",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://ir.genedx.com/news-events/events"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "GeneDx",
+      "category": "N",
+      "primary_url": "https://ir.genedx.com/news-events/news-releases",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official primary page and/or issuer indexed fallback consulted; full seven-day archive or complete upcoming event coverage was not reliably established.",
+      "evidence_urls": [
+        "https://ir.genedx.com/news-events/news-releases"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "E",
+      "primary_url": "https://ir.sophiagenetics.com/events",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Issuer event detail displays November 11, 10:15 AM ET for UBS, while linked webcast and issuer LinkedIn announce November 9, 10:15 AM ET. Conflicting official dates; not published.",
+      "evidence_urls": [
+        "https://ir.sophiagenetics.com/events?item=38",
+        "https://event.webcasts.com/starthere.jsp?ei=1782188&tp_key=a4adaee09c&tp_special=8"
+      ],
+      "event_ids": [
+        "sophia-ubs-2026-date-conflict-pending"
+      ],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "N",
+      "primary_url": "https://ir.sophiagenetics.com/index.php?s=43",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://ir.sophiagenetics.com/index.php?s=43"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Illumina",
+      "category": "E",
+      "primary_url": "https://investor.illumina.com/news-events/events",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor events page restricted direct retrieval; issuer indexed content confirms two November talks already on calendar, not entire archive.",
+      "evidence_urls": [
+        "https://investor.illumina.com/news-events/events"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Illumina",
+      "category": "N",
+      "primary_url": "https://investor.illumina.com/",
+      "configured_fallback_urls": [
+        "https://www.illumina.com/company/news-center/press-releases.html"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official primary page and/or issuer indexed fallback consulted; full seven-day archive or complete upcoming event coverage was not reliably established.",
+      "evidence_urls": [
+        "https://investor.illumina.com/"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "PacBio",
+      "category": "E",
+      "primary_url": "https://investor.pacificbiosciences.com/events-and-presentations",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://investor.pacificbiosciences.com/events-and-presentations"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "PacBio",
+      "category": "N",
+      "primary_url": "https://investor.pacificbiosciences.com/news-releases",
+      "configured_fallback_urls": [
+        "https://www.pacb.com/news/press-releases/"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor releases archive itself was inaccessible; individual official event notices confirmed UBS and Stephens but not full seven-day release coverage.",
+      "evidence_urls": [
+        "https://investor.pacificbiosciences.com/news-releases"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "E",
+      "primary_url": "https://nanoporetech.com/about/investors/financial-calendar",
+      "configured_fallback_urls": [
+        "https://nanoporetech.com/about/investors/regulatory-news"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor financial calendar has fiscal results but Nov 4 issuer conference announcements were found elsewhere; individual webcast links for four events not on events page.",
+      "evidence_urls": [
+        "https://nanoporetech.com/about/investors/financial-calendar"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "N",
+      "primary_url": "https://www.londonstockexchange.com/en/quote/equity/ONT/oxford-nanopore-technologies-plc",
+      "configured_fallback_urls": [
+        "https://nanoporetech.com/about/investors/regulatory-news"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NEW",
+      "substantive_coverage_assessment": "Issuer November 4 announcement documents four upcoming investor presentations with dated times; individual official webcast/event pages unavailable. Events are PENDING and not published.",
+      "evidence_urls": [
+        "https://www.londonstockexchange.com/en/news/article/ONT/participation-in-upcoming-investor-conferences/c4e5-e0-e3-fc-df-4fa9b2"
+      ],
+      "event_ids": [
+        "ont-stifel-2026-11-10-pending",
+        "ont-canaccord-2026-11-11-pending",
+        "ont-jefferies-2026-11-17-pending",
+        "ont-berenberg-2026-11-30-pending"
+      ],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Element Biosciences",
+      "category": "N",
+      "primary_url": "https://www.elementbiosciences.com/news",
+      "configured_fallback_urls": [
+        "https://www.elementbiosciences.com/newsroom"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://www.elementbiosciences.com/news"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "MGI Tech",
+      "category": "E",
+      "primary_url": "https://www.mgi-tech.com/Investor/index",
+      "configured_fallback_urls": [
+        "https://www.mgi-tech.com/investors.html",
+        "https://roadshow.sseinfo.com/"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Corporate Investor page returned content but no dated public investor presentation calendar. No new investor event can be excluded.",
+      "evidence_urls": [
+        "https://www.mgi-tech.com/Investor/index"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "MGI Tech",
+      "category": "N",
+      "primary_url": "https://global-mgitech.com/news/",
+      "configured_fallback_urls": [
+        "https://www.mgi-tech.com/Investor/index"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "substantive_coverage_assessment": "Dated issuer event/release content was read and compared against calendar; no additional publishable conference call or investor presentation identified.",
+      "evidence_urls": [
+        "https://global-mgitech.com/news/"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": null
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "E",
+      "primary_url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "The primary investor events page returned JavaScript-loaded placeholders without verifiable full event list.",
+      "evidence_urls": [
+        "https://ir.thermofisher.com/investors/news-events/events/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "N",
+      "primary_url": "https://ir.thermofisher.com/investors/news-events/news/default.aspx",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official primary page and/or issuer indexed fallback consulted; full seven-day archive or complete upcoming event coverage was not reliably established.",
+      "evidence_urls": [
+        "https://ir.thermofisher.com/investors/news-events/news/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "10x Genomics",
+      "category": "E",
+      "primary_url": "https://investors.10xgenomics.com/events-and-presentations/",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Primary calendar JS shell; official dated Jefferies investor-conference release corroborates November 17 event already on ICS, not full calendar coverage.",
+      "evidence_urls": [
+        "https://investors.10xgenomics.com/news/news-details/2026/10x-Genomics-to-Participate-in-the-2026-Jefferies-Global-Healthcare-Conference/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "10x Genomics",
+      "category": "N",
+      "primary_url": "https://investors.10xgenomics.com/news/default.aspx",
+      "configured_fallback_urls": [
+        "https://investors.10xgenomics.com/overview/default.aspx"
+      ],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official primary page and/or issuer indexed fallback consulted; full seven-day archive or complete upcoming event coverage was not reliably established.",
+      "evidence_urls": [
+        "https://investors.10xgenomics.com/news/default.aspx"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "E",
+      "primary_url": "https://investors.twistbioscience.com/events-and-presentations/events",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Investor events page restricted; official indexed release confirms November 12 Q4 earnings on ICS but no complete event archive.",
+      "evidence_urls": [
+        "https://investors.twistbioscience.com/events-and-presentations/events"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "N",
+      "primary_url": "https://investors.twistbioscience.com/news-releases",
+      "configured_fallback_urls": [],
+      "direct_source_attempted": true,
+      "checked_at_utc": null,
+      "status": "INCOMPLETE",
+      "substantive_coverage_assessment": "Official primary page and/or issuer indexed fallback consulted; full seven-day archive or complete upcoming event coverage was not reliably established.",
+      "evidence_urls": [
+        "https://investors.twistbioscience.com/news-releases"
+      ],
+      "event_ids": [],
+      "method": "ChatGPT web retrieval + official issuer event/news source search",
+      "verification_limits": "Incomplete archive/window, JavaScript shell, restricted access or insufficient dated evidence; do not interpret as no announcements"
+    }
+  ],
+  "baseline": {
+    "published_ics_events": 101,
+    "unique_baseline_event_ids": 101,
+    "baseline_ics_ref": "2026-11-07 pre-Labcorp Investor Day, GitHub blob 16409f394037392eebe975ebb2070e2edbf9dcc7"
+  },
+  "changes": [
+    {
+      "type": "VERIFIED_HISTORICAL_BACKFILL",
+      "event_id": "labcorp-investor-day-2026-09-10",
+      "title": "Labcorp — 2026 Investor Day",
+      "start": "2026-09-10T09:00:00-04:00",
+      "webcast": "https://edge.media-server.com/mmc/p/y48wz7fs",
+      "source": "https://ir.labcorp.com/news-releases/news-release-details/labcorp-highlights-strategic-priorities-driving-durable-growth",
+      "source_file": "events_backfill_2026_chatgpt.json",
+      "uid": "52eef6b6125ab8eb10c7@diagnostics-earnings-calendar",
+      "publication": "PRESENT_IN_GITHUB_ICS_MANUALLY_REPAIRED_AFTER_PUBLISHER_LAG"
+    }
+  ],
+  "duplicates_prevented": [
+    {
+      "company": "Caris Life Sciences",
+      "count": 4,
+      "reason": "Four Caris earnings calls already existed in ICS as company 'Caris', despite canonical alias 'Caris Life Sciences'. Removed candidate duplicates from events_backfill_2026_chatgpt.json."
+    }
+  ],
+  "pending_events": [
+    {
+      "company": "Oxford Nanopore Technologies",
+      "event": "Stifel Healthcare Conference",
+      "local_start": "2026-11-10T13:20:00-05:00",
+      "reason": "No individual company event page/webcast URL",
+      "issuer_source": "https://www.londonstockexchange.com/en/news/article/ONT/participation-in-upcoming-investor-conferences/c4e5-e0-e3-fc-df-4fa9b2"
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "event": "Canaccord Medtech, Diagnostics and Digital Health & Services Forum",
+      "local_start": "2026-11-11T11:30:00-05:00",
+      "reason": "No individual company event page/webcast URL",
+      "issuer_source": "https://www.londonstockexchange.com/en/news/article/ONT/participation-in-upcoming-investor-conferences/c4e5-e0-e3-fc-df-4fa9b2"
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "event": "Jefferies Global Healthcare Conference",
+      "local_start": "2026-11-17T11:00:00+00:00",
+      "reason": "No individual company event page/webcast URL",
+      "issuer_source": "https://www.londonstockexchange.com/en/news/article/ONT/participation-in-upcoming-investor-conferences/c4e5-e0-e3-fc-df-4fa9b2"
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "event": "Berenberg European Conference",
+      "local_start": "2026-11-30T13:15:00+00:00",
+      "reason": "No individual company event page/webcast URL",
+      "issuer_source": "https://www.londonstockexchange.com/en/news/article/ONT/participation-in-upcoming-investor-conferences/c4e5-e0-e3-fc-df-4fa9b2"
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "event": "UBS Global Healthcare Conference",
+      "reported_starts": [
+        "2026-11-09T10:15:00-05:00",
+        "2026-11-11T10:15:00-05:00"
+      ],
+      "reason": "Company event page and linked webcast/issuer LinkedIn disagree on November 9 vs November 11. Exact correct start unverified.",
+      "issuer_source": "https://ir.sophiagenetics.com/events?item=38",
+      "webcast": "https://event.webcasts.com/starthere.jsp?ei=1782188&tp_key=a4adaee09c&tp_special=8"
+    }
+  ],
+  "publication": {
+    "event_source_commit": "cad4d71ecfb6e4995cf2c274ef056de28a17d60d",
+    "ics_repair_commit": "b02fbf69ec5363d6219a9633f6071cbad7e554f6",
+    "ics_repository_event_count": 102,
+    "old_101_uid_preservation": "TO_VERIFY",
+    "new_event_uid_present": "TO_VERIFY",
+    "public_raw_ics_access": "DISABLED_BY_WEB_TOOL",
+    "public_feed_url": "https://raw.githubusercontent.com/scherel88/diagnostics-earnings-calendar/main/earnings.ics",
+    "github_actions_completed": "UNCONFIRMED",
+    "notes": "Publisher had not reflected the one backfill; ICS was updated in GitHub with a deterministic UID; final in-repository verification is required, independent public fetching unavailable."
+  },
+  "errors": [
+    "Multiple official dynamic investor-event pages exposed JavaScript shells rather than complete event archives.",
+    "Several official investor-hosted pages restricted direct retrieval; isolated indexed official detail results cannot certify a complete rolling seven-day window.",
+    "SOPHiA GENETICS published conflicting Nov 9/Nov 11 UBS conference dates.",
+    "Four Oxford Nanopore investor conferences announced without issuer event-detail/webcast links.",
+    "GitHub Actions publication not independently confirmed; raw subscription URL access unavailable to web retrieval."
+  ],
+  "success": false,
+  "notes": "An attempt means the original primary URL was opened or searched in ChatGPT, not that every archive was fully read. Per-category fetch timestamps were not emitted by retrieval tools; null is used instead of invented time. Task must not claim 48/48 full editorial success."
+}
