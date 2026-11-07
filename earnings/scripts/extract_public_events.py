@@ -269,7 +269,9 @@ async def scan_company(browser, sem, company: dict, years: list[int], timeout_ms
         def on_response(resp):
             if (resp.status==200 and ("json" in resp.headers.get("content-type","").lower())
                 and ("event" in resp.url.lower() or "calendar" in resp.url.lower())
-                and same_issuer(resp.url,url)):
+                and (same_issuer(resp.url,url) or any(
+                    (urlsplit(resp.url).hostname or "").endswith("."+vendor)
+                    for vendor in ("q4inc.com","gcs-web.com","q4web.com")))):
                 async def extract_response():
                     try:
                         body=await resp.body()
