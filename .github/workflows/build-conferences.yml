@@ -2,6 +2,8 @@ name: Build conference calendar feed
 
 on:
   push:
+    branches:
+      - "conferences"
     paths:
       - "conferences/events.json"
       - "conferences/generate_calendar.py"
@@ -73,4 +75,34 @@ jobs:
             git commit -m "Update conference calendar feed" || exit 1
             sleep $((attempt * 5))
           done
+          exit 1
+
+      - name: Mirror validated conferences feed to main (retain existing subscriptions)
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_feed="$PWD/conferences/upcoming-conferences.ics"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin '+refs/heads/main:refs/remotes/origin/main'
+            mirror="$RUNNER_TEMP/conferences-main-mirror"
+            if [[ -d "$mirror" ]]; then
+              git worktree remove --force "$mirror"
+            fi
+            git worktree add --detach "$mirror" origin/main
+            mkdir -p "$(dirname "$mirror/conferences/upcoming-conferences.ics")"
+            cp "$source_feed" "$mirror/conferences/upcoming-conferences.ics"
+            if git -C "$mirror" diff --quiet -- "conferences/upcoming-conferences.ics"; then
+              echo "Published main feed already matches validated branch"
+              exit 0
+            fi
+            git -C "$mirror" config user.name "onco-calendar-publisher"
+            git -C "$mirror" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git -C "$mirror" add "conferences/upcoming-conferences.ics"
+            git -C "$mirror" commit -m "Publish validated conferences calendar"
+            if git -C "$mirror" push origin HEAD:main; then exit 0; fi
+            echo "Concurrent main update; retrying publication"
+            git worktree remove --force "$mirror"
+            sleep $((attempt * 3))
+          done
+          echo "Unable to publish conferences calendar to main" >&2
           exit 1
