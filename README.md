@@ -1,30 +1,19 @@
-# Published calendars
+# OncoDiag Calendars
 
-This repository has exactly two GitHub Actions publishing pipelines. **Discovery and source verification run externally** (the ChatGPT investor-events and conference monitoring tasks); GitHub only validates supplied data, builds ICS, and publishes it.
+One public GitHub repository with **two independent publishing branches**. Event research and verification are performed externally by scheduled ChatGPT tasks, not by GitHub Actions.
 
-| Calendar | Subscription link | External inputs | GitHub builder/validator |
-| --- | --- | --- | --- |
-| Investor events and earnings | https://raw.githubusercontent.com/scherel88/diagnostics-earnings-calendar/main/earnings.ics | Root events.json and results/*.json | generate_calendar.py and validate_calendar.py |
-| Scientific and industry conferences | https://raw.githubusercontent.com/scherel88/diagnostics-earnings-calendar/main/conferences/upcoming-conferences.ics | conferences/events.json | conferences/generate_calendar.py and conferences/validate_calendar.py |
+| Calendar | Working branch | Public subscription feed (kept stable) | Verified events source |
+|---|---|---|---|
+| Earnings / Financial Calls | [`earnings-financial-calls`](https://github.com/scherel88/OncoDiag-Calendars/tree/earnings-financial-calls) | [`earnings.ics`](https://raw.githubusercontent.com/scherel88/OncoDiag-Calendars/main/earnings.ics) | `earnings-financial-calls/events*.json` and `results/*.json` |
+| Scientific & Industry Conferences | [`conferences`](https://github.com/scherel88/OncoDiag-Calendars/tree/conferences) | [`conferences/upcoming-conferences.ics`](https://raw.githubusercontent.com/scherel88/OncoDiag-Calendars/main/conferences/upcoming-conferences.ics) | `conferences:conferences/events.json` |
 
-## Source updates
+## How publishing works
 
-**Investor events:** The external daily monitor appends or updates official event records in root events.json and official results in results/*.json. Editing either input triggers the investor build and independent ICS validation; a results-only change also triggers a build.
+1. **External discovery:** The investor monitoring task commits new or corrected source records only to the `earnings-financial-calls` branch; the conference monitor commits only to the `conferences` branch.
+2. **Independent GitHub builds:** Each branch contains only its own generator, validator, data, and workflow in `.github/workflows/`. Pushes to source input paths trigger the corresponding build only on that branch.
+3. **Independent validation:** Every build validates its source input and the generated iCalendar feed. A failed validation stops publication.
+4. **Public mirror:** After successful validation, each workflow copies only its generated `.ics` file into `main`, retrying safely around concurrent updates. Therefore existing subscribers using the previous `main` URLs continue to receive updates.
 
-**Conferences:** The external weekly monitor updates conferences/events.json from verified organizer announcements. Its object has schema_version: 1 and an events list. Each event needs uid, title, start_date, end_date (exclusive, YYYY-MM-DD), location, url, description. Preserve an edition's UID when it is rescheduled. Missing venues should be recorded as "Venue to be announced" rather than invented.
+**Do not edit calendar data directly on `main`.** This branch holds only the two published, independently validated ICS feeds and this README. Event input, scripts, and workflows reside exclusively in their respective working branches.
 
-Do not directly edit either generated ICS file as the source of truth. Existing subscribed ICS URLs and original conference UIDs are preserved. The separate GitHub workflows run after external JSON updates or via manual Actions dispatch. Neither workflow scrapes event websites.
-
-## Local validation
-
-Run from repository root:
-
-    python validate_calendar.py
-    python generate_calendar.py
-    python validate_calendar.py --ics
-
-    python conferences/validate_calendar.py
-    python conferences/generate_calendar.py
-    python conferences/validate_calendar.py --ics
-
-Old source-probing and audit-execution scripts/workflows were removed. Historical audit/source-probe JSON evidence is retained but does not participate in these publishing pipelines.
+If an existing subscription uses the old repository name `diagnostics-earnings-calendar`, GitHub typically redirects to `OncoDiag-Calendars`; the canonical public URLs are listed above.
