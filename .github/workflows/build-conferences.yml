@@ -28,6 +28,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Enforce dedicated publishing branch
+        run: test "${GITHUB_REF_NAME}" = "conferences"
+
       - name: Validate external conference source
         run: python conferences/validate_calendar.py
       - name: Build conference ICS
