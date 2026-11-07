@@ -6,6 +6,8 @@ on:
       - "conferences"
     paths:
       - "conferences/events.json"
+      - "conferences/source_registry.json"
+      - "conferences/validate_sources.py"
       - "conferences/generate_calendar.py"
       - "conferences/validate_calendar.py"
       - ".github/workflows/build-conferences.yml"
@@ -30,6 +32,9 @@ jobs:
           python-version: "3.12"
       - name: Enforce dedicated publishing branch
         run: test "${GITHUB_REF_NAME}" = "conferences"
+
+      - name: Validate 45 ChatGPT discovery sources (static schema)
+        run: python conferences/validate_sources.py
 
       - name: Validate external conference source
         run: python conferences/validate_calendar.py
