@@ -1,0 +1,38 @@
+name: Mandatory 78-source queue
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "11 11 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: ondiag-78-source-probe
+  cancel-in-progress: false
+jobs:
+  source-queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Execute all 26 x 3 source categories
+        id: probe
+        continue-on-error: true
+        run: python mandatory_source_queue.py
+      - name: Persist source attempt evidence even on incomplete audit
+        if: always()
+        run: |
+          git config user.name "diagnostics-earnings-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add source-probes/
+          if ! git diff --cached --quiet; then
+            git commit -m "Record 78-source mandatory queue attempt"
+            git push
+          fi
+      - name: Fail on unverified or unattempted source categories
+        if: steps.probe.outcome != 'success'
+        run: |
+          echo "Coverage gate failed. Inspect source-probes/ for exact errors and missing URL mappings." >&2
+          exit 1
