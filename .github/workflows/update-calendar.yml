@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "events*.json"
+      - "results/*.json"
       - "generate_calendar.py"
       - "validate_calendar.py"
       - ".github/workflows/update-calendar.yml"

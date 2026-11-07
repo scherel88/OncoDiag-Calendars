@@ -1,0 +1,76 @@
+name: Build conference calendar feed
+
+on:
+  push:
+    paths:
+      - "conferences/events.json"
+      - "conferences/generate_calendar.py"
+      - "conferences/validate_calendar.py"
+      - ".github/workflows/build-conferences.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conference-calendar-build
+  cancel-in-progress: false
+
+jobs:
+  build-conferences:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate external conference source
+        run: python conferences/validate_calendar.py
+      - name: Build conference ICS
+        run: python conferences/generate_calendar.py
+      - name: Suppress timestamp-only feed changes
+        run: |
+          python - <<'PY'
+          import re, subprocess
+          from pathlib import Path
+          path = "conferences/upcoming-conferences.ics"
+          old = subprocess.run(["git", "show", "HEAD:" + path], capture_output=True)
+          if old.returncode == 0:
+              current = Path(path).read_bytes()
+              strip = lambda b: re.sub(
+                  rb"^(DTSTAMP|LAST-MODIFIED):[^\r\n]*",
+                  rb"\1:UNCHANGED", b, flags=re.M
+              )
+              if strip(current) == strip(old.stdout):
+                  Path(path).write_bytes(old.stdout)
+                  print("No substantive conference changes")
+          PY
+      - name: Validate conference ICS independently
+        run: python conferences/validate_calendar.py --ics
+      - name: Publish conference feed
+        run: |
+          if git diff --quiet -- conferences/upcoming-conferences.ics; then
+            echo "No conference changes"
+            exit 0
+          fi
+          git config user.name "conference-calendar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add conferences/upcoming-conferences.ics
+          git commit -m "Update conference calendar feed"
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            git fetch origin "$GITHUB_REF_NAME" || exit 1
+            git reset --hard "origin/$GITHUB_REF_NAME" || exit 1
+            python conferences/validate_calendar.py || exit 1
+            python conferences/generate_calendar.py || exit 1
+            python conferences/validate_calendar.py --ics || exit 1
+            if git diff --quiet -- conferences/upcoming-conferences.ics; then
+              exit 0
+            fi
+            git add conferences/upcoming-conferences.ics
+            git commit -m "Update conference calendar feed" || exit 1
+            sleep $((attempt * 5))
+          done
+          exit 1
