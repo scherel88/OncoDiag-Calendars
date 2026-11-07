@@ -318,6 +318,18 @@ async def scan_company(browser, sem, company: dict, years: list[int], timeout_ms
                                 await capture("year:"+str(option["label"])[:15])
                         except (PWError,ValueError) as ex:
                             log["errors"].append("archive: "+str(ex)[:110])
+                    # Read public past/upcoming event tabs as separate views.
+                    for label in ("Past Events", "Upcoming Events"):
+                        for role in ("tab", "button"):
+                            try:
+                                tab=page.get_by_role(role,name=label,exact=True)
+                                if await tab.count() and await tab.first.is_visible():
+                                    await tab.first.click(timeout=2000)
+                                    await page.wait_for_timeout(450)
+                                    await capture("tab:"+label)
+                                    break
+                            except PWError:
+                                continue
                     # Bound the visible 'load more' UI interactions.
                     for j in range(3):
                         btn=page.get_by_text(re.compile(r"^(load more|view more|show more)$",re.I))
@@ -394,8 +406,14 @@ async def run(args):
     async with async_playwright() as p:
         browser=await p.chromium.launch(headless=True)
         try:
-            tasks=[asyncio.wait_for(scan_company(browser,sem,c,years,args.timeout_ms,args.max_details),
-                                   timeout=args.site_deadline) for c in companies]
+            # A queued company must not time out before a browser slot opens.
+            async def protected(company):
+                async with sem:
+                    return await asyncio.wait_for(
+                        scan_company(browser,asyncio.Semaphore(1),company,years,
+                                     args.timeout_ms,args.max_details),
+                        timeout=args.site_deadline)
+            tasks=[protected(c) for c in companies]
             outcomes=await asyncio.gather(*tasks,return_exceptions=True)
             for c,result in zip(companies,outcomes):
                 name=c["company"]
