@@ -112,6 +112,7 @@
       "https://investors.personalis.com/news-events/press-releases"
     ],
     "Personalis|official_filings_financial_reports": [
+      "https://investors.personalis.com/financial-information/sec-filings",
       "https://data.sec.gov/submissions/CIK0001527753.json"
     ],
     "GRAIL|official_ir_events_webcasts": [
@@ -163,6 +164,7 @@
       "https://ir.genedx.com/news-events/news-releases"
     ],
     "GeneDx|official_filings_financial_reports": [
+      "https://ir.genedx.com/financials-filings/sec-filings",
       "https://data.sec.gov/submissions/CIK0001818331.json"
     ],
     "SOPHiA GENETICS|official_ir_events_webcasts": [
@@ -184,6 +186,7 @@
       "https://www.illumina.com/company/news-center/press-releases.html"
     ],
     "Illumina|official_filings_financial_reports": [
+      "https://investor.illumina.com/financial-information/sec-filings",
       "https://data.sec.gov/submissions/CIK0001110803.json"
     ],
     "PacBio|official_ir_events_webcasts": [
@@ -195,6 +198,7 @@
       "https://www.pacb.com/news/press-releases/"
     ],
     "PacBio|official_filings_financial_reports": [
+      "https://investor.pacificbiosciences.com/financial-information/sec-filings",
       "https://data.sec.gov/submissions/CIK0001299130.json"
     ],
     "Oxford Nanopore Technologies|official_ir_events_webcasts": [
@@ -254,6 +258,7 @@
       "https://investors.twistbioscience.com/news-releases"
     ],
     "Twist Bioscience|official_filings_financial_reports": [
+      "https://investors.twistbioscience.com/financial-information/sec-filings",
       "https://data.sec.gov/submissions/CIK0001581280.json"
     ]
   },
