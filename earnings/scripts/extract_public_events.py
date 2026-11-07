@@ -421,10 +421,32 @@ async def run(args):
             # A queued company must not time out before a browser slot opens.
             async def protected(company):
                 async with sem:
-                    return await asyncio.wait_for(
-                        scan_company(browser,asyncio.Semaphore(1),company,years,
-                                     args.timeout_ms,args.max_details),
-                        timeout=args.site_deadline)
+                    attempts=[]
+                    all_rows=[]
+                    for candidate_url in company["event_urls"][:3]:
+                        configured=dict(company,event_urls=[candidate_url])
+                        try:
+                            rows,stat=await asyncio.wait_for(
+                                scan_company(browser,asyncio.Semaphore(1),configured,years,
+                                             args.timeout_ms,args.max_details),
+                                timeout=args.site_deadline)
+                            attempts.append(stat)
+                            all_rows.extend(rows)
+                            if rows:
+                                break  # avoid redundant work after a useful first-page extract
+                        except Exception as ex:
+                            attempts.append({"primary_url":candidate_url,
+                                "status":"TIMED_OUT_OR_FAILED","errors":[str(ex)[:180]]})
+                    final=attempts[-1]
+                    final["configured_primary_url"]=company["event_urls"][0]
+                    final["attempted_urls"]=[a["primary_url"] for a in attempts]
+                    final["attempts"]=attempts
+                    clean=merge(all_rows)
+                    final["candidate_count"]=len(clean)
+                    final["review_ready_count"]=sum(x.review_ready for x in clean)
+                    if clean:
+                        final["status"]="CANDIDATES_FOUND"
+                    return clean,final
             tasks=[protected(c) for c in companies]
             outcomes=await asyncio.gather(*tasks,return_exceptions=True)
             for c,result in zip(companies,outcomes):
@@ -452,7 +474,7 @@ async def run(args):
     temp.write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     temp.replace(args.output)
     print(json.dumps(report["summary"],indent=2))
-    return 0
+    return 2 if report["summary"]["sites_with_access_errors"] == len(companies) else 0
 
 
 def self_test():
