@@ -4,6 +4,11 @@ name: Extract public investor-event candidates
 # earnings-financial-calls. This workflow never modifies canonical events/ICS.
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/extract-investor-events.yml"
   schedule:
     # 07:05 America/New_York via DST-aware gate
     - cron: "5 11,12 * * *"
