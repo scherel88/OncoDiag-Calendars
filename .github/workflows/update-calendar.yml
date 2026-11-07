@@ -3,7 +3,7 @@ name: Build calendar feed
 on:
   push:
     paths:
-      - "events*.json"
+      - "events.json"
       - "results/*.json"
       - "generate_calendar.py"
       - "validate_calendar.py"

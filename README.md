@@ -4,12 +4,12 @@ This repository has exactly two GitHub Actions publishing pipelines. **Discovery
 
 | Calendar | Subscription link | External inputs | GitHub builder/validator |
 | --- | --- | --- | --- |
-| Investor events and earnings | https://raw.githubusercontent.com/scherel88/diagnostics-earnings-calendar/main/earnings.ics | Root events*.json and results/*.json | generate_calendar.py and validate_calendar.py |
+| Investor events and earnings | https://raw.githubusercontent.com/scherel88/diagnostics-earnings-calendar/main/earnings.ics | Root events.json and results/*.json | generate_calendar.py and validate_calendar.py |
 | Scientific and industry conferences | https://raw.githubusercontent.com/scherel88/diagnostics-earnings-calendar/main/conferences/upcoming-conferences.ics | conferences/events.json | conferences/generate_calendar.py and conferences/validate_calendar.py |
 
 ## Source updates
 
-**Investor events:** The external daily monitor appends or updates official event records in root events*.json and official results in results/*.json. Editing either input triggers the investor build and independent ICS validation; a results-only change also triggers a build.
+**Investor events:** The external daily monitor appends or updates official event records in root events.json and official results in results/*.json. Editing either input triggers the investor build and independent ICS validation; a results-only change also triggers a build.
 
 **Conferences:** The external weekly monitor updates conferences/events.json from verified organizer announcements. Its object has schema_version: 1 and an events list. Each event needs uid, title, start_date, end_date (exclusive, YYYY-MM-DD), location, url, description. Preserve an edition's UID when it is rescheduled. Missing venues should be recorded as "Venue to be announced" rather than invented.
 
