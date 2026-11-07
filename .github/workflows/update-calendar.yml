@@ -4,13 +4,10 @@ on:
   push:
     paths:
       - "events*.json"
-      - "results/**"
       - "generate_calendar.py"
       - "validate_calendar.py"
       - ".github/workflows/update-calendar.yml"
   workflow_dispatch:
-  schedule:
-    - cron: "17 12 * * *"
 
 permissions:
   contents: write
