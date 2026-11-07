@@ -1,0 +1,1034 @@
+{
+  "schema": "ondig-chatgpt-findings-v1",
+  "local_run_date": "2026-11-06",
+  "report_created_at_utc": "2026-11-07T04:48:07.319Z",
+  "execution_owner": "ChatGPT (web searches and directly opened issuer sources)",
+  "publisher": "GitHub calendar publisher only",
+  "scope": {
+    "companies": 25,
+    "categories_per_company": 3,
+    "expected_checks": 75,
+    "categories_attempted": 75,
+    "source_records": 75,
+    "review_status_counts": {
+      "REVIEWED_LIMITED": 35,
+      "ATTEMPTED_INCOMPLETE": 39,
+      "NOT_APPLICABLE_STANDALONE": 1
+    }
+  },
+  "confidence": "PARTIAL — event candidates verified but full 75-category, seven-day archive completion not established",
+  "sources": [
+    {
+      "company": "Labcorp",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+      "alternate_urls": [
+        "https://ir.labcorp.com/"
+      ],
+      "evidence_urls": [
+        "https://ir.labcorp.com/events/event-details/labcorp-holdings-inc-ubs-global-healthcare-conference"
+      ],
+      "observation": "Official presentations and UBS Nov 10 at 8:45 ET checked against ICS",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Labcorp",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://ir.labcorp.com/news-and-events/news-releases",
+      "alternate_urls": [
+        "https://www.labcorp.com/newsroom/press-releases"
+      ],
+      "evidence_urls": [
+        "https://ir.labcorp.com/news-releases/news-release-details/labcorp-speak-ubs-global-healthcare-conference"
+      ],
+      "observation": "Nov 4 UBS presentation release checked; event already on calendar",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Labcorp",
+      "category": "F",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://data.sec.gov/submissions/CIK0000920148.json",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://ir.labcorp.com/financials/sec-filings"
+      ],
+      "observation": "Issuer SEC filing listing includes Nov 4 8-K and Nov 5 Form 4",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Exact Sciences",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://www.abbott.com/en-us/investors/",
+      "alternate_urls": [
+        "https://www.abbott.com/en-us/exact-sciences"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Exact Sciences",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://www.abbott.com/en-us/investors/",
+      "alternate_urls": [
+        "https://www.abbott.com/en-us/exact-sciences"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Exact Sciences",
+      "category": "F",
+      "status": "NOT_APPLICABLE_STANDALONE",
+      "configured_url": "https://data.sec.gov/submissions/CIK0001124140.json",
+      "alternate_urls": [
+        "https://data.sec.gov/submissions/CIK0000001800.json"
+      ],
+      "evidence_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1124140/000119312526118700/d128802d8k.htm"
+      ],
+      "observation": "Former EXAS issuer merged into Abbott March 23, 2026 and discontinued standalone registration; independent EXAS filings are not an ongoing category",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Veracyte",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.veracyte.com/events-presentations",
+      "alternate_urls": [
+        "https://veracyteinc.gcs-web.com/events-presentations"
+      ],
+      "evidence_urls": [
+        "https://investor.veracyte.com/events-presentations"
+      ],
+      "observation": "Three November upcoming fireside chats checked against ICS",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Veracyte",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.veracyte.com/press-releases",
+      "alternate_urls": [
+        "https://veracyteinc.gcs-web.com/press-releases"
+      ],
+      "evidence_urls": [
+        "https://investor.veracyte.com/news-releases/news-release-details/veracyte-participate-upcoming-investor-conferences-9"
+      ],
+      "observation": "October 29 announcement and November 4 financial-results release checked",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Veracyte",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://data.sec.gov/submissions/CIK0001384101.json",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.carislifesciences.com/news-events/events",
+      "alternate_urls": [
+        "https://investor.carislifesciences.com/"
+      ],
+      "evidence_urls": [
+        "https://investor.carislifesciences.com/news-events/events"
+      ],
+      "observation": "Official events archive lists Nov 4 Q3 as past, no upcoming events in visible archive",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.carislifesciences.com/news-events/news-releases",
+      "alternate_urls": [
+        "https://www.carislifesciences.com/news-and-events/news/"
+      ],
+      "evidence_urls": [
+        "https://investor.carislifesciences.com/news-events/news-releases"
+      ],
+      "observation": "Issuer release archive shows Nov 4 Q3 release",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://data.sec.gov/submissions/CIK0002019410.json",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Guardant Health",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Guardant Health",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://investors.guardanthealth.com/press-releases/default.aspx",
+      "alternate_urls": [
+        "https://guardanthealth.com/newsroom/press-releases/"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Guardant Health",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://investors.guardanthealth.com/financials/sec-filings/default.aspx",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.myriad.com/events-and-presentations/",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://investor.myriad.com/events-and-presentations/"
+      ],
+      "observation": "Official IR event page and investor news reviewed; Nov conference entries verified via release",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.myriad.com/news-releases/",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://investor.myriad.com/news-releases/news-release-detail/?newsItemId=27656"
+      ],
+      "observation": "Nov 2 issuer release confirms UBS Nov 10, Stephens Nov 18, Piper Dec 2, already in ICS",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "F",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.myriad.com/sec-filings/",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://investor.myriad.com/sec-filings/"
+      ],
+      "observation": "Official issuer filings index was retrieved with dated filings",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Natera",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.natera.com/events-and-presentations/events/default.aspx",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://investor.natera.com/events-and-presentations/events/default.aspx"
+      ],
+      "observation": "Issuer event archive and official dated Q3 event confirmation reviewed",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Natera",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.natera.com/news/default.aspx",
+      "alternate_urls": [
+        "https://www.natera.com/company/news/"
+      ],
+      "evidence_urls": [
+        "https://investor.natera.com/news/news-details/2026/Natera-to-Report-its-Third-Quarter-Results-on-November-5-2026/default.aspx"
+      ],
+      "observation": "October 29 and November 5 company releases confirm Q3 date/time already in ICS",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Natera",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://investor.natera.com/financials/sec-filings/default.aspx",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://ir.questdiagnostics.com/events-and-presentations/",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://ir.questdiagnostics.com/",
+      "alternate_urls": [
+        "https://newsroom.questdiagnostics.com/"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://data.sec.gov/submissions/CIK0001022079.json",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://ir.neogenomics.com/news-events/ir-calendar"
+      ],
+      "observation": "Nov 17 Stephens and Dec 1 Piper Sandler event details verified with exact time and webcast",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://ir.neogenomics.com/news-events/press-releases",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://ir.neogenomics.com/news-events/press-releases/detail/343/neogenomics-to-participate-in-upcoming-investor-conferences"
+      ],
+      "observation": "Issuer November 6 release verified two NEW investor events absent from baseline ICS",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "F",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://ir.neogenomics.com/sec-filings/all-sec-filings",
+      "alternate_urls": [
+        "https://ir.neogenomics.com/sec-filings"
+      ],
+      "evidence_urls": [
+        "https://ir.neogenomics.com/sec-filings/all-sec-filings"
+      ],
+      "observation": "Official issuer SEC filings page opened; archive comprehensiveness not established",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "DELFI Diagnostics",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://delfidiagnostics.com/about-us/newsroom/",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "DELFI Diagnostics",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://delfidiagnostics.com/about-us/newsroom/",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://delfidiagnostics.com/about-us/newsroom/"
+      ],
+      "observation": "Official press release archive latest May 28 2026; no new investor conference in displayed records",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "DELFI Diagnostics",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://delfidiagnostics.com/about-us/newsroom/",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Personalis",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://investors.personalis.com/",
+      "alternate_urls": [
+        "https://www.personalis.com/resources/"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Personalis",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.personalis.com/news-events/press-releases",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://investors.personalis.com/news-events/press-releases"
+      ],
+      "observation": "Issuer November 4 third-quarter financial results release displayed",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Personalis",
+      "category": "F",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.personalis.com/financial-information/sec-filings",
+      "alternate_urls": [
+        "https://data.sec.gov/submissions/CIK0001527753.json"
+      ],
+      "evidence_urls": [
+        "https://investors.personalis.com/financial-information/sec-filings"
+      ],
+      "observation": "Official SEC filing index opened; comprehensive dated disclosure review not established",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "GRAIL",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.grail.com/news-events/events",
+      "alternate_urls": [
+        "https://investors.grail.com/"
+      ],
+      "evidence_urls": [
+        "https://investors.grail.com/news-events/events"
+      ],
+      "observation": "Nov 10 UBS at 11 AM ET verified; already in calendar",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "GRAIL",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.grail.com/",
+      "alternate_urls": [
+        "https://grail.com/news-center/"
+      ],
+      "evidence_urls": [
+        "https://investors.grail.com/news-events/news-releases"
+      ],
+      "observation": "November 4 Q3 release and Oct 27 UBS announcement assessed",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "GRAIL",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://investors.grail.com/financials-filings/sec-filings",
+      "alternate_urls": [
+        "https://data.sec.gov/submissions/CIK0001699031.json"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Tempus AI",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://tempus.gcs-web.com/",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://tempus.gcs-web.com/news-events/investor-events"
+      ],
+      "observation": "Official investor events source says no upcoming events after Nov 2 Q3 event",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Tempus AI",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://tempus.gcs-web.com/news-events/news-releases",
+      "alternate_urls": [
+        "https://www.tempus.com/news/"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Tempus AI",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://data.sec.gov/submissions/CIK0001717115.json",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.adaptivebiotech.com/",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://investors.adaptivebiotech.com/news-events/events"
+      ],
+      "observation": "Issuer events list states no upcoming events and Nov 4 Q3 past",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.adaptivebiotech.com/news-releases",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://investors.adaptivebiotech.com/"
+      ],
+      "observation": "Issuer IR shows Nov 4 financial results release and prior announcement",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://data.sec.gov/submissions/CIK0001478320.json",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "BillionToOne",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.billiontoone.com/news-events/events-presentations",
+      "alternate_urls": [
+        "https://investors.billiontoone.com/"
+      ],
+      "evidence_urls": [
+        "https://investors.billiontoone.com/news-events/events-presentations"
+      ],
+      "observation": "Nov 10 UBS and Nov 11 Stifel times confirmed; both already in ICS",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "BillionToOne",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.billiontoone.com/news-events/news-releases",
+      "alternate_urls": [
+        "https://www.billiontoone.com/news-media"
+      ],
+      "evidence_urls": [
+        "https://investors.billiontoone.com/news-releases/news-release-details/billiontoone-participate-two-upcoming-investor-conferences"
+      ],
+      "observation": "Oct 27 issuer release confirms both upcoming conferences",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "BillionToOne",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://data.sec.gov/submissions/CIK0002070849.json",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "GeneDx",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://ir.genedx.com/",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "GeneDx",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://ir.genedx.com/news-events/news-releases",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://ir.genedx.com/news-events/news-releases"
+      ],
+      "observation": "Nov 5 corporate release and Oct 23 Nov 9 earnings announcement reviewed",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "GeneDx",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://ir.genedx.com/financials-filings/sec-filings",
+      "alternate_urls": [
+        "https://data.sec.gov/submissions/CIK0001818331.json"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://ir.sophiagenetics.com/events",
+      "alternate_urls": [
+        "https://ir.sophiagenetics.com/"
+      ],
+      "evidence_urls": [
+        "https://ir.sophiagenetics.com/events"
+      ],
+      "observation": "Official investor calendar states no upcoming event, Nov 3 Q3 past event",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://ir.sophiagenetics.com/index.php?s=43",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://ir.sophiagenetics.com/financials",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Illumina",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.illumina.com/news-events/events",
+      "alternate_urls": [
+        "https://investor.illumina.com/"
+      ],
+      "evidence_urls": [
+        "https://investor.illumina.com/news-events/events"
+      ],
+      "observation": "Nov 10 UBS and Nov 17 Jefferies both confirmed, already in calendar",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Illumina",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.illumina.com/",
+      "alternate_urls": [
+        "https://www.illumina.com/company/news-center/press-releases.html"
+      ],
+      "evidence_urls": [
+        "https://investor.illumina.com/"
+      ],
+      "observation": "Oct 27 investor conference announcement shown in latest releases",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Illumina",
+      "category": "F",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.illumina.com/financial-information/sec-filings",
+      "alternate_urls": [
+        "https://data.sec.gov/submissions/CIK0001110803.json"
+      ],
+      "evidence_urls": [
+        "https://investor.illumina.com/financial-information/sec-filings"
+      ],
+      "observation": "Issuer SEC filings archive opened and examined; exact completeness uncertain",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "PacBio",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investor.pacificbiosciences.com/events-and-presentations",
+      "alternate_urls": [
+        "https://investor.pacificbiosciences.com/investor-relations"
+      ],
+      "evidence_urls": [
+        "https://investor.pacificbiosciences.com/events-and-presentations"
+      ],
+      "observation": "Nov 9 UBS and Nov 18 Stephens exact times checked; both already in calendar",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "PacBio",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://investor.pacificbiosciences.com/news-releases",
+      "alternate_urls": [
+        "https://www.pacb.com/news/press-releases/"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "PacBio",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://investor.pacificbiosciences.com/financial-information/sec-filings",
+      "alternate_urls": [
+        "https://data.sec.gov/submissions/CIK0001299130.json"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://nanoporetech.com/about/investors",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://nanoporetech.com/about/investors/reports",
+      "alternate_urls": [
+        "https://nanoporetech.com/"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://nanoporetech.com/about/investors/reports",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Element Biosciences",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://www.elementbiosciences.com/",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Element Biosciences",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://www.elementbiosciences.com/",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Element Biosciences",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://www.elementbiosciences.com/",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "MGI Tech",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://www.mgi-tech.com/Investor/index",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "MGI Tech",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://global-mgitech.com/news/",
+      "alternate_urls": [
+        "https://www.mgi-tech.com/Investor/index"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "MGI Tech",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://www.mgi-tech.com/Investor/index",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "E",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "N",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://ir.thermofisher.com/investors/news-events/news/default.aspx",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "10x Genomics",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.10xgenomics.com/events-and-presentations/",
+      "alternate_urls": [
+        "https://investors.10xgenomics.com/overview/default.aspx"
+      ],
+      "evidence_urls": [
+        "https://investors.10xgenomics.com/news/news-details/2026/10x-Genomics-to-Participate-in-the-2026-Jefferies-Global-Healthcare-Conference/default.aspx"
+      ],
+      "observation": "Issuer's October 27 announcement confirms Nov 17 Jefferies at 4:30 PM GMT, already on calendar",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "10x Genomics",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.10xgenomics.com/news/default.aspx",
+      "alternate_urls": [
+        "https://investors.10xgenomics.com/overview/default.aspx"
+      ],
+      "evidence_urls": [
+        "https://investors.10xgenomics.com/news/news-details/2026/10x-Genomics-to-Participate-in-the-2026-Jefferies-Global-Healthcare-Conference/default.aspx"
+      ],
+      "observation": "Oct 27 investor news release reviewed",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "10x Genomics",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://data.sec.gov/submissions/CIK0001770787.json",
+      "alternate_urls": [],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "E",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.twistbioscience.com/events-and-presentations/events",
+      "alternate_urls": [
+        "https://investors.twistbioscience.com/"
+      ],
+      "evidence_urls": [
+        "https://investors.twistbioscience.com/events-and-presentations/events"
+      ],
+      "observation": "Nov 12 fiscal Q4 earnings at 8 AM EST confirmed; in ICS",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "N",
+      "status": "REVIEWED_LIMITED",
+      "configured_url": "https://investors.twistbioscience.com/news-releases",
+      "alternate_urls": [],
+      "evidence_urls": [
+        "https://investors.twistbioscience.com/news-releases"
+      ],
+      "observation": "Oct 26 earnings announcement and Nov 3 corporate notice in issuer releases",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "F",
+      "status": "ATTEMPTED_INCOMPLETE",
+      "configured_url": "https://investors.twistbioscience.com/financial-information/sec-filings",
+      "alternate_urls": [
+        "https://data.sec.gov/submissions/CIK0001581280.json"
+      ],
+      "evidence_urls": [],
+      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "attempted_in_chatgpt": true,
+      "seven_day_archives_fully_verified": false
+    }
+  ],
+  "baseline": {
+    "public_ics_entries_in_repository": 95,
+    "previous_commit": "f89d48e96952c28086c41a0629439af96b899053"
+  },
+  "discovered_events": [
+    {
+      "company": "NeoGenomics",
+      "title": "NeoGenomics — Stephens Annual Investment Conference Fireside Chat",
+      "date": "2026-11-17",
+      "time": "08:45 CST",
+      "start": "2026-11-17T08:45:00-06:00",
+      "event_id": "neogenomics-stephens-annual-investment-conference-2026-11-17",
+      "source": "https://ir.neogenomics.com/news-events/press-releases/detail/343/neogenomics-to-participate-in-upcoming-investor-conferences",
+      "status": "PUBLISHED_IN_REPOSITORY_ICS"
+    },
+    {
+      "company": "NeoGenomics",
+      "title": "NeoGenomics — Piper Sandler 38th Annual Healthcare Conference Fireside Chat",
+      "date": "2026-12-01",
+      "time": "16:00 EST",
+      "start": "2026-12-01T16:00:00-05:00",
+      "event_id": "neogenomics-piper-sandler-38th-healthcare-2026-12-01",
+      "source": "https://ir.neogenomics.com/news-events/press-releases/detail/343/neogenomics-to-participate-in-upcoming-investor-conferences",
+      "status": "PUBLISHED_IN_REPOSITORY_ICS"
+    }
+  ],
+  "calendar_verification": {
+    "ics_git_blob_event_count": 97,
+    "old_ics_uid_count": 95,
+    "old_uid_preserved_count": 95,
+    "old_uids_missing": 0,
+    "duplicate_uids": 0,
+    "new_ics_events_confirmed": 2,
+    "public_raw_ics": "UNVERIFIED_WEB_RETRIEVAL_DISABLED",
+    "public_url": "https://raw.githubusercontent.com/scherel88/diagnostics-earnings-calendar/main/earnings.ics"
+  },
+  "errors": [
+    "Complete seven-day archive review was not established for every source category.",
+    "Many SEC data.sec.gov JSON endpoints did not return readable content; issuer SEC HTML indexes were substituted where checked.",
+    "Some investor pages returned thin JavaScript shells or 403 and required issuer-news search fallback.",
+    "External raw.githubusercontent.com retrieval returned DisabledError, so public feed subscription access was not independently confirmed."
+  ],
+  "status": "PARTIAL",
+  "success": false,
+  "notes": "This file is a factual work ledger. URL attempts do not equal substantive verification. Only completed findings are asserted; no full 75/75 success claim."
+}
