@@ -493,6 +493,35 @@ def self_test():
     print("Self-test: 5 parser checks passed")
 
 
+async def browser_smoke_test():
+    """Exercise Chromium/JavaScript without accessing an external website."""
+    from playwright.async_api import async_playwright
+    html = """<div id="events"></div>
+<script>
+setTimeout(function() {
+  document.getElementById('events').innerHTML =
+    '<article><h3>Q3 Earnings Conference Call</h3>' +
+    '<time datetime="2026-11-05T16:30:00-05:00"></time>' +
+    '<a href="/events/q3">Q3 Earnings Conference Call</a>' +
+    '<a href="https://stream.example/q3">Listen to webcast</a></article>';
+}, 50);
+</script>"""
+    async with async_playwright() as p:
+        browser=await p.chromium.launch(headless=True)
+        try:
+            page=await browser.new_page()
+            await page.goto("about:blank")
+            await page.set_content(html)
+            await page.wait_for_selector("article",timeout=5000)
+            rows=from_html("TestCo",await page.content(),
+                           "https://investor.company.example/events","smoke:javascript")
+            if len(rows)!=1 or not rows[0].review_ready:
+                raise AssertionError("Chromium rendered event not captured")
+        finally:
+            await browser.close()
+    print("Chromium smoke: JavaScript event rendered and captured")
+
+
 def cli():
     parser=argparse.ArgumentParser()
     parser.add_argument("--config",type=Path,default=Path("earnings/config/sources.json"))
@@ -505,9 +534,12 @@ def cli():
     parser.add_argument("--max-details",type=int,default=10)
     parser.add_argument("--site-deadline",type=int,default=130)
     parser.add_argument("--self-test",action="store_true")
+    parser.add_argument("--browser-smoke",action="store_true")
     args=parser.parse_args()
     if args.self_test:
         self_test();return 0
+    if args.browser_smoke:
+        asyncio.run(browser_smoke_test());return 0
     if not 1<=args.concurrency<=5:
         parser.error("Concurrency must be between 1 and 5")
     return asyncio.run(run(args))
