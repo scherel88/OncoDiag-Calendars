@@ -1,0 +1,35 @@
+name: Test earnings event extractor
+on:
+  push:
+    branches:
+      - earnings-financial-calls
+    paths:
+      - "earnings/scripts/**"
+      - "earnings/config/**"
+      - "earnings/tests/**"
+      - "earnings/requirements-extraction.txt"
+      - ".github/workflows/test-issuer-extraction.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-parser-regressions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: earnings/requirements-extraction.txt
+      - name: Install parser requirements
+        run: python -m pip install -r earnings/requirements-extraction.txt
+      - name: Compile Python and validate all source mappings
+        run: python -m py_compile earnings/scripts/extract_public_events.py
+      - name: Run regression tests
+        run: python -m unittest discover -s earnings/tests -p 'test_*.py' -v
+      - name: Run executable self-test
+        run: python earnings/scripts/extract_public_events.py --self-test
