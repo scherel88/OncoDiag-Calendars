@@ -1496,6 +1496,23 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:52eef6b6125ab8eb10c7@diagnostics-earnings-calendar
+DTSTAMP:20261107T053821Z
+LAST-MODIFIED:20261107T053821Z
+DTSTART:20260910T130000Z
+DTEND:20260910T140000Z
+SUMMARY:Labcorp — 2026 Investor Day
+LOCATION:https://edge.media-server.com/mmc/p/y48wz7fs
+URL:https://edge.media-server.com/mmc/p/y48wz7fs
+DESCRIPTION:Investor event: Labcorp — 2026 Investor Day\nCompany:
+  Labcorp\nFiscal year: 2026\nOfficial event source: https://ir.la
+ bcorp.com/news-releases/news-release-details/labcorp-highlights-s
+ trategic-priorities-driving-durable-growth\nWebcast / event page:
+  https://edge.media-server.com/mmc/p/y48wz7fs
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:a38fb09cf968d9fdd10c@diagnostics-earnings-calendar
 DTSTAMP:20261107T053323Z
 LAST-MODIFIED:20261107T053323Z
