@@ -10,7 +10,7 @@ permissions:
   contents: write
 concurrency:
   group: investor-access-audit
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   audit:
     runs-on: ubuntu-latest
