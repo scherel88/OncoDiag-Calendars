@@ -252,8 +252,7 @@
       "mode": "unconfirmed",
       "event_urls": [
         "https://www.mgi-tech.com/Investor/index",
-        "https://www.mgi-tech.com/investors.html",
-        "https://roadshow.sseinfo.com/"
+        "https://www.mgi-tech.com/investors.html"
       ],
       "news_urls": [
         "https://global-mgitech.com/news/",
