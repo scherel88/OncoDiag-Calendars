@@ -1,0 +1,1116 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-11-07T14:56:04+00:00",
+  "extractor": "Playwright public browser",
+  "review_required": true,
+  "events": [
+    {
+      "company": "NeoGenomics",
+      "title": "Jefferies Global Healthcare Conference 2026",
+      "event_date": "2026-06-04",
+      "start": "2026-06-04T10:30:00-05:00",
+      "event_url": "https://ir.neogenomics.com/news-events/ir-calendar/detail/20260604-jefferies-global-healthcare-conference-2026",
+      "webcast_url": "https://event.summitcast.com/view/NgCqua4VVQjq9ibVWHVWca/guest_book?session_id=SEHJagUmRj3BECT9c5Dfh3",
+      "listing_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "extraction_method": "browser:initial:dom + browser:after_scroll:dom + browser:issuer-detail:dom",
+      "excerpt": "Jun 4, 2026 10:30 am EST Jefferies Global Healthcare Conference 2026",
+      "missing": null,
+      "id": "80b721995d65c26c043b2b95",
+      "ready_for_manual_review": true
+    },
+    {
+      "company": "NeoGenomics",
+      "title": "Second Quarter 2026 Financial Results Conference Call",
+      "event_date": "2026-07-28",
+      "start": "2026-07-28T16:30:00-05:00",
+      "event_url": "https://ir.neogenomics.com/news-events/ir-calendar/detail/20260728-second-quarter-2026-financial-results-conference-call",
+      "webcast_url": "https://www.webcaster5.com/Webcast/Page/1219/54220",
+      "listing_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "extraction_method": "browser:initial:dom + browser:after_scroll:dom + browser:issuer-detail:dom",
+      "excerpt": "Jul 28, 2026 4:30 pm EST Second Quarter 2026 Financial Results Conference Call",
+      "missing": null,
+      "id": "d281fc3563b2bca875dcb358",
+      "ready_for_manual_review": true
+    },
+    {
+      "company": "NeoGenomics",
+      "title": "Morgan Stanley 24th Annual Global Healthcare Conference",
+      "event_date": "2026-09-15",
+      "start": "2026-09-15T07:45:00-05:00",
+      "event_url": "https://ir.neogenomics.com/news-events/ir-calendar/detail/20260915-morgan-stanley-24th-annual-global-healthcare-conference",
+      "webcast_url": "https://event.webcasts.com/starthere.jsp?ei=1773793&tp_key=204dfff272&tp_special=8",
+      "listing_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "extraction_method": "browser:initial:dom + browser:after_scroll:dom + browser:issuer-detail:dom",
+      "excerpt": "Sep 15, 2026 7:45 am EST Morgan Stanley 24th Annual Global Healthcare Conference",
+      "missing": null,
+      "id": "499b51dae7990d0ea5f54e59",
+      "ready_for_manual_review": true
+    },
+    {
+      "company": "NeoGenomics",
+      "title": "Third Quarter 2026 Financial Results Conference Call",
+      "event_date": "2026-10-28",
+      "start": "2026-10-28T16:30:00-05:00",
+      "event_url": "https://ir.neogenomics.com/news-events/ir-calendar/detail/20261028-third-quarter-2026-financial-results-conference-call",
+      "webcast_url": "https://www.webcaster5.com/Webcast/Page/1219/54667",
+      "listing_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "extraction_method": "browser:initial:dom + browser:after_scroll:dom + browser:issuer-detail:dom",
+      "excerpt": "Oct 28, 2026 4:30 pm EST Third Quarter 2026 Financial Results Conference Call",
+      "missing": null,
+      "id": "157274047ec82e20e164f0f0",
+      "ready_for_manual_review": true
+    },
+    {
+      "company": "NeoGenomics",
+      "title": "Stephens Annual Investment Conference",
+      "event_date": "2026-11-17",
+      "start": "2026-11-17T08:45:00-06:00",
+      "event_url": "https://ir.neogenomics.com/news-events/ir-calendar/detail/20261117-stephens-annual-investment-conference",
+      "webcast_url": "https://event.summitcast.com/view/AnJcL7fjsXraGqV8XG6fRL/guest_book?session_id=GdfCjMG7wQ7UwSk5DqB58S",
+      "listing_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "extraction_method": "browser:initial:dom + browser:after_scroll:dom + browser:issuer-detail:dom",
+      "excerpt": "Nov 17, 2026 8:45 am CST Stephens Annual Investment Conference Nashville, TN",
+      "missing": null,
+      "id": "429bae632004d6dd6c1974e6",
+      "ready_for_manual_review": true
+    },
+    {
+      "company": "NeoGenomics",
+      "title": "Piper Sandler 38th Annual Healthcare Conference",
+      "event_date": "2026-12-01",
+      "start": "2026-12-01T16:00:00-05:00",
+      "event_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "webcast_url": null,
+      "listing_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "extraction_method": "browser:initial:dom + browser:after_scroll:dom",
+      "excerpt": "Dec 1, 2026 4:00 pm EST Piper Sandler 38th Annual Healthcare Conference New York, NY",
+      "missing": null,
+      "id": "f9baae4b790705bf2aeab113",
+      "ready_for_manual_review": false
+    }
+  ],
+  "companies": {
+    "Labcorp": {
+      "company": "Labcorp",
+      "primary_url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+      "mode": "standard",
+      "checked_at_utc": "2026-11-07T14:56:05+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+      "attempted_urls": [
+        "https://ir.labcorp.com/news-and-events/recent-past-presentations"
+      ],
+      "attempts": [
+        {
+          "company": "Labcorp",
+          "primary_url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:05+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Abbott": {
+      "company": "Abbott",
+      "primary_url": "https://www.abbottinvestor.com/news-and-events/events",
+      "mode": "standard",
+      "checked_at_utc": "2026-11-07T14:56:05+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://www.abbottinvestor.com/news-and-events/events",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://www.abbottinvestor.com/news-and-events/events",
+      "attempted_urls": [
+        "https://www.abbottinvestor.com/news-and-events/events"
+      ],
+      "attempts": [
+        {
+          "company": "Abbott",
+          "primary_url": "https://www.abbottinvestor.com/news-and-events/events",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:05+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://www.abbottinvestor.com/news-and-events/events",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Veracyte": {
+      "company": "Veracyte",
+      "primary_url": "https://investor.veracyte.com/events-presentations",
+      "mode": "indexed",
+      "checked_at_utc": "2026-11-07T14:56:05+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investor.veracyte.com/events-presentations",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investor.veracyte.com/events-presentations",
+      "attempted_urls": [
+        "https://investor.veracyte.com/events-presentations"
+      ],
+      "attempts": [
+        {
+          "company": "Veracyte",
+          "primary_url": "https://investor.veracyte.com/events-presentations",
+          "mode": "indexed",
+          "checked_at_utc": "2026-11-07T14:56:05+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investor.veracyte.com/events-presentations",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Caris Life Sciences": {
+      "company": "Caris Life Sciences",
+      "primary_url": "https://investor.carislifesciences.com/news-events/events",
+      "mode": "standard",
+      "checked_at_utc": "2026-11-07T14:56:05+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investor.carislifesciences.com/news-events/events",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investor.carislifesciences.com/news-events/events",
+      "attempted_urls": [
+        "https://investor.carislifesciences.com/news-events/events"
+      ],
+      "attempts": [
+        {
+          "company": "Caris Life Sciences",
+          "primary_url": "https://investor.carislifesciences.com/news-events/events",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:05+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investor.carislifesciences.com/news-events/events",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Guardant Health": {
+      "company": "Guardant Health",
+      "primary_url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx",
+      "mode": "dynamic",
+      "checked_at_utc": "2026-11-07T14:56:05+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx?__cf_chl_rt_tk=9Velqfz_tzwWXj0yza93C6Ayh4hAlCtD6Ykxt3B4hQs-1794063365-1.0.1.1-Mp_vLfsVSD9F_zU27TBQ2_jLajlmjh0PTigD8Ws0utU",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx",
+      "attempted_urls": [
+        "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
+      ],
+      "attempts": [
+        {
+          "company": "Guardant Health",
+          "primary_url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx",
+          "mode": "dynamic",
+          "checked_at_utc": "2026-11-07T14:56:05+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx?__cf_chl_rt_tk=9Velqfz_tzwWXj0yza93C6Ayh4hAlCtD6Ykxt3B4hQs-1794063365-1.0.1.1-Mp_vLfsVSD9F_zU27TBQ2_jLajlmjh0PTigD8Ws0utU",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Myriad Genetics": {
+      "company": "Myriad Genetics",
+      "primary_url": "https://investor.myriad.com/events-and-presentations/",
+      "mode": "standard",
+      "checked_at_utc": "2026-11-07T14:56:05+00:00",
+      "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+      "errors": [
+        "capture: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+      ],
+      "views": [
+        {
+          "view": "initial",
+          "url": "https://investor.myriad.com/events-and-presentations/",
+          "events_detected": 0
+        },
+        {
+          "view": "after_scroll",
+          "url": "https://investor.myriad.com/events-and-presentations/",
+          "events_detected": 0
+        },
+        {
+          "view": "year:2026",
+          "url": "https://investor.myriad.com/events-and-presentations/?date=2026",
+          "events_detected": 0
+        }
+      ],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 200,
+      "final_url": "https://investor.myriad.com/events-and-presentations/",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investor.myriad.com/events-and-presentations/",
+      "attempted_urls": [
+        "https://investor.myriad.com/events-and-presentations/"
+      ],
+      "attempts": [
+        {
+          "company": "Myriad Genetics",
+          "primary_url": "https://investor.myriad.com/events-and-presentations/",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:05+00:00",
+          "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+          "errors": [
+            "capture: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+          ],
+          "views": [
+            {
+              "view": "initial",
+              "url": "https://investor.myriad.com/events-and-presentations/",
+              "events_detected": 0
+            },
+            {
+              "view": "after_scroll",
+              "url": "https://investor.myriad.com/events-and-presentations/",
+              "events_detected": 0
+            },
+            {
+              "view": "year:2026",
+              "url": "https://investor.myriad.com/events-and-presentations/?date=2026",
+              "events_detected": 0
+            }
+          ],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 200,
+          "final_url": "https://investor.myriad.com/events-and-presentations/",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Natera": {
+      "company": "Natera",
+      "primary_url": "https://investor.natera.com/events-and-presentations/events/default.aspx",
+      "mode": "dynamic",
+      "checked_at_utc": "2026-11-07T14:56:05+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investor.natera.com/events-and-presentations/events/default.aspx?__cf_chl_rt_tk=OxUhcITftFdpeqGxkQmDu03vM9gwa.iYQOLPhdxxYsY-1794063366-1.0.1.1-qyT1keJfDDVQr8B.JV6RmQjOMU_f12P2mjFan.RaJCw",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investor.natera.com/events-and-presentations/events/default.aspx",
+      "attempted_urls": [
+        "https://investor.natera.com/events-and-presentations/events/default.aspx"
+      ],
+      "attempts": [
+        {
+          "company": "Natera",
+          "primary_url": "https://investor.natera.com/events-and-presentations/events/default.aspx",
+          "mode": "dynamic",
+          "checked_at_utc": "2026-11-07T14:56:05+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investor.natera.com/events-and-presentations/events/default.aspx?__cf_chl_rt_tk=OxUhcITftFdpeqGxkQmDu03vM9gwa.iYQOLPhdxxYsY-1794063366-1.0.1.1-qyT1keJfDDVQr8B.JV6RmQjOMU_f12P2mjFan.RaJCw",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Quest Diagnostics": {
+      "company": "Quest Diagnostics",
+      "primary_url": "https://ir.questdiagnostics.com/events-and-presentations/default.aspx",
+      "mode": "dynamic",
+      "checked_at_utc": "2026-11-07T14:56:05+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://ir.questdiagnostics.com/events-and-presentations/default.aspx?__cf_chl_rt_tk=TrrEQiZqMKEwxL7l05LJaymT1rZ.2kU9qX06VXZiduA-1794063366-1.0.1.1-SW4pKTuxcvUiM.MSVfEr6CId3CHLv2e5To1dc1UtsOM",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://ir.questdiagnostics.com/events-and-presentations/default.aspx",
+      "attempted_urls": [
+        "https://ir.questdiagnostics.com/events-and-presentations/default.aspx"
+      ],
+      "attempts": [
+        {
+          "company": "Quest Diagnostics",
+          "primary_url": "https://ir.questdiagnostics.com/events-and-presentations/default.aspx",
+          "mode": "dynamic",
+          "checked_at_utc": "2026-11-07T14:56:05+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://ir.questdiagnostics.com/events-and-presentations/default.aspx?__cf_chl_rt_tk=TrrEQiZqMKEwxL7l05LJaymT1rZ.2kU9qX06VXZiduA-1794063366-1.0.1.1-SW4pKTuxcvUiM.MSVfEr6CId3CHLv2e5To1dc1UtsOM",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "NeoGenomics": {
+      "company": "NeoGenomics",
+      "primary_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "mode": "standard",
+      "checked_at_utc": "2026-11-07T14:56:06+00:00",
+      "status": "CANDIDATES_FOUND",
+      "errors": [],
+      "views": [
+        {
+          "view": "initial",
+          "url": "https://ir.neogenomics.com/news-events/ir-calendar",
+          "events_detected": 6
+        },
+        {
+          "view": "after_scroll",
+          "url": "https://ir.neogenomics.com/news-events/ir-calendar",
+          "events_detected": 6
+        }
+      ],
+      "network_event_payloads": 0,
+      "detail_pages": 5,
+      "http_status": 200,
+      "final_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "candidate_count": 6,
+      "review_ready_count": 5,
+      "configured_primary_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "attempted_urls": [
+        "https://ir.neogenomics.com/news-events/ir-calendar"
+      ],
+      "attempts": [
+        {
+          "company": "NeoGenomics",
+          "primary_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:06+00:00",
+          "status": "CANDIDATES_FOUND",
+          "errors": [],
+          "views": [
+            {
+              "view": "initial",
+              "url": "https://ir.neogenomics.com/news-events/ir-calendar",
+              "events_detected": 6
+            },
+            {
+              "view": "after_scroll",
+              "url": "https://ir.neogenomics.com/news-events/ir-calendar",
+              "events_detected": 6
+            }
+          ],
+          "network_event_payloads": 0,
+          "detail_pages": 5,
+          "http_status": 200,
+          "final_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+          "candidate_count": 6,
+          "review_ready_count": 5
+        }
+      ]
+    },
+    "Personalis": {
+      "company": "Personalis",
+      "primary_url": "https://investors.personalis.com/news-events/events-and-presentations",
+      "mode": "indexed",
+      "checked_at_utc": "2026-11-07T14:56:06+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investors.personalis.com/news-events/events-and-presentations",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investors.personalis.com/news-events/events-and-presentations",
+      "attempted_urls": [
+        "https://investors.personalis.com/news-events/events-and-presentations"
+      ],
+      "attempts": [
+        {
+          "company": "Personalis",
+          "primary_url": "https://investors.personalis.com/news-events/events-and-presentations",
+          "mode": "indexed",
+          "checked_at_utc": "2026-11-07T14:56:06+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investors.personalis.com/news-events/events-and-presentations",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "GRAIL": {
+      "company": "GRAIL",
+      "primary_url": "https://investors.grail.com/news-events/events",
+      "mode": "indexed",
+      "checked_at_utc": "2026-11-07T14:56:06+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investors.grail.com/news-events/events",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investors.grail.com/news-events/events",
+      "attempted_urls": [
+        "https://investors.grail.com/news-events/events"
+      ],
+      "attempts": [
+        {
+          "company": "GRAIL",
+          "primary_url": "https://investors.grail.com/news-events/events",
+          "mode": "indexed",
+          "checked_at_utc": "2026-11-07T14:56:06+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investors.grail.com/news-events/events",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Tempus AI": {
+      "company": "Tempus AI",
+      "primary_url": "https://investors.tempus.com/events/default.aspx",
+      "mode": "dynamic",
+      "checked_at_utc": "2026-11-07T14:56:06+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investors.tempus.com/events/default.aspx?__cf_chl_rt_tk=3wB_11Zsd6QLMYXohk0iHvBuAfjYGnDkrGorlSV_Nac-1794063366-1.0.1.1-2.WKMUtmeCaURbjOsfLGtHd0nWQckk5ghqpbiec358M",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investors.tempus.com/events/default.aspx",
+      "attempted_urls": [
+        "https://investors.tempus.com/events/default.aspx"
+      ],
+      "attempts": [
+        {
+          "company": "Tempus AI",
+          "primary_url": "https://investors.tempus.com/events/default.aspx",
+          "mode": "dynamic",
+          "checked_at_utc": "2026-11-07T14:56:06+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investors.tempus.com/events/default.aspx?__cf_chl_rt_tk=3wB_11Zsd6QLMYXohk0iHvBuAfjYGnDkrGorlSV_Nac-1794063366-1.0.1.1-2.WKMUtmeCaURbjOsfLGtHd0nWQckk5ghqpbiec358M",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Adaptive Biotechnologies": {
+      "company": "Adaptive Biotechnologies",
+      "primary_url": "https://investors.adaptivebiotech.com/news-events/events",
+      "mode": "indexed",
+      "checked_at_utc": "2026-11-07T14:56:06+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investors.adaptivebiotech.com/news-events/events",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investors.adaptivebiotech.com/news-events/events",
+      "attempted_urls": [
+        "https://investors.adaptivebiotech.com/news-events/events"
+      ],
+      "attempts": [
+        {
+          "company": "Adaptive Biotechnologies",
+          "primary_url": "https://investors.adaptivebiotech.com/news-events/events",
+          "mode": "indexed",
+          "checked_at_utc": "2026-11-07T14:56:06+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investors.adaptivebiotech.com/news-events/events",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "BillionToOne": {
+      "company": "BillionToOne",
+      "primary_url": "https://investors.billiontoone.com/news-events/events-presentations",
+      "mode": "indexed",
+      "checked_at_utc": "2026-11-07T14:56:07+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investors.billiontoone.com/news-events/events-presentations",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investors.billiontoone.com/news-events/events-presentations",
+      "attempted_urls": [
+        "https://investors.billiontoone.com/news-events/events-presentations"
+      ],
+      "attempts": [
+        {
+          "company": "BillionToOne",
+          "primary_url": "https://investors.billiontoone.com/news-events/events-presentations",
+          "mode": "indexed",
+          "checked_at_utc": "2026-11-07T14:56:07+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investors.billiontoone.com/news-events/events-presentations",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "GeneDx": {
+      "company": "GeneDx",
+      "primary_url": "https://ir.genedx.com/news-events/events",
+      "mode": "standard",
+      "checked_at_utc": "2026-11-07T14:56:07+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://ir.genedx.com/news-events/events",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://ir.genedx.com/news-events/events",
+      "attempted_urls": [
+        "https://ir.genedx.com/news-events/events"
+      ],
+      "attempts": [
+        {
+          "company": "GeneDx",
+          "primary_url": "https://ir.genedx.com/news-events/events",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:07+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://ir.genedx.com/news-events/events",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "SOPHiA GENETICS": {
+      "company": "SOPHiA GENETICS",
+      "primary_url": "https://ir.sophiagenetics.com/events",
+      "mode": "standard",
+      "checked_at_utc": "2026-11-07T14:56:07+00:00",
+      "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+      "errors": [],
+      "views": [
+        {
+          "view": "initial",
+          "url": "https://ir.sophiagenetics.com/events",
+          "events_detected": 0
+        },
+        {
+          "view": "after_scroll",
+          "url": "https://ir.sophiagenetics.com/events",
+          "events_detected": 0
+        }
+      ],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 200,
+      "final_url": "https://ir.sophiagenetics.com/events",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://ir.sophiagenetics.com/events",
+      "attempted_urls": [
+        "https://ir.sophiagenetics.com/events"
+      ],
+      "attempts": [
+        {
+          "company": "SOPHiA GENETICS",
+          "primary_url": "https://ir.sophiagenetics.com/events",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:07+00:00",
+          "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+          "errors": [],
+          "views": [
+            {
+              "view": "initial",
+              "url": "https://ir.sophiagenetics.com/events",
+              "events_detected": 0
+            },
+            {
+              "view": "after_scroll",
+              "url": "https://ir.sophiagenetics.com/events",
+              "events_detected": 0
+            }
+          ],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 200,
+          "final_url": "https://ir.sophiagenetics.com/events",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Illumina": {
+      "company": "Illumina",
+      "primary_url": "https://investor.illumina.com/news-events/events",
+      "mode": "indexed",
+      "checked_at_utc": "2026-11-07T14:56:10+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investor.illumina.com/news-events/events",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investor.illumina.com/news-events/events",
+      "attempted_urls": [
+        "https://investor.illumina.com/news-events/events"
+      ],
+      "attempts": [
+        {
+          "company": "Illumina",
+          "primary_url": "https://investor.illumina.com/news-events/events",
+          "mode": "indexed",
+          "checked_at_utc": "2026-11-07T14:56:10+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investor.illumina.com/news-events/events",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "PacBio": {
+      "company": "PacBio",
+      "primary_url": "https://investor.pacificbiosciences.com/events-and-presentations",
+      "mode": "standard",
+      "checked_at_utc": "2026-11-07T14:56:10+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investor.pacificbiosciences.com/events-and-presentations",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investor.pacificbiosciences.com/events-and-presentations",
+      "attempted_urls": [
+        "https://investor.pacificbiosciences.com/events-and-presentations"
+      ],
+      "attempts": [
+        {
+          "company": "PacBio",
+          "primary_url": "https://investor.pacificbiosciences.com/events-and-presentations",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:10+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investor.pacificbiosciences.com/events-and-presentations",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Oxford Nanopore Technologies": {
+      "company": "Oxford Nanopore Technologies",
+      "primary_url": "https://nanoporetech.com/about/investors/regulatory-news",
+      "mode": "standard",
+      "checked_at_utc": "2026-11-07T14:56:14+00:00",
+      "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+      "errors": [],
+      "views": [
+        {
+          "view": "initial",
+          "url": "https://nanoporetech.com/about/investors/regulatory-news",
+          "events_detected": 0
+        },
+        {
+          "view": "after_scroll",
+          "url": "https://nanoporetech.com/about/investors/regulatory-news",
+          "events_detected": 0
+        }
+      ],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 200,
+      "final_url": "https://nanoporetech.com/about/investors/regulatory-news",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://nanoporetech.com/about/investors/financial-calendar",
+      "attempted_urls": [
+        "https://nanoporetech.com/about/investors/financial-calendar",
+        "https://nanoporetech.com/about/investors/regulatory-news"
+      ],
+      "attempts": [
+        {
+          "company": "Oxford Nanopore Technologies",
+          "primary_url": "https://nanoporetech.com/about/investors/financial-calendar",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:10+00:00",
+          "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+          "errors": [],
+          "views": [
+            {
+              "view": "initial",
+              "url": "https://nanoporetech.com/about/investors/financial-calendar",
+              "events_detected": 0
+            },
+            {
+              "view": "after_scroll",
+              "url": "https://nanoporetech.com/about/investors/financial-calendar",
+              "events_detected": 0
+            }
+          ],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 200,
+          "final_url": "https://nanoporetech.com/about/investors/financial-calendar",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        },
+        {
+          "company": "Oxford Nanopore Technologies",
+          "primary_url": "https://nanoporetech.com/about/investors/regulatory-news",
+          "mode": "standard",
+          "checked_at_utc": "2026-11-07T14:56:14+00:00",
+          "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+          "errors": [],
+          "views": [
+            {
+              "view": "initial",
+              "url": "https://nanoporetech.com/about/investors/regulatory-news",
+              "events_detected": 0
+            },
+            {
+              "view": "after_scroll",
+              "url": "https://nanoporetech.com/about/investors/regulatory-news",
+              "events_detected": 0
+            }
+          ],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 200,
+          "final_url": "https://nanoporetech.com/about/investors/regulatory-news",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "MGI Tech": {
+      "company": "MGI Tech",
+      "primary_url": "https://www.mgi-tech.com/investors.html",
+      "mode": "unconfirmed",
+      "checked_at_utc": "2026-11-07T14:56:20+00:00",
+      "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+      "errors": [],
+      "views": [
+        {
+          "view": "initial",
+          "url": "https://www.mgi-tech.com/investors.html",
+          "events_detected": 0
+        },
+        {
+          "view": "after_scroll",
+          "url": "https://www.mgi-tech.com/investors.html",
+          "events_detected": 0
+        }
+      ],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 200,
+      "final_url": "https://www.mgi-tech.com/investors.html",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "warning": "MGI: No issuer-owned dated investor events list independently confirmed.",
+      "configured_primary_url": "https://www.mgi-tech.com/Investor/index",
+      "attempted_urls": [
+        "https://www.mgi-tech.com/Investor/index",
+        "https://www.mgi-tech.com/investors.html"
+      ],
+      "attempts": [
+        {
+          "company": "MGI Tech",
+          "primary_url": "https://www.mgi-tech.com/Investor/index",
+          "mode": "unconfirmed",
+          "checked_at_utc": "2026-11-07T14:56:11+00:00",
+          "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+          "errors": [],
+          "views": [
+            {
+              "view": "initial",
+              "url": "https://www.mgi-tech.com/Investor/index",
+              "events_detected": 0
+            },
+            {
+              "view": "after_scroll",
+              "url": "https://www.mgi-tech.com/Investor/index",
+              "events_detected": 0
+            }
+          ],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 200,
+          "final_url": "https://www.mgi-tech.com/Investor/index",
+          "candidate_count": 0,
+          "review_ready_count": 0,
+          "warning": "MGI: No issuer-owned dated investor events list independently confirmed."
+        },
+        {
+          "company": "MGI Tech",
+          "primary_url": "https://www.mgi-tech.com/investors.html",
+          "mode": "unconfirmed",
+          "checked_at_utc": "2026-11-07T14:56:20+00:00",
+          "status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+          "errors": [],
+          "views": [
+            {
+              "view": "initial",
+              "url": "https://www.mgi-tech.com/investors.html",
+              "events_detected": 0
+            },
+            {
+              "view": "after_scroll",
+              "url": "https://www.mgi-tech.com/investors.html",
+              "events_detected": 0
+            }
+          ],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 200,
+          "final_url": "https://www.mgi-tech.com/investors.html",
+          "candidate_count": 0,
+          "review_ready_count": 0,
+          "warning": "MGI: No issuer-owned dated investor events list independently confirmed."
+        }
+      ]
+    },
+    "Thermo Fisher Scientific": {
+      "company": "Thermo Fisher Scientific",
+      "primary_url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
+      "mode": "dynamic",
+      "checked_at_utc": "2026-11-07T14:56:11+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx?__cf_chl_rt_tk=FFtt._IHDxJgIQzVdpqUC_V80cM5RTHyO45oOMOPz6s-1794063371-1.0.1.1-zW7XL.DLt9CqiIKZfUnghBs1Sczal5RO59jNRXrnf4c",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
+      "attempted_urls": [
+        "https://ir.thermofisher.com/investors/news-events/events/default.aspx"
+      ],
+      "attempts": [
+        {
+          "company": "Thermo Fisher Scientific",
+          "primary_url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
+          "mode": "dynamic",
+          "checked_at_utc": "2026-11-07T14:56:11+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx?__cf_chl_rt_tk=FFtt._IHDxJgIQzVdpqUC_V80cM5RTHyO45oOMOPz6s-1794063371-1.0.1.1-zW7XL.DLt9CqiIKZfUnghBs1Sczal5RO59jNRXrnf4c",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "10x Genomics": {
+      "company": "10x Genomics",
+      "primary_url": "https://investors.10xgenomics.com/events-and-presentations/",
+      "mode": "dynamic",
+      "checked_at_utc": "2026-11-07T14:56:11+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investors.10xgenomics.com/events-and-presentations/?__cf_chl_rt_tk=gABS2kiwTi4M2jZejcQZvejjJUXgrGTcwM_gP53TpII-1794063372-1.0.1.1-bpQrl9mOZqBr2ia2TcvKA4I7dydiCSs0ZmmuJ9UQRpM",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investors.10xgenomics.com/events-and-presentations/",
+      "attempted_urls": [
+        "https://investors.10xgenomics.com/events-and-presentations/"
+      ],
+      "attempts": [
+        {
+          "company": "10x Genomics",
+          "primary_url": "https://investors.10xgenomics.com/events-and-presentations/",
+          "mode": "dynamic",
+          "checked_at_utc": "2026-11-07T14:56:11+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investors.10xgenomics.com/events-and-presentations/?__cf_chl_rt_tk=gABS2kiwTi4M2jZejcQZvejjJUXgrGTcwM_gP53TpII-1794063372-1.0.1.1-bpQrl9mOZqBr2ia2TcvKA4I7dydiCSs0ZmmuJ9UQRpM",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    },
+    "Twist Bioscience": {
+      "company": "Twist Bioscience",
+      "primary_url": "https://investors.twistbioscience.com/events-and-presentations/events",
+      "mode": "indexed",
+      "checked_at_utc": "2026-11-07T14:56:12+00:00",
+      "status": "ACCESS_RESTRICTED",
+      "errors": [],
+      "views": [],
+      "network_event_payloads": 0,
+      "detail_pages": 0,
+      "http_status": 403,
+      "final_url": "https://investors.twistbioscience.com/events-and-presentations/events",
+      "candidate_count": 0,
+      "review_ready_count": 0,
+      "configured_primary_url": "https://investors.twistbioscience.com/events-and-presentations/events",
+      "attempted_urls": [
+        "https://investors.twistbioscience.com/events-and-presentations/events"
+      ],
+      "attempts": [
+        {
+          "company": "Twist Bioscience",
+          "primary_url": "https://investors.twistbioscience.com/events-and-presentations/events",
+          "mode": "indexed",
+          "checked_at_utc": "2026-11-07T14:56:12+00:00",
+          "status": "ACCESS_RESTRICTED",
+          "errors": [],
+          "views": [],
+          "network_event_payloads": 0,
+          "detail_pages": 0,
+          "http_status": 403,
+          "final_url": "https://investors.twistbioscience.com/events-and-presentations/events",
+          "candidate_count": 0,
+          "review_ready_count": 0
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "notes": [
+    "Browser extraction is discovery evidence only; ChatGPT confirms all events.",
+    "A zero-result site does NOT prove no new events.",
+    "Private companies, SEC filings and conference discovery are not scanned."
+  ],
+  "completed_at_utc": "2026-11-07T14:56:26+00:00",
+  "summary": {
+    "public_companies_checked": 23,
+    "event_candidates": 6,
+    "sites_without_candidates": 22,
+    "sites_with_access_errors": 18
+  }
+}
