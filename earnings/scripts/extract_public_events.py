@@ -1284,7 +1284,10 @@ async def run(args):
         "source_verification":"NOT_PERFORMED_REQUIRES_CHATGPT"}
     args.output.parent.mkdir(parents=True,exist_ok=True)
     temp=args.output.with_suffix(args.output.suffix+".tmp")
-    temp.write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    # Keep the full audit payload below GitHub's 1 MB Contents API threshold
+    # where possible. Whitespace must not make a successful report unreadable
+    # to the daily verification task; no event/evidence fields are omitted.
+    temp.write_text(json.dumps(report,separators=(",",":"),ensure_ascii=False)+"\n",encoding="utf-8")
     temp.replace(args.output)
     print(json.dumps(report["summary"],indent=2))
     return 2 if not any(v["primary_readable"] or v["candidate_count"]
