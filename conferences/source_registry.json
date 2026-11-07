@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "description": "ChatGPT-only conference discovery registry. No GitHub crawler. Every listed website is a starting point, not proof of a future conference date, venue or organizer announcement.",
+  "sources": [
+    {
+      "organization": "AACR",
+      "segment": "scientific",
+      "url": "https://www.aacr.org/meeting/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "AGBT",
+      "segment": "scientific",
+      "url": "https://www.agbt.org/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Association for Molecular Pathology",
+      "segment": "scientific",
+      "url": "https://www.amp.org/events/amp-events-calendar/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "AMP Europe",
+      "segment": "scientific",
+      "url": "https://amp-europe-congress.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "ASCO",
+      "segment": "scientific",
+      "url": "https://www.asco.org/meetings-education",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "ASHG",
+      "segment": "scientific",
+      "url": "https://www.ashg.org/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "EACR",
+      "segment": "scientific",
+      "url": "https://www.eacr.org/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "ESHG",
+      "segment": "scientific",
+      "url": "https://www.eshg.org/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "ESMO",
+      "segment": "scientific",
+      "url": "https://www.esmo.org/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Cancer Research UK",
+      "segment": "scientific",
+      "url": "https://www.cancerresearchuk.org/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "San Antonio Breast Cancer Symposium",
+      "segment": "scientific",
+      "url": "https://sabcs.org/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Personalized Medicine Conference",
+      "segment": "scientific",
+      "url": "https://www.personalizedmedicineconference.org/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "PMWC",
+      "segment": "scientific",
+      "url": "https://pmwcintl.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Molecular and Precision Medicine TRI-CON",
+      "segment": "scientific",
+      "url": "https://www.triconference.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "NCI Early Detection Research Network",
+      "segment": "scientific",
+      "url": "https://edrn.nci.nih.gov/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Mayo Clinic Individualizing Medicine",
+      "segment": "scientific",
+      "url": "https://www.mayo.edu/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Next Generation Dx Summit",
+      "segment": "scientific",
+      "url": "https://www.nextgenerationdx.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Liquid Biopsy for Precision Oncology Summit",
+      "segment": "scientific",
+      "url": "https://lbx-summit.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "World Clinical Biomarkers and CDx Summit",
+      "segment": "scientific",
+      "url": "https://world-cdx.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "CDx Europe",
+      "segment": "scientific",
+      "url": "https://cdx-europe.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Diagnostics World News",
+      "segment": "scientific",
+      "url": "https://www.diagnosticsworldnews.com/",
+      "tier": "secondary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "J.P. Morgan Healthcare",
+      "segment": "investor",
+      "url": "https://www.jpmorgan.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Jefferies",
+      "segment": "investor",
+      "url": "https://www.jefferies.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Stephens",
+      "segment": "investor",
+      "url": "https://www.stephens.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Piper Sandler",
+      "segment": "investor",
+      "url": "https://www.pipersandler.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Morgan Stanley",
+      "segment": "investor",
+      "url": "https://www.morganstanley.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "William Blair",
+      "segment": "investor",
+      "url": "https://www.williamblair.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Wells Fargo",
+      "segment": "investor",
+      "url": "https://www.wellsfargo.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "TD Cowen",
+      "segment": "investor",
+      "url": "https://www.tdcowen.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Stifel",
+      "segment": "investor",
+      "url": "https://www.stifel.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Wolfe Research",
+      "segment": "investor",
+      "url": "https://www.wolferesearch.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Guggenheim Securities",
+      "segment": "investor",
+      "url": "https://www.guggenheimsecurities.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Evercore",
+      "segment": "investor",
+      "url": "https://www.evercore.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Raymond James",
+      "segment": "investor",
+      "url": "https://www.raymondjames.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Leerink Partners",
+      "segment": "investor",
+      "url": "https://www.leerink.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "BTIG",
+      "segment": "investor",
+      "url": "https://www.btig.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "AllianceBernstein",
+      "segment": "investor",
+      "url": "https://www.alliancebernstein.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "UBS",
+      "segment": "investor",
+      "url": "https://www.ubs.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Barclays",
+      "segment": "investor",
+      "url": "https://www.barclays.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Bank of America",
+      "segment": "investor",
+      "url": "https://business.bofa.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Canaccord Genuity",
+      "segment": "investor",
+      "url": "https://www.canaccordgenuity.com/",
+      "tier": "primary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Gilmartin Group conference calendar",
+      "segment": "crosscheck",
+      "url": "https://gilmartinir.com/gilmartin-group-resources/conference-calendar/",
+      "tier": "secondary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "RxIR investor conference calendar",
+      "segment": "crosscheck",
+      "url": "https://rxir.com/conferences/",
+      "tier": "secondary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Investors in Healthcare conference calendar",
+      "segment": "crosscheck",
+      "url": "https://www.investorsinhealthcare.com/",
+      "tier": "secondary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    },
+    {
+      "organization": "Official venue calendars",
+      "segment": "crosscheck",
+      "url": "https://www.meetings-conventions.com/",
+      "tier": "secondary",
+      "policy": "Discovery entry point only; verify each specific edition and venue from organizer/venue primary page."
+    }
+  ],
+  "verification": {
+    "minimum_distinct_websites_per_full_audit": 30,
+    "require_event_specific_primary_evidence": true,
+    "do_not_infer_year_or_venue": true,
+    "do_not_publish_unverified_editions": true,
+    "avoid_secondhand_source_as_sole_confirmation": true
+  }
+}
