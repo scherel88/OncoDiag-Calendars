@@ -1,16 +1,17 @@
 # OncoDiag Calendars
 
-One public GitHub repository with **two independent publishing branches**. Event research and verification are performed externally by scheduled ChatGPT tasks, not by GitHub Actions.
+One public GitHub repository with **two independent publishing branches**. Event discovery and verification run externally through scheduled ChatGPT tasks; GitHub Actions only validates, generates, and publishes calendar feeds.
 
-| Calendar | Working branch | Public subscription feed (kept stable) | Verified events source |
-|---|---|---|---|
-| Earnings / Financial Calls | [`earnings-financial-calls`](https://github.com/scherel88/OncoDiag-Calendars/tree/earnings-financial-calls) | [`earnings.ics`](https://raw.githubusercontent.com/scherel88/OncoDiag-Calendars/main/earnings.ics) | `earnings-financial-calls/events*.json` and `results/*.json` |
-| Scientific & Industry Conferences | [`conferences`](https://github.com/scherel88/OncoDiag-Calendars/tree/conferences) | [`conferences/upcoming-conferences.ics`](https://raw.githubusercontent.com/scherel88/OncoDiag-Calendars/main/conferences/upcoming-conferences.ics) | `conferences:conferences/events.json` |
+| Calendar | Working branch | Public subscription feed | Source data |
+| --- | --- | --- | --- |
+| Earnings / Financial Calls | [`earnings-financial-calls`](https://github.com/scherel88/OncoDiag-Calendars/tree/earnings-financial-calls) | [`earnings.ics`](https://raw.githubusercontent.com/scherel88/OncoDiag-Calendars/main/earnings.ics) | `events*.json` and `results/*.json` in the earnings branch |
+| Scientific & Industry Conferences | [`conferences`](https://github.com/scherel88/OncoDiag-Calendars/tree/conferences) | [`conferences.ics`](https://raw.githubusercontent.com/scherel88/OncoDiag-Calendars/main/conferences.ics) | `conferences/events.json` in the conferences branch |
 
-## How publishing works
+## Workflow
 
-1. **External discovery:** The investor monitoring task commits new or corrected source records only to the `earnings-financial-calls` branch; the conference monitor commits only to the `conferences` branch.
-2. **Independent GitHub builds:** Each branch contains only its own generator, validator, data, and workflow in `.github/workflows/`. Pushes to source input paths trigger the corresponding build only on that branch.
-3. **Independent validation:** Every build validates its source input and the generated iCalendar feed. A failed validation stops publication.
-4. **Public mirror:** After successful validation, each workflow copies only its generated `.ics` file into `main`, retrying safely around concurrent updates. Therefore existing subscribers using the previous `main` URLs continue to receive updates.
+1. Each external monitoring task researches official sources and commits verified JSON updates **only to its dedicated working branch**.
+2. Each working branch has a separate GitHub Actions workflow, generator, and validator. A push to relevant inputs triggers the correct build and validates the source and generated ICS.
+3. After successful validation, each workflow mirrors its verified ICS feed to the **root of `main`**, with retries for concurrent pushes.
+4. `main` is publication-only: this README and the two published `.ics` feeds. **Do not edit generated ICS files directly.**
 
+**Subscription change:** The previous conference feed `main/conferences/upcoming-conferences.ics` has moved to `main/conferences.ics`. Subscribers to the old path must replace their subscription URL with the new one. The earnings URL is unchanged.
