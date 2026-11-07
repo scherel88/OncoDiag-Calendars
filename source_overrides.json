@@ -2,23 +2,23 @@
   "description": "ChatGPT-owned issuer sources, 25 tracked companies: 23 public x E,N,F plus two private (DELFI Diagnostics and Element Biosciences) x N-only = 71 required checks. For private companies never check investor events or SEC/exchange filings.",
   "sources": {
     "Labcorp|official_ir_events_webcasts": [
-      "https://ir.labcorp.com/news-and-events/recent-past-presentations",
-      "https://ir.labcorp.com/news-and-events/past-events"
+      "https://labcorp.gcs-web.com/news-and-events/recent-past-presentations",
+      "https://ir.labcorp.com/news-and-events/recent-past-presentations"
     ],
     "Labcorp|corporate_ir_press_releases_investor_conferences": [
       "https://ir.labcorp.com/news-and-events/news-releases",
       "https://www.labcorp.com/newsroom/press-releases"
     ],
     "Labcorp|official_filings_financial_reports": [
-      "https://ir.labcorp.com/financials/sec-filings",
-      "https://data.sec.gov/submissions/CIK0000920148.json"
+      "https://labcorp.gcs-web.com/financials/sec-filings",
+      "https://ir.labcorp.com/financials/sec-filings"
     ],
     "Veracyte|official_ir_events_webcasts": [
       "https://investor.veracyte.com/events-presentations"
     ],
     "Veracyte|corporate_ir_press_releases_investor_conferences": [
-      "https://investor.veracyte.com/press-releases",
-      "https://veracyteinc.gcs-web.com/press-releases"
+      "https://investor.veracyte.com/news-releases",
+      "https://investor.veracyte.com/press-releases"
     ],
     "Veracyte|official_filings_financial_reports": [
       "https://investor.veracyte.com/financials/sec-filings",
@@ -39,8 +39,8 @@
       "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
     ],
     "Guardant Health|corporate_ir_press_releases_investor_conferences": [
-      "https://investors.guardanthealth.com/press-releases/default.aspx",
-      "https://guardanthealth.com/newsroom/press-releases/"
+      "https://investors.guardanthealth.com/press-releases/2026/",
+      "https://investors.guardanthealth.com/press-releases/default.aspx"
     ],
     "Guardant Health|official_filings_financial_reports": [
       "https://investors.guardanthealth.com/financials/sec-filings/default.aspx"
@@ -116,8 +116,8 @@
       "https://investors.tempus.com/"
     ],
     "Tempus AI|corporate_ir_press_releases_investor_conferences": [
-      "https://tempus.gcs-web.com/news-events/news-releases",
-      "https://www.tempus.com/news/"
+      "https://investors.tempus.com/news/default.aspx",
+      "https://tempus.gcs-web.com/news-events/news-releases"
     ],
     "Tempus AI|official_filings_financial_reports": [
       "https://data.sec.gov/submissions/CIK0001717115.json"
@@ -126,6 +126,7 @@
       "https://investors.adaptivebiotech.com/news-events/events"
     ],
     "Adaptive Biotechnologies|corporate_ir_press_releases_investor_conferences": [
+      "https://investors.adaptivebiotech.com/news-events/news-releases",
       "https://investors.adaptivebiotech.com/news-releases"
     ],
     "Adaptive Biotechnologies|official_filings_financial_reports": [
@@ -140,6 +141,7 @@
       "https://www.billiontoone.com/news-media"
     ],
     "BillionToOne|official_filings_financial_reports": [
+      "https://investors.billiontoone.com/financial-information/sec-filings",
       "https://data.sec.gov/submissions/CIK0002070849.json"
     ],
     "GeneDx|official_ir_events_webcasts": [
@@ -185,16 +187,17 @@
       "https://data.sec.gov/submissions/CIK0001299130.json"
     ],
     "Oxford Nanopore Technologies|official_ir_events_webcasts": [
+      "https://www.londonstockexchange.com/en/quote/equity/ONT/oxford-nanopore-technologies-plc",
       "https://nanoporetech.com/about/investors/financial-calendar",
       "https://nanoporetech.com/about/investors/reports"
     ],
     "Oxford Nanopore Technologies|corporate_ir_press_releases_investor_conferences": [
-      "https://nanoporetech.com/about/investors/regulatory-news",
-      "https://nanoporetech.com/about/investors/reports"
+      "https://www.londonstockexchange.com/en/quote/equity/ONT/oxford-nanopore-technologies-plc",
+      "https://nanoporetech.com/about/investors/regulatory-news"
     ],
     "Oxford Nanopore Technologies|official_filings_financial_reports": [
-      "https://nanoporetech.com/about/investors/reports",
-      "https://nanoporetech.com/about/investors/regulatory-news"
+      "https://www.londonstockexchange.com/en/quote/equity/ONT/oxford-nanopore-technologies-plc",
+      "https://nanoporetech.com/about/investors/reports"
     ],
     "Element Biosciences|corporate_ir_press_releases_investor_conferences": [
       "https://www.elementbiosciences.com/news",
@@ -208,6 +211,7 @@
       "https://www.mgi-tech.com/Investor/index"
     ],
     "MGI Tech|official_filings_financial_reports": [
+      "https://www.sse.com.cn/home/search/index.shtml?webswd=%E5%8D%8E%E5%A4%A7%E6%99%BA%E9%80%A0",
       "https://www.mgi-tech.com/Investor/index"
     ],
     "Thermo Fisher Scientific|official_ir_events_webcasts": [
@@ -229,6 +233,7 @@
       "https://investors.10xgenomics.com/overview/default.aspx"
     ],
     "10x Genomics|official_filings_financial_reports": [
+      "https://investors.10xgenomics.com/financials/",
       "https://data.sec.gov/submissions/CIK0001770787.json"
     ],
     "Twist Bioscience|official_ir_events_webcasts": [
@@ -250,8 +255,8 @@
       "https://www.abbottinvestor.com/news-and-events"
     ],
     "Abbott|official_filings_financial_reports": [
-      "https://www.abbottinvestor.com/financials/sec-filings",
-      "https://data.sec.gov/submissions/CIK0000001800.json"
+      "https://abbottinvestor.gcs-web.com/financials/sec-filings",
+      "https://www.abbottinvestor.com/financials/sec-filings"
     ]
   },
   "meta": {
