@@ -35,6 +35,8 @@ BAD_CONTENT = (
     "checking your browser", "attention required! | cloudflare", "captcha challenge",
 )
 MAX_BYTES = 1_000_000
+DATE_ITEM = re.compile(r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\\.?\\s+\\d{1,2},?\\s+20\\d{2}|\\b\\d{1,2}/\\d{1,2}/20\\d{2}\\b", re.I)
+CALENDAR_PATHS = ("events", "press-releases", "news-releases", "sec-filings", "ir-calendar")
 
 
 def stamp():
@@ -110,7 +112,7 @@ def inspect(response, category=None):
             u = candidate_link(a["href"], response.url)
             if u:
                 links.append((u, "syndication feed"))
-    if len(text) < 140:
+    if len(text) < 140 or (any(k in urlparse(response.url).path.lower() for k in CALENDAR_PATHS) and not DATE_ITEM.search(text)):
         return "JS_OR_THIN_PAGE", title, len(text), links
     return "READABLE", title, len(text), links
 
@@ -119,7 +121,7 @@ class Auditor:
     def __init__(self, retries=2, browser=False, timeout=16):
         self.session = requests.Session()
         self.session.headers.update({
-            "User-Agent": os.getenv("SEC_USER_AGENT", "OncoDiag public investor calendar monitor; contact: https://github.com/scherel88/diagnostics-earnings-calendar"),
+            "User-Agent": (os.getenv("SEC_USER_AGENT") or "OncoDiag investor calendar monitor; contact: https://github.com/scherel88/diagnostics-earnings-calendar"),
             "Accept": "text/html,application/json,application/xml,application/rss+xml;q=0.9,*/*;q=0.6",
         })
         self.retries = retries
@@ -178,7 +180,8 @@ class Auditor:
                 return {"status": "BROWSER_HTTP_ERROR", "http_status": response.status if response else None}
             if any(x in text.lower() for x in BAD_CONTENT):
                 return {"status": "BLOCKED_PAGE", "title": title}
-            return {"status": "READABLE_JS" if len(text.strip()) >= 140 else "JS_OR_THIN_PAGE",
+            substantive = len(text.strip()) >= 140 and (not any(k in urlparse(url).path.lower() for k in CALENDAR_PATHS) or DATE_ITEM.search(text))
+            return {"status": "READABLE_JS" if substantive else "JS_OR_THIN_PAGE",
                     "title": title[:140], "text_chars": len(text), "html_chars": len(html)}
         except Exception as exc:
             return {"status": "BROWSER_ERROR", "error": str(exc)[:180]}
@@ -198,11 +201,11 @@ class Auditor:
         return self.cache[url]
 
 
-def fallback_candidates(urls, category, cache, limit=8):
+def fallback_candidates(urls, category, cache, other_company_urls=(), limit=10):
     """Discover FIRST-PARTY source pages already linked by the configured pages."""
     found = []
-    allowed_hosts = {host(u) for u in urls}
-    for url in urls:
+    allowed_hosts = {host(u) for u in [*urls, *other_company_urls]}
+    for url in dict.fromkeys([*urls, *other_company_urls]):
         result = cache.get(url, {})
         for attempt in result.get("attempts", [])[-1:]:
             for link, label in attempt.get("links", []):
@@ -239,8 +242,16 @@ def run(args):
         readable = [u for u in urls if audit.cache[u]["status"] in ("READABLE", "READABLE_JS")]
         extra = []
         if not readable:
-            # Only issuer-hosted links exposed by actual loaded source pages.
-            for candidate in fallback_candidates(urls, key.rsplit("|", 1)[-1], audit.cache):
+            # Official issuer links found on OTHER accessible pages for this same company.
+            company = key.split("|", 1)[0]
+            other_company_urls = [u for k, group in sources.items() if k.startswith(company + "|") for u in group]
+            candidates = fallback_candidates(urls, key.rsplit("|", 1)[-1], audit.cache, other_company_urls)
+            # SEC official EDGAR browse is a documented fallback for blocked data.sec.gov JSON.
+            for u in urls:
+                m = re.search(r"data\\.sec\\.gov/submissions/CIK(\\d{10})\\.json", u)
+                if m:
+                    candidates.append("https://www.sec.gov/edgar/browse/?CIK=" + str(int(m.group(1))) + "&owner=exclude")
+            for candidate in dict.fromkeys(candidates):
                 r = audit.check(candidate)
                 extra.append({"url": candidate, "status": r["status"]})
                 if r["status"] in ("READABLE", "READABLE_JS"):
