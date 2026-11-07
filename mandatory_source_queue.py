@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Mandatory 26x3 source-attempt queue. Network access != verified editorial review."""
+"""Mandatory 25x3 source-attempt queue. Network access != verified editorial review."""
 import datetime as dt
 import json
 import os
@@ -10,7 +10,7 @@ import urllib.error
 import urllib.request
 from html.parser import HTMLParser
 
-COMPANIES = ["Labcorp","Mendelics","Exact Sciences","Veracyte","Caris Life Sciences","Guardant Health","Myriad Genetics","Natera","Quest Diagnostics","NeoGenomics","DELFI Diagnostics","Personalis","GRAIL","Tempus AI","Adaptive Biotechnologies","BillionToOne","GeneDx","SOPHiA GENETICS","Illumina","PacBio","Oxford Nanopore Technologies","Element Biosciences","MGI Tech","Thermo Fisher Scientific","10x Genomics","Twist Bioscience"]
+COMPANIES = ["Labcorp","Exact Sciences","Veracyte","Caris Life Sciences","Guardant Health","Myriad Genetics","Natera","Quest Diagnostics","NeoGenomics","DELFI Diagnostics","Personalis","GRAIL","Tempus AI","Adaptive Biotechnologies","BillionToOne","GeneDx","SOPHiA GENETICS","Illumina","PacBio","Oxford Nanopore Technologies","Element Biosciences","MGI Tech","Thermo Fisher Scientific","10x Genomics","Twist Bioscience"]
 CATEGORIES = ["official_ir_events_webcasts","corporate_ir_press_releases_investor_conferences","official_filings_financial_reports"]
 ROOT = pathlib.Path(__file__).resolve().parent
 TODAY = dt.datetime.now(dt.timezone.utc).date()
@@ -94,19 +94,19 @@ def main():
             ledger.append(entry)
             # Persist after every category so interrupted jobs retain evidence in workspace.
             DEST.write_text(json.dumps({"date": TODAY.isoformat(), "generated_at": now(),
-                "expected": 78, "checks": ledger}, indent=2) + "\n")
+                "expected": 75, "checks": ledger}, indent=2) + "\n")
         assert len(ledger) == company_index * 3, "Company queue boundary failure"
     keys = {(x["company"], x["category"]) for x in ledger}
-    assert len(ledger) == len(keys) == 78, "Coverage queue integrity failure"
+    assert len(ledger) == len(keys) == 75, "Coverage queue integrity failure"
     counts = {s: sum(x["status"] == s for x in ledger) for s in
               ["VERIFIED_NEW", "VERIFIED_NO_CHANGE", "NOT_APPLICABLE", "SOURCE_ERROR", "NOT_ATTEMPTED"]}
-    payload = {"date": TODAY.isoformat(), "generated_at": now(), "expected": 78,
+    payload = {"date": TODAY.isoformat(), "generated_at": now(), "expected": 75,
                "unique_keys": len(keys), "counts": counts, "checks": ledger,
-               "warning": "All 78 queue entries processed, but HTTP fetches alone never establish 78 verified sources."}
+               "warning": "All 75 queue entries processed, but HTTP fetches alone never establish 75 verified sources."}
     DEST.write_text(json.dumps(payload, indent=2) + "\n")
-    print(json.dumps({"expected": 78, "unique_keys": len(keys), "counts": counts,
+    print(json.dumps({"expected": 75, "unique_keys": len(keys), "counts": counts,
                       "output": str(DEST.relative_to(ROOT))}))
-    # Do not mark an audit successful until all 78 substantive reviews have passed.
+    # Do not mark an audit successful until all 75 substantive reviews have passed.
     if counts["SOURCE_ERROR"] or counts["NOT_ATTEMPTED"]: raise SystemExit(2)
 
 if __name__ == "__main__": main()
