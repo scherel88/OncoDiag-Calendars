@@ -61,6 +61,7 @@ jobs:
           python -m py_compile earnings/scripts/extract_public_events.py
           python -m unittest discover -s earnings/tests -p 'test_*.py' -v
           python earnings/scripts/extract_public_events.py --self-test
+          python earnings/scripts/extract_public_events.py --browser-smoke
 
       - name: Scan 23 public issuer event pages
         if: steps.window.outputs.run == 'true'
