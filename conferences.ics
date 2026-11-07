@@ -1,0 +1,1029 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Watch//Conference Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Scientific and Investor Conferences
+X-WR-CALDESC:Published future conference dates tracked from official source
+ s
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:guggenheim-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261112
+SUMMARY:Guggenheim Healthcare Innovation Conference
+LOCATION:Boston\, Massachusetts\, USA
+URL:https://gilmartinir.com/gilmartin-group-resources/conference-calendar/
+DESCRIPTION:Official event information: https://gilmartinir.com/gilmartin-g
+ roup-resources/conference-calendar/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wolfe-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261111
+SUMMARY:Wolfe Research Healthcare Conference
+LOCATION:New York\, New York\, USA
+URL:https://ir.moonlaketx.com/events/event-details/8th-annual-wolfe-researc
+ h-healthcare-conference
+DESCRIPTION:Official event information: https://ir.moonlaketx.com/events/ev
+ ent-details/8th-annual-wolfe-research-healthcare-conference
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:amp-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261115
+SUMMARY:AMP Annual Meeting
+LOCATION:Seattle Convention Center\, Seattle\, Washington\, USA
+URL:https://www.amp.org/events/amp-events-calendar/
+DESCRIPTION:Official event source: https://www.amp.org/events/amp-events-ca
+ lendar/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:jefferies-london-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261120
+SUMMARY:Jefferies London Healthcare Conference
+LOCATION:The Waldorf Hilton\, London\, United Kingdom
+URL:https://www.investorsinhealthcare.com/event/jefferies-london-2026/
+DESCRIPTION:Official event information: https://www.investorsinhealthcare.c
+ om/event/jefferies-london-2026/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:stephens-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261120
+SUMMARY:Stephens Annual Investment Conference
+LOCATION:Grand Hyatt Nashville\, Nashville\, Tennessee\, USA
+URL:https://prod-new.stephens.com/events/save-the-date-stephens-annual-inve
+ stment-conference
+DESCRIPTION:Official event information: https://prod-new.stephens.com/event
+ s/save-the-date-stephens-annual-investment-conference
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pmc-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261120
+SUMMARY:Personalized Medicine Conference
+LOCATION:Hyatt Regency Boston/Cambridge\, Cambridge\, Massachusetts\, USA
+URL:https://www.personalizedmedicineconference.org/
+DESCRIPTION:Official event information: https://www.personalizedmedicinecon
+ ference.org/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:evercore-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261203
+SUMMARY:Evercore ISI Healthcare Conference
+LOCATION:Miami\, Florida\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:piper-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261204
+SUMMARY:Piper Sandler Healthcare Conference
+LOCATION:New York\, New York\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-liver-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261209
+SUMMARY:AACR Special Conference in Cancer Research: Advances in the Pathoge
+ nesis and Immune Therapies of Liver Cancer
+LOCATION:Hyatt Regency Austin\, Austin\, Texas\, USA
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -advances-in-the-pathogenesis-and-immune-therapies-of-liver-cancer/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-advances-in-the-pathogenesis-and-immu
+ ne-therapies-of-liver-cancer/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2026@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261212
+SUMMARY:San Antonio Breast Cancer Symposium
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/
+ . Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-radioligand-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270111
+SUMMARY:AACR Special Conference in Cancer Research: Cancer Biology-informed
+  Radioligand Therapy
+LOCATION:Hilton San Diego Bayfront\, San Diego\, California\, USA
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -cancer-biology-informed-radioligand-therapy/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-cancer-biology-informed-radioligand-t
+ herapy/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:jpm-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270115
+SUMMARY:J.P. Morgan Healthcare Conference
+LOCATION:The Westin St. Francis\, San Francisco\, California\, USA
+URL:https://www.jpmorgan.com/about-us/events-conferences/health-care-confer
+ ence
+DESCRIPTION:Official event source: https://www.jpmorgan.com/about-us/events
+ -conferences/health-care-conference. Venue may be pending when only city i
+ s shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-lung-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270118
+SUMMARY:AACR Special Conference in Cancer Research: Redefining Lung Cancer:
+  From Mechanistic Biology to Emerging and AI-Driven Therapies
+LOCATION:Hilton San Diego Bayfront\, San Diego\, California\, USA
+URL:https://www.aacr.org/meeting/aacr-lung-cancer-conference/
+DESCRIPTION:Official event source: https://www.aacr.org/meeting/aacr-lung-c
+ ancer-conference/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pmwc-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270130
+SUMMARY:PMWC
+LOCATION:Santa Clara Convention Center\, Santa Clara\, California\, USA
+URL:https://pmwcintl.com/
+DESCRIPTION:Official event source: https://pmwcintl.com/. Venue may be pend
+ ing when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-ras-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270201
+SUMMARY:AACR Special Conference in Cancer Research: Targeting RAS—Mechani
+ sms\, Novel Therapeutics\, and Clinical Impact
+LOCATION:Westin San Diego Bayview\, San Diego\, California\, USA
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-targeting-ras-mechanisms-novel-therap
+ eutics-and-clinical-impact/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:liquid-santiago-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270131
+SUMMARY:Liquid Biopsy Symposium\, Santiago de Compostela
+LOCATION:San Francisco Hotel Monumento\, Santiago de Compostela\, Spain
+URL:https://tacticsmd.net/congreso/liquid-biopsy/
+DESCRIPTION:Official event information: https://tacticsmd.net/congreso/liqu
+ id-biopsy/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:btig-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270211
+SUMMARY:BTIG MedTech\, Digital Health\, Life Science & Diagnostic Tools Con
+ ference
+LOCATION:Snowbird\, Utah\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-aneuploidy-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270304
+SUMMARY:AACR Special Conference in Cancer Research: Aneuploidy in Cancer: M
+ echanisms\, Instability\, and Therapeutic Opportunities
+LOCATION:JW Marriott Parq Vancouver\, Vancouver\, British Columbia\, Canada
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -aneuploidy-chromosomally-complex-cancers/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-aneuploidy-chromosomally-complex-canc
+ ers/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agbt-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270305
+SUMMARY:AGBT General Meeting
+LOCATION:Signia by Hilton Orlando Bonnet Creek\, Orlando\, Florida\, USA
+URL:https://www.agbt.org/general-meeting-venue-travel
+DESCRIPTION:Official event source: https://www.agbt.org/general-meeting-ven
+ ue-travel. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tdcowen-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270304
+SUMMARY:TD Cowen Health Care Conference
+LOCATION:Boston\, Massachusetts\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:leerink-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270311
+SUMMARY:Leerink Partners Global Biopharma Conference
+LOCATION:Miami\, Florida\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:raymondjames-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270311
+SUMMARY:Raymond James Institutional Investors Conference
+LOCATION:Orlando\, Florida\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:barclays-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270311
+SUMMARY:Barclays Global Healthcare Conference
+LOCATION:Miami\, Florida\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:lbx-west-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270320
+SUMMARY:Liquid Biopsy for Precision Oncology Summit
+LOCATION:Hyatt Regency Mission Bay Spa & Marina\, San Diego\, California\, 
+ USA
+URL:https://lbx-summit.com/venue-accommodation/
+DESCRIPTION:Official event information: https://lbx-summit.com/venue-accomm
+ odation/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270408
+SUMMARY:AACR Annual Meeting
+LOCATION:Orange County Convention Center\, Orlando\, Florida\, USA
+URL:https://www.aacr.org/meeting/aacr-annual-meeting-2027/
+DESCRIPTION:Official event source: https://www.aacr.org/meeting/aacr-annual
+ -meeting-2027/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-cdx-europe-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270415
+SUMMARY:World Clinical Biomarkers & CDx Summit Europe
+LOCATION:London\, United Kingdom
+URL:https://cdx-europe.com/
+DESCRIPTION:Official event information: https://cdx-europe.com/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-radiation-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270524
+SUMMARY:AACR Special Conference in Cancer Research: Advances in Radiation B
+ iology Mechanisms: Towards Clinical Adoption
+LOCATION:Hilton Denver City Center\, Denver\, Colorado\, USA
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -advances-in-radiation-biology-mechanisms-towards-clinical-adoption/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-advances-in-radiation-biology-mechani
+ sms-towards-clinical-adoption/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bernstein-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270605
+SUMMARY:Bernstein Strategic Decisions Conference
+LOCATION:New York\, New York\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:asco-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270609
+SUMMARY:ASCO Annual Meeting
+LOCATION:McCormick Place\, Chicago\, Illinois\, USA
+URL:https://www.asco.org/annual-meeting/dates-know
+DESCRIPTION:Official event source: https://www.asco.org/annual-meeting/date
+ s-know. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:jefferies-ny-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270608
+DTEND;VALUE=DATE:20270611
+SUMMARY:Jefferies Global Healthcare Conference
+LOCATION:New York\, New York\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eshg-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270612
+DTEND;VALUE=DATE:20270616
+SUMMARY:ESHG Conference
+LOCATION:Rotterdam Ahoy\, Rotterdam\, The Netherlands
+URL:https://2027.eshg.org/general-information/location-venue/
+DESCRIPTION:Official event source: https://2027.eshg.org/general-informatio
+ n/location-venue/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-evolution-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270624
+SUMMARY:AACR Special Conference in Cancer Research: Cancer Evolution
+LOCATION:Hilton Toronto\, Toronto\, Ontario\, Canada
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -cancer-evolution-2027/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-cancer-evolution-2027/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:amp-europe-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270624
+SUMMARY:AMP Europe
+LOCATION:Amsterdam Congress Center\, La Guardiaweg 59\, Amsterdam\, The Net
+ herlands
+URL:https://amp-europe-congress.com/
+DESCRIPTION:Official event source: https://amp-europe-congress.com/. Venue 
+ may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cancer-prevention-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270623
+DTEND;VALUE=DATE:20270626
+SUMMARY:Cancer Prevention Research Conference
+LOCATION:Park Plaza London Riverbank\, London\, United Kingdom
+URL:https://www.cancerresearchuk.org/for-researchers/how-we-deliver-researc
+ h/scientific-events-and-webinars/cancer-prevention-research-conference
+DESCRIPTION:Official event information: https://www.cancerresearchuk.org/fo
+ r-researchers/how-we-deliver-research/scientific-events-and-webinars/cance
+ r-prevention-research-conference
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-dormancy-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270719
+SUMMARY:AACR Special Conference in Cancer Research: Cancer Dormancy and Res
+ idual Disease
+LOCATION:Delta Hotel by Marriott\, Toronto\, Ontario\, Canada
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -cancer-dormancy-and-residual-disease/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-cancer-dormancy-and-residual-disease/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-pathology-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270723
+SUMMARY:AACR Special Conference in Cancer Research: Harnessing the Power of
+  Next Generation Pathology for Cancer Research
+LOCATION:Hyatt Regency Calgary\, Calgary\, Alberta\, Canada
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -harnessing-the-power-of-next-generation-pathology-for-cancer-research/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-harnessing-the-power-of-next-generati
+ on-pathology-for-cancer-research/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dxworld-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270823
+DTEND;VALUE=DATE:20270826
+SUMMARY:Dx World Summit
+LOCATION:Capital Hilton\, Washington\, D.C.\, USA
+URL:https://www.diagnosticsworldnews.com/dxworld
+DESCRIPTION:Official event information: https://www.diagnosticsworldnews.co
+ m/dxworld
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-cdx-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270830
+DTEND;VALUE=DATE:20270903
+SUMMARY:World Clinical Biomarkers & CDx Summit
+LOCATION:Encore Boston Harbor\, Everett\, Massachusetts\, USA
+URL:https://world-cdx.com/events-in-series/
+DESCRIPTION:Official event information: https://world-cdx.com/events-in-ser
+ ies/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wellsfargo-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270907
+DTEND;VALUE=DATE:20270910
+SUMMARY:Wells Fargo Healthcare Conference
+LOCATION:Boston\, Massachusetts\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:morganstanley-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270913
+DTEND;VALUE=DATE:20270916
+SUMMARY:Morgan Stanley Global Healthcare Conference
+LOCATION:New York\, New York\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:esmo-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270922
+SUMMARY:ESMO Congress
+LOCATION:Fira de Barcelona Gran Via\, Barcelona\, Spain
+URL:https://www.esmo.org/about-esmo-meetings/esmo-congresses/
+DESCRIPTION:Official event source: https://www.esmo.org/about-esmo-meetings
+ /esmo-congresses/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-proximity-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20271004
+DTEND;VALUE=DATE:20271008
+SUMMARY:AACR Special Conference in Cancer Research: Frontiers in Induced Pr
+ oximity – Transforming Cancer Research
+LOCATION:Hilton Philadelphia Penn's Landing\, Philadelphia\, Pennsylvania\,
+  USA
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -frontiers-in-induced-proximity-transforming-cancer-research-and-therapeut
+ ics/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-frontiers-in-induced-proximity-transf
+ orming-cancer-research-and-therapeutics/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:early-detection-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20271005
+DTEND;VALUE=DATE:20271008
+SUMMARY:Early Detection of Cancer Conference
+LOCATION:Heidelberg\, Germany
+URL:https://www.cancerresearchuk.org/for-researchers/how-we-deliver-researc
+ h/scientific-events-and-webinars
+DESCRIPTION:Official event information: https://www.cancerresearchuk.org/fo
+ r-researchers/how-we-deliver-research/scientific-events-and-webinars
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-liquidbiopsy-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20271014
+DTEND;VALUE=DATE:20271018
+SUMMARY:AACR Special Conference in Cancer Research: Liquid Biopsy
+LOCATION:Sheraton Grand Los Angeles\, Los Angeles\, California\, USA
+URL:https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research
+ -liquid-biopsy/
+DESCRIPTION:Official event information: https://www.aacr.org/meeting/aacr-s
+ pecial-conference-in-cancer-research-liquid-biopsy/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20271026
+DTEND;VALUE=DATE:20271031
+SUMMARY:ASHG Annual Meeting
+LOCATION:Nashville\, Tennessee\, USA
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event source: https://www.ashg.org/meetings/future-pas
+ t/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:guggenheim-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20271108
+DTEND;VALUE=DATE:20271110
+SUMMARY:Guggenheim Healthcare Innovation Conference
+LOCATION:Boston\, Massachusetts\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:amp-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271114
+SUMMARY:AMP Annual Meeting
+LOCATION:Baltimore\, Maryland\, USA
+URL:https://www.amp.org/events/amp-events-calendar/
+DESCRIPTION:Official event source: https://www.amp.org/events/amp-events-ca
+ lendar/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:evercore-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20271129
+DTEND;VALUE=DATE:20271202
+SUMMARY:Evercore ISI Healthcare Conference
+LOCATION:Miami\, Florida\, USA
+URL:https://rxir.com/conferences/
+DESCRIPTION:Official event information: https://rxir.com/conferences/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2027@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20271207
+DTEND;VALUE=DATE:20271211
+SUMMARY:San Antonio Breast Cancer Symposium
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/
+ . Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agbt-2028@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20280207
+DTEND;VALUE=DATE:20280211
+SUMMARY:AGBT General Meeting
+LOCATION:Venue to be announced
+URL:https://www.agbt.org/meetings
+DESCRIPTION:Official event source: https://www.agbt.org/meetings. Venue may
+  be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-2028@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20280421
+DTEND;VALUE=DATE:20280427
+SUMMARY:AACR Annual Meeting
+LOCATION:Ernest N. Morial Convention Center\, New Orleans\, Louisiana\, USA
+URL:https://www.aacr.org/professionals/meetings/future-annual-meetings/
+DESCRIPTION:Official event information: https://www.aacr.org/professionals/
+ meetings/future-annual-meetings/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eshg-2028@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20280617
+DTEND;VALUE=DATE:20280621
+SUMMARY:ESHG Conference
+LOCATION:Venue to be announced
+URL:https://www.eshg.org/conferences/future-eshg-meetings
+DESCRIPTION:Official event source: https://www.eshg.org/conferences/future-
+ eshg-meetings. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:esmo-2028@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20281020
+DTEND;VALUE=DATE:20281025
+SUMMARY:ESMO Congress
+LOCATION:Milan\, Italy
+URL:https://www.esmo.org/about-esmo-meetings/esmo-congresses/
+DESCRIPTION:Official event source: https://www.esmo.org/about-esmo-meetings
+ /esmo-congresses/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2028@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20281025
+DTEND;VALUE=DATE:20281030
+SUMMARY:ASHG Annual Meeting
+LOCATION:San Diego\, California\, USA
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event information: https://www.ashg.org/meetings/futur
+ e-past/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:amp-2028@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20281107
+DTEND;VALUE=DATE:20281112
+SUMMARY:AMP Annual Meeting
+LOCATION:Honolulu\, Hawaii\, USA
+URL:https://www.amp.org/events/amp-events-calendar/
+DESCRIPTION:Official event source: https://www.amp.org/events/amp-events-ca
+ lendar/. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2028@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20281205
+DTEND;VALUE=DATE:20281209
+SUMMARY:San Antonio Breast Cancer Symposium
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/
+ . Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agbt-2029@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20290212
+DTEND;VALUE=DATE:20290216
+SUMMARY:AGBT General Meeting
+LOCATION:Venue to be announced
+URL:https://www.agbt.org/meetings
+DESCRIPTION:Official event source: https://www.agbt.org/meetings. Venue may
+  be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-2029@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20290413
+DTEND;VALUE=DATE:20290419
+SUMMARY:AACR Annual Meeting
+LOCATION:San Diego Convention Center\, San Diego\, California\, USA
+URL:https://www.aacr.org/professionals/meetings/future-annual-meetings/
+DESCRIPTION:Official event information: https://www.aacr.org/professionals/
+ meetings/future-annual-meetings/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eshg-2029@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20290526
+DTEND;VALUE=DATE:20290530
+SUMMARY:ESHG Conference
+LOCATION:Venue to be announced
+URL:https://www.eshg.org/conferences/future-eshg-meetings
+DESCRIPTION:Official event source: https://www.eshg.org/conferences/future-
+ eshg-meetings. Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2029@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20291016
+DTEND;VALUE=DATE:20291021
+SUMMARY:ASHG Annual Meeting
+LOCATION:Boston\, Massachusetts\, USA
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event information: https://www.ashg.org/meetings/futur
+ e-past/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2029@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20291204
+DTEND;VALUE=DATE:20291208
+SUMMARY:San Antonio Breast Cancer Symposium
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/
+ . Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:agbt-2030@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20300225
+DTEND;VALUE=DATE:20300301
+SUMMARY:AGBT General Meeting
+LOCATION:Venue to be announced
+URL:https://www.agbt.org/meetings
+DESCRIPTION:Official event source: https://www.agbt.org/meetings. Venue may
+  be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-2030@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20300405
+DTEND;VALUE=DATE:20300411
+SUMMARY:AACR Annual Meeting
+LOCATION:Ernest N. Morial Convention Center\, New Orleans\, Louisiana\, USA
+URL:https://www.aacr.org/professionals/meetings/future-annual-meetings/
+DESCRIPTION:Official event information: https://www.aacr.org/professionals/
+ meetings/future-annual-meetings/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2030@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20301022
+DTEND;VALUE=DATE:20301027
+SUMMARY:ASHG Annual Meeting
+LOCATION:Los Angeles\, California\, USA
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event information: https://www.ashg.org/meetings/futur
+ e-past/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sabcs-2030@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20301210
+DTEND;VALUE=DATE:20301214
+SUMMARY:San Antonio Breast Cancer Symposium
+LOCATION:San Antonio\, Texas\, USA
+URL:https://sabcs.org/media/future-symposia/
+DESCRIPTION:Official event source: https://sabcs.org/media/future-symposia/
+ . Venue may be pending when only city is shown.
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aacr-2031@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20310418
+DTEND;VALUE=DATE:20310424
+SUMMARY:AACR Annual Meeting
+LOCATION:McCormick Place Convention Center\, Chicago\, Illinois\, USA
+URL:https://www.aacr.org/professionals/meetings/future-annual-meetings/
+DESCRIPTION:Official event information: https://www.aacr.org/professionals/
+ meetings/future-annual-meetings/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2031@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20311021
+DTEND;VALUE=DATE:20311026
+SUMMARY:ASHG Annual Meeting
+LOCATION:Montreal\, Quebec\, Canada
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event information: https://www.ashg.org/meetings/futur
+ e-past/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2032@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20321012
+DTEND;VALUE=DATE:20321017
+SUMMARY:ASHG Annual Meeting
+LOCATION:San Diego\, California\, USA
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event information: https://www.ashg.org/meetings/futur
+ e-past/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2033@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20331101
+DTEND;VALUE=DATE:20331106
+SUMMARY:ASHG Annual Meeting
+LOCATION:Washington\, D.C.\, USA
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event information: https://www.ashg.org/meetings/futur
+ e-past/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2034@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20341017
+DTEND;VALUE=DATE:20341022
+SUMMARY:ASHG Annual Meeting
+LOCATION:Houston\, Texas\, USA
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event information: https://www.ashg.org/meetings/futur
+ e-past/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ashg-2035@conference-watch.scherel88
+DTSTAMP:20261107T052355Z
+LAST-MODIFIED:20261107T052355Z
+DTSTART;VALUE=DATE:20351023
+DTEND;VALUE=DATE:20351028
+SUMMARY:ASHG Annual Meeting
+LOCATION:Los Angeles\, California\, USA
+URL:https://www.ashg.org/meetings/future-past/
+DESCRIPTION:Official event information: https://www.ashg.org/meetings/futur
+ e-past/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
