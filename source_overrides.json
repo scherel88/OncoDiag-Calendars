@@ -10,6 +10,7 @@
       "https://www.labcorp.com/newsroom/press-releases"
     ],
     "Labcorp|official_filings_financial_reports": [
+      "https://ir.labcorp.com/financials/sec-filings",
       "https://data.sec.gov/submissions/CIK0000920148.json"
     ],
     "Exact Sciences|official_ir_events_webcasts": [
@@ -33,6 +34,7 @@
       "https://veracyteinc.gcs-web.com/press-releases"
     ],
     "Veracyte|official_filings_financial_reports": [
+      "https://investor.veracyte.com/financials/sec-filings",
       "https://data.sec.gov/submissions/CIK0001384101.json"
     ],
     "Caris Life Sciences|official_ir_events_webcasts": [
@@ -44,6 +46,7 @@
       "https://www.carislifesciences.com/news-and-events/news/"
     ],
     "Caris Life Sciences|official_filings_financial_reports": [
+      "https://investor.carislifesciences.com/financial-information/sec-filings",
       "https://data.sec.gov/submissions/CIK0002019410.json"
     ],
     "Guardant Health|official_ir_events_webcasts": [
@@ -144,6 +147,7 @@
       "https://investors.adaptivebiotech.com/news-releases"
     ],
     "Adaptive Biotechnologies|official_filings_financial_reports": [
+      "https://investors.adaptivebiotech.com/sec-filings",
       "https://data.sec.gov/submissions/CIK0001478320.json"
     ],
     "BillionToOne|official_ir_events_webcasts": [
@@ -237,6 +241,7 @@
       "https://ir.thermofisher.com/investors/news-events/news/default.aspx"
     ],
     "Thermo Fisher Scientific|official_filings_financial_reports": [
+      "https://ir.thermofisher.com/investors/financials/sec-filings/default.aspx",
       "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude"
     ],
     "10x Genomics|official_ir_events_webcasts": [
