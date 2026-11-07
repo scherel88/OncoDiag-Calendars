@@ -1,0 +1,43 @@
+[
+  {
+    "company": "Caris Life Sciences",
+    "quarter": 4,
+    "fiscal_year": 2025,
+    "start": "2026-02-26T16:30:00-05:00",
+    "webcast": "https://edge.media-server.com/mmc/p/49czfgs4",
+    "source": "https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-fourth-quarter-and-full-year-2025"
+  },
+  {
+    "company": "Caris Life Sciences",
+    "quarter": 1,
+    "fiscal_year": 2026,
+    "start": "2026-05-07T16:30:00-04:00",
+    "webcast": "https://edge.media-server.com/mmc/p/6iwr2xf8/",
+    "source": "https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-first-quarter-2026-financial-results"
+  },
+  {
+    "company": "Caris Life Sciences",
+    "quarter": 2,
+    "fiscal_year": 2026,
+    "start": "2026-08-05T16:30:00-04:00",
+    "webcast": "https://edge.media-server.com/mmc/p/ff8xb4qs",
+    "source": "https://investor.carislifesciences.com/events/event-details/caris-second-quarter-2026-financial-results-conference-call"
+  },
+  {
+    "company": "Caris Life Sciences",
+    "quarter": 3,
+    "fiscal_year": 2026,
+    "start": "2026-11-04T16:30:00-05:00",
+    "webcast": "https://edge.media-server.com/mmc/p/nri9afky",
+    "source": "https://investor.carislifesciences.com/news-releases/news-release-details/caris-life-sciences-reports-third-quarter-2026-financial-results"
+  },
+  {
+    "company": "Labcorp",
+    "event_id": "labcorp-investor-day-2026-09-10",
+    "fiscal_year": 2026,
+    "title": "Labcorp — 2026 Investor Day",
+    "start": "2026-09-10T09:00:00-04:00",
+    "webcast": "https://edge.media-server.com/mmc/p/y48wz7fs",
+    "source": "https://ir.labcorp.com/news-releases/news-release-details/labcorp-highlights-strategic-priorities-driving-durable-growth"
+  }
+]
