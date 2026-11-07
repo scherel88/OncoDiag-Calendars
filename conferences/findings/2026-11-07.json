@@ -1,0 +1,418 @@
+{
+  "schema_version": 1,
+  "date_eastern": "2026-11-07",
+  "generated_at_utc": "2026-11-07T15:08:45.038Z",
+  "run_status": "PARTIAL",
+  "discovery_owner": "ChatGPT only",
+  "repo": "scherel88/OncoDiag-Calendars",
+  "branch": "conferences",
+  "scope": {
+    "registered_websites": 45,
+    "registered_websites_visited": 32,
+    "registered_websites_not_visited": 13,
+    "sites_with_explicit_access_issues": [
+      "ASCO",
+      "J.P. Morgan Healthcare",
+      "EACR",
+      "AACR",
+      "ESMO",
+      "TD Cowen"
+    ],
+    "websites_outside_registry_consulted": [
+      "https://medicine.yale.edu/event/precision-medicine-world-conference-2027/"
+    ]
+  },
+  "source_checks": [
+    {
+      "organization": "AACR",
+      "segment": "scientific",
+      "starting_url": "https://www.aacr.org/meeting/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": "A landing link led to stale/unrelated meeting materials; edition-specific pages needed",
+      "verified_new_edition": null
+    },
+    {
+      "organization": "AGBT",
+      "segment": "scientific",
+      "starting_url": "https://www.agbt.org/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Association for Molecular Pathology",
+      "segment": "scientific",
+      "starting_url": "https://www.amp.org/events/amp-events-calendar/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "AMP Europe",
+      "segment": "scientific",
+      "starting_url": "https://amp-europe-congress.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "ASCO",
+      "segment": "scientific",
+      "starting_url": "https://www.asco.org/meetings-education",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": "Official site returned HTTP 403 to web retrieval",
+      "verified_new_edition": null
+    },
+    {
+      "organization": "ASHG",
+      "segment": "scientific",
+      "starting_url": "https://www.ashg.org/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "EACR",
+      "segment": "scientific",
+      "starting_url": "https://www.eacr.org/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": "Official site returned HTTP 429 to web retrieval",
+      "verified_new_edition": null
+    },
+    {
+      "organization": "ESHG",
+      "segment": "scientific",
+      "starting_url": "https://www.eshg.org/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "ESMO",
+      "segment": "scientific",
+      "starting_url": "https://www.esmo.org/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": "General landing page was insufficient to prove full 2027 event inventory",
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Cancer Research UK",
+      "segment": "scientific",
+      "starting_url": "https://www.cancerresearchuk.org/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "San Antonio Breast Cancer Symposium",
+      "segment": "scientific",
+      "starting_url": "https://sabcs.org/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Personalized Medicine Conference",
+      "segment": "scientific",
+      "starting_url": "https://www.personalizedmedicineconference.org/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "PMWC",
+      "segment": "scientific",
+      "starting_url": "https://pmwcintl.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": "PMWC East Coast (Yale), June 24–25, 2027"
+    },
+    {
+      "organization": "Molecular and Precision Medicine TRI-CON",
+      "segment": "scientific",
+      "starting_url": "https://www.triconference.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "NCI Early Detection Research Network",
+      "segment": "scientific",
+      "starting_url": "https://edrn.nci.nih.gov/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Mayo Clinic Individualizing Medicine",
+      "segment": "scientific",
+      "starting_url": "https://www.mayo.edu/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Next Generation Dx Summit",
+      "segment": "scientific",
+      "starting_url": "https://www.nextgenerationdx.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Liquid Biopsy for Precision Oncology Summit",
+      "segment": "scientific",
+      "starting_url": "https://lbx-summit.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "World Clinical Biomarkers and CDx Summit",
+      "segment": "scientific",
+      "starting_url": "https://world-cdx.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "CDx Europe",
+      "segment": "scientific",
+      "starting_url": "https://cdx-europe.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Diagnostics World News",
+      "segment": "scientific",
+      "starting_url": "https://www.diagnosticsworldnews.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "J.P. Morgan Healthcare",
+      "segment": "investor",
+      "starting_url": "https://www.jpmorgan.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": "Official site returned HTTP 403 to web retrieval",
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Jefferies",
+      "segment": "investor",
+      "starting_url": "https://www.jefferies.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Stephens",
+      "segment": "investor",
+      "starting_url": "https://www.stephens.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Piper Sandler",
+      "segment": "investor",
+      "starting_url": "https://www.pipersandler.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Morgan Stanley",
+      "segment": "investor",
+      "starting_url": "https://www.morganstanley.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "William Blair",
+      "segment": "investor",
+      "starting_url": "https://www.williamblair.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Wells Fargo",
+      "segment": "investor",
+      "starting_url": "https://www.wellsfargo.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "TD Cowen",
+      "segment": "investor",
+      "starting_url": "https://www.tdcowen.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": "Official source redirected to generic TD Securities pages; edition detail not established",
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Stifel",
+      "segment": "investor",
+      "starting_url": "https://www.stifel.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Wolfe Research",
+      "segment": "investor",
+      "starting_url": "https://www.wolferesearch.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Guggenheim Securities",
+      "segment": "investor",
+      "starting_url": "https://www.guggenheimsecurities.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Evercore",
+      "segment": "investor",
+      "starting_url": "https://www.evercore.com/",
+      "status": "VISITED_NOT_EXHAUSTIVE",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Raymond James",
+      "segment": "investor",
+      "starting_url": "https://www.raymondjames.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Leerink Partners",
+      "segment": "investor",
+      "starting_url": "https://www.leerink.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "BTIG",
+      "segment": "investor",
+      "starting_url": "https://www.btig.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "AllianceBernstein",
+      "segment": "investor",
+      "starting_url": "https://www.alliancebernstein.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "UBS",
+      "segment": "investor",
+      "starting_url": "https://www.ubs.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Barclays",
+      "segment": "investor",
+      "starting_url": "https://www.barclays.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Bank of America",
+      "segment": "investor",
+      "starting_url": "https://business.bofa.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Canaccord Genuity",
+      "segment": "investor",
+      "starting_url": "https://www.canaccordgenuity.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Gilmartin Group conference calendar",
+      "segment": "crosscheck",
+      "starting_url": "https://gilmartinir.com/gilmartin-group-resources/conference-calendar/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "RxIR investor conference calendar",
+      "segment": "crosscheck",
+      "starting_url": "https://rxir.com/conferences/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Investors in Healthcare conference calendar",
+      "segment": "crosscheck",
+      "starting_url": "https://www.investorsinhealthcare.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    },
+    {
+      "organization": "Official venue calendars",
+      "segment": "crosscheck",
+      "starting_url": "https://www.meetings-conventions.com/",
+      "status": "NOT_VISITED",
+      "access_issue": null,
+      "verified_new_edition": null
+    }
+  ],
+  "changes": [
+    {
+      "action": "ADDED_CONFIRMED_EDITION",
+      "uid": "pmwc-yale-2027@conference-watch.scherel88",
+      "title": "PMWC East Coast",
+      "date_start": "2027-06-24",
+      "date_end_exclusive": "2027-06-26",
+      "venue": "Omni New Haven Hotel at Yale, 155 Temple Street, New Haven, Connecticut, USA",
+      "official_organizer_source": "https://pmwcintl.com/east/",
+      "independent_official_corroboration": "https://medicine.yale.edu/event/precision-medicine-world-conference-2027/",
+      "event_json_commit": "ac789aeb302b26f6e20bbb077e9ca3c6f8fae643"
+    }
+  ],
+  "publication": {
+    "previous_conferences_ics_event_count": 71,
+    "current_conferences_ics_event_count": 72,
+    "all_71_previous_uids_preserved": true,
+    "duplicate_uids": 0,
+    "new_uid_present_once": true,
+    "working_branch_main_ics_equal": true,
+    "public_subscription_url": "https://raw.githubusercontent.com/scherel88/OncoDiag-Calendars/main/conferences.ics",
+    "public_raw_endpoint_http_test": "NOT_AVAILABLE",
+    "individual_github_actions_run_status": "NOT_AVAILABLE_FROM_GITHUB_CONNECTOR"
+  },
+  "limitations": [
+    "A reviewed site may be a generic organizer homepage rather than a comprehensive archive; 32 visited is not 32 exhaustive verified event catalogs.",
+    "Thirteen of the 45 registered sources were not visited during this partial run; future weekly task should continue those.",
+    "Some visited sites responded with HTTP 403 or 429, or redirected to generic/stale pages.",
+    "Source-level exact web fetch times were not emitted; this report uses a creation timestamp only."
+  ],
+  "notes": "No new conferences were created from extrapolated dates; all previously published edition UIDs retained."
+}
