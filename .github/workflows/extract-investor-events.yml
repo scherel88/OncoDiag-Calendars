@@ -1,5 +1,5 @@
 name: Extract public investor-event candidates
-# Manual end-to-end run: 2026-11-07 (browser extraction + ChatGPT review)
+# HTTP-first recovery with selective Chromium and conditional caching.
 
 # Scheduling must live on main; scripts, registry and extraction data live on
 # earnings-financial-calls. This workflow never modifies canonical events/ICS.
@@ -56,6 +56,15 @@ jobs:
           python -m pip install -r earnings/requirements-extraction.txt
           python -m playwright install --with-deps chromium
 
+      - name: Restore revalidatable public responses
+        if: steps.window.outputs.run == 'true'
+        uses: actions/cache@v4
+        with:
+          path: .cache/investor-events
+          key: investor-events-v2-${{ runner.os }}-${{ hashFiles('earnings/requirements-extraction.txt') }}-${{ github.run_id }}
+          restore-keys: |
+            investor-events-v2-${{ runner.os }}-${{ hashFiles('earnings/requirements-extraction.txt') }}-
+
       - name: Test parser and source roster
         if: steps.window.outputs.run == 'true'
         run: |
@@ -64,7 +73,7 @@ jobs:
           python earnings/scripts/extract_public_events.py --self-test
           python earnings/scripts/extract_public_events.py --browser-smoke
 
-      - name: Scan 23 public issuer event pages
+      - name: Discover candidates across 23 public issuers (HTTP first)
         if: steps.window.outputs.run == 'true'
         id: scan
         continue-on-error: true
@@ -74,7 +83,8 @@ jobs:
           python earnings/scripts/extract_public_events.py \
             --config earnings/config/sources.json \
             --output "earnings/extractions/$run_day.json" \
-            --concurrency 3 --max-details 10 --site-deadline 130
+            --concurrency 6 --browser-concurrency 2 \
+            --cache-dir .cache/investor-events --max-details 10 --site-deadline 130
 
       - name: Preserve diagnostic artifact
         if: always() && steps.window.outputs.run == 'true'

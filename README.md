@@ -1,6 +1,6 @@
 # OncoDiag Calendars
 
-**Two subscription calendars, one repository, independent publishing branches, with ChatGPT as the final fact-checker.** Public issuer event websites sometimes render events in JavaScript or block indexers. The earnings pipeline therefore has an automated browser **discovery** stage. Discovery output is **not** trusted calendar content until ChatGPT corroborates it.
+**Two subscription calendars, one repository, independent publishing branches, with ChatGPT as the final fact-checker.** Public issuer event websites sometimes render events in JavaScript or block browsers. The earnings pipeline therefore has an automated HTTP-first **discovery** stage with selective browser recovery. Discovery output is **not** trusted calendar content until ChatGPT corroborates it.
 
 ## Subscribe
 
@@ -13,14 +13,19 @@
 
 ## Architecture at a glance
 
-### 1. Earnings / Financial Calls — hybrid browser + ChatGPT
+### 1. Earnings / Financial Calls — HTTP + selective browser + ChatGPT
 
-**A. GitHub Actions extracts public investor-event CANDIDATES at ~7:05 AM ET daily.**
+**A. GitHub Actions discovers public investor-event CANDIDATES at ~7:05 AM ET daily.**
 
 - Main-branch scheduler: [.github/workflows/extract-investor-events.yml](.github/workflows/extract-investor-events.yml). GitHub scheduled workflows must exist on the default branch; this small launcher checks out the earnings working branch.
 - Actual extractor: [earnings/scripts/extract_public_events.py](https://github.com/scherel88/OncoDiag-Calendars/blob/earnings-financial-calls/earnings/scripts/extract_public_events.py), **only on earnings-financial-calls**.
 - Registry: [earnings/config/sources.json](https://github.com/scherel88/OncoDiag-Calendars/blob/earnings-financial-calls/earnings/config/sources.json). Contains **23 public company event calendars and 25 issuer news-release archives** (23 public + 2 private).
-- Shared headless Chromium executes public JavaScript and examines rendered event cards, linked public JSON, JSON-LD, event-detail pages, historical-year selectors, and available Past/Upcoming and Load More controls. Concurrency is bounded to 3 companies, with per-site timeouts and per-issuer error logs.
+- A shared HTTP connection pool reads issuer HTML, structured Event JSON, linked calendar parameters, public ICS/RSS/Atom, real event-detail links, and public issuer announcements as a fallback. Raw news publication timestamps never become call times.
+- ETag/Last-Modified revalidation and coalesced identical requests reduce duplicate work. A bounded Actions cache persists revalidatable bodies; failed requests never pass off stale cached content as a fresh check.
+- Chromium is reserved for dynamic/empty pages. It replays readable public HTML/scripts under the issuer's original URLs, prefetches critical scripts, skips stylesheets/media and selected analytics, and captures the issuer widget's actual public JSON/JSONP responses.
+- Broken Q4 widget initialization can be retried through the issuer's already-loaded published library with **forcePublic=true**. No private endpoint or API key is guessed. Exact observed request URLs and failures are retained.
+- Six companies can progress together, with at most two browser contexts and two simultaneous HTTP requests per host. Retry-After cools rate-limited hosts; transient failures get one retry. Partial candidates survive the single end-to-end company deadline.
+- Numeric dates, different event-card templates, timezone conflicts, and PDF attachment labels have dedicated regression coverage. All conflicting or incomplete event facts remain subject to ChatGPT review.
 - Raw findings: [earnings/extractions/YYYY-MM-DD.json](https://github.com/scherel88/OncoDiag-Calendars/tree/earnings-financial-calls/earnings/extractions). This is a **candidate queue**. It is not read by the calendar generator, and saving it cannot create an ICS event. Reports distinguish browser errors, zero extracted candidates, missing timestamps and links. Zero extracted is **not** proof of zero events.
 - No proxy rotation, CAPTCHA-solving, authenticated crawling, private Q4 endpoints or SEC/EDGAR filing scans. If GitHub's network is blocked, the source stays incomplete for ChatGPT to investigate.
 
@@ -49,10 +54,11 @@
 
 ## Responsibilities and validation
 
-| Stage | GitHub browser job | ChatGPT task | Publishing workflow |
+| Stage | GitHub discovery job | ChatGPT task | Publishing workflow |
 | --- | --- | --- | --- |
 | Render dynamic public investor calendars | Yes, earnings only | Can cross-check via web/search | No |
-| Search official investor releases & private companies | No | Yes, daily | No |
+| Read public issuer releases | Bounded fallback only | Yes, every issuer daily | No |
+| Research private companies | No | Yes, news only | No |
 | Discover and corroborate conferences | No | Yes, weekly, 45 sources | No |
 | Verify exact event facts and deduplicate | Candidates only | **Yes, required** | Structural validation only |
 | Change canonical event JSON | **Never** | **Yes, correct branch only** | Never |
@@ -65,7 +71,7 @@
 
 From the **earnings-financial-calls** branch, with Python 3.12:
 
-\`\`\`bash
+```bash
 python -m pip install -r earnings/requirements-extraction.txt
 python -m playwright install --with-deps chromium
 python -m unittest discover -s earnings/tests -p 'test_*.py' -v
@@ -74,8 +80,9 @@ python earnings/scripts/extract_public_events.py --browser-smoke
 python earnings/scripts/extract_public_events.py \
   --config earnings/config/sources.json \
   --output earnings/extractions/local-test.json \
-  --concurrency 3 --site-deadline 130
-\`\`\`
+  --cache-dir .cache/investor-events \
+  --concurrency 6 --browser-concurrency 2 --site-deadline 130
+```
 
 Or open [GitHub Actions → Extract public investor-event candidates](https://github.com/scherel88/OncoDiag-Calendars/actions/workflows/extract-investor-events.yml) and choose **Run workflow**. The scheduled workflow runs at 07:05 America/New_York using two UTC cron expressions and an Eastern-time gate; GitHub scheduled start times may be delayed.
 
