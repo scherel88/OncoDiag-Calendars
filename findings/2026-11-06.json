@@ -11,12 +11,12 @@
     "categories_attempted": 75,
     "source_records": 75,
     "review_status_counts": {
-      "REVIEWED_LIMITED": 35,
-      "ATTEMPTED_INCOMPLETE": 39,
+      "REVIEWED_LIMITED": 48,
+      "ATTEMPTED_INCOMPLETE": 26,
       "NOT_APPLICABLE_STANDALONE": 1
     }
   },
-  "confidence": "PARTIAL — event candidates verified but full 75-category, seven-day archive completion not established",
+  "confidence": "PARTIAL — some source disclosures and event announcements verified, but full seven-day archives are not completed for all 75 categories",
   "sources": [
     {
       "company": "Labcorp",
@@ -135,11 +135,13 @@
     {
       "company": "Veracyte",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://data.sec.gov/submissions/CIK0001384101.json",
       "alternate_urls": [],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://investor.veracyte.com/financials/sec-filings"
+      ],
+      "observation": "Official filing index shows Nov 5 Q3 10-Q and Nov 4 8-K",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -176,11 +178,13 @@
     {
       "company": "Caris Life Sciences",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://data.sec.gov/submissions/CIK0002019410.json",
       "alternate_urls": [],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://investor.carislifesciences.com/financial-information/sec-filings"
+      ],
+      "observation": "Official filing index shows Nov 4 Q3 10-Q and 8-K",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -198,13 +202,15 @@
     {
       "company": "Guardant Health",
       "category": "N",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://investors.guardanthealth.com/press-releases/default.aspx",
       "alternate_urls": [
         "https://guardanthealth.com/newsroom/press-releases/"
       ],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results-and-Increases-2026-Revenue-Guidance/default.aspx"
+      ],
+      "observation": "Official issuer Nov 5 third-quarter financial-results press release examined",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -289,11 +295,13 @@
     {
       "company": "Natera",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://investor.natera.com/financials/sec-filings/default.aspx",
       "alternate_urls": [],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://investor.natera.com/financials/sec-filings/default.aspx"
+      ],
+      "observation": "Issuer SEC filings index shows Nov 5 10-Q and 8-K",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -482,13 +490,15 @@
     {
       "company": "GRAIL",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://investors.grail.com/financials-filings/sec-filings",
       "alternate_urls": [
         "https://data.sec.gov/submissions/CIK0001699031.json"
       ],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://investors.grail.com/financials-filings/sec-filings"
+      ],
+      "observation": "Official SEC filing index shows Nov 5 10-Q and Nov 4 8-K",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -558,11 +568,13 @@
     {
       "company": "Adaptive Biotechnologies",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://data.sec.gov/submissions/CIK0001478320.json",
       "alternate_urls": [],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://investors.adaptivebiotech.com/sec-filings"
+      ],
+      "observation": "Issuer filings index lists Nov 4 10-Q and 8-K",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -599,11 +611,13 @@
     {
       "company": "BillionToOne",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://data.sec.gov/submissions/CIK0002070849.json",
       "alternate_urls": [],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://investors.billiontoone.com/sec-filings/sec-filing/10-q/0002070849-26-000082"
+      ],
+      "observation": "Issuer Nov 4 10-Q filing identified by exact filing accession",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -634,13 +648,15 @@
     {
       "company": "GeneDx",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://ir.genedx.com/financials-filings/sec-filings",
       "alternate_urls": [
         "https://data.sec.gov/submissions/CIK0001818331.json"
       ],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://ir.genedx.com/financials-filings/sec-filings"
+      ],
+      "observation": "Issuer filings index shows Nov 6 Schedule 13G",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -662,22 +678,26 @@
     {
       "company": "SOPHiA GENETICS",
       "category": "N",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://ir.sophiagenetics.com/index.php?s=43",
       "alternate_urls": [],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://ir.sophiagenetics.com/2026-11-03-SOPHiA-GENETICS-Reports-Third-Quarter-2026-Results"
+      ],
+      "observation": "Nov 3 issuer Q3 earnings release confirms past call already in calendar",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
     {
       "company": "SOPHiA GENETICS",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://ir.sophiagenetics.com/financials",
       "alternate_urls": [],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://ir.sophiagenetics.com/financials"
+      ],
+      "observation": "Issuer investor financials page contains Nov 2026 Q3 filing link",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -757,13 +777,15 @@
     {
       "company": "PacBio",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://investor.pacificbiosciences.com/financial-information/sec-filings",
       "alternate_urls": [
         "https://data.sec.gov/submissions/CIK0001299130.json"
       ],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://investor.pacificbiosciences.com/financial-information/sec-filings"
+      ],
+      "observation": "Issuer SEC filings index lists Nov 5 Q3 10-Q and Nov 4 8-K",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -895,11 +917,13 @@
     {
       "company": "Thermo Fisher Scientific",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://www.sec.gov/edgar/browse/?CIK=97745&owner=exclude",
       "alternate_urls": [],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://ir.thermofisher.com/investors/financials/sec-filings/default.aspx"
+      ],
+      "observation": "Official SEC filings index opened; dynamically loaded data limits date completeness",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     },
@@ -975,13 +999,15 @@
     {
       "company": "Twist Bioscience",
       "category": "F",
-      "status": "ATTEMPTED_INCOMPLETE",
+      "status": "REVIEWED_LIMITED",
       "configured_url": "https://investors.twistbioscience.com/financial-information/sec-filings",
       "alternate_urls": [
         "https://data.sec.gov/submissions/CIK0001581280.json"
       ],
-      "evidence_urls": [],
-      "observation": "Configured URL was submitted for retrieval, but a complete, dated archive and event comparison could not be substantiated from the returned source content (may be blocked, dynamic, generic, or missing source data).",
+      "evidence_urls": [
+        "https://investors.twistbioscience.com/financial-information/sec-filings"
+      ],
+      "observation": "Official SEC index shows Nov 5 13G/A and insider filings",
       "attempted_in_chatgpt": true,
       "seven_day_archives_fully_verified": false
     }
@@ -1023,6 +1049,7 @@
     "public_url": "https://raw.githubusercontent.com/scherel88/diagnostics-earnings-calendar/main/earnings.ics"
   },
   "errors": [
+    "Follow-up issuer-filing searches reviewed additional SEC filings despite direct SEC JSON access limits; these remain limited category reviews, not certified seven-day exhaustive checks.",
     "Complete seven-day archive review was not established for every source category.",
     "Many SEC data.sec.gov JSON endpoints did not return readable content; issuer SEC HTML indexes were substituted where checked.",
     "Some investor pages returned thin JavaScript shells or 403 and required issuer-news search fallback.",
@@ -1030,5 +1057,6 @@
   ],
   "status": "PARTIAL",
   "success": false,
-  "notes": "This file is a factual work ledger. URL attempts do not equal substantive verification. Only completed findings are asserted; no full 75/75 success claim."
+  "notes": "This file is a factual work ledger. URL attempts do not equal substantive verification. Only completed findings are asserted; no full 75/75 success claim.",
+  "report_revised_at_utc": "2026-11-07T04:49:06.786Z"
 }
