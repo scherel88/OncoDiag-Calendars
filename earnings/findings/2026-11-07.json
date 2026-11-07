@@ -1,0 +1,853 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-07",
+  "report_created_at_utc": "2026-11-07T15:06:45.166Z",
+  "result": "PARTIAL",
+  "repository": "scherel88/OncoDiag-Calendars",
+  "branch": "earnings-financial-calls",
+  "scope": {
+    "tracked": 25,
+    "public": 23,
+    "private": 2,
+    "categories": 48,
+    "attempted": 48,
+    "counts": {
+      "VERIFIED_NO_CHANGE": 22,
+      "INCOMPLETE": 25,
+      "VERIFIED_NEW": 1
+    }
+  },
+  "extraction": {
+    "report_path": "earnings/extractions/2026-11-07.json",
+    "generated_at_utc": "2026-11-07T14:59:39+00:00",
+    "company_count": 23,
+    "summary": {
+      "public_companies_checked": 23,
+      "event_candidates": 6,
+      "sites_without_candidates": 22,
+      "sites_with_access_errors": 18
+    },
+    "conclusion": "GitHub runners encountered 18 issuer HTTP 403 responses. All six raw candidates were from NeoGenomics. Browser extraction cannot certify all-source coverage."
+  },
+  "source_checks": [
+    {
+      "company": "Labcorp",
+      "category": "E",
+      "primary_url": "https://ir.labcorp.com/news-and-events/recent-past-presentations",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://ir.labcorp.com/news-and-events/recent-past-presentations"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:39+00:00"
+    },
+    {
+      "company": "Labcorp",
+      "category": "N",
+      "primary_url": "https://ir.labcorp.com/news-and-events/news-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Abbott",
+      "category": "E",
+      "primary_url": "https://www.abbottinvestor.com/news-and-events/events",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://www.abbottinvestor.com/news-and-events/events"
+      ],
+      "web_retrieval": "WEB_HTTP_403",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:39+00:00"
+    },
+    {
+      "company": "Abbott",
+      "category": "N",
+      "primary_url": "https://www.abbottinvestor.com/taxonomy/term/3886/",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "WEB_HTTP_403",
+      "issuer_fallback_url": "https://www.abbott.com/en-us/corpnewsroom",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Veracyte",
+      "category": "E",
+      "primary_url": "https://investor.veracyte.com/events-presentations",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investor.veracyte.com/events-presentations"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:39+00:00"
+    },
+    {
+      "company": "Veracyte",
+      "category": "N",
+      "primary_url": "https://investor.veracyte.com/news-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "WEB_HTTP_403",
+      "issuer_fallback_url": "https://investor.veracyte.com/",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "E",
+      "primary_url": "https://investor.carislifesciences.com/news-events/events",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investor.carislifesciences.com/news-events/events"
+      ],
+      "web_retrieval": "WEB_HTTP_403",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:40+00:00"
+    },
+    {
+      "company": "Caris Life Sciences",
+      "category": "N",
+      "primary_url": "https://investor.carislifesciences.com/news-events/news-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Guardant Health",
+      "category": "E",
+      "primary_url": "https://investors.guardanthealth.com/events-and-presentations/default.aspx",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
+      ],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:40+00:00"
+    },
+    {
+      "company": "Guardant Health",
+      "category": "N",
+      "primary_url": "https://investors.guardanthealth.com/press-releases/2026/",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": "https://investors.guardanthealth.com/financials/quarterly-results/default.aspx",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "E",
+      "primary_url": "https://investor.myriad.com/events-and-presentations/",
+      "browser_status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+      "browser_http_status": 200,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investor.myriad.com/events-and-presentations/"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:40+00:00"
+    },
+    {
+      "company": "Myriad Genetics",
+      "category": "N",
+      "primary_url": "https://investor.myriad.com/news-releases/",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Natera",
+      "category": "E",
+      "primary_url": "https://investor.natera.com/events-and-presentations/events/default.aspx",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investor.natera.com/events-and-presentations/events/default.aspx"
+      ],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:40+00:00"
+    },
+    {
+      "company": "Natera",
+      "category": "N",
+      "primary_url": "https://investor.natera.com/news/default.aspx",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": "https://www.natera.com/company/news/",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "E",
+      "primary_url": "https://ir.questdiagnostics.com/events-and-presentations/default.aspx",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://ir.questdiagnostics.com/events-and-presentations/default.aspx"
+      ],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:40+00:00"
+    },
+    {
+      "company": "Quest Diagnostics",
+      "category": "N",
+      "primary_url": "https://ir.questdiagnostics.com/press-releases/default.aspx",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": "https://newsroom.questdiagnostics.com/",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "E",
+      "primary_url": "https://ir.neogenomics.com/news-events/ir-calendar",
+      "browser_status": "CANDIDATES_FOUND",
+      "browser_http_status": 200,
+      "browser_candidates": 6,
+      "browser_attempted_urls": [
+        "https://ir.neogenomics.com/news-events/ir-calendar"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NEW",
+      "reason": "Six browser candidates extracted, two already published earnings calls, two previously published future investor presentations; two historical investor conferences newly verified, with correct EDT offsets, and backfilled.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:40+00:00"
+    },
+    {
+      "company": "NeoGenomics",
+      "category": "N",
+      "primary_url": "https://ir.neogenomics.com/news-events/press-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "DELFI Diagnostics",
+      "category": "N",
+      "primary_url": "https://delfidiagnostics.com/about-us/newsroom/",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Personalis",
+      "category": "E",
+      "primary_url": "https://investors.personalis.com/news-events/events-and-presentations",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investors.personalis.com/news-events/events-and-presentations"
+      ],
+      "web_retrieval": "WEB_HTTP_403",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:40+00:00"
+    },
+    {
+      "company": "Personalis",
+      "category": "N",
+      "primary_url": "https://investors.personalis.com/news-events/press-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "GRAIL",
+      "category": "E",
+      "primary_url": "https://investors.grail.com/news-events/events",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investors.grail.com/news-events/events"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:41+00:00"
+    },
+    {
+      "company": "GRAIL",
+      "category": "N",
+      "primary_url": "https://investors.grail.com/",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": "https://grail.com/news-center/",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Tempus AI",
+      "category": "E",
+      "primary_url": "https://investors.tempus.com/events/default.aspx",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investors.tempus.com/events/default.aspx"
+      ],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:41+00:00"
+    },
+    {
+      "company": "Tempus AI",
+      "category": "N",
+      "primary_url": "https://investors.tempus.com/news/default.aspx",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": "https://investors.tempus.com/news/news-details/2026/Tempus-Reports-Third-Quarter-2026-Results/default.aspx",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "E",
+      "primary_url": "https://investors.adaptivebiotech.com/news-events/events",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investors.adaptivebiotech.com/news-events/events"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:41+00:00"
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "category": "N",
+      "primary_url": "https://investors.adaptivebiotech.com/news-events/news-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "BillionToOne",
+      "category": "E",
+      "primary_url": "https://investors.billiontoone.com/news-events/events-presentations",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investors.billiontoone.com/news-events/events-presentations"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:41+00:00"
+    },
+    {
+      "company": "BillionToOne",
+      "category": "N",
+      "primary_url": "https://investors.billiontoone.com/news-events/news-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": "https://investors.billiontoone.com/",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "GeneDx",
+      "category": "E",
+      "primary_url": "https://ir.genedx.com/news-events/events",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://ir.genedx.com/news-events/events"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:41+00:00"
+    },
+    {
+      "company": "GeneDx",
+      "category": "N",
+      "primary_url": "https://ir.genedx.com/news-events/news-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "E",
+      "primary_url": "https://ir.sophiagenetics.com/events",
+      "browser_status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+      "browser_http_status": 200,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://ir.sophiagenetics.com/events"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Main issuer E calendar says no upcoming events while specific UBS event page shows Nov 11 and linked webcast reportedly indicates Nov 9. Date inconsistency unresolved; do not publish.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:42+00:00"
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "category": "N",
+      "primary_url": "https://ir.sophiagenetics.com/index.php?s=43",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Illumina",
+      "category": "E",
+      "primary_url": "https://investor.illumina.com/news-events/events",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investor.illumina.com/news-events/events"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:44+00:00"
+    },
+    {
+      "company": "Illumina",
+      "category": "N",
+      "primary_url": "https://investor.illumina.com/",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": "https://www.illumina.com/company/news-center/press-releases.html",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "PacBio",
+      "category": "E",
+      "primary_url": "https://investor.pacificbiosciences.com/events-and-presentations",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investor.pacificbiosciences.com/events-and-presentations"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:44+00:00"
+    },
+    {
+      "company": "PacBio",
+      "category": "N",
+      "primary_url": "https://investor.pacificbiosciences.com/news-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": "https://www.pacb.com/news/press-releases/",
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "E",
+      "primary_url": "https://nanoporetech.com/about/investors/financial-calendar",
+      "browser_status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+      "browser_http_status": 200,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://nanoporetech.com/about/investors/financial-calendar",
+        "https://nanoporetech.com/about/investors/regulatory-news"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Issuer financial calendar does not list four November investor conferences announced by official Nov 4 RNS. Exact event-specific webcast pages are missing.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:48+00:00"
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "category": "N",
+      "primary_url": "https://www.londonstockexchange.com/en/quote/equity/ONT/oxford-nanopore-technologies-plc",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": "https://www.londonstockexchange.com/en/news/article/ONT/participation-in-upcoming-investor-conferences/c4e5-e0-e3-fc-df-4fa9b2",
+      "status": "INCOMPLETE",
+      "reason": "Nov 4 issuer RNS confirms four timed investor conference appearances, but individual webcast links unavailable and full weekly release archive unverified.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Element Biosciences",
+      "category": "N",
+      "primary_url": "https://www.elementbiosciences.com/news",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "MGI Tech",
+      "category": "E",
+      "primary_url": "https://www.mgi-tech.com/Investor/index",
+      "browser_status": "NO_EVENT_CANDIDATES_NOT_VERIFIED",
+      "browser_http_status": 200,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://www.mgi-tech.com/Investor/index",
+        "https://www.mgi-tech.com/investors.html"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Issuer IR site lacks confirmed dated investor presentation calendar; GitHub alternate pages returned no extractable events.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T15:00:06+00:00"
+    },
+    {
+      "company": "MGI Tech",
+      "category": "N",
+      "primary_url": "https://global-mgitech.com/news/",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "E",
+      "primary_url": "https://ir.thermofisher.com/investors/news-events/events/default.aspx",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://ir.thermofisher.com/investors/news-events/events/default.aspx"
+      ],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:45+00:00"
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "category": "N",
+      "primary_url": "https://ir.thermofisher.com/investors/news-events/news/default.aspx",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "10x Genomics",
+      "category": "E",
+      "primary_url": "https://investors.10xgenomics.com/events-and-presentations/",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investors.10xgenomics.com/events-and-presentations/"
+      ],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": null,
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:46+00:00"
+    },
+    {
+      "company": "10x Genomics",
+      "category": "N",
+      "primary_url": "https://investors.10xgenomics.com/news/default.aspx",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "STATIC_JS_SHELL",
+      "issuer_fallback_url": "https://investors.10xgenomics.com/news/news-details/2026/10x-Genomics-to-Participate-in-the-2026-Jefferies-Global-Healthcare-Conference/default.aspx",
+      "status": "INCOMPLETE",
+      "reason": "Source was opened/searched and dated issuer announcements reviewed when accessible, but the full upcoming investor calendar or seven-day news archive was not established; no absence-of-events claim.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "E",
+      "primary_url": "https://investors.twistbioscience.com/events-and-presentations/events",
+      "browser_status": "ACCESS_RESTRICTED",
+      "browser_http_status": 403,
+      "browser_candidates": 0,
+      "browser_attempted_urls": [
+        "https://investors.twistbioscience.com/events-and-presentations/events"
+      ],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": "2026-11-07T14:59:46+00:00"
+    },
+    {
+      "company": "Twist Bioscience",
+      "category": "N",
+      "primary_url": "https://investors.twistbioscience.com/news-releases",
+      "browser_status": null,
+      "browser_http_status": null,
+      "browser_candidates": null,
+      "browser_attempted_urls": [],
+      "web_retrieval": "CONTENT_RETRIEVED",
+      "issuer_fallback_url": null,
+      "status": "VERIFIED_NO_CHANGE",
+      "reason": "Issuer source displayed dated relevant events or releases; compared with calendar and no other publishable new event found in the inspected period.",
+      "web_checked_at_utc": null,
+      "browser_checked_at_utc": null
+    }
+  ],
+  "confirmed_new_events": [
+    {
+      "id": "neogenomics-jefferies-2026-06-04",
+      "date": "2026-06-04",
+      "local_start": "10:30 EDT",
+      "issuer_source": "https://ir.neogenomics.com/news-events/press-releases/detail/328/neogenomics-to-participate-in-upcoming-investor-conferences"
+    },
+    {
+      "id": "neogenomics-morgan-stanley-2026-09-15",
+      "date": "2026-09-15",
+      "local_start": "07:45 EDT",
+      "issuer_source": "https://ir.neogenomics.com/news-events/press-releases/detail/338/neogenomics-to-participate-in-the-morgan-stanley-24th-annual-global-healthcare-conference"
+    }
+  ],
+  "pending": [
+    {
+      "company": "Oxford Nanopore Technologies",
+      "items": [
+        "Stifel Healthcare Nov 10",
+        "Canaccord Nov 11",
+        "Jefferies Nov 17",
+        "Berenberg Nov 30"
+      ],
+      "issue": "Issuer RNS documents the appearances and start times, but no event-specific issuer webcast URL was verified.",
+      "source": "https://www.londonstockexchange.com/en/news/article/ONT/participation-in-upcoming-investor-conferences/c4e5-e0-e3-fc-df-4fa9b2"
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "item": "UBS Global Healthcare Conference",
+      "issue": "Nov 11 official event page conflicts with Nov 9 webcast; not published.",
+      "source": "https://ir.sophiagenetics.com/events?item=38"
+    }
+  ],
+  "publication": {
+    "baseline_events": 102,
+    "current_events": 104,
+    "previous_uids_preserved": true,
+    "duplicate_uids": 0,
+    "new_events_once": true,
+    "main_equals_working_branch": true,
+    "main_feed_url": "https://raw.githubusercontent.com/scherel88/OncoDiag-Calendars/main/earnings.ics",
+    "github_actions_completion": "NOT_INDEPENDENTLY_VISIBLE_FROM_AVAILABLE_GITHUB_CONNECTOR",
+    "raw_subscription_http_verification": "UNAVAILABLE_FROM_WEB_TOOL"
+  },
+  "provenance_notes": [
+    "48 source categories were attempted; 23 had adequate dated source evidence for this limited run, not a guarantee of exhaustive archives.",
+    "The GitHub extractor's raw 403/200 findings and the ChatGPT web retrieval statuses are separate assessments and may differ.",
+    "Verified_no_change indicates dated source review found no new confirmed eligible event, not a full historical-year audit.",
+    "Source-specific web fetch timestamps are unavailable; null deliberately avoids fabricating timestamps.",
+    "No SEC filing or private-company investor-event checks were performed."
+  ]
+}
