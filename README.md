@@ -16,4 +16,4 @@ One public GitHub repository with **two independent publishing branches**. Event
 
 **Do not edit calendar data directly on `main`.** This branch holds only the two published, independently validated ICS feeds and this README. Event input, scripts, and workflows reside exclusively in their respective working branches.
 
-If an existing subscription uses the old repository name `diagnostics-earnings-calendar`, GitHub typically redirects to `OncoDiag-Calendars`; the canonical public URLs are listed above.
+
