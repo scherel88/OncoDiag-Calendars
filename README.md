@@ -70,6 +70,7 @@ python -m pip install -r earnings/requirements-extraction.txt
 python -m playwright install --with-deps chromium
 python -m unittest discover -s earnings/tests -p 'test_*.py' -v
 python earnings/scripts/extract_public_events.py --self-test
+python earnings/scripts/extract_public_events.py --browser-smoke
 python earnings/scripts/extract_public_events.py \
   --config earnings/config/sources.json \
   --output earnings/extractions/local-test.json \
