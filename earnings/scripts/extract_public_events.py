@@ -437,7 +437,7 @@ async def run(args):
                         except Exception as ex:
                             attempts.append({"primary_url":candidate_url,
                                 "status":"TIMED_OUT_OR_FAILED","errors":[str(ex)[:180]]})
-                    final=attempts[-1]
+                    final=dict(attempts[-1])  # detach from attempts; avoid circular JSON reference
                     final["configured_primary_url"]=company["event_urls"][0]
                     final["attempted_urls"]=[a["primary_url"] for a in attempts]
                     final["attempts"]=attempts
