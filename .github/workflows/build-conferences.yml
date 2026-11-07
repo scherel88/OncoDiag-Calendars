@@ -80,7 +80,7 @@ jobs:
           done
           exit 1
 
-      - name: Mirror validated conferences feed to main (retain existing subscriptions)
+      - name: Publish validated conference feed to main/conferences.ics
         shell: bash
         run: |
           set -euo pipefail
@@ -92,15 +92,15 @@ jobs:
               git worktree remove --force "$mirror"
             fi
             git worktree add --detach "$mirror" origin/main
-            mkdir -p "$(dirname "$mirror/conferences/upcoming-conferences.ics")"
-            cp "$source_feed" "$mirror/conferences/upcoming-conferences.ics"
-            if git -C "$mirror" diff --quiet -- "conferences/upcoming-conferences.ics"; then
+            mkdir -p "$(dirname "$mirror/conferences.ics")"
+            cp "$source_feed" "$mirror/conferences.ics"
+            if git -C "$mirror" diff --quiet -- "conferences.ics"; then
               echo "Published main feed already matches validated branch"
               exit 0
             fi
             git -C "$mirror" config user.name "onco-calendar-publisher"
             git -C "$mirror" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git -C "$mirror" add "conferences/upcoming-conferences.ics"
+            git -C "$mirror" add "conferences.ics"
             git -C "$mirror" commit -m "Publish validated conferences calendar"
             if git -C "$mirror" push origin HEAD:main; then exit 0; fi
             echo "Concurrent main update; retrying publication"
