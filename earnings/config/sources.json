@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "description": "23 public issuer-event pages and 25 company news archives; 2 private companies are news-only. Sources are candidates; browser extraction does not constitute verification.",
+  "companies": [
+    {
+      "company": "Labcorp",
+      "kind": "public",
+      "mode": "standard",
+      "event_urls": [
+        "https://ir.labcorp.com/news-and-events/recent-past-presentations"
+      ],
+      "news_urls": [
+        "https://ir.labcorp.com/news-and-events/news-releases",
+        "https://www.labcorp.com/newsroom/press-releases"
+      ]
+    },
+    {
+      "company": "Abbott",
+      "kind": "public",
+      "mode": "standard",
+      "event_urls": [
+        "https://www.abbottinvestor.com/news-and-events/events"
+      ],
+      "news_urls": [
+        "https://www.abbottinvestor.com/taxonomy/term/3886/",
+        "https://www.abbott.com/en-us/corpnewsroom",
+        "https://www.abbottinvestor.com/news-and-events"
+      ]
+    },
+    {
+      "company": "Veracyte",
+      "kind": "public",
+      "mode": "indexed",
+      "event_urls": [
+        "https://investor.veracyte.com/events-presentations"
+      ],
+      "news_urls": [
+        "https://investor.veracyte.com/news-releases",
+        "https://investor.veracyte.com/press-releases"
+      ]
+    },
+    {
+      "company": "Caris Life Sciences",
+      "kind": "public",
+      "mode": "standard",
+      "event_urls": [
+        "https://investor.carislifesciences.com/news-events/events"
+      ],
+      "news_urls": [
+        "https://investor.carislifesciences.com/news-events/news-releases",
+        "https://www.carislifesciences.com/news-and-events/news/"
+      ]
+    },
+    {
+      "company": "Guardant Health",
+      "kind": "public",
+      "mode": "dynamic",
+      "event_urls": [
+        "https://investors.guardanthealth.com/events-and-presentations/default.aspx"
+      ],
+      "news_urls": [
+        "https://investors.guardanthealth.com/press-releases/2026/",
+        "https://investors.guardanthealth.com/press-releases/default.aspx"
+      ]
+    },
+    {
+      "company": "Myriad Genetics",
+      "kind": "public",
+      "mode": "standard",
+      "event_urls": [
+        "https://investor.myriad.com/events-and-presentations/"
+      ],
+      "news_urls": [
+        "https://investor.myriad.com/news-releases/"
+      ]
+    },
+    {
+      "company": "Natera",
+      "kind": "public",
+      "mode": "dynamic",
+      "event_urls": [
+        "https://investor.natera.com/events-and-presentations/events/default.aspx"
+      ],
+      "news_urls": [
+        "https://investor.natera.com/news/default.aspx",
+        "https://www.natera.com/company/news/"
+      ]
+    },
+    {
+      "company": "Quest Diagnostics",
+      "kind": "public",
+      "mode": "dynamic",
+      "event_urls": [
+        "https://ir.questdiagnostics.com/events-and-presentations/default.aspx"
+      ],
+      "news_urls": [
+        "https://ir.questdiagnostics.com/press-releases/default.aspx",
+        "https://newsroom.questdiagnostics.com/"
+      ]
+    },
+    {
+      "company": "NeoGenomics",
+      "kind": "public",
+      "mode": "standard",
+      "event_urls": [
+        "https://ir.neogenomics.com/news-events/ir-calendar"
+      ],
+      "news_urls": [
+        "https://ir.neogenomics.com/news-events/press-releases"
+      ]
+    },
+    {
+      "company": "DELFI Diagnostics",
+      "kind": "private",
+      "mode": "news_only",
+      "event_urls": [],
+      "news_urls": [
+        "https://delfidiagnostics.com/about-us/newsroom/"
+      ]
+    },
+    {
+      "company": "Personalis",
+      "kind": "public",
+      "mode": "indexed",
+      "event_urls": [
+        "https://investors.personalis.com/news-events/events-and-presentations"
+      ],
+      "news_urls": [
+        "https://investors.personalis.com/news-events/press-releases"
+      ]
+    },
+    {
+      "company": "GRAIL",
+      "kind": "public",
+      "mode": "indexed",
+      "event_urls": [
+        "https://investors.grail.com/news-events/events"
+      ],
+      "news_urls": [
+        "https://investors.grail.com/",
+        "https://grail.com/news-center/"
+      ]
+    },
+    {
+      "company": "Tempus AI",
+      "kind": "public",
+      "mode": "dynamic",
+      "event_urls": [
+        "https://investors.tempus.com/events/default.aspx"
+      ],
+      "news_urls": [
+        "https://investors.tempus.com/news/default.aspx",
+        "https://tempus.gcs-web.com/news-events/news-releases"
+      ]
+    },
+    {
+      "company": "Adaptive Biotechnologies",
+      "kind": "public",
+      "mode": "indexed",
+      "event_urls": [
+        "https://investors.adaptivebiotech.com/news-events/events"
+      ],
+      "news_urls": [
+        "https://investors.adaptivebiotech.com/news-events/news-releases",
+        "https://investors.adaptivebiotech.com/news-releases"
+      ]
+    },
+    {
+      "company": "BillionToOne",
+      "kind": "public",
+      "mode": "indexed",
+      "event_urls": [
+        "https://investors.billiontoone.com/news-events/events-presentations"
+      ],
+      "news_urls": [
+        "https://investors.billiontoone.com/news-events/news-releases",
+        "https://www.billiontoone.com/news-media"
+      ]
+    },
+    {
+      "company": "GeneDx",
+      "kind": "public",
+      "mode": "standard",
+      "event_urls": [
+        "https://ir.genedx.com/news-events/events"
+      ],
+      "news_urls": [
+        "https://ir.genedx.com/news-events/news-releases"
+      ]
+    },
+    {
+      "company": "SOPHiA GENETICS",
+      "kind": "public",
+      "mode": "standard",
+      "event_urls": [
+        "https://ir.sophiagenetics.com/events"
+      ],
+      "news_urls": [
+        "https://ir.sophiagenetics.com/index.php?s=43"
+      ]
+    },
+    {
+      "company": "Illumina",
+      "kind": "public",
+      "mode": "indexed",
+      "event_urls": [
+        "https://investor.illumina.com/news-events/events"
+      ],
+      "news_urls": [
+        "https://investor.illumina.com/",
+        "https://www.illumina.com/company/news-center/press-releases.html"
+      ]
+    },
+    {
+      "company": "PacBio",
+      "kind": "public",
+      "mode": "standard",
+      "event_urls": [
+        "https://investor.pacificbiosciences.com/events-and-presentations"
+      ],
+      "news_urls": [
+        "https://investor.pacificbiosciences.com/news-releases",
+        "https://www.pacb.com/news/press-releases/"
+      ]
+    },
+    {
+      "company": "Oxford Nanopore Technologies",
+      "kind": "public",
+      "mode": "standard",
+      "event_urls": [
+        "https://nanoporetech.com/about/investors/financial-calendar",
+        "https://nanoporetech.com/about/investors/regulatory-news"
+      ],
+      "news_urls": [
+        "https://www.londonstockexchange.com/en/quote/equity/ONT/oxford-nanopore-technologies-plc",
+        "https://nanoporetech.com/about/investors/regulatory-news"
+      ]
+    },
+    {
+      "company": "Element Biosciences",
+      "kind": "private",
+      "mode": "news_only",
+      "event_urls": [],
+      "news_urls": [
+        "https://www.elementbiosciences.com/news",
+        "https://www.elementbiosciences.com/newsroom"
+      ]
+    },
+    {
+      "company": "MGI Tech",
+      "kind": "public",
+      "mode": "unconfirmed",
+      "event_urls": [
+        "https://www.mgi-tech.com/Investor/index",
+        "https://www.mgi-tech.com/investors.html",
+        "https://roadshow.sseinfo.com/"
+      ],
+      "news_urls": [
+        "https://global-mgitech.com/news/",
+        "https://www.mgi-tech.com/Investor/index"
+      ]
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "kind": "public",
+      "mode": "dynamic",
+      "event_urls": [
+        "https://ir.thermofisher.com/investors/news-events/events/default.aspx"
+      ],
+      "news_urls": [
+        "https://ir.thermofisher.com/investors/news-events/news/default.aspx"
+      ]
+    },
+    {
+      "company": "10x Genomics",
+      "kind": "public",
+      "mode": "dynamic",
+      "event_urls": [
+        "https://investors.10xgenomics.com/events-and-presentations/"
+      ],
+      "news_urls": [
+        "https://investors.10xgenomics.com/news/default.aspx",
+        "https://investors.10xgenomics.com/overview/default.aspx"
+      ]
+    },
+    {
+      "company": "Twist Bioscience",
+      "kind": "public",
+      "mode": "indexed",
+      "event_urls": [
+        "https://investors.twistbioscience.com/events-and-presentations/events"
+      ],
+      "news_urls": [
+        "https://investors.twistbioscience.com/news-releases"
+      ]
+    }
+  ]
+}
