@@ -792,6 +792,15 @@
     "source": "https://investor.veracyte.com/news-releases/news-release-details/veracyte-participate-upcoming-investor-conferences-9"
   },
   {
+    "event_id": "guardant-jefferies-global-healthcare-2026-11-18",
+    "company": "Guardant Health",
+    "title": "Guardant Health — Jefferies Global Healthcare Conference Fireside Chat",
+    "fiscal_year": 2026,
+    "start": "2026-11-18T10:00:00-05:00",
+    "webcast": "https://investors.guardanthealth.com/events-and-presentations/default.aspx",
+    "source": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-to-Participate-in-Upcoming-Investor-Conferences-fe7b00c73/default.aspx"
+  },
+  {
     "event_id": "myriad-stephens-investment-2026",
     "company": "Myriad Genetics",
     "title": "Myriad Genetics — Stephens Investment Conference Fireside Chat",
@@ -826,6 +835,15 @@
     "start": "2026-12-01T07:30:00-05:00",
     "webcast": "https://event.summitcast.com/view/FkwyWrnNgoveMhBfJS2NCC/N3jdaLs9wcfDcF5Lcjr6Cx",
     "source": "https://investors.twistbioscience.com/events-and-presentations/events"
+  },
+  {
+    "event_id": "guardant-piper-sandler-2026-12-01",
+    "company": "Guardant Health",
+    "title": "Guardant Health — Piper Sandler 38th Annual Healthcare Conference Fireside Chat",
+    "fiscal_year": 2026,
+    "start": "2026-12-01T08:00:00-05:00",
+    "webcast": "https://investors.guardanthealth.com/events-and-presentations/default.aspx",
+    "source": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-to-Participate-in-Upcoming-Investor-Conferences-fe7b00c73/default.aspx"
   },
   {
     "event_id": "neogenomics-piper-sandler-38th-healthcare-2026-12-01",
