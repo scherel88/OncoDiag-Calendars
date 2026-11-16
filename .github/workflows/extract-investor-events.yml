@@ -11,7 +11,8 @@ on:
     paths:
       - ".github/workflows/extract-investor-events.yml"
   schedule:
-    # 07:05 America/New_York via DST-aware gate
+    # Two DST-covering UTC attempts; both perform extraction so delayed runs cannot silently skip.
+    # This intentionally favors reliable data collection over one perfectly-timed daily attempt.
     - cron: "5 11,12 * * *"
 
 permissions:
@@ -26,15 +27,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 50
     steps:
-      - name: Gate to 7 AM Eastern (or manual invocation)
+      - name: Run extraction even when GitHub starts late
         id: window
         run: |
-          hour=$(TZ=America/New_York date +%H)
-          if [[ "$GITHUB_EVENT_NAME" != "schedule" || "$hour" == "07" ]]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
+          # Scheduled triggers can be delayed well beyond their nominal clock hour.
+          # Never let such a run report success with all extraction steps skipped.
+          echo "run=true" >> "$GITHUB_OUTPUT"
 
       - uses: actions/checkout@v4
         if: steps.window.outputs.run == 'true'
