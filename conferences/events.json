@@ -30,6 +30,15 @@
       "description": "Official event source: https://www.amp.org/events/amp-events-calendar/. Venue may be pending when only city is shown."
     },
     {
+      "uid": "esmo-ai-digital-2026@conference-watch.scherel88",
+      "title": "ESMO AI & Digital Oncology Congress",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-19",
+      "location": "Berlin, Germany",
+      "url": "https://www.esmo.org/meeting-calendar/esmo-ai-digital-oncology-congress-2026",
+      "description": "Official ESMO Congress calendar: November 16–18, 2026, Berlin, Germany."
+    },
+    {
       "uid": "jefferies-london-2026@conference-watch.scherel88",
       "title": "Jefferies London Healthcare Conference",
       "start_date": "2026-11-16",
@@ -46,6 +55,15 @@
       "location": "Grand Hyatt Nashville, Nashville, Tennessee, USA",
       "url": "https://prod-new.stephens.com/events/save-the-date-stephens-annual-investment-conference",
       "description": "Official event information: https://prod-new.stephens.com/events/save-the-date-stephens-annual-investment-conference"
+    },
+    {
+      "uid": "eortc-nci-aacr-2026@conference-watch.scherel88",
+      "title": "38th EORTC-NCI-AACR Symposium on Molecular Targets and Cancer Therapeutics",
+      "start_date": "2026-11-18",
+      "end_date": "2026-11-21",
+      "location": "Centre de Convencions Internacional de Barcelona (CCIB), Plaça de Willy Brandt 11–14, Barcelona, Spain",
+      "url": "https://event.eortc.org/ena2026/general-information/",
+      "description": "Official EORTC event: November 18–20, 2026 at CCIB, Barcelona."
     },
     {
       "uid": "pmc-2026@conference-watch.scherel88",
@@ -75,6 +93,15 @@
       "description": "Official event information: https://rxir.com/conferences/"
     },
     {
+      "uid": "esmo-asia-2026@conference-watch.scherel88",
+      "title": "ESMO Asia Congress",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-07",
+      "location": "Suntec Singapore Convention & Exhibition Centre, Singapore",
+      "url": "https://www.esmo.org/meeting-calendar/esmo-asia-congress-2026/venue",
+      "description": "Official ESMO Congress: December 4–6, 2026, Singapore."
+    },
+    {
       "uid": "aacr-liver-2026@conference-watch.scherel88",
       "title": "AACR Special Conference in Cancer Research: Advances in the Pathogenesis and Immune Therapies of Liver Cancer",
       "start_date": "2026-12-06",
@@ -91,6 +118,15 @@
       "location": "San Antonio, Texas, USA",
       "url": "https://sabcs.org/media/future-symposia/",
       "description": "Official event source: https://sabcs.org/media/future-symposia/. Venue may be pending when only city is shown."
+    },
+    {
+      "uid": "esmo-immuno-oncology-2026@conference-watch.scherel88",
+      "title": "ESMO Immuno-Oncology & Advanced Therapies Congress",
+      "start_date": "2026-12-14",
+      "end_date": "2026-12-17",
+      "location": "Queen Elizabeth II Centre, Broad Sanctuary, London, United Kingdom",
+      "url": "https://www.esmo.org/meeting-calendar/esmo-immuno-oncology-advanced-therapies-congress-2026/venue",
+      "description": "Official ESMO Congress: December 14–16, 2026, QEII Centre, London."
     },
     {
       "uid": "aacr-radioligand-2027@conference-watch.scherel88",
@@ -118,6 +154,15 @@
       "location": "Hilton San Diego Bayfront, San Diego, California, USA",
       "url": "https://www.aacr.org/meeting/aacr-lung-cancer-conference/",
       "description": "Official event source: https://www.aacr.org/meeting/aacr-lung-cancer-conference/. Venue may be pending when only city is shown."
+    },
+    {
+      "uid": "asco-gi-2027@conference-watch.scherel88",
+      "title": "ASCO Gastrointestinal Cancers Symposium",
+      "start_date": "2027-01-21",
+      "end_date": "2027-01-24",
+      "location": "Moscone West, San Francisco, California, USA",
+      "url": "https://www.asco.org/gi/dates-know",
+      "description": "Official ASCO meeting: January 21–23, 2027 at Moscone West."
     },
     {
       "uid": "pmwc-2027@conference-watch.scherel88",
@@ -156,6 +201,24 @@
       "description": "Official event information: https://rxir.com/conferences/"
     },
     {
+      "uid": "asco-gu-2027@conference-watch.scherel88",
+      "title": "ASCO Genitourinary Cancers Symposium",
+      "start_date": "2027-02-11",
+      "end_date": "2027-02-14",
+      "location": "Moscone West, San Francisco, California, USA",
+      "url": "https://www.asco.org/gu/dates-know",
+      "description": "Official ASCO meeting: February 11–13, 2027 at Moscone West."
+    },
+    {
+      "uid": "aacr-io-2027@conference-watch.scherel88",
+      "title": "AACR Immuno-Oncology (AACR IO)",
+      "start_date": "2027-02-28",
+      "end_date": "2027-03-04",
+      "location": "JW Marriott Los Angeles L.A. Live, Los Angeles, California, USA",
+      "url": "https://www.aacr.org/meeting/aacr-io-2027/",
+      "description": "Official AACR meeting: February 28–March 3, 2027."
+    },
+    {
       "uid": "aacr-aneuploidy-2027@conference-watch.scherel88",
       "title": "AACR Special Conference in Cancer Research: Aneuploidy in Cancer: Mechanisms, Instability, and Therapeutic Opportunities",
       "start_date": "2027-03-01",
@@ -181,6 +244,15 @@
       "location": "Boston, Massachusetts, USA",
       "url": "https://rxir.com/conferences/",
       "description": "Official event information: https://rxir.com/conferences/"
+    },
+    {
+      "uid": "aacr-data-science-ai-2027@conference-watch.scherel88",
+      "title": "AACR Data Science and Artificial Intelligence in Oncology Conference",
+      "start_date": "2027-03-04",
+      "end_date": "2027-03-08",
+      "location": "Hyatt Regency San Francisco Downtown SOMA, San Francisco, California, USA",
+      "url": "https://www.aacr.org/meeting/data-science/",
+      "description": "Official AACR meeting: March 4–7, 2027."
     },
     {
       "uid": "leerink-2027@conference-watch.scherel88",
@@ -372,15 +444,6 @@
       "description": "Official event information: https://rxir.com/conferences/"
     },
     {
-      "uid": "morganstanley-2027@conference-watch.scherel88",
-      "title": "Morgan Stanley Global Healthcare Conference",
-      "start_date": "2027-09-13",
-      "end_date": "2027-09-16",
-      "location": "New York, New York, USA",
-      "url": "https://rxir.com/conferences/",
-      "description": "Official event information: https://rxir.com/conferences/"
-    },
-    {
       "uid": "agbt-precision-health-2027@conference-watch.scherel88",
       "title": "AGBT Precision Health",
       "start_date": "2027-09-13",
@@ -388,6 +451,15 @@
       "location": "Loews Coronado Bay Resort, Coronado, California, USA",
       "url": "https://www.agbt.org/precision-health",
       "description": "September 13–15, 2027. Official organizer venue confirmation: https://www.agbt.org/precision-health-venue-travel"
+    },
+    {
+      "uid": "morganstanley-2027@conference-watch.scherel88",
+      "title": "Morgan Stanley Global Healthcare Conference",
+      "start_date": "2027-09-13",
+      "end_date": "2027-09-16",
+      "location": "New York, New York, USA",
+      "url": "https://rxir.com/conferences/",
+      "description": "Official event information: https://rxir.com/conferences/"
     },
     {
       "uid": "esmo-2027@conference-watch.scherel88",
@@ -424,6 +496,15 @@
       "location": "Sheraton Grand Los Angeles, Los Angeles, California, USA",
       "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-liquid-biopsy/",
       "description": "Official event information: https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-liquid-biopsy/"
+    },
+    {
+      "uid": "aacr-nci-eortc-targets-2027@conference-watch.scherel88",
+      "title": "AACR-NCI-EORTC International Conference Molecular Targets and Cancer Therapeutics",
+      "start_date": "2027-10-26",
+      "end_date": "2027-10-31",
+      "location": "Sheraton Grand Chicago Riverwalk, Chicago, Illinois, USA",
+      "url": "https://www.aacr.org/meeting/aacr-nci-eortc-international-conference-molecular-targets-and-cancer-therapeutics/",
+      "description": "Official AACR meeting: October 26–30, 2027."
     },
     {
       "uid": "ashg-2027@conference-watch.scherel88",
