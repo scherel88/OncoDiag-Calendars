@@ -752,8 +752,17 @@
     "title": "Illumina — Jefferies Global Healthcare Conference Fireside Chat",
     "fiscal_year": 2026,
     "start": "2026-11-17T05:30:00-05:00",
-    "webcast": "https://investor.illumina.com/events/event-details/jefferies-global-healthcare-conference-london",
+    "webcast": "https://event.summitcast.com/view/avibSrFufLKeoLRAEgMxy6/o3yHoptdixUaW5A3uFSx7W",
     "source": "https://investor.illumina.com/news-releases/news-release-details/illumina-webcast-upcoming-investor-conference-19"
+  },
+  {
+    "event_id": "quest-jefferies-london-2026-11-17",
+    "company": "Quest Diagnostics",
+    "title": "Quest Diagnostics — Jefferies Global Healthcare Conference Fireside Chat",
+    "fiscal_year": 2026,
+    "start": "2026-11-17T08:30:00-05:00",
+    "webcast": "https://event.summitcast.com/view/avibSrFufLKeoLRAEgMxy6/H38r6p2N2WPwzqtdg558XJ",
+    "source": "https://ir.questdiagnostics.com/press-releases/press-release-details/2026/Quest-Diagnostics-to-Speak-at-the-Jefferies-Global-Healthcare-Conference-in-London/default.aspx"
   },
   {
     "event_id": "neogenomics-stephens-annual-investment-conference-2026-11-17",
@@ -779,8 +788,17 @@
     "title": "10x Genomics — Jefferies Global Healthcare Conference Fireside Chat",
     "fiscal_year": 2026,
     "start": "2026-11-17T11:30:00-05:00",
-    "webcast": "https://investors.10xgenomics.com/",
+    "webcast": "https://event.summitcast.com/view/avibSrFufLKeoLRAEgMxy6/guest_book?session_id=FcLt9zwuSBR66svV2FQ4ek",
     "source": "https://www.prnewswire.com/news-releases/10x-genomics-to-participate-in-the-2026-jefferies-global-healthcare-conference-302921150.html"
+  },
+  {
+    "event_id": "genedx-jefferies-london-2026-11-17",
+    "company": "GeneDx",
+    "title": "GeneDx — Jefferies Global Healthcare Conference Fireside Chat",
+    "fiscal_year": 2026,
+    "start": "2026-11-17T11:30:00-05:00",
+    "webcast": "https://event.summitcast.com/view/avibSrFufLKeoLRAEgMxy6/guest_book?session_id=8MhxmiNTYybrCeAuycWgAs",
+    "source": "https://ir.genedx.com/news-releases/news-release-details/genedx-participate-upcoming-investor-conferences-5"
   },
   {
     "event_id": "veracyte-jefferies-global-healthcare-2026-11-18",
@@ -788,7 +806,7 @@
     "title": "Veracyte — Jefferies Global Healthcare Conference Fireside Chat",
     "fiscal_year": 2026,
     "start": "2026-11-18T09:30:00-05:00",
-    "webcast": "https://investor.veracyte.com/events-presentations",
+    "webcast": "https://event.summitcast.com/view/avibSrFufLKeoLRAEgMxy6/guest_book?session_id=Gx83hTv95hYRLRRWJnWgUm",
     "source": "https://investor.veracyte.com/news-releases/news-release-details/veracyte-participate-upcoming-investor-conferences-9"
   },
   {
@@ -801,12 +819,21 @@
     "source": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-to-Participate-in-Upcoming-Investor-Conferences-fe7b00c73/default.aspx"
   },
   {
+    "event_id": "adaptive-jefferies-london-2026-11-18",
+    "company": "Adaptive Biotechnologies",
+    "title": "Adaptive Biotechnologies — Jefferies Global Healthcare Conference Presentation",
+    "fiscal_year": 2026,
+    "start": "2026-11-18T11:00:00-05:00",
+    "webcast": "https://investors.adaptivebiotech.com/events/event-details/jefferies-global-healthcare-conference-0",
+    "source": "https://investors.adaptivebiotech.com/news-releases/news-release-details/adaptive-biotechnologies-participate-upcoming-investor-3"
+  },
+  {
     "event_id": "myriad-stephens-investment-2026",
     "company": "Myriad Genetics",
     "title": "Myriad Genetics — Stephens Investment Conference Fireside Chat",
     "fiscal_year": 2026,
     "start": "2026-11-18T15:00:00-05:00",
-    "webcast": "https://investor.myriad.com/",
+    "webcast": "https://event.summitcast.com/view/AnJcL7fjsXraGqV8XG6fRL/guest_book?session_id=XNgqBBn8eRHTzBjNMhSfsv",
     "source": "https://investor.myriad.com/news-releases/news-release-detail/?newsItemId=27656"
   },
   {
@@ -824,7 +851,7 @@
     "title": "Veracyte — Stephens Annual Investment Conference Fireside Chat",
     "fiscal_year": 2026,
     "start": "2026-11-19T10:30:00-05:00",
-    "webcast": "https://investor.veracyte.com/events-presentations",
+    "webcast": "https://event.summitcast.com/view/AnJcL7fjsXraGqV8XG6fRL/XXEfEWJ3CnUWTbvsT9ni86",
     "source": "https://investor.veracyte.com/news-releases/news-release-details/veracyte-participate-upcoming-investor-conferences-9"
   },
   {
@@ -846,6 +873,15 @@
     "source": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-to-Participate-in-Upcoming-Investor-Conferences-fe7b00c73/default.aspx"
   },
   {
+    "event_id": "quest-evercore-2026-12-01",
+    "company": "Quest Diagnostics",
+    "title": "Quest Diagnostics — 9th Annual Evercore Healthcare Conference Fireside Chat",
+    "fiscal_year": 2026,
+    "start": "2026-12-01T14:10:00-05:00",
+    "webcast": "https://event.summitcast.com/view/FkwyWrnNgoveMhBfJS2NCC/ahdRJ3LHf8P2CAR9d9EyFW",
+    "source": "https://ir.questdiagnostics.com/press-releases/press-release-details/2026/Quest-Diagnostics-to-Speak-at-the-9th-Annual-Evercore-Healthcare-Conference/default.aspx"
+  },
+  {
     "event_id": "neogenomics-piper-sandler-38th-healthcare-2026-12-01",
     "company": "NeoGenomics",
     "fiscal_year": 2026,
@@ -855,12 +891,30 @@
     "source": "https://ir.neogenomics.com/news-events/press-releases/detail/343/neogenomics-to-participate-in-upcoming-investor-conferences"
   },
   {
+    "event_id": "genedx-piper-sandler-2026-12-02",
+    "company": "GeneDx",
+    "title": "GeneDx — Piper Sandler 38th Annual Healthcare Conference Fireside Chat",
+    "fiscal_year": 2026,
+    "start": "2026-12-02T09:00:00-05:00",
+    "webcast": "https://event.webcasts.com/starthere.jsp?ei=1783094&tp_key=29b54686cb",
+    "source": "https://ir.genedx.com/news-releases/news-release-details/genedx-participate-upcoming-investor-conferences-5"
+  },
+  {
     "event_id": "myriad-piper-sandler-healthcare-2026",
     "company": "Myriad Genetics",
     "title": "Myriad Genetics — Piper Sandler Healthcare Conference Fireside Chat",
     "fiscal_year": 2026,
     "start": "2026-12-02T12:30:00-05:00",
-    "webcast": "https://investor.myriad.com/",
+    "webcast": "https://event.webcasts.com/starthere.jsp?ei=1782381&tp_key=520405f3c3",
     "source": "https://investor.myriad.com/news-releases/news-release-detail/?newsItemId=27656"
+  },
+  {
+    "event_id": "adaptive-piper-sandler-2026-12-02",
+    "company": "Adaptive Biotechnologies",
+    "title": "Adaptive Biotechnologies — Piper Sandler 38th Annual Healthcare Conference Fireside Chat",
+    "fiscal_year": 2026,
+    "start": "2026-12-02T16:00:00-05:00",
+    "webcast": "https://investors.adaptivebiotech.com/events/event-details/piper-sandler-38th-annual-healthcare-conference",
+    "source": "https://investors.adaptivebiotech.com/news-releases/news-release-details/adaptive-biotechnologies-participate-upcoming-investor-3"
   }
 ]
