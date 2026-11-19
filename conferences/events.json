@@ -156,6 +156,15 @@
       "description": "Official event source: https://www.aacr.org/meeting/aacr-lung-cancer-conference/. Venue may be pending when only city is shown."
     },
     {
+      "uid": "esmo-genitourinary-cancers-asia-2027@conference-watch.scherel88",
+      "title": "ESMO Genitourinary Cancers Asia",
+      "start_date": "2027-01-15",
+      "end_date": "2027-01-18",
+      "location": "Kerry Hotel, 38 Hung Luen Road, Hung Hom, Hong Kong SAR, China",
+      "url": "https://www.esmo.org/meeting-calendar/esmo-genitourinary-cancers-asia-2027/practical-information",
+      "description": "Organizer-confirmed dates and location for ESMO Genitourinary Cancers Asia, 2027-01-15 through the day before 2027-01-18. Official source: https://www.esmo.org/meeting-calendar/esmo-genitourinary-cancers-asia-2027/practical-information"
+    },
+    {
       "uid": "asco-gi-2027@conference-watch.scherel88",
       "title": "ASCO Gastrointestinal Cancers Symposium",
       "start_date": "2027-01-21",
@@ -210,6 +219,15 @@
       "description": "Official ASCO meeting: February 11–13, 2027 at Moscone West."
     },
     {
+      "uid": "esmo-targeted-anticancer-therapies-congress-2027@conference-watch.scherel88",
+      "title": "ESMO Targeted Anticancer Therapies Congress",
+      "start_date": "2027-02-22",
+      "end_date": "2027-02-25",
+      "location": "Paris, France",
+      "url": "https://www.esmo.org/about-esmo-meetings/esmo-congresses/",
+      "description": "Organizer-confirmed dates and location for ESMO Targeted Anticancer Therapies Congress, 2027-02-22 through the day before 2027-02-25. Official source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/"
+    },
+    {
       "uid": "aacr-io-2027@conference-watch.scherel88",
       "title": "AACR Immuno-Oncology (AACR IO)",
       "start_date": "2027-02-28",
@@ -255,6 +273,15 @@
       "description": "Official AACR meeting: March 4–7, 2027."
     },
     {
+      "uid": "esmo-sarcoma-and-rare-cancers-congress-2027@conference-watch.scherel88",
+      "title": "ESMO Sarcoma and Rare Cancers Congress",
+      "start_date": "2027-03-04",
+      "end_date": "2027-03-07",
+      "location": "Lugano, Switzerland",
+      "url": "https://www.esmo.org/about-esmo-meetings/esmo-congresses/",
+      "description": "Organizer-confirmed dates and location for ESMO Sarcoma and Rare Cancers Congress, 2027-03-04 through the day before 2027-03-07. Official source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/"
+    },
+    {
       "uid": "leerink-2027@conference-watch.scherel88",
       "title": "Leerink Partners Global Biopharma Conference",
       "start_date": "2027-03-07",
@@ -282,6 +309,24 @@
       "description": "Official event information: https://rxir.com/conferences/"
     },
     {
+      "uid": "esmo-novel-cancer-therapies-symposium-2027@conference-watch.scherel88",
+      "title": "ESMO Novel Cancer Therapies Symposium",
+      "start_date": "2027-03-08",
+      "end_date": "2027-03-11",
+      "location": "Lugano, Switzerland",
+      "url": "https://www.esmo.org/meeting-calendar/esmo-novel-cancer-therapies-2027/registration/third-party-registration",
+      "description": "Organizer-confirmed dates and location for ESMO Novel Cancer Therapies Symposium, 2027-03-08 through the day before 2027-03-11. Official source: https://www.esmo.org/meeting-calendar/esmo-novel-cancer-therapies-2027/registration/third-party-registration"
+    },
+    {
+      "uid": "european-lung-cancer-congress-2027@conference-watch.scherel88",
+      "title": "European Lung Cancer Congress",
+      "start_date": "2027-03-17",
+      "end_date": "2027-03-21",
+      "location": "Munich, Germany",
+      "url": "https://www.esmo.org/about-esmo-meetings/esmo-congresses/",
+      "description": "Organizer-confirmed dates and location for European Lung Cancer Congress, 2027-03-17 through the day before 2027-03-21. Official source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/"
+    },
+    {
       "uid": "lbx-west-2027@conference-watch.scherel88",
       "title": "Liquid Biopsy for Precision Oncology Summit",
       "start_date": "2027-03-17",
@@ -300,6 +345,15 @@
       "description": "Confirmed by AACR: April 2–7, 2027, Orange County Convention Center, Orlando, Florida. Official event page: https://www.aacr.org/meeting/aacr-annual-meeting-2027/"
     },
     {
+      "uid": "agbt-agriculture-2027@conference-watch.scherel88",
+      "title": "AGBT Agriculture",
+      "start_date": "2027-04-04",
+      "end_date": "2027-04-08",
+      "location": "InterContinental Miami, 100 Chopin Plaza, Miami, Florida, USA",
+      "url": "https://www.agbt.org/agriculture",
+      "description": "Organizer-confirmed dates and location for AGBT Agriculture, 2027-04-04 through the day before 2027-04-08. Official source: https://www.agbt.org/agriculture"
+    },
+    {
       "uid": "world-cdx-europe-2027@conference-watch.scherel88",
       "title": "World Clinical Biomarkers & CDx Summit Europe",
       "start_date": "2027-04-12",
@@ -307,6 +361,15 @@
       "location": "London, United Kingdom",
       "url": "https://cdx-europe.com/",
       "description": "Official event information: https://cdx-europe.com/"
+    },
+    {
+      "uid": "esmo-breast-cancer-2027@conference-watch.scherel88",
+      "title": "ESMO Breast Cancer",
+      "start_date": "2027-05-12",
+      "end_date": "2027-05-15",
+      "location": "Milan, Italy",
+      "url": "https://www.esmo.org/about-esmo-meetings/esmo-congresses/",
+      "description": "Organizer-confirmed dates and location for ESMO Breast Cancer, 2027-05-12 through the day before 2027-05-15. Official source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/"
     },
     {
       "uid": "cruk-early-diagnosis-2027@conference-watch.scherel88",
@@ -363,6 +426,24 @@
       "description": "Official event source: https://2027.eshg.org/general-information/location-venue/. Venue may be pending when only city is shown."
     },
     {
+      "uid": "esmo-gynaecological-cancers-congress-2027@conference-watch.scherel88",
+      "title": "ESMO Gynaecological Cancers Congress",
+      "start_date": "2027-06-16",
+      "end_date": "2027-06-19",
+      "location": "Vienna, Austria",
+      "url": "https://www.esmo.org/about-esmo-meetings/esmo-congresses/",
+      "description": "Organizer-confirmed dates and location for ESMO Gynaecological Cancers Congress, 2027-06-16 through the day before 2027-06-19. Official source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/"
+    },
+    {
+      "uid": "esmo-targeted-anticancer-therapies-asia-congress-2027@conference-watch.scherel88",
+      "title": "ESMO Targeted Anticancer Therapies Asia Congress",
+      "start_date": "2027-06-18",
+      "end_date": "2027-06-21",
+      "location": "Hong Kong SAR, China",
+      "url": "https://www.esmo.org/about-esmo-meetings/esmo-congresses/",
+      "description": "Organizer-confirmed dates and location for ESMO Targeted Anticancer Therapies Asia Congress, 2027-06-18 through the day before 2027-06-21. Official source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/"
+    },
+    {
       "uid": "aacr-evolution-2027@conference-watch.scherel88",
       "title": "AACR Special Conference in Cancer Research: Cancer Evolution",
       "start_date": "2027-06-21",
@@ -397,6 +478,15 @@
       "location": "Omni New Haven Hotel at Yale, 155 Temple Street, New Haven, Connecticut, USA",
       "url": "https://pmwcintl.com/east/",
       "description": "PMWC 2027 Yale (East Coast), June 24–25, 2027. Official event source: https://pmwcintl.com/east/ ; corroborated by Yale School of Medicine: https://medicine.yale.edu/event/precision-medicine-world-conference-2027/ . End date in calendar is exclusive."
+    },
+    {
+      "uid": "esmo-gastrointestinal-cancers-congress-2027@conference-watch.scherel88",
+      "title": "ESMO Gastrointestinal Cancers Congress",
+      "start_date": "2027-06-30",
+      "end_date": "2027-07-04",
+      "location": "Barcelona, Spain",
+      "url": "https://www.esmo.org/about-esmo-meetings/esmo-congresses/",
+      "description": "Organizer-confirmed dates and location for ESMO Gastrointestinal Cancers Congress, 2027-06-30 through the day before 2027-07-04. Official source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/"
     },
     {
       "uid": "aacr-dormancy-2027@conference-watch.scherel88",
@@ -534,6 +624,15 @@
       "description": "Official event source: https://www.amp.org/events/amp-events-calendar/. Venue may be pending when only city is shown."
     },
     {
+      "uid": "esmo-ai-digital-oncology-congress-2027@conference-watch.scherel88",
+      "title": "ESMO AI & Digital Oncology Congress",
+      "start_date": "2027-11-15",
+      "end_date": "2027-11-18",
+      "location": "CityCube – Messe Berlin, Berlin, Germany",
+      "url": "https://www.esmo.org/meeting-calendar/esmo-ai-digital-oncology-congress-2027",
+      "description": "Organizer-confirmed dates and location for ESMO AI & Digital Oncology Congress, 2027-11-15 through the day before 2027-11-18. Official source: https://www.esmo.org/meeting-calendar/esmo-ai-digital-oncology-congress-2027"
+    },
+    {
       "uid": "evercore-2027@conference-watch.scherel88",
       "title": "Evercore ISI Healthcare Conference",
       "start_date": "2027-11-29",
@@ -541,6 +640,15 @@
       "location": "Miami, Florida, USA",
       "url": "https://rxir.com/conferences/",
       "description": "Official event information: https://rxir.com/conferences/"
+    },
+    {
+      "uid": "esmo-asia-congress-2027@conference-watch.scherel88",
+      "title": "ESMO Asia Congress",
+      "start_date": "2027-12-03",
+      "end_date": "2027-12-06",
+      "location": "Singapore",
+      "url": "https://www.esmo.org/about-esmo-meetings/esmo-congresses/",
+      "description": "Organizer-confirmed dates and location for ESMO Asia Congress, 2027-12-03 through the day before 2027-12-06. Official source: https://www.esmo.org/about-esmo-meetings/esmo-congresses/"
     },
     {
       "uid": "sabcs-2027@conference-watch.scherel88",
