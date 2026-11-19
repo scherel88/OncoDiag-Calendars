@@ -846,6 +846,15 @@
     "source": "https://investor.pacificbiosciences.com/news-releases/news-release-details/pacbio-participate-upcoming-investor-conferences"
   },
   {
+    "event_id": "thermo-fisher-ubs-ceo-2026-11-19",
+    "company": "Thermo Fisher Scientific",
+    "title": "Thermo Fisher Scientific — UBS CEO Virtual Group Meeting",
+    "fiscal_year": 2026,
+    "start": "2026-11-19T08:30:00-05:00",
+    "webcast": "https://ir.thermofisher.com/investors/news-events/events/event-details/2026/UBS-CEO-Virtual-Group-Meeting-2026-eMobZiXqXP/default.aspx",
+    "source": "https://ir.thermofisher.com/investors/news-events/events/event-details/2026/UBS-CEO-Virtual-Group-Meeting-2026-eMobZiXqXP/default.aspx"
+  },
+  {
     "event_id": "veracyte-stephens-investment-2026-11-19",
     "company": "Veracyte",
     "title": "Veracyte — Stephens Annual Investment Conference Fireside Chat",
@@ -882,6 +891,15 @@
     "source": "https://ir.questdiagnostics.com/press-releases/press-release-details/2026/Quest-Diagnostics-to-Speak-at-the-9th-Annual-Evercore-Healthcare-Conference/default.aspx"
   },
   {
+    "event_id": "billiontoone-piper-sandler-2026-12-01",
+    "company": "BillionToOne",
+    "title": "BillionToOne — Piper Sandler 38th Annual Healthcare Conference Fireside Chat",
+    "fiscal_year": 2026,
+    "start": "2026-12-01T15:00:00-05:00",
+    "webcast": "https://event.webcasts.com/starthere.jsp?ei=1783438&tp_key=15bdc60469",
+    "source": "https://investors.billiontoone.com/news-releases/news-release-details/billiontoone-participate-piper-sandler-38th-annual-healthcare"
+  },
+  {
     "event_id": "neogenomics-piper-sandler-38th-healthcare-2026-12-01",
     "company": "NeoGenomics",
     "fiscal_year": 2026,
@@ -898,6 +916,15 @@
     "start": "2026-12-02T09:00:00-05:00",
     "webcast": "https://event.webcasts.com/starthere.jsp?ei=1783094&tp_key=29b54686cb",
     "source": "https://ir.genedx.com/news-releases/news-release-details/genedx-participate-upcoming-investor-conferences-5"
+  },
+  {
+    "event_id": "pacbio-piper-sandler-2026-12-02",
+    "company": "PacBio",
+    "title": "PacBio — Piper Sandler 38th Annual Healthcare Conference Fireside Chat",
+    "fiscal_year": 2026,
+    "start": "2026-12-02T09:30:00-05:00",
+    "webcast": "https://event.webcasts.com/starthere.jsp?ei=1782043&tp_key=5e14382fdc",
+    "source": "https://investor.pacificbiosciences.com/news-releases/news-release-details/pacbio-participate-piper-sandler-38th-annual-healthcare"
   },
   {
     "event_id": "myriad-piper-sandler-healthcare-2026",
