@@ -882,6 +882,24 @@
     "source": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-to-Participate-in-Upcoming-Investor-Conferences-fe7b00c73/default.aspx"
   },
   {
+    "event_id": "grail-piper-sandler-2026-12-01",
+    "company": "GRAIL",
+    "title": "GRAIL — Piper Sandler 38th Annual Healthcare Conference Presentation",
+    "fiscal_year": 2026,
+    "start": "2026-12-01T11:30:00-05:00",
+    "webcast": "https://event.webcasts.com/starthere.jsp?ei=1781914&tp_key=72688c7fde",
+    "source": "https://investors.grail.com/news-releases/news-release-details/grail-present-piper-sandler-38th-annual-healthcare-conference"
+  },
+  {
+    "event_id": "veracyte-piper-sandler-2026-12-01",
+    "company": "Veracyte",
+    "title": "Veracyte — Piper Sandler 38th Annual Healthcare Conference",
+    "fiscal_year": 2026,
+    "start": "2026-12-01T13:30:00-05:00",
+    "webcast": "https://event.webcasts.com/starthere.jsp?ei=1781909&tp_key=052880ecb5",
+    "source": "https://investor.veracyte.com/events-presentations"
+  },
+  {
     "event_id": "quest-evercore-2026-12-01",
     "company": "Quest Diagnostics",
     "title": "Quest Diagnostics — 9th Annual Evercore Healthcare Conference Fireside Chat",
